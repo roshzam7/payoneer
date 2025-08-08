@@ -6,6 +6,9 @@ import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Content from "../assets/images/gettingstarted/Content.png";
+import Content2 from "../assets/images/gettingstarted/Content2.png";
+import Content3 from "../assets/images/gettingstarted/Content3.png";
+
 import Checkicon from "../assets/images/Check-icon.svg";
 
 
@@ -212,7 +215,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src={Content}
+                  src={Content2}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -272,7 +275,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src={Content}
+                  src={Content3}
                   alt="Reseller program"
                   width={200}
                   height={200}
