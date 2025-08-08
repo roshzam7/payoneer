@@ -4,6 +4,14 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
+import backBtn from "../assets/images/back-button.svg";
+import Sectionthree1 from "../assets/Sectionthree/Sectionthree1.png";
+import Sectionthree2 from "../assets/Sectionthree/Sectionthree2.png";
+import Sectionthree3 from "../assets/Sectionthree/Sectionthree3.png";
+import Sectionthree4 from "../assets/Sectionthree/Sectionthree4.png";
+
+
+
 
 const topics = [
   {
@@ -108,13 +116,14 @@ export default function ResellerLandingPage() {
                 aria-label="Back to Table of Content"
                 title="Back to Table of Content"
               >
-                <Image
-                  src="images/back-button.svg"
+                <Image 
+                  src={backBtn}
                   alt="Expand cross-border"
                   width={32}
                   height={32}
                   className="mt-0 "
                 />
+                
               </button>
 
               {/* Crumb text */}
@@ -138,7 +147,7 @@ export default function ResellerLandingPage() {
             </h2>
             <div className="mt-8 w-full">
               <Image
-                src="/images/Sectionthree/Sectionthree1.png"
+                src={Sectionthree1}
                 alt="Reseller Program Phases"
                 width={800}
                 height={450}
@@ -207,7 +216,7 @@ export default function ResellerLandingPage() {
                   Marketing & Reselling Guidelines
                 </h3>
                 <Image
-                  src="/images/Sectionthree/Sectionthree2.png"
+                  src={Sectionthree2}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
@@ -265,14 +274,14 @@ export default function ResellerLandingPage() {
                   how they engage with Payoneer&apos;s products.
                 </p>
                 <Image
-                  src="/images/Sectionthree/Sectionthree3.png"
+                  src={Sectionthree3}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
                   className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
                 />
                 <Image
-                  src="/images/Sectionthree/Sectionthree4.png"
+                  src={Sectionthree4}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
