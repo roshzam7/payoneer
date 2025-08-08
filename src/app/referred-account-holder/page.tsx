@@ -4,6 +4,27 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
+import backBtn from "../assets/images/back-button.svg";
+import Checkicon from "../assets/images/Check-icon.svg";                 
+import Content1 from "../assets/images/sectionfour/Content1.png";
+import Content2 from "../assets/images/sectionfour/Content2.png";
+import Content3 from "../assets/images/sectionfour/Content3.png";
+import Content4 from "../assets/images/sectionfour/Content4.png";
+import Content5 from "../assets/images/sectionfour/Content5.png";
+import Content6 from "../assets/images/sectionfour/Content6.png";
+import Content7 from "../assets/images/sectionfour/Content7.png";
+import Content8 from "../assets/images/sectionfour/Content8.png";
+import Content9 from "../assets/images/sectionfour/Content9.png";
+import Content10 from "../assets/images/sectionfour/Content10.png";
+import Content11 from "../assets/images/sectionfour/Content11.png";
+import Content12 from "../assets/images/sectionfour/Content12.png";
+import Content13 from "../assets/images/sectionfour/Content13.png";
+import Content14 from "../assets/images/sectionfour/Content14.png";
+import Content15 from "../assets/images/sectionfour/Content15.png";
+import Content16 from "../assets/images/sectionfour/Content16.png";
+import Content17 from "../assets/images/sectionfour/Content17.png";
+
+
 
 const topics = [
   {
@@ -174,7 +195,7 @@ export default function ResellerLandingPage() {
                 title="Back to Table of Content"
               >
                 <Image
-                  src="images/back-button.svg"
+                  src={backBtn}
                   alt="Expand cross-border"
                   width={32}
                   height={32}
@@ -234,7 +255,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -247,7 +268,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content1.png"
+                  src={Content1}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -261,7 +282,7 @@ export default function ResellerLandingPage() {
             <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content2.png"
+                  src={Content2}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -280,7 +301,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -307,7 +328,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -320,7 +341,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content3.png"
+                  src={Content3}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -335,7 +356,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content4.png"
+                  src={Content4}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -355,7 +376,7 @@ export default function ResellerLandingPage() {
                       className=" text-[12px] flex items-start gap-3 text-[#878787]"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -393,7 +414,7 @@ export default function ResellerLandingPage() {
                       className="text-[12px] flex items-start gap-3 text-[#878787]"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -447,7 +468,7 @@ export default function ResellerLandingPage() {
               <div className="flex items-center justify-center">
                 <div className="w-[200px] h-auto">
                   <Image
-                    src="/images/sectionfour/Content5.png"
+                  src={Content5}
                     alt="Reseller program"
                     width={200}
                     height={200}
@@ -464,7 +485,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content6.png"
+                  src={Content6}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -483,7 +504,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -529,7 +550,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -542,7 +563,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content7.png"
+                  src={Content7}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -557,7 +578,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content8.png"
+                  src={Content8}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -577,7 +598,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -604,7 +625,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -617,7 +638,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content9.png"
+                  src={Content9}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -632,7 +653,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[300px]">
                 <Image
-                  src="/images/sectionfour/Content10.png"
+                  src={Content10}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -652,7 +673,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -679,7 +700,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -692,7 +713,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content11.png"
+                  src={Content11}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -707,7 +728,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content12.png"
+                  src={Content10}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -727,7 +748,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -754,7 +775,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -767,7 +788,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content13.png"
+                  src={Content13}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -782,7 +803,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content14.png"
+                  src={Content14}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -802,7 +823,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -828,7 +849,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -841,7 +862,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content15.png"
+                  src={Content15}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -856,7 +877,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/sectionfour/Content16.png"
+                  src={Content16}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -876,7 +897,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -902,7 +923,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -915,7 +936,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/sectionfour/Content17.png"
+                  src={Content17}
                   alt="Reseller program"
                   width={200}
                   height={200}
