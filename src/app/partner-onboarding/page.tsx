@@ -4,6 +4,12 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
+import backBtn from "../assets/images/back-button.svg";
+import Content from "../assets/images/gettingstarted/Content.png";
+import Checkicon from "../assets/images/Check-icon.svg";
+
+
+
 
 const topics = [
   { title: "How to Join the Program", slug: "How-to-Join" },
@@ -120,7 +126,7 @@ export default function ResellerLandingPage() {
                 title="Back to Table of Content"
               >
                 <Image
-                  src="/images/back-button.svg"
+                  src={backBtn}
                   alt="Back"
                   width={24}
                   height={24}
@@ -178,7 +184,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -191,7 +197,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/gettingstarted/Content.png"
+                  src={Content}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -206,7 +212,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src="/images/gettingstarted/Content.png"
+                  src={Content}
                   alt="Reseller program"
                   width={200}
                   height={200}
@@ -226,7 +232,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="Check icon"
                         width={20}
                         height={20}
@@ -253,7 +259,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={Checkicon}
                         alt="My Icon"
                         width={20}
                         height={20}
@@ -266,7 +272,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-[200px] h-auto">
                 <Image
-                  src="/images/gettingstarted/Content.png"
+                  src={Content}
                   alt="Reseller program"
                   width={200}
                   height={200}
