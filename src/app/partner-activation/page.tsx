@@ -5,10 +5,10 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
-import Sectionthree1 from "../assets/Sectionthree/Sectionthree1.png";
-import Sectionthree2 from "../assets/Sectionthree/Sectionthree2.png";
-import Sectionthree3 from "../assets/Sectionthree/Sectionthree3.png";
-import Sectionthree4 from "../assets/Sectionthree/Sectionthree4.png";
+import Sectionthree1 from "../assets/images/Sectionthree/Sectionthree1.png";
+import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
+import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
+import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 
 
 
