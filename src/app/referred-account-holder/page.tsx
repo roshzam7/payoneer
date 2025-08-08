@@ -728,7 +728,7 @@ export default function ResellerLandingPage() {
               {/* Left image */}
               <div className="flex justify-center w-[200px]">
                 <Image
-                  src={Content10}
+                  src={Content12}
                   alt="Reseller program"
                   width={200}
                   height={200}

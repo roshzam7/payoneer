@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
+import backBtn from "../assets/images/back-button.svg";
 
 const topics = [
   {
@@ -731,7 +732,7 @@ export default function ResellerLandingPage() {
                 title="Back to Table of Content"
               >
                 <Image
-                  src="/images/back-button.svg"
+                  src={backBtn}
                   alt="Expand cross-border"
                   width={32}
                   height={32}
