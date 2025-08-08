@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
+import backBtn from "../assets/images/back-button.svg";
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
@@ -43,7 +44,7 @@ const bankCols = [
     logos: [
       {
         name: "Bank of America",
-        logo: "/images/globalbanks/bank-of-america.svg",
+        logo: "../assets/images/globalbanks/bank-of-america.svg",
       },
       { name: "Barclays", logo: "/images/globalbanks/barclays.svg" },
       { name: "Citi", logo: "/images/globalbanks/citi.svg" },
@@ -287,7 +288,7 @@ export default function ResellerLandingPage() {
                 title="Back to Table of Content"
               >
                 <Image
-                  src="images/back-button.svg"
+                  src={backBtn}
                   alt="Back"
                   width={24}
                   height={24}
