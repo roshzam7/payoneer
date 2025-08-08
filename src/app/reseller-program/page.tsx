@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
+import bankLogo1 from "../assets/images/globalbanks/bank-of-america.svg"
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
@@ -44,7 +45,7 @@ const bankCols = [
     logos: [
       {
         name: "Bank of America",
-        logo: "../assets/images/globalbanks/bank-of-america.svg",
+        logo: bankLogo1,
       },
       { name: "Barclays", logo: "/images/globalbanks/barclays.svg" },
       { name: "Citi", logo: "/images/globalbanks/citi.svg" },
