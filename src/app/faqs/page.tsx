@@ -5,6 +5,9 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
+import Togglebtn from "../assets/images/toggle-faq.svg";
+
+
 
 const topics = [
   {
@@ -794,7 +797,7 @@ export default function ResellerLandingPage() {
                     }}
                   >
                     <Image
-                      src="/images/toggle-faq.svg"
+                      src={Togglebtn} 
                       alt="Toggle FAQ"
                       width={20}
                       height={20}
@@ -893,7 +896,7 @@ export default function ResellerLandingPage() {
                     }}
                   >
                     <Image
-                      src="/images/toggle-faq.svg"
+                      src={Togglebtn} 
                       alt="Toggle FAQ"
                       width={20}
                       height={20}
