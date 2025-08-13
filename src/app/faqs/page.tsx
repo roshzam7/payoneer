@@ -899,14 +899,18 @@ export default function ResellerLandingPage() {
                           </table>
                         </div>
                       )}
-
-                      {faq.type === "list" && "answers" in faq && (
-                        <ul className="list-disc pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed">
-                          {faq.answers.map((ans, i) => (
-                            <li key={i}>{linkify(ans)}</li>
-                          ))}
-                        </ul>
-                      )}
+                    {faq.type === "list" && "answers" in faq && (
+                      <>
+                        {faq.answers.map((ans, i) => (
+                          <div
+                            key={i}
+                            className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
+                          >
+                            {linkify(ans)}
+                          </div>
+                        ))}
+                      </>
+                    )}
                     </div>
                   )}
                 </div>
