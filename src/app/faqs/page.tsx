@@ -8,6 +8,24 @@ import backBtn from "../assets/images/back-button.svg";
 import Togglebtn from "../assets/images/toggle-faq.svg";
 
 
+type ListFAQ = {
+  type: "list";
+  question: string;
+  answers: string[];
+};
+
+type TableFAQ = {
+  type: "table";
+  question: string;
+  subHeading?: string;
+  tableData: {
+    headers: string[];
+    rows: string[][];
+  };
+};
+
+type FAQ = ListFAQ | TableFAQ;
+
 
 const topics = [
   {
@@ -644,12 +662,41 @@ const faqsSectionTwo = [
     },
   },
 ];
+const linkify = (text: string) => {
+  const urlRegex =
+    /((https?:\/\/|www\.)[^\s)]+)|(mailto:[^\s)]+)/gi;
+  const parts = text.split(urlRegex);
+
+  return parts.map((part, i) => {
+    if (!part) return null;
+    const looksLikeUrl =
+      part.startsWith("http") || part.startsWith("www.");
+    const isMailto = part.startsWith("mailto:");
+    if (looksLikeUrl) {
+      const href = part.startsWith("http") ? part : `https://${part}`;
+      return (
+        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="underline">
+          {part}
+        </a>
+      );
+    }
+    if (isMailto) {
+      return (
+        <a key={i} href={part} className="underline">
+          {part.replace("mailto:", "")}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+};
 
 export default function ResellerLandingPage() {
   const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
-  const [faqOpenMap, setFaqOpenMap] = useState<{ [key: number]: boolean }>({
-    0: true,
+
+  const [faqOpenMap, setFaqOpenMap] = useState<Record<string, boolean>>({
+    "faqs-0": true,
   });
 
   useEffect(() => {
@@ -677,8 +724,8 @@ export default function ResellerLandingPage() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const toggleFaq = (index: number) => {
-    setFaqOpenMap((prev) => ({ ...prev, [index]: !prev[index] }));
+  const toggleFaq = (key: string) => {
+    setFaqOpenMap((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
   return (
@@ -698,6 +745,7 @@ export default function ResellerLandingPage() {
           </h1>
         </div>
       </section>
+
       <div className="flex">
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
           <h3 className="text-[25px] text-black font-semibold mb-4">Topics</h3>
@@ -757,6 +805,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
+          {/* ---------- Section 1: FAQs ---------- */}
           <section id="faqs" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
@@ -775,78 +824,97 @@ export default function ResellerLandingPage() {
           </section>
 
           <section className="scroll-mt-28 space-y-6">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border border-[#eee] rounded-[12px] px-6 py-4 bg-white shadow-sm"
-              >
+            {(faqs as FAQ[]).map((faq, index) => {
+              const key = `faqs-${index}`;
+              const isOpen = !!faqOpenMap[key];
+              return (
                 <div
-                  className="flex justify-between items-start cursor-pointer"
-                  onClick={() => toggleFaq(index)}
+                  key={key}
+                  className="border border-[#eee] rounded-[12px] px-6 py-4 bg-white shadow-sm"
                 >
-                  <h3 className="text-[16px] font-semibold text-gray-900 max-w-[90%] leading-snug">
-                    {faq.question}
-                  </h3>
                   <div
-                    className="w-5 h-5 flex items-center justify-center rounded-full"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom right, #5f6df3, #aa5cc3)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
+                    className="flex justify-between items-start cursor-pointer"
+                    onClick={() => toggleFaq(key)}
                   >
-                    <Image
-                      src={Togglebtn} 
-                      alt="Toggle FAQ"
-                      width={20}
-                      height={20}
-                      className="w-5 h-5"
-                    />
+                    <h3 className="text-[16px] font-semibold text-gray-900 max-w-[90%] leading-snug">
+                      {faq.question}
+                    </h3>
+                    <div
+                      className={`w-5 h-5 flex items-center justify-center rounded-full transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      style={{
+                        background:
+                          "linear-gradient(to bottom right, #5f6df3, #aa5cc3)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >
+                      <Image
+                        src={Togglebtn}
+                        alt="Toggle FAQ"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    </div>
                   </div>
-                </div>
 
-                {faqOpenMap[index] && (
-                  <div className="mt-4">
-                    {faq.type === "table" && faq.tableData && (
-                      <div className="overflow-x-auto rounded-2xl text-sm">
-                        {faq.subHeading && (
-                          <p className="mb-4 text-[14px] text-[#555] font-medium">
-                            {faq.subHeading}
-                          </p>
-                        )}
-                        <table className="min-w-full text-[10px] text-[#878787]">
-                          <thead className="bg-[#EFEFEF] text-[#878787]">
-                            <tr>
-                              {faq.tableData.headers.map((header, i) => (
-                                <th
-                                  key={i}
-                                  className="px-4 py-2 font-semibold text-left"
-                                >
-                                  {header}
-                                </th>
-                              ))}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {faq.tableData.rows.map((row, rowIndex) => (
-                              <tr key={rowIndex} className="even:bg-[#fafafa]">
-                                {row.map((cell, colIndex) => (
-                                  <td key={colIndex} className="px-4 py-2">
-                                    {cell}
-                                  </td>
+                  {isOpen && (
+                    <div className="mt-4">
+                      {faq.type === "table" && "tableData" in faq && (
+                        <div className="overflow-x-auto rounded-2xl text-sm">
+                          {faq.subHeading && (
+                            <p className="mb-4 text-[14px] text-[#555] font-medium">
+                              {faq.subHeading}
+                            </p>
+                          )}
+                          <table className="min-w-full text-[10px] text-[#878787]">
+                            <thead className="bg-[#EFEFEF] text-[#878787]">
+                              <tr>
+                                {faq.tableData.headers.map((header, i) => (
+                                  <th
+                                    key={i}
+                                    className="px-4 py-2 font-semibold text-left"
+                                  >
+                                    {header}
+                                  </th>
                                 ))}
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
+                            </thead>
+                            <tbody>
+                              {faq.tableData.rows.map((row, rowIndex) => (
+                                <tr
+                                  key={rowIndex}
+                                  className="even:bg-[#fafafa]"
+                                >
+                                  {row.map((cell, colIndex) => (
+                                    <td key={colIndex} className="px-4 py-2">
+                                      {cell}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+
+                      {faq.type === "list" && "answers" in faq && (
+                        <ul className="list-disc pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed">
+                          {faq.answers.map((ans, i) => (
+                            <li key={i}>{linkify(ans)}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </section>
+
+          {/* ---------- Section 2: Support Ticket Questionnaire ---------- */}
           <section id="support-ticket-questionnaire" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-0 lg:grid-cols-0 gap-10">
               <div className="mt-0">
@@ -873,78 +941,96 @@ export default function ResellerLandingPage() {
               </div>
             </div>
           </section>
-          <section className="scroll-mt-28 space-y-6">
-            {faqsSectionTwo.map((faq, index) => (
-              <div
-                key={index}
-                className="border border-[#eee] rounded-[12px] px-6 py-4 bg-white shadow-sm"
-              >
-                <div
-                  className="flex justify-between items-start cursor-pointer"
-                  onClick={() => toggleFaq(index)}
-                >
-                  <h3 className="text-[16px] font-semibold text-gray-900 max-w-[90%] leading-snug">
-                    {faq.question}
-                  </h3>
-                  <div
-                    className="w-5 h-5 flex items-center justify-center rounded-full"
-                    style={{
-                      background:
-                        "linear-gradient(to bottom right, #5f6df3, #aa5cc3)",
-                      WebkitBackgroundClip: "text",
-                      WebkitTextFillColor: "transparent",
-                    }}
-                  >
-                    <Image
-                      src={Togglebtn} 
-                      alt="Toggle FAQ"
-                      width={20}
-                      height={20}
-                      className="w-5 h-5"
-                    />
-                  </div>
-                </div>
 
-                {faqOpenMap[index] && (
-                  <div className="mt-4">
-                    {faq.type === "table" && faq.tableData && (
-                      <div className="overflow-x-auto rounded-2xl text-sm">
-                        {faq.subHeading && (
-                          <p className="mb-4 text-[14px] text-[#555] font-medium">
-                            {faq.subHeading}
-                          </p>
-                        )}
-                        <table className="min-w-full text-[10px] text-[#878787]">
-                          <thead className="bg-[#EFEFEF] text-[#878787]">
-                            <tr>
-                              {faq.tableData.headers.map((header, i) => (
-                                <th
-                                  key={i}
-                                  className="px-4 py-2 font-semibold text-left"
-                                >
-                                  {header}
-                                </th>
-                              ))}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {faq.tableData.rows.map((row, rowIndex) => (
-                              <tr key={rowIndex} className="even:bg-[#fafafa]">
-                                {row.map((cell, colIndex) => (
-                                  <td key={colIndex} className="px-4 py-2">
-                                    {cell}
-                                  </td>
+          <section className="scroll-mt-28 space-y-6">
+            {(faqsSectionTwo as FAQ[]).map((faq, index) => {
+              const key = `faqs2-${index}`;
+              const isOpen = !!faqOpenMap[key];
+              return (
+                <div
+                  key={key}
+                  className="border border-[#eee] rounded-[12px] px-6 py-4 bg-white shadow-sm"
+                >
+                  <div
+                    className="flex justify-between items-start cursor-pointer"
+                    onClick={() => toggleFaq(key)}
+                  >
+                    <h3 className="text-[16px] font-semibold text-gray-900 max-w-[90%] leading-snug">
+                      {faq.question}
+                    </h3>
+                    <div
+                      className={`w-5 h-5 flex items-center justify-center rounded-full transition-transform ${
+                        isOpen ? "rotate-180" : ""
+                      }`}
+                      style={{
+                        background:
+                          "linear-gradient(to bottom right, #5f6df3, #aa5cc3)",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                      }}
+                    >
+                      <Image
+                        src={Togglebtn}
+                        alt="Toggle FAQ"
+                        width={20}
+                        height={20}
+                        className="w-5 h-5"
+                      />
+                    </div>
+                  </div>
+
+                  {isOpen && (
+                    <div className="mt-4">
+                      {faq.type === "table" && "tableData" in faq && (
+                        <div className="overflow-x-auto rounded-2xl text-sm">
+                          {faq.subHeading && (
+                            <p className="mb-4 text-[14px] text-[#555] font-medium">
+                              {faq.subHeading}
+                            </p>
+                          )}
+                          <table className="min-w-full text-[10px] text-[#878787]">
+                            <thead className="bg-[#EFEFEF] text-[#878787]">
+                              <tr>
+                                {faq.tableData.headers.map((header, i) => (
+                                  <th
+                                    key={i}
+                                    className="px-4 py-2 font-semibold text-left"
+                                  >
+                                    {header}
+                                  </th>
                                 ))}
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
+                            </thead>
+                            <tbody>
+                              {faq.tableData.rows.map((row, rowIndex) => (
+                                <tr
+                                  key={rowIndex}
+                                  className="even:bg-[#fafafa]"
+                                >
+                                  {row.map((cell, colIndex) => (
+                                    <td key={colIndex} className="px-4 py-2">
+                                      {cell}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      )}
+
+                      {faq.type === "list" && "answers" in faq && (
+                        <ul className="list-disc pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed">
+                          {faq.answers.map((ans, i) => (
+                            <li key={i}>{linkify(ans)}</li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
           </section>
         </main>
       </div>
