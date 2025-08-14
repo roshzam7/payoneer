@@ -10,9 +10,6 @@ import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 
-
-
-
 const topics = [
   {
     title: "Sales Enablement Tools",
@@ -102,34 +99,30 @@ export default function ResellerLandingPage() {
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white">
           <section
             aria-label="Breadcrumb"
-            className="sticky top-[80px] z-40 bg-white text-black border-b border-white/10 backdrop-blur"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div
-              className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 h-6 flex items-center gap-3 bg-white"
-              onClick={() => router.push("/")}
-            >
+            <div className="max-w-7xl mx-auto flex h-6 items-center gap-3 px-4 sm:px-6 lg:px-0">
               {/* Back button */}
               <button
                 type="button"
                 onClick={() => router.push("/")}
-                className="inline-flex items-center justify-center h-8 w-8 rounded-xl bg-white text-black"
-                aria-label="Back to Table of Content"
-                title="Back to Table of Content"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                aria-label="Back"
+                title="Back"
               >
-                <Image 
+                <Image
                   src={backBtn}
-                  alt="Expand cross-border"
+                  alt="Back"
                   width={32}
                   height={32}
-                  className="mt-0 "
+                  className="mt-0"
                 />
-                
               </button>
 
               {/* Crumb text */}
-              <div className="flex items-center gap-2 text-sm text-[#878787]">
+              <nav className="flex items-center gap-2 text-sm text-[#878787]">
                 <span
-                  className="font-medium cursor-pointer hover:underline"
+                  className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
                   Table of Content
@@ -138,9 +131,10 @@ export default function ResellerLandingPage() {
                 <span className="truncate">
                   Partner Activation & Enablement
                 </span>
-              </div>
+              </nav>
             </div>
           </section>
+
           <section id="sales-enablement-tools" className="scroll-mt-24 mb-0">
             <h2 className="text-[25px] font-bold text-gray-900 mt-10">
               Sales Enablement Tools
@@ -155,63 +149,63 @@ export default function ResellerLandingPage() {
               />
             </div>
           </section>
-          {/* Pitch Decks & Sales Scripts */}
-          <section id="kyc-process-explained" className="scroll-mt-28">
-            <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
-              <div className="mt-0">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+
+          <section id="kyc-process-explained" className="scroll-mt-28 mb-0">
+            <div className="grid grid-cols-1">
+              <div>
+                {/* Pitch Decks & Sales Scripts */}
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
                   Pitch Decks & Sales Scripts
                 </h3>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   View the Payoneer Global Payments Training Document to gain an
                   overview of our international reach, available payment
                   solutions, and step-by-step guidance on opening an account.
                 </p>
-
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   <a className="text-blue-600" href="">
                     View Payoneer Training Document
-                  </a>{" "}
+                  </a>
                 </p>
+
                 {/* Training Webinars & Certifications */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
                   Training Webinars & Certifications
                 </h3>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   This certificate recognizes Authorised Channel Partners of
                   Payoneer. It confirms your status as a trusted partner,
                   authorized to promote Payoneer&apos;s global payment
-                  solutions.{" "}
+                  solutions.
                 </p>
-
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   <a className="text-blue-600" href="">
                     Download Certificate
-                  </a>{" "}
+                  </a>
                 </p>
 
-                {/* Brand Positioning Guide  */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+                {/* Brand Positioning Guide */}
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
                   Brand Positioning Guide
                 </h3>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   View the brand battlecards to gain a breakdown of
                   Payoneer&apos;s core features and see how our services compare
                   with competitors, Wio and 3S Money.
                 </p>
-
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4 space-x-4">
                   <a className="text-blue-600" href="">
                     View Payoneer vs Wio Battlecard
                   </a>
-                  &nbsp; &nbsp; &nbsp;&nbsp;
                   <a className="text-blue-600" href="">
                     View Payoneer vs 3S Money Battlecard
                   </a>
                 </p>
+
+                {/* Marketing & Reselling Guidelines */}
                 <h3
                   id="reselling-guidelines"
-                  className="scroll-mt-24 text-[20px] font-semibold text-gray-900 mb-4 mt-10"
+                  className="scroll-mt-24 text-[20px] font-semibold text-gray-900 mt-10 mb-4"
                 >
                   Marketing & Reselling Guidelines
                 </h3>
@@ -220,55 +214,54 @@ export default function ResellerLandingPage() {
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
+                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm mt-4 mb-8"
                 />
+
                 {/* Branding & Messaging Compliance */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
                   Branding & Messaging Compliance
                 </h3>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   View the Payoneer Design Guidelines to gain a comprehensive
                   understanding of our brand&apos;s visual identity. This
                   document provides detailed examples of the correct use of
                   logos, color palettes, typography, imagery, tone of voice, and
-                  other design variations.{" "}
+                  other design variations.
                 </p>
-
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   <a className="text-blue-600" href="">
                     View Payoneer Design Guidelines
                   </a>
                 </p>
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+
+                {/* Do's and Don'ts */}
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
                   Do&apos;s and Don&apos;ts in Promotions
                 </h3>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   Refer to the Do&apos;s & Dont&apos;s Guidelines to understand
                   how to accurately and effectively promote Payoneer. This
                   document outlines approved messaging, visual assets, and key
                   compliance points to ensure all promotional efforts align with
                   brand standards.
                 </p>
-
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] mb-16 ">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   <a className="text-blue-600" href="">
                     View Do&apos;s and Dont&apos;s Guidelines
                   </a>
                 </p>
 
                 {/* Personas */}
-
                 <h2
                   id="onboarding-overview"
-                  className="text-[25px] font-bold pt-2 text-gray-900 scroll-mt-24"
+                  className="text-[25px] font-bold text-gray-900 scroll-mt-24 mt-10 mb-4"
                 >
                   Referred AH Onboarding Overview
                 </h2>
-                {/* Business we can’t support */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-2  mt-4">
+                <h3 className="text-[20px] font-semibold text-gray-900 mt-4 mb-4">
                   Personas
                 </h3>
-                <p className=" text-[#878787] text-sm mb-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   View the customer profiles to gain an understanding of their
                   specific requirements, preferred payment functionalities, and
                   how they engage with Payoneer&apos;s products.
@@ -278,19 +271,21 @@ export default function ResellerLandingPage() {
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
+                  className="w-full h-auto rounded-xl  mt-4 mb-8"
                 />
                 <Image
                   src={Sectionthree4}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
+                  className="w-full h-auto rounded-xl  mt-4 mb-8"
                 />
-                <h2 className="text-[25px] font-bold text-gray-900 mt-10">
+
+                {/* Restricted Businesses */}
+                <h2 className="text-[25px] font-bold text-gray-900 mt-10 mb-4">
                   Business we can&apos;t support
                 </h2>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="text-[#878787] text-[12px] mt-2 mb-4">
                   To protect our network and stay compliant, certain high-risk
                   or restricted businesses are not eligible for Payoneer
                   services.
@@ -299,57 +294,58 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section className="scroll-mt-28 mt-10 rounded-xl">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl">
-              {/* Left Box */}
-              <div className="rounded-[12px] border border-gray-200 p-6 text-[10px] text-[#878787] bg-white shadow-md">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Any criminal or illegal act earnings.</li>
-                  <li>Adult Entertainment Services</li>
-                  <li>Art, antiquity and collectibles</li>
-                  <li>Auction houses or antiques</li>
-                  <li>Charities, Donations & Trusts</li>
-                  <li>Chemicals (Of Any Kind)</li>
-                  <li>Collection agencies</li>
-                  <li>Counterfeited Products</li>
-                  <li>
-                    Cryptocurrency exchanges, Crypto Earnings & Binary Options.
-                  </li>
-                  <li>Dating Services</li>
-                  <li>Domain registration & buying/ selling</li>
-                  <li>
-                    Energy Industry like Crude Oil, Natural Gas, Petroleum,
-                    Diesel & Nuclear.
-                  </li>
-                  <li>Fantasy Sports</li>
-                  <li>Financial institutions</li>
-                  <li>Finished Metal Products & Hardware</li>
-                </ul>
-              </div>
+          {/* //c */}
 
-              {/* Right Box */}
-              <div className="rounded-[12px] border border-gray-200 p-6 text-[10px] text-[#878787] bg-white shadow-md">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Fish and seafood of any kind (fresh, frozen or dry)</li>
-                  <li>Gambling, Betting & Fantasy Sports</li>
-                  <li>Insurance sales and services</li>
-                  <li>Intrusive beauty and cosmetic products</li>
-                  <li>Jewelry & bullion trading</li>
-                  <li>Maritime Crewing & Staffing</li>
-                  <li>Medical or healthcare services</li>
-                  <li>Money exchange</li>
-                  <li>Multi-level marketing (MLM)</li>
-                  <li>
-                    Pharmaceuticals, Medicine, Drugs, Fertilizers & Tobacco
-                  </li>
-                  <li>Prepaid cards or gift card/gift certificates</li>
-                  <li>Raw & Semi-processed Steel & Iron</li>
-                  <li>Real Estate sales, Investments & Trading.</li>
-                  <li>Trusts or funds</li>
-                  <li>Venture Capital and investments</li>
-                  <li>Web Hosting & VPS</li>
-                </ul>
-              </div>
+          <section className="scroll-mt-28  rounded-xl">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl">
+              {[
+                [
+                  "Any criminal or illegal act earnings.",
+                  "Adult Entertainment Services",
+                  "Art, antiquity and collectibles",
+                  "Auction houses or antiques",
+                  "Charities, Donations & Trusts",
+                  "Chemicals (Of Any Kind)",
+                  "Collection agencies",
+                  "Counterfeited Products",
+                  "Cryptocurrency exchanges, Crypto Earnings & Binary Options.",
+                  "Dating Services",
+                  "Domain registration & buying/ selling",
+                  "Energy Industry like Crude Oil, Natural Gas, Petroleum, Diesel & Nuclear.",
+                  "Fantasy Sports",
+                  "Financial institutions",
+                  "Finished Metal Products & Hardware",
+                ],
+                [
+                  "Fish and seafood of any kind (fresh, frozen or dry)",
+                  "Gambling, Betting & Fantasy Sports",
+                  "Insurance sales and services",
+                  "Intrusive beauty and cosmetic products",
+                  "Jewelry & bullion trading",
+                  "Maritime Crewing & Staffing",
+                  "Medical or healthcare services",
+                  "Money exchange",
+                  "Multi-level marketing (MLM)",
+                  "Pharmaceuticals, Medicine, Drugs, Fertilizers & Tobacco",
+                  "Prepaid cards or gift card/gift certificates",
+                  "Raw & Semi-processed Steel & Iron",
+                  "Real Estate sales, Investments & Trading.",
+                  "Trusts or funds",
+                  "Venture Capital and investments",
+                  "Web Hosting & VPS",
+                ],
+              ].map((list, idx) => (
+                <div
+                  key={idx}
+                  className="rounded-[12px] border border-gray-200 p-6 text-[10px] text-[#878787] bg-white shadow-md"
+                >
+                  <ul className="list-disc list-inside space-y-2">
+                    {list.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </section>
         </main>
