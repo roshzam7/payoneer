@@ -63,27 +63,26 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-6 sm:mb-12 leading-snug">
             Partner
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Activation & Enablement{" "}
+              Activation & Enablement
             </span>
           </h1>
-          <p className="text-gray-600 text-base sm:text-lg"></p>
         </div>
       </section>
 
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
-          <h3 className="text-[25px] text-black  font-semibold mb-4">Topics</h3>
-          <nav className="space-y-2">
+          <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
+          <nav className="space-y-3">
             {topics.map((topic) => (
               <button
                 key={topic.slug}
                 onClick={() => scrollTo(topic.slug)}
-                className={`block text-left w-full px-4 py-2 rounded-full text-[10px] transition border ${
+                className={`block text-left w-full px-4 py-2 rounded-full text-xs sm:text-sm transition border ${
                   active === topic.slug
                     ? "bg-[#EFEFEF] text-[#878787] border-white"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"
@@ -122,7 +121,7 @@ export default function ResellerLandingPage() {
               {/* Crumb text */}
               <nav className="flex items-center gap-2 text-sm text-[#878787]">
                 <span
-                  className="cursor-pointer font-medium hover:underline"
+                  className="cursor-pointer font-medium "
                   onClick={() => router.push("/")}
                 >
                   Table of Content
@@ -136,7 +135,7 @@ export default function ResellerLandingPage() {
           </section>
 
           <section id="sales-enablement-tools" className="scroll-mt-24 mb-0">
-            <h2 className="text-[25px] font-bold text-gray-900 mt-10">
+            <h2 className="text-[48px] font-bold text-gray-900 mt-10">
               Sales Enablement Tools
             </h2>
             <div className="mt-8 w-full">
@@ -151,53 +150,55 @@ export default function ResellerLandingPage() {
           </section>
 
           <section id="kyc-process-explained" className="scroll-mt-28 mb-0">
-            <div className="grid grid-cols-1">
+            <div className="grid grid-cols-1 gap-8">
               <div>
                 {/* Pitch Decks & Sales Scripts */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
                   Pitch Decks & Sales Scripts
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
                   View the Payoneer Global Payments Training Document to gain an
                   overview of our international reach, available payment
                   solutions, and step-by-step guidance on opening an account.
                 </p>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
-                  <a className="text-blue-600" href="">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
+                  <a className="text-blue-600 hover:underline" href="">
                     View Payoneer Training Document
                   </a>
                 </p>
 
                 {/* Training Webinars & Certifications */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
+                  {" "}
                   Training Webinars & Certifications
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   This certificate recognizes Authorised Channel Partners of
                   Payoneer. It confirms your status as a trusted partner,
                   authorized to promote Payoneer&apos;s global payment
                   solutions.
                 </p>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
-                  <a className="text-blue-600" href="">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
+                  <a className="text-blue-600 hover:underline" href="">
                     Download Certificate
                   </a>
                 </p>
 
                 {/* Brand Positioning Guide */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
+                  {" "}
                   Brand Positioning Guide
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   View the brand battlecards to gain a breakdown of
                   Payoneer&apos;s core features and see how our services compare
                   with competitors, Wio and 3S Money.
                 </p>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4 space-x-4">
-                  <a className="text-blue-600" href="">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4 space-x-4">
+                  <a className="text-blue-600 hover:underline" href="">
                     View Payoneer vs Wio Battlecard
                   </a>
-                  <a className="text-blue-600" href="">
+                  <a className="text-blue-600 hover:underline" href="">
                     View Payoneer vs 3S Money Battlecard
                   </a>
                 </p>
@@ -205,7 +206,7 @@ export default function ResellerLandingPage() {
                 {/* Marketing & Reselling Guidelines */}
                 <h3
                   id="reselling-guidelines"
-                  className="scroll-mt-24 text-[20px] font-semibold text-gray-900 mt-10 mb-4"
+                  className="scroll-mt-24 text-2xl sm:text-4xl font-semibold text-gray-900 mt-10 mb-4"
                 >
                   Marketing & Reselling Guidelines
                 </h3>
@@ -218,35 +219,37 @@ export default function ResellerLandingPage() {
                 />
 
                 {/* Branding & Messaging Compliance */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
+                  {" "}
                   Branding & Messaging Compliance
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   View the Payoneer Design Guidelines to gain a comprehensive
                   understanding of our brand&apos;s visual identity. This
                   document provides detailed examples of the correct use of
                   logos, color palettes, typography, imagery, tone of voice, and
                   other design variations.
                 </p>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
-                  <a className="text-blue-600" href="">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
+                  <a className="text-blue-600 hover:underline" href="">
                     View Payoneer Design Guidelines
                   </a>
                 </p>
 
                 {/* Do's and Don'ts */}
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-10 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
+                  {" "}
                   Do&apos;s and Don&apos;ts in Promotions
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   Refer to the Do&apos;s & Dont&apos;s Guidelines to understand
                   how to accurately and effectively promote Payoneer. This
                   document outlines approved messaging, visual assets, and key
                   compliance points to ensure all promotional efforts align with
                   brand standards.
                 </p>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
-                  <a className="text-blue-600" href="">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
+                  <a className="text-blue-600 hover:underline" href="">
                     View Do&apos;s and Dont&apos;s Guidelines
                   </a>
                 </p>
@@ -254,14 +257,15 @@ export default function ResellerLandingPage() {
                 {/* Personas */}
                 <h2
                   id="onboarding-overview"
-                  className="text-[25px] font-bold text-gray-900 scroll-mt-24 mt-10 mb-4"
+                  className="text-2xl sm:text-4xl font-bold text-gray-900 scroll-mt-24 mt-10 mb-4"
                 >
                   Referred AH Onboarding Overview
                 </h2>
-                <h3 className="text-[20px] font-semibold text-gray-900 mt-4 mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-2 mb-4">
+                  {" "}
                   Personas
                 </h3>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   View the customer profiles to gain an understanding of their
                   specific requirements, preferred payment functionalities, and
                   how they engage with Payoneer&apos;s products.
@@ -271,21 +275,21 @@ export default function ResellerLandingPage() {
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl  mt-4 mb-8"
+                  className="w-full h-auto rounded-xl mt-4 mb-8"
                 />
                 <Image
                   src={Sectionthree4}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl  mt-4 mb-8"
+                  className="w-full h-auto rounded-xl mt-4 mb-8"
                 />
 
                 {/* Restricted Businesses */}
-                <h2 className="text-[25px] font-bold text-gray-900 mt-10 mb-4">
+                <h2 className="text-xl sm:text-4xl font-bold text-gray-900 mt-10 mb-4">
                   Business we can&apos;t support
                 </h2>
-                <p className="text-[#878787] text-[12px] mt-2 mb-4">
+                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   To protect our network and stay compliant, certain high-risk
                   or restricted businesses are not eligible for Payoneer
                   services.
@@ -337,11 +341,13 @@ export default function ResellerLandingPage() {
               ].map((list, idx) => (
                 <div
                   key={idx}
-                  className="rounded-[12px] border border-gray-200 p-6 text-[10px] text-[#878787] bg-white shadow-md"
+                  className="rounded-[12px] border border-gray-200 p-6 bg-white shadow-md"
                 >
-                  <ul className="list-disc list-inside space-y-2">
+                  <ul className="list-disc list-outside pl-5 space-y-2 text-xs sm:text-sm text-[#878787]">
                     {list.map((item, i) => (
-                      <li key={i}>{item}</li>
+                      <li key={i} className="-ml-2">
+                        {item}
+                      </li>
                     ))}
                   </ul>
                 </div>
