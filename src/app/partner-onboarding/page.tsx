@@ -6,8 +6,8 @@ import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Content from "../assets/images/gettingstarted/Content.png";
-import Content2 from "../assets/images/gettingstarted/Content.png";
-import Content3 from "../assets/images/gettingstarted/Content.png";
+import Content2 from "../assets/images/gettingstarted/Content2.png";
+import Content3 from "../assets/images/gettingstarted/Content3.png";
 import Checkicon from "../assets/images/Check-icon.svg";
 
 const topics = [
@@ -173,20 +173,20 @@ export default function ResellerLandingPage() {
           {/* reseller-overview */}
           <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
-              <p className="text-gray-900 text-[25px] font-semibold">
+              <p className="text-gray-900 text-[48px] font-semibold">
                 How to Join the Program
               </p>
               <a
                 href="#"
-                className="text-sm text-blue-600 hover:underline font-medium"
+                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
               >
                 View Contracting & Legal Agreements
               </a>
             </div>
-            <p className="mt-2 text-gray-900 text-[20px]">
+            <p className="mt-2 text-gray-900 text-[23px]">
               Reseller Sign-Up Process
             </p>
-            <p className="mt-2 text-[#878787] text-[14px]">
+            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
               View the guided steps below to learn how to get onboarded to
               Payoneer with Hasoffer.
             </p>
@@ -214,10 +214,10 @@ export default function ResellerLandingPage() {
               >
                 {/* Text */}
                 <div className={idx % 2 !== 0 ? "lg:order-2" : ""}>
-                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-0 sm:mt-30">
+                  <h3 className="text-[23px] font-semibold text-gray-900 mb-4 mt-0 sm:mt-30">
                     {section.title}
                   </h3>
-                  <ul className="space-y-4 text-[#878787] text-[14px]">
+                  <ul className="space-y-4 text-[#878787] text-[18px]">
                     {section.bullets.map((text, i) => (
                       <li
                         key={i}
@@ -257,12 +257,12 @@ export default function ResellerLandingPage() {
 
           {/* 2 */}
           {/* 4th */}
-          <section id="Understand-Your-Role" className="scroll-mt-28">
-            <h2 className="text-[25px] font-bold text-gray-900">
+          <section id="Understand-Your-Role" className="scroll-mt-28 mb-3">
+            <h2 className="text-[48px] font-bold text-gray-900">
               Understand Your Role as a Payoneer Reseller
             </h2>
 
-            <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+            <p className="mt-2 text-[#878787] text-[23px] max-w-2xl">
               View the following details to ensure you meet all requirements and
               maintain compliance with our program.{" "}
             </p>
@@ -270,13 +270,13 @@ export default function ResellerLandingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
-              <h3 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+              <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 Your Role as a Reseller
               </h3>
               {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
-              <ul className=" text-[10px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+              <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                 <li>
                   Actively promote Payoneer&apos;s services to potential clients
                   (“Prospects”)
@@ -298,14 +298,14 @@ export default function ResellerLandingPage() {
 
             {/* Card 2 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
-              <h3 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+              <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 How to Refer Clients Share Payoneer-provided links that contain
                 your unique tracking code
               </h3>
               {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
-              <ul className=" text-[10px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+              <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                 <li>
                   You may only promote Payoneer using official Payoneer
                   marketing materials and branding
@@ -325,13 +325,13 @@ export default function ResellerLandingPage() {
             {/* Card 3 */}
 
             <div className="bg-white rounded-2xl shadow-md p-6">
-              <h3 className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+              <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 Important Limits You cannot bind Payoneer or speak on its behalf
               </h3>
               {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
-              <ul className=" text-[10px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+              <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                 <li>
                   You may not charge clients any extra fees without written
                   approval from Payoneer
