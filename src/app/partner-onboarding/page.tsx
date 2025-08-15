@@ -213,7 +213,7 @@ export default function ResellerLandingPage() {
                 className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
               >
                 {/* Text */}
-                <div className={idx % 2 !== 0 ? "lg:order-2" : ""}>
+                <div className={idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"}>
                   <h3 className="text-[23px] font-semibold text-gray-900 mb-4 mt-0 sm:mt-30">
                     {section.title}
                   </h3>
@@ -238,8 +238,8 @@ export default function ResellerLandingPage() {
 
                 {/* Image with modal trigger */}
                 <div
-                  className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last lg:order-${
-                    idx % 2 !== 0 ? "1" : "2"
+                  className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
+                    idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
                   } lg:flex lg:justify-center`}
                 >
                   <Image
