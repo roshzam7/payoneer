@@ -11,9 +11,6 @@ import Content3 from "../assets/images/gettingstarted/Content3.png";
 
 import Checkicon from "../assets/images/Check-icon.svg";
 
-
-
-
 const topics = [
   { title: "How to Join the Program", slug: "How-to-Join" },
   {
@@ -86,22 +83,19 @@ export default function ResellerLandingPage() {
               Partner Onboarding
             </span>
           </h1>
-          <p className="text-gray-600 text-base sm:text-lg">
-            {/* Optional description can go here */}
-          </p>
         </div>
       </section>
 
       <div className="flex">
         {/* Sidebar */}
-        <aside className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto w-full lg:w-[400px] p-6 border-r hidden lg:block">
-          <h3 className="text-[25px] text-black  font-semibold mb-4">Topics</h3>
-          <nav className="space-y-2">
+        <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
+          <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
+          <nav className="space-y-3">
             {topics.map((topic) => (
               <button
                 key={topic.slug}
                 onClick={() => scrollTo(topic.slug)}
-                className={`block text-left w-full px-4 py-2 rounded-full text-[10px] transition border ${
+                className={`block text-left w-full px-4 py-2 rounded-full text-xs sm:text-sm transition border ${
                   active === topic.slug
                     ? "bg-[#EFEFEF] text-[#878787] border-white"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"
@@ -117,47 +111,39 @@ export default function ResellerLandingPage() {
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white relative z-10">
           <section
             aria-label="Breadcrumb"
-            className="sticky top-[80px] z-40 bg-white text-black border-b border-gray-200 backdrop-blur-sm"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center gap-3">
+            <div className="max-w-5xl mx-auto flex  sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
               {/* Back button */}
               <button
                 type="button"
                 onClick={() => router.push("/")}
-                className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-white text-black hover:bg-gray-100 transition"
-                aria-label="Back to Table of Content"
-                title="Back to Table of Content"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                aria-label="Back"
+                title="Back"
               >
-                <Image
-                  src={backBtn}
-                  alt="Back"
-                  width={24}
-                  height={24}
-                  className="object-contain"
-                />
+                <Image src={backBtn} alt="Back" width={32} height={32} />
               </button>
 
               {/* Crumb text */}
-              <div className="flex items-center gap-2 text-sm text-[#878787] whitespace-nowrap overflow-x-auto">
+              <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
                 <span
-                  className="font-medium cursor-pointer hover:underline"
+                  className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
                   Table of Content
                 </span>
                 <span className="opacity-60">›</span>
-                <span className="truncate">
+                <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
                   Getting Started: Partner Onboarding
-                  {/* Or use dynamic topic title */}
-                  {/* {topics.find((t) => t.slug === active)?.title || "Getting Started"} */}
                 </span>
-              </div>
+              </nav>
             </div>
           </section>
 
           {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-36">
-            <div className="flex justify-between items-center max-w-5xl">
+          <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[25px] font-semibold">
                 How to Join the Program
               </p>
@@ -168,122 +154,85 @@ export default function ResellerLandingPage() {
                 View Contracting & Legal Agreements
               </a>
             </div>
-            <p className="mt-2 text-gray-900 text-[20px] max-w-2xl">
-              Reseller Sign-Up Process{" "}
+            <p className="mt-2 text-gray-900 text-[20px]">
+              Reseller Sign-Up Process
             </p>
-            <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+            <p className="mt-2 text-[#878787] text-[14px]">
               View the guided steps below to learn how to get onboarded to
               Payoneer with Hasoffer.
             </p>
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Account Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[14px]">
-                  {resellerBullets.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-[30%_70%] gap-10 items-start">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content2}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
 
-              {/* Right content */}
-              <div className="mt-12">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  User Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[14px]">
-                  {resellerBulletsTwo.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="Check icon"
-                        width={20}
-                        height={20}
-                        className="mt-1 flex-none shrink-0"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
+            {/* Alternating Sections */}
+            {[
+              {
+                title: "Account Details",
+                bullets: resellerBullets,
+                image: Content,
+              },
+              {
+                title: "User Details",
+                bullets: resellerBulletsTwo,
+                image: Content2,
+              },
+              {
+                title: "User Agreement",
+                bullets: resellerBulletsThree,
+                image: Content3,
+              },
+            ].map((section, idx) => (
+              <div
+                key={idx}
+                className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
+              >
+                {/* Text */}
+                <div className={idx % 2 !== 0 ? "lg:order-2" : ""}>
+                  <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-0 sm:mt-30">
+                    {section.title}
+                  </h3>
+                  <ul className="space-y-4 text-[#878787] text-[14px]">
+                    {section.bullets.map((text, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start gap-3 text-gray-700"
+                      >
+                        <Image
+                          src={Checkicon}
+                          alt="Check"
+                          width={20}
+                          height={20}
+                          className="flex-none mt-1"
+                        />
+                        <span>{text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Image */}
+                <div
+                  className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last lg:order-${
+                    idx % 2 !== 0 ? "1" : "2"
+                  } lg:flex lg:justify-center`}
+                >
+                  <a
+                    href={section.image.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={section.image}
+                      alt={section.title}
+                      width={300}
+                      height={300}
+                      className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                    />
+                  </a>
+                </div>
               </div>
-            </div>
+            ))}
           </section>
-          {/* 3rd */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  User Agreement
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[14px]">
-                  {resellerBulletsThree.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content3}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
+
+          {/* 2 */}
           {/* 4th */}
           <section id="Understand-Your-Role" className="scroll-mt-28">
             <h2 className="text-[25px] font-bold text-gray-900">
