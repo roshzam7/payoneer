@@ -5,75 +5,6 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
-import bankLogo1 from "../assets/images/globalbanks/bank-of-america.svg"
-import barclays from "../assets/images/globalbanks/barclays.svg";
-import citi from "../assets/images/globalbanks/citi.svg";
-import deutsche from "../assets/images/globalbanks/deutsche-bank.svg";
-
-// Local banks
-import nab from "../assets/images/localbanks/nab.svg";
-import icbc from "../assets/images/localbanks/icbc.svg";
-import dbs from "../assets/images/localbanks/1.svg";
-import ing from "../assets/images/localbanks/2.svg";
-import rbs from "../assets/images/localbanks/3.svg";
-import unionbank from "../assets/images/localbanks/4.svg";
-import bri from "../assets/images/localbanks/5.svg";
-import lb6 from "../assets/images/localbanks/6.svg";
-import lb7 from "../assets/images/localbanks/7.svg";
-import lb8 from "../assets/images/localbanks/8.svg";
-import lb9 from "../assets/images/localbanks/9.svg";
-
-// Payment providers
-import pp1 from "../assets/images/paymentproviders/1.svg";
-import pp2 from "../assets/images/paymentproviders/2.svg";
-import pp3 from "../assets/images/paymentproviders/3.svg";
-import pp4 from "../assets/images/paymentproviders/4.svg";
-import pp5 from "../assets/images/paymentproviders/5.svg";
-import pp6 from "../assets/images/paymentproviders/6.svg";
-import pp7 from "../assets/images/paymentproviders/7.svg";
-import pp8 from "../assets/images/paymentproviders/8.svg";
-import pp9 from "../assets/images/paymentproviders/9.svg";
-
-// Brands
-import adobe from "../assets/images/brands/adobe.svg";
-import airbnb from "../assets/images/brands/airbnb.svg";
-import amazon from "../assets/images/brands/amazon.svg";
-import booking from "../assets/images/brands/booking.svg";
-import daraz from "../assets/images/brands/daraz.svg";
-import cdiscount from "../assets/images/brands/cdiscount.svg";
-import facebook from "../assets/images/brands/facebook.svg";
-import fiverr from "../assets/images/brands/fiverr.svg";
-import gettyimages from "../assets/images/brands/gettyimages.svg";
-import google from "../assets/images/brands/google.svg";
-import homeaway from "../assets/images/brands/homeaway.svg";
-import joom from "../assets/images/brands/joom.svg";
-import jumia from "../assets/images/brands/jumia.svg";
-import lazada from "../assets/images/brands/lazada.svg";
-import linio from "../assets/images/brands/linio.svg";
-import mercadolibre from "../assets/images/brands/mercadolibre.svg";
-import noon from "../assets/images/brands/noon.svg";
-import wayfair from "../assets/images/brands/wayfair.svg";
-import rakuten from "../assets/images/brands/rakuten.svg";
-import shopee from "../assets/images/brands/shopee.svg";
-import shutterstock from "../assets/images/brands/shutterstock.svg";
-import uber from "../assets/images/brands/uber.svg";
-import upwork from "../assets/images/brands/upwork.svg";
-import walmart from "../assets/images/brands/walmart.svg";
-import wish from "../assets/images/brands/wish.svg";
-import realde from "../assets/images/brands/realde.svg";
-
-// Others
-import checkIcon from "../assets/images/Check-icon.svg";
-import resellerImg from "../assets/images/ResellerProgram-img.png";
-import resellerPhasesImg from "../assets/images/Reseller-Program-Phases-img.png";
-import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
-//import resellerCardBg from "../assets/images/Reseller-card-bg.png";
-
-// Key features icons
-import fastOnboarding from "../assets/images/fast-onboarding.svg";
-import debitCards from "../assets/images/debit-cards.svg";
-import collectionLinks from "../assets/images/collection-links.svg";
-import onlineCheckout from "../assets/images/online-checkout.svg";
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
@@ -113,72 +44,72 @@ const bankCols = [
     logos: [
       {
         name: "Bank of America",
-        logo: bankLogo1,
+        logo: "/images/globalbanks/bank-of-america.svg",
       },
-{ name: "Barclays", logo: barclays },
-      { name: "Citi", logo: citi },
-      { name: "Deutsche Bank", logo: deutsche },
+      { name: "Barclays", logo: "/images/globalbanks/barclays.svg" },
+      { name: "Citi", logo: "/images/globalbanks/citi.svg" },
+      { name: "Deutsche Bank", logo: "/images/globalbanks/deutsche-bank.svg" },
     ],
   },
   {
     title: "Selected Regional & Local Banks",
     logos: [
-      { name: "NAB", logo: nab },
-      { name: "ICBC", logo: icbc },
-      { name: "DBS", logo: dbs },
-      { name: "ING", logo: ing },
-      { name: "RBS", logo: rbs },
-      { name: "UnionBank", logo: unionbank },
-      { name: "BRI", logo: bri },
-      { name: "6", logo: lb6 },
-      { name: "7", logo: lb7},
-      { name: "8", logo: lb8 },
-      { name: "9", logo: lb9 },
+      { name: "NAB", logo: "/images/localbanks/nab.svg" },
+      { name: "ICBC", logo: "/images/localbanks/icbc.svg" },
+      { name: "DBS", logo: "/images/localbanks/1.svg" },
+      { name: "ING", logo: "/images/localbanks/2.svg" },
+      { name: "RBS", logo: "/images/localbanks/3.svg" },
+      { name: "UnionBank", logo: "/images/localbanks/4.svg" },
+      { name: "BRI", logo: "/images/localbanks/5.svg" },
+      { name: "6", logo: "/images/localbanks/6.svg" },
+      { name: "7", logo: "/images/localbanks/7.svg" },
+      { name: "8", logo: "/images/localbanks/8.svg" },
+      { name: "9", logo: "/images/localbanks/9.svg" },
     ],
   },
   {
     title: "Selected Payment Providers",
     logos: [
-      { name: "1", logo: pp1 },
-      { name: "2", logo: pp2 },
-      { name: "3", logo: pp3 },
-      { name: "4", logo: pp4 },
-      { name: "5", logo: pp5 },
-      { name: "6", logo: pp6 },
-      { name: "7", logo: pp7 },
-      { name: "8", logo: pp8 },
-      { name: "9", logo: pp9 },
+      { name: "1", logo: "/images/paymentproviders/1.svg" },
+      { name: "2", logo: "/images/paymentproviders/2.svg" },
+      { name: "3", logo: "/images/paymentproviders/3.svg" },
+      { name: "4", logo: "/images/paymentproviders/4.svg" },
+      { name: "5", logo: "/images/paymentproviders/5.svg" },
+      { name: "6", logo: "/images/paymentproviders/6.svg" },
+      { name: "7", logo: "/images/paymentproviders/7.svg" },
+      { name: "8", logo: "/images/paymentproviders/8.svg" },
+      { name: "9", logo: "/images/paymentproviders/9.svg" },
     ],
   },
 ];
 
 const brands = [
-  { name: "Adobe", logo: adobe },
-  { name: "Airbnb", logo: airbnb },
-  { name: "Amazon", logo: amazon },
-  { name: "Booking.com", logo: booking },
-  { name: "Daraz", logo: daraz },
-  { name: "Cdiscount", logo: cdiscount },
-  { name: "Facebook", logo: facebook },
-  { name: "Fiverr", logo: fiverr },
-  { name: "Getty Images", logo: gettyimages },
-  { name: "Google", logo: google },
-  { name: "HomeAway", logo: homeaway },
-  { name: "JOOM", logo: joom },
-  { name: "JUMIA", logo: jumia },
-  { name: "LAZADA", logo: lazada },
-  { name: "LINIO", logo: linio },
-  { name: "Mercado Libre", logo: mercadolibre },
-  { name: "Noon", logo: noon },
-  { name: "Wayfair", logo: wayfair },
-  { name: "Rakuten", logo: rakuten },
-  { name: "Shopee", logo: shopee },
-  { name: "Shutterstock", logo: shutterstock },
-  { name: "Uber", logo: uber },
-  { name: "Upwork", logo: upwork },
-  { name: "Walmart", logo: walmart },
-  { name: "Wish", logo: wish },
-  { name: "Real.de", logo: realde },
+  { name: "Adobe", logo: "/images/brands/adobe.svg" },
+  { name: "Airbnb", logo: "/images/brands/airbnb.svg" },
+  { name: "Amazon", logo: "/images/brands/amazon.svg" },
+  { name: "Booking.com", logo: "/images/brands/booking.svg" },
+  { name: "Daraz", logo: "/images/brands/daraz.svg" },
+  { name: "Cdiscount", logo: "/images/brands/cdiscount.svg" },
+  { name: "Facebook", logo: "/images/brands/facebook.svg" },
+  { name: "Fiverr", logo: "/images/brands/fiverr.svg" },
+  { name: "Getty Images", logo: "/images/brands/gettyimages.svg" },
+  { name: "Google", logo: "/images/brands/google.svg" },
+  { name: "HomeAway", logo: "/images/brands/homeaway.svg" },
+  { name: "JOOM", logo: "/images/brands/joom.svg" },
+  { name: "JUMIA", logo: "/images/brands/jumia.svg" },
+  { name: "LAZADA", logo: "/images/brands/lazada.svg" },
+  { name: "LINIO", logo: "/images/brands/linio.svg" },
+  { name: "mercado libre", logo: "/images/brands/mercadolibre.svg" },
+  { name: "noon", logo: "/images/brands/noon.svg" },
+  { name: "wayfair", logo: "/images/brands/wayfair.svg" },
+  { name: "Rakuten", logo: "/images/brands/rakuten.svg" },
+  { name: "Shopee", logo: "/images/brands/shopee.svg" },
+  { name: "shutterstock", logo: "/images/brands/shutterstock.svg" },
+  { name: "Uber", logo: "/images/brands/uber.svg" },
+  { name: "Upwork", logo: "/images/brands/upwork.svg" },
+  { name: "Walmart", logo: "/images/brands/walmart.svg" },
+  { name: "Wish", logo: "/images/brands/wish.svg" },
+  { name: "real.de", logo: "/images/brands/realde.svg" },
 ];
 
 const resellerBullets = [
@@ -189,7 +120,7 @@ const resellerBullets = [
 
 const partnerCards = [
   {
-    image: expandCrossBorder,
+    image: "/images/Expand-cross-border.svg",
     title: "Expand cross-border offering",
     link: "Compliment your offering with Payoneers global infrastructure",
     bullets: [
@@ -200,7 +131,7 @@ const partnerCards = [
     ],
   },
   {
-    image: expandCrossBorder,
+    image: "/images/Expand-cross-border.svg",
     title: "Unlock new revenue streams",
     link: "Generate new revenue streams via tailored revenue-share model",
     bullets: [
@@ -209,7 +140,7 @@ const partnerCards = [
     ],
   },
   {
-    image: expandCrossBorder,
+    image: "/images/Expand-cross-border.svg",
     title: "Grow your international brand",
     link: "Leverage Payoneer's resources and reach to grow your business",
     bullets: [
@@ -245,22 +176,22 @@ const customerBenefits = [
 // Key features (glass cards)
 const keyFeatures = [
   {
-    logo: fastOnboarding,
+    logo: "/images/fast-onboarding.svg",
     title: "Fast Onboarding",
     desc: "Fast and digital onboarding. Get started in 1–3 days from document submission when you have a business bank account.",
   },
   {
-    logo: debitCards,
+    logo: "/images/debit-cards.svg",
     title: "International debit cards",
     desc: "Get a physical or digital Mastercard in EUR, USD, GBP and CAD. + great cashback rewards*",
   },
   {
-    logo: collectionLinks,
+    logo: "/images/collection-links.svg",
     title: "Payment collection links",
     desc: "Accept card payments from all over the world and tag them to invoices.",
   },
   {
-    logo: onlineCheckout,
+    logo: "/images/online-checkout.svg",
     title: "Online checkout",
     desc: "Accept payments on webstores with our online checkout solution.",
   },
@@ -320,13 +251,13 @@ export default function ResellerLandingPage() {
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
-          <h3 className="text-[25px] text-black  font-semibold mb-4">Topics</h3>
-          <nav className="space-y-2">
+          <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
+          <nav className="space-y-3">
             {topics.map((topic) => (
               <button
                 key={topic.slug}
                 onClick={() => scrollTo(topic.slug)}
-                className={`block text-left w-full px-4 py-2 rounded-full text-[10px] transition border ${
+                className={`block text-left w-full px-4 py-2 rounded-full text-xs sm:text-sm transition border ${
                   active === topic.slug
                     ? "bg-[#EFEFEF] text-[#878787] border-white"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"
@@ -342,61 +273,52 @@ export default function ResellerLandingPage() {
         <main className="flex-1 px-4 sm:px-6 py-10 max-w-7xl mx-auto space-y-20 bg-white">
           <section
             aria-label="Breadcrumb"
-            className="sticky top-[80px] z-40 bg-white text-black border-b border-white/10 backdrop-blur px-4 sm:px-6"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div
-              className="max-w-7xl mx-auto flex items-center gap-2 sm:gap-3 h-12"
-              onClick={() => router.push("/")}
-            >
+            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
               {/* Back button */}
               <button
                 type="button"
                 onClick={() => router.push("/")}
-                className="inline-flex items-center justify-center h-8 w-8 rounded-xl bg-white text-black"
-                aria-label="Back to Table of Content"
-                title="Back to Table of Content"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                aria-label="Back"
+                title="Back"
               >
-                <Image
-                  src={backBtn}
-                  alt="Back"
-                  width={24}
-                  height={24}
-                  className="object-contain"
-                />
+                <Image src={backBtn} alt="Back" width={32} height={32} />
               </button>
 
               {/* Crumb text */}
-              <div className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm text-[#878787] overflow-x-auto whitespace-nowrap px-4 sm:px-0">
+              <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
                 <span
-                  className="font-medium cursor-pointer hover:underline flex-shrink-0"
+                  className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
                   Table of Content
                 </span>
-                <span className="opacity-60 flex-shrink-0">›</span>
-                <span className="truncate flex-shrink min-w-0">
-                  Welcome to Payoneer Reseller Program
+                <span className="opacity-60">›</span>
+                <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
+                  Getting Started: Partner Onboarding
                 </span>
-              </div>
+              </nav>
             </div>
           </section>
 
           {/* about-payoneer */}
           <section id="about-payoneer" className="scroll-mt-28 px-4 sm:px-6">
-            <h1 className="text-[20px] sm:text-[25px] font-bold mb-2 text-[#252526]">
+            <h1 className="text-[20px] sm:text-[48px] font-bold mb-2 text-[#252526]">
               About Payoneer
             </h1>
-            <p className="text-[#878787] mb-6 max-w-2xl text-[13px] sm:text-[14px]">
+            <p className="text-[#878787] mb-6 max-w-2xl text-[13px] sm:text-[20px]">
               Payoneer is a global financial services company that provides
               solutions for cross-border payments and international transactions
               for businesses, freelancers, and sellers.
             </p>
 
             <div className="mt-10">
-              <h2 className="text-md sm:text-lg font-semibold text-gray-900">
+              <h2 className="text-md sm:text-[23px] font-semibold text-gray-900">
                 Unmatched Global Infrastructure
               </h2>
-              <p className="text-[#878787] text-[13px] sm:text-[14px] mt-1">
+              <p className="text-[#878787] text-[13px] sm:text-[20px] mt-1">
                 Covering 200+ countries with redundant capabilities in 145
                 countries
               </p>
@@ -411,7 +333,7 @@ export default function ResellerLandingPage() {
                     <div className="text-2xl sm:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#DA54D8] to-[#0092F4]">
                       {m.value}
                     </div>
-                    <div className="mt-1 text-xs sm:text-sm text-[#878787]">
+                    <div className="mt-1 text-xs sm:text-[14px] text-[#878787]">
                       {m.labelTop}
                     </div>
                   </div>
@@ -426,7 +348,7 @@ export default function ResellerLandingPage() {
                   key={i}
                   className="rounded-xl bg-white border border-gray-100 shadow-sm p-6"
                 >
-                  <h3 className="text-sm font-semibold text-gray-800 mb-4">
+                  <h3 className="text-[23px] font-semibold text-gray-800 mb-4">
                     {col.title}
                   </h3>
                   <div className="flex flex-wrap gap-3">
@@ -438,7 +360,7 @@ export default function ResellerLandingPage() {
                         <Image
                           src={bank.logo}
                           alt={`${bank.name} logo`}
-                          width={50}
+                          width={60}
                           height={24}
                           className="object-contain"
                           style={{ height: "auto" }}
@@ -452,10 +374,10 @@ export default function ResellerLandingPage() {
 
             {/* Trusted brands */}
             <div className="mt-10">
-              <h3 className="text-md sm:text-lg font-semibold text-gray-900">
+              <h3 className="text-md sm:text-[23px] font-semibold text-gray-900">
                 Trusted by the world&apos;s leading digital brands
               </h3>
-              <p className="text-xs sm:text-sm text-[#878787] mt-1 max-w-3xl">
+              <p className="text-xs sm:text-[20px] text-[#878787] mt-1 max-w-3xl">
                 Serving over 2000 leading global marketplaces & digital
                 platforms, sending tens of billions of dollars a year to SMBs
                 across the world
@@ -483,10 +405,10 @@ export default function ResellerLandingPage() {
 
           {/* why-partner */}
           <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
-            <h1 className="text-[20px] sm:text-[25px] font-semibold text-gray-900">
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
               Why Partner with Us
             </h1>
-            <p className="mt-3 max-w-3xl text-[#878787] text-[13px] sm:text-[14px]">
+            <p className="mt-3 max-w-3xl text-[#878787] text-[13px] sm:text-[20px]">
               Partner with Payoneer to unlock global payouts, world-class
               infrastructure, and co-marketing opportunities. Empower your
               merchants and creators to scale internationally with seamless
@@ -509,14 +431,14 @@ export default function ResellerLandingPage() {
                   />
                   <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
 
-                  <h3 className="mt-2 text-sm font-semibold text-gray-900">
+                  <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
                     {title}
                   </h3>
-                  <span className="mt-2 block text-[11px] sm:text-[12px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                  <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                     {link}
                   </span>
 
-                  <ul className="mt-4 text-[10px] sm:text-[11px] text-[#878787] space-y-2">
+                  <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
                     {bullets.map((b, i) => (
                       <li
                         key={i}
@@ -533,28 +455,28 @@ export default function ResellerLandingPage() {
 
           {/* reseller-overview */}
           <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
-            <h2 className="text-[20px] sm:text-[25px] font-bold text-gray-900">
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Reseller Program Overview
             </h2>
-            <p className="mt-2 text-[#878787] text-[13px] sm:text-[14px] max-w-2xl">
+            <p className="mt-2 text-[#878787] text-[13px] sm:text-[20px] max-w-2xl">
               The Payoneer Reseller Program enables incorporation agencies and
               VAS providers to become full-service financial partners for SMB
               clients.
             </p>
 
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[18px] sm:text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+            <div className="sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+              <div className="sm:mt-10">
+                <h3 className="text-[18px] sm:text-[20px] font-semibold text-gray-900 mb-4  sm:mt-10">
                   Grow revenue by bundling Payoneer with your services
                 </h3>
-                <ul className="space-y-4 text-[#878787] text-[13px] sm:text-[14px]">
+                <ul className="space-y-4 text-[#878787] text-[13px] sm:text-[17px]">
                   {resellerBullets.map((text, i) => (
                     <li
                       key={i}
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src={checkIcon}
+                        src="/images/Check-icon.svg"
                         alt="Check icon"
                         width={20}
                         height={20}
@@ -567,7 +489,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-full h-auto">
                 <Image
-                  src={resellerImg}
+                  src="/images/ResellerProgram-img.png"
                   alt="Reseller program"
                   width={800}
                   height={500}
@@ -577,27 +499,27 @@ export default function ResellerLandingPage() {
             </div>
 
             {/* Reseller Phases */}
-            <section id="reseller-phases" className="scroll-mt-24 mb-24">
-              <h2 className="text-[20px] sm:text-[25px] font-bold text-gray-900 mt-10">
+            <section id="reseller-phases" className="scroll-mt-24 sm:mb-24">
+              <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900 mt-10">
                 Reseller Program Phases
               </h2>
-              <div className="mt-8 w-full">
+              <div className="sm:mt-8 w-full">
                 <Image
-                  src={resellerPhasesImg}
+                  src="/images/Reseller-Program-Phases-img.png"
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
+                  className="w-full h-auto rounded-xl  "
                 />
               </div>
             </section>
 
             {/* Partner Cards Block */}
-            <section className="mt-16">
-              <h2 className="text-[20px] sm:text-[25px] font-bold text-gray-900">
+            <section className="sm:mt-16 mt-4">
+              <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
                 Payoneer, your ideal banking services partner
               </h2>
-              <p className="mt-2 text-[#878787] text-[13px] sm:text-[14px] max-w-4xl">
+              <p className="mt-2 text-[#878787] text-[13px] sm:text-[20px] max-w-4xl">
                 The proposed reseller partnership enables cross-border access
                 for customers and unlocks new revenue streams.
               </p>
@@ -608,6 +530,7 @@ export default function ResellerLandingPage() {
                     key={title}
                     className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 shadow-gray-300"
                   >
+                    {/* Icon above title */}
                     <Image
                       src={image}
                       alt="Expand cross-border"
@@ -616,14 +539,15 @@ export default function ResellerLandingPage() {
                       className="mt-4"
                     />
                     <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
-                    <h3 className="mt-2 text-sm font-semibold text-gray-900">
+
+                    <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
                       {title}
                     </h3>
-                    <span className="mt-2 block text-[11px] sm:text-[12px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                    <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                       {link}
                     </span>
 
-                    <ul className="mt-4 text-[10px] sm:text-[11px] text-[#878787] space-y-2">
+                    <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
                       {bullets.map((b, i) => (
                         <li
                           key={i}
@@ -640,20 +564,20 @@ export default function ResellerLandingPage() {
           </section>
 
           <section className="scroll-mt-24 px-4 sm:px-6">
-            <h2 className="text-[20px] sm:text-[25px] font-bold text-gray-900">
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Great for Your Customers
             </h2>
-            <p className="mt-2 text-[#878787] text-[13px] sm:text-[14px]">
+            <p className="mt-2 text-[#878787] text-[13px] sm:text-[20px]">
               Keeping your customers happy is always good for business.
             </p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
               {customerBenefits.map((item, i) => (
                 <div key={i}>
-                  <h3 className="text-[13px] sm:text-[14px] font-semibold text-gray-900">
+                  <h3 className="text-[17px] sm:text-[20px] font-semibold text-gray-900">
                     {item.title}
                   </h3>
                   <div className="h-0.5 w-8 mt-1 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
-                  <p className="mt-3 text-[#878787] text-[10px] sm:text-[11px]">
+                  <p className="mt-3 text-[#878787] text-[13px] sm:text-[14px]">
                     {item.desc}
                   </p>
                 </div>
@@ -664,18 +588,18 @@ export default function ResellerLandingPage() {
           {/* key-features */}
           <section
             id="key-features"
-            className="scroll-mt-10 py-10 px-4 sm:px-6"
+            className="scroll-mt-10 sm:py-10 px-4 sm:px-6 mb-0 sm:mb-20"
           >
-            <h2 className="text-[20px] sm:text-[25px] font-bold text-gray-900">
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Key features your customer will value most
             </h2>
-            <p className="mt-2 text-[#878787] text-[13px] sm:text-[14px]">
+            <p className="mt-2 text-[#878787] text-[13px] sm:text-[20px]">
               Focus on building long-term value, not just one-time transactions.
             </p>
           </section>
 
           <section
-            className="scroll-mt-24 relative py-8 sm:py-10 bg-cover bg-center"
+            className="scroll-mt-28 relative py-0 sm:py-10 bg-cover bg-center"
             style={{ backgroundImage: "url('/images/Reseller-card-bg.png')" }}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -697,12 +621,12 @@ export default function ResellerLandingPage() {
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-[11px] sm:text-[12px] font-semibold text-black">
+                    <h3 className="text-[11px] sm:text-[17px] font-semibold text-black">
                       {f.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-2 text-[10px] sm:text-[11px] text-black flex-grow">
+                    <p className="mt-2 text-[10px] sm:text-[14px] text-black flex-grow">
                       {f.desc}
                     </p>
                   </div>
