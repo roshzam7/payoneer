@@ -6,9 +6,8 @@ import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Content from "../assets/images/gettingstarted/Content.png";
-import Content2 from "../assets/images/gettingstarted/Content2.png";
-import Content3 from "../assets/images/gettingstarted/Content3.png";
-
+import Content2 from "../assets/images/gettingstarted/Content.png";
+import Content3 from "../assets/images/gettingstarted/Content.png";
 import Checkicon from "../assets/images/Check-icon.svg";
 
 const topics = [
@@ -42,6 +41,9 @@ export default function ResellerLandingPage() {
   const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
 
+  // Modal state
+  const [modalImage, setModalImage] = useState<string | null>(null);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY + 120;
@@ -70,6 +72,33 @@ export default function ResellerLandingPage() {
   return (
     <div>
       <Navbar />
+
+      {/* Modal */}
+      {modalImage && (
+        <div
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          onClick={() => setModalImage(null)}
+        >
+          <div
+            className="relative max-w-3xl w-full p-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="absolute top-2 right-2 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow hover:bg-gray-200"
+              onClick={() => setModalImage(null)}
+            >
+              ✕
+            </button>
+            <Image
+              src={modalImage}
+              alt="Preview"
+              width={800}
+              height={800}
+              className="rounded-xl object-contain w-full h-auto"
+            />
+          </div>
+        </div>
+      )}
 
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
@@ -113,7 +142,7 @@ export default function ResellerLandingPage() {
             aria-label="Breadcrumb"
             className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-5xl mx-auto flex  sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
+            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
               {/* Back button */}
               <button
                 type="button"
@@ -162,7 +191,6 @@ export default function ResellerLandingPage() {
               Payoneer with Hasoffer.
             </p>
 
-            {/* Alternating Sections */}
             {[
               {
                 title: "Account Details",
@@ -208,25 +236,20 @@ export default function ResellerLandingPage() {
                   </ul>
                 </div>
 
-                {/* Image */}
+                {/* Image with modal trigger */}
                 <div
                   className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last lg:order-${
                     idx % 2 !== 0 ? "1" : "2"
                   } lg:flex lg:justify-center`}
                 >
-                  <a
-                    href={section.image.src}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={section.image}
-                      alt={section.title}
-                      width={300}
-                      height={300}
-                      className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
-                    />
-                  </a>
+                  <Image
+                    src={section.image}
+                    alt={section.title}
+                    width={300}
+                    height={300}
+                    className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                    onClick={() => setModalImage(section.image.src)}
+                  />
                 </div>
               </div>
             ))}
