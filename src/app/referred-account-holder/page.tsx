@@ -553,7 +553,7 @@ export default function ResellerLandingPage() {
                   Some Additional KYC Requirements
                 </h3>
 
-                <p className="font-semibold text-[#878787] sm:text-[20px]   mt-6 text-[12px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Affiliation URL / Screenshot showing affiliation
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
@@ -593,7 +593,7 @@ export default function ResellerLandingPage() {
                   </a>{" "}
                 </p>
                 {/* Business Profile */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Business Profile / Merchant Application Form (MAF)
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
@@ -606,7 +606,8 @@ export default function ResellerLandingPage() {
                   they opt-in for the PRQ service
                 </p>
                 {/* Held ID */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  {" "}
                   Held ID
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px]">
@@ -627,7 +628,8 @@ export default function ResellerLandingPage() {
                   </a>
                 </p>
                 {/* Invoice */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  {" "}
                   Invoice
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px]  sm:text-[17px]">
@@ -644,7 +646,8 @@ export default function ResellerLandingPage() {
                 </ul>
                 {/* Invoice For Alias Review */}
 
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  {" "}
                   Invoice (For Alias Review)
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
@@ -668,7 +671,8 @@ export default function ResellerLandingPage() {
                   </li>
                 </ul>
                 {/* Visual identity verification (Selfie) */}
-                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[20px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  {" "}
                   Visual identity verification (Selfie)
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
@@ -688,7 +692,8 @@ export default function ResellerLandingPage() {
                   requirement and we should not manually upload anything to
                   these requirements or review (give review status) to them.
                 </p>
-                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[20px]">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  {" "}
                   They should be completed by AH and reviewed by KYC only.
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
