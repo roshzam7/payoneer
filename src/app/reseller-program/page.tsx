@@ -5,6 +5,77 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
+import barclays from "../assets/images/globalbanks/barclays.svg";
+import citi from "../assets/images/globalbanks/citi.svg";
+import deutsche from "../assets/images/globalbanks/deutsche-bank.svg";
+import bankLogo1 from "../assets/images/globalbanks/bank-of-america.svg"
+
+
+// Local banks
+import nab from "../assets/images/localbanks/nab.svg";
+import icbc from "../assets/images/localbanks/icbc.svg";
+import dbs from "../assets/images/localbanks/1.svg";
+import ing from "../assets/images/localbanks/2.svg";
+import rbs from "../assets/images/localbanks/3.svg";
+import unionbank from "../assets/images/localbanks/4.svg";
+import bri from "../assets/images/localbanks/5.svg";
+import lb6 from "../assets/images/localbanks/6.svg";
+import lb7 from "../assets/images/localbanks/7.svg";
+import lb8 from "../assets/images/localbanks/8.svg";
+import lb9 from "../assets/images/localbanks/9.svg";
+
+// Payment providers
+import pp1 from "../assets/images/paymentproviders/1.svg";
+import pp2 from "../assets/images/paymentproviders/2.svg";
+import pp3 from "../assets/images/paymentproviders/3.svg";
+import pp4 from "../assets/images/paymentproviders/4.svg";
+import pp5 from "../assets/images/paymentproviders/5.svg";
+import pp6 from "../assets/images/paymentproviders/6.svg";
+import pp7 from "../assets/images/paymentproviders/7.svg";
+import pp8 from "../assets/images/paymentproviders/8.svg";
+import pp9 from "../assets/images/paymentproviders/9.svg";
+
+// Brands
+import adobe from "../assets/images/brands/adobe.svg";
+import airbnb from "../assets/images/brands/airbnb.svg";
+import amazon from "../assets/images/brands/amazon.svg";
+import booking from "../assets/images/brands/booking.svg";
+import daraz from "../assets/images/brands/daraz.svg";
+import cdiscount from "../assets/images/brands/cdiscount.svg";
+import facebook from "../assets/images/brands/facebook.svg";
+import fiverr from "../assets/images/brands/fiverr.svg";
+import gettyimages from "../assets/images/brands/gettyimages.svg";
+import google from "../assets/images/brands/google.svg";
+import homeaway from "../assets/images/brands/homeaway.svg";
+import joom from "../assets/images/brands/joom.svg";
+import jumia from "../assets/images/brands/jumia.svg";
+import lazada from "../assets/images/brands/lazada.svg";
+import linio from "../assets/images/brands/linio.svg";
+import mercadolibre from "../assets/images/brands/mercadolibre.svg";
+import noon from "../assets/images/brands/noon.svg";
+import wayfair from "../assets/images/brands/wayfair.svg";
+import rakuten from "../assets/images/brands/rakuten.svg";
+import shopee from "../assets/images/brands/shopee.svg";
+import shutterstock from "../assets/images/brands/shutterstock.svg";
+import uber from "../assets/images/brands/uber.svg";
+import upwork from "../assets/images/brands/upwork.svg";
+import walmart from "../assets/images/brands/walmart.svg";
+import wish from "../assets/images/brands/wish.svg";
+import realde from "../assets/images/brands/realde.svg";
+
+// Others
+import checkIcon from "../assets/images/Check-icon.svg";
+import resellerImg from "../assets/images/ResellerProgram-img.png";
+import resellerPhasesImg from "../assets/images/Reseller-Program-Phases-img.png";
+import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
+//import resellerCardBg from "../assets/images/Reseller-card-bg.png";
+
+// Key features icons
+import fastOnboarding from "../assets/images/fast-onboarding.svg";
+import debitCards from "../assets/images/debit-cards.svg";
+import collectionLinks from "../assets/images/collection-links.svg";
+import onlineCheckout from "../assets/images/online-checkout.svg";
+
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
@@ -44,72 +115,72 @@ const bankCols = [
     logos: [
       {
         name: "Bank of America",
-        logo: "/images/globalbanks/bank-of-america.svg",
+        logo: bankLogo1,
       },
-      { name: "Barclays", logo: "/images/globalbanks/barclays.svg" },
-      { name: "Citi", logo: "/images/globalbanks/citi.svg" },
-      { name: "Deutsche Bank", logo: "/images/globalbanks/deutsche-bank.svg" },
+{ name: "Barclays", logo: barclays },
+      { name: "Citi", logo: citi },
+      { name: "Deutsche Bank", logo: deutsche },
     ],
   },
   {
     title: "Selected Regional & Local Banks",
     logos: [
-      { name: "NAB", logo: "/images/localbanks/nab.svg" },
-      { name: "ICBC", logo: "/images/localbanks/icbc.svg" },
-      { name: "DBS", logo: "/images/localbanks/1.svg" },
-      { name: "ING", logo: "/images/localbanks/2.svg" },
-      { name: "RBS", logo: "/images/localbanks/3.svg" },
-      { name: "UnionBank", logo: "/images/localbanks/4.svg" },
-      { name: "BRI", logo: "/images/localbanks/5.svg" },
-      { name: "6", logo: "/images/localbanks/6.svg" },
-      { name: "7", logo: "/images/localbanks/7.svg" },
-      { name: "8", logo: "/images/localbanks/8.svg" },
-      { name: "9", logo: "/images/localbanks/9.svg" },
+      { name: "NAB", logo: nab },
+      { name: "ICBC", logo: icbc },
+      { name: "DBS", logo: dbs },
+      { name: "ING", logo: ing },
+      { name: "RBS", logo: rbs },
+      { name: "UnionBank", logo: unionbank },
+      { name: "BRI", logo: bri },
+      { name: "6", logo: lb6 },
+      { name: "7", logo: lb7},
+      { name: "8", logo: lb8 },
+      { name: "9", logo: lb9 },
     ],
   },
   {
     title: "Selected Payment Providers",
     logos: [
-      { name: "1", logo: "/images/paymentproviders/1.svg" },
-      { name: "2", logo: "/images/paymentproviders/2.svg" },
-      { name: "3", logo: "/images/paymentproviders/3.svg" },
-      { name: "4", logo: "/images/paymentproviders/4.svg" },
-      { name: "5", logo: "/images/paymentproviders/5.svg" },
-      { name: "6", logo: "/images/paymentproviders/6.svg" },
-      { name: "7", logo: "/images/paymentproviders/7.svg" },
-      { name: "8", logo: "/images/paymentproviders/8.svg" },
-      { name: "9", logo: "/images/paymentproviders/9.svg" },
+      { name: "1", logo: pp1 },
+      { name: "2", logo: pp2 },
+      { name: "3", logo: pp3 },
+      { name: "4", logo: pp4 },
+      { name: "5", logo: pp5 },
+      { name: "6", logo: pp6 },
+      { name: "7", logo: pp7 },
+      { name: "8", logo: pp8 },
+      { name: "9", logo: pp9 },
     ],
   },
 ];
 
 const brands = [
-  { name: "Adobe", logo: "/images/brands/adobe.svg" },
-  { name: "Airbnb", logo: "/images/brands/airbnb.svg" },
-  { name: "Amazon", logo: "/images/brands/amazon.svg" },
-  { name: "Booking.com", logo: "/images/brands/booking.svg" },
-  { name: "Daraz", logo: "/images/brands/daraz.svg" },
-  { name: "Cdiscount", logo: "/images/brands/cdiscount.svg" },
-  { name: "Facebook", logo: "/images/brands/facebook.svg" },
-  { name: "Fiverr", logo: "/images/brands/fiverr.svg" },
-  { name: "Getty Images", logo: "/images/brands/gettyimages.svg" },
-  { name: "Google", logo: "/images/brands/google.svg" },
-  { name: "HomeAway", logo: "/images/brands/homeaway.svg" },
-  { name: "JOOM", logo: "/images/brands/joom.svg" },
-  { name: "JUMIA", logo: "/images/brands/jumia.svg" },
-  { name: "LAZADA", logo: "/images/brands/lazada.svg" },
-  { name: "LINIO", logo: "/images/brands/linio.svg" },
-  { name: "mercado libre", logo: "/images/brands/mercadolibre.svg" },
-  { name: "noon", logo: "/images/brands/noon.svg" },
-  { name: "wayfair", logo: "/images/brands/wayfair.svg" },
-  { name: "Rakuten", logo: "/images/brands/rakuten.svg" },
-  { name: "Shopee", logo: "/images/brands/shopee.svg" },
-  { name: "shutterstock", logo: "/images/brands/shutterstock.svg" },
-  { name: "Uber", logo: "/images/brands/uber.svg" },
-  { name: "Upwork", logo: "/images/brands/upwork.svg" },
-  { name: "Walmart", logo: "/images/brands/walmart.svg" },
-  { name: "Wish", logo: "/images/brands/wish.svg" },
-  { name: "real.de", logo: "/images/brands/realde.svg" },
+  { name: "Adobe", logo: adobe },
+  { name: "Airbnb", logo: airbnb },
+  { name: "Amazon", logo: amazon },
+  { name: "Booking.com", logo: booking },
+  { name: "Daraz", logo: daraz },
+  { name: "Cdiscount", logo: cdiscount },
+  { name: "Facebook", logo: facebook },
+  { name: "Fiverr", logo: fiverr },
+  { name: "Getty Images", logo: gettyimages },
+  { name: "Google", logo: google },
+  { name: "HomeAway", logo: homeaway },
+  { name: "JOOM", logo: joom },
+  { name: "JUMIA", logo: jumia },
+  { name: "LAZADA", logo: lazada },
+  { name: "LINIO", logo: linio },
+  { name: "Mercado Libre", logo: mercadolibre },
+  { name: "Noon", logo: noon },
+  { name: "Wayfair", logo: wayfair },
+  { name: "Rakuten", logo: rakuten },
+  { name: "Shopee", logo: shopee },
+  { name: "Shutterstock", logo: shutterstock },
+  { name: "Uber", logo: uber },
+  { name: "Upwork", logo: upwork },
+  { name: "Walmart", logo: walmart },
+  { name: "Wish", logo: wish },
+  { name: "Real.de", logo: realde },
 ];
 
 const resellerBullets = [
@@ -120,7 +191,7 @@ const resellerBullets = [
 
 const partnerCards = [
   {
-    image: "/images/Expand-cross-border.svg",
+    image: expandCrossBorder,
     title: "Expand cross-border offering",
     link: "Compliment your offering with Payoneers global infrastructure",
     bullets: [
@@ -131,7 +202,7 @@ const partnerCards = [
     ],
   },
   {
-    image: "/images/Expand-cross-border.svg",
+    image: expandCrossBorder,
     title: "Unlock new revenue streams",
     link: "Generate new revenue streams via tailored revenue-share model",
     bullets: [
@@ -140,7 +211,7 @@ const partnerCards = [
     ],
   },
   {
-    image: "/images/Expand-cross-border.svg",
+    image: expandCrossBorder,
     title: "Grow your international brand",
     link: "Leverage Payoneer's resources and reach to grow your business",
     bullets: [
@@ -176,22 +247,22 @@ const customerBenefits = [
 // Key features (glass cards)
 const keyFeatures = [
   {
-    logo: "/images/fast-onboarding.svg",
+    logo: fastOnboarding,
     title: "Fast Onboarding",
     desc: "Fast and digital onboarding. Get started in 1–3 days from document submission when you have a business bank account.",
   },
   {
-    logo: "/images/debit-cards.svg",
+    logo: debitCards,
     title: "International debit cards",
     desc: "Get a physical or digital Mastercard in EUR, USD, GBP and CAD. + great cashback rewards*",
   },
   {
-    logo: "/images/collection-links.svg",
+    logo: collectionLinks,
     title: "Payment collection links",
     desc: "Accept card payments from all over the world and tag them to invoices.",
   },
   {
-    logo: "/images/online-checkout.svg",
+    logo: onlineCheckout,
     title: "Online checkout",
     desc: "Accept payments on webstores with our online checkout solution.",
   },
@@ -476,7 +547,7 @@ export default function ResellerLandingPage() {
                       className="flex items-start gap-3 text-gray-700"
                     >
                       <Image
-                        src="/images/Check-icon.svg"
+                        src={checkIcon}
                         alt="Check icon"
                         width={20}
                         height={20}
@@ -489,7 +560,7 @@ export default function ResellerLandingPage() {
               </div>
               <div className="w-full h-auto">
                 <Image
-                  src="/images/ResellerProgram-img.png"
+                  src={resellerImg}
                   alt="Reseller program"
                   width={800}
                   height={500}
@@ -505,7 +576,7 @@ export default function ResellerLandingPage() {
               </h2>
               <div className="sm:mt-8 w-full">
                 <Image
-                  src="/images/Reseller-Program-Phases-img.png"
+                  src={resellerPhasesImg}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
