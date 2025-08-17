@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
-import Checkicon from "../assets/images/Check-icon.svg";                 
+import Checkicon from "../assets/images/Check-icon.svg";
 import Content1 from "../assets/images/sectionfour/Content1.png";
 import Content2 from "../assets/images/sectionfour/Content2.png";
 import Content3 from "../assets/images/sectionfour/Content3.png";
@@ -24,8 +24,7 @@ import Content15 from "../assets/images/sectionfour/Content15.png";
 import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 
-
-
+// Topics for sidebar navigation
 const topics = [
   {
     title: "Account Sign-Up Process for Referred Account Holders",
@@ -106,10 +105,153 @@ const resellerBulletsseventeen = [
   "Drag the relevant file into the space provided and select Submit  to complete the process.",
 ];
 
+// Steps with bullets and optional note content
+const steps = [
+  {
+    title: "Company Details",
+    bullets: resellerBullets,
+    image: Content1,
+  },
+  {
+    title: "Contact Details",
+    bullets: resellerBulletsTwo,
+    image: Content2,
+  },
+  {
+    title: "    Security Details",
+    bullets: resellerBulletsThree,
+    image: Content3,
+  },
+  {
+    title: "    Payment Details ",
+    bullets: resellerBulletsFour,
+    image: Content4,
+    note: (
+      <>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+          If you do not have a Company Business Bank Account (a Business Bank),
+          you can enter your Personal Bank Account.
+        </p>
+        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px]">
+          <li>
+            * Please Note – During KYC, you would be asked to upload your
+            Personal Bank Statement (Issued within Last 3 Months){" "}
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "    KYC Details ",
+    bullets: resellerBulletsfive,
+    image: Content5,
+    note: (
+      <>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+          Please Click Submit Now & update the requested information​{" "}
+        </p>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
+          Company Documents
+        </p>
+        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+          <li>Business License </li>
+          <li>Certificate of Formation </li>
+          <li>
+            Memorandum of Association (MOA) *This should show the Number of
+            shares held by each shareholder.{" "}
+          </li>
+        </ul>
+
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
+          Company Documents
+        </p>
+        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+          <li>Director & Shareholder Documents </li>
+          <li>Home Country Address </li>
+          <li>
+            Personal Address Proof (Any of the below is good)
+            <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+              <li>Personal Bank Statement</li>
+              <li>Utility Bill</li>
+              <li>Tenancy Agreement</li>
+            </ul>
+          </li>
+          <li>
+            Personal Bank Statement (Issued within Last 6 Months showing
+            residential address){" "}
+          </li>
+        </ul>
+      </>
+    ),
+  },
+  {
+    title: "    User Details ",
+    bullets: resellerBulletssix,
+    image: Content6,
+  },
+  {
+    title: "  Onboarding Process ",
+    bullets: resellerBulletsseven,
+    image: Content7,
+  },
+  {
+    title: "  Registration ",
+    bullets: resellerBulletseight,
+    image: Content8,
+  },
+  {
+    title: "    Business Details ",
+    bullets: resellerBulletsnine,
+    image: Content9,
+  },
+  {
+    title: "  Email Verification ",
+    bullets: resellerBulletsTen,
+    image: Content10,
+  },
+  {
+    title: "  Confirm Business Registration ",
+    bullets: resellerBulletswleven,
+    image: Content11,
+  },
+  {
+    title: "  Location Information ",
+    bullets: resellerBulletswtwelve,
+    image: Content12,
+  },
+  {
+    title: "  Mobile Number Verification ",
+    bullets: resellerBulletsthirteen,
+    image: Content13,
+  },
+  {
+    title: "  Password Creation  ",
+    bullets: resellerBulletsfourteen,
+    image: Content14,
+  },
+  {
+    title: "  Document Submission ",
+    bullets: resellerBulletsfifteen,
+    image: Content15,
+  },
+  {
+    title: "  ID photo submission ",
+    bullets: resellerBulletssisteen,
+    image: Content16,
+  },
+  {
+    title: "  Final Document Submission ",
+    bullets: resellerBulletsseventeen,
+    image: Content17,
+  },
+];
+
 export default function ResellerLandingPage() {
   const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
+  // Scrollspy for sidebar
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY + 120;
@@ -139,32 +281,63 @@ export default function ResellerLandingPage() {
     <div>
       <Navbar />
 
+      {/* Modal for image preview */}
+      {modalImage && (
+        <div
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          onClick={() => setModalImage(null)} // closes when clicking outside
+        >
+          <div
+            className="relative w-[90%] max-w-3xl h-[80vh] p-4 flex items-center justify-center bg-transparent"
+            onClick={(e) => e.stopPropagation()} // prevent outside click closing
+          >
+            {/* Close button */}
+            <button
+              className="absolute top-2 right-2 z-50 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow hover:bg-gray-200"
+              onClick={() => setModalImage(null)}
+            >
+              ✕
+            </button>
+
+            {/* Image */}
+            <div className="w-full h-full relative">
+              <Image
+                src={modalImage}
+                alt="Preview"
+                fill
+                className="object-contain rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Banner */}
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
-        className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+        className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+        <div className="max-w-4xl mx-auto py-12 sm:py-20">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
             Referred Account Holder (AH)
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Onboarding Journey{" "}
+              Onboarding Journey
             </span>
           </h1>
-          <p className="text-gray-600 text-base sm:text-lg"></p>
         </div>
       </section>
 
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
-          <h3 className="text-[25px] text-black  font-semibold mb-4">Topics</h3>
-          <nav className="space-y-2">
+          <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
+          <nav className="space-y-3">
             {topics.map((topic) => (
               <button
                 key={topic.slug}
                 onClick={() => scrollTo(topic.slug)}
-                className={`block text-left w-full px-4 py-2 rounded-full text-[10px] transition border ${
+                className={`block text-left w-full px-4 py-2 rounded-full text-xs sm:text-sm transition border ${
                   active === topic.slug
                     ? "bg-[#EFEFEF] text-[#878787] border-white"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"
@@ -176,888 +349,314 @@ export default function ResellerLandingPage() {
           </nav>
         </aside>
 
-        {/* Page Content */}
-        <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white">
+        {/* Main content */}
+        <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white relative z-10">
+          {/* Breadcrumb */}
           <section
             aria-label="Breadcrumb"
-            className="sticky top-[80px] z-40 bg-white text-black border-b border-white/10 backdrop-blur"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div
-              className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 h-6 flex items-center gap-3 bg-white"
-              onClick={() => router.push("/")}
-            >
-              {/* Back button */}
+            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
               <button
                 type="button"
                 onClick={() => router.push("/")}
-                className="inline-flex items-center justify-center h-8 w-8 rounded-xl bg-white text-black"
-                aria-label="Back to Table of Content"
-                title="Back to Table of Content"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                aria-label="Back"
+                title="Back"
               >
-                <Image
-                  src={backBtn}
-                  alt="Expand cross-border"
-                  width={32}
-                  height={32}
-                  className="mt-0 "
-                />
+                <Image src={backBtn} alt="Back" width={32} height={32} />
               </button>
 
-              {/* Crumb text */}
-              <div className="flex items-center gap-2 text-sm text-[#878787]">
+              <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
                 <span
-                  className="font-medium cursor-pointer hover:underline"
+                  className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
                   Table of Content
                 </span>
                 <span className="opacity-60">›</span>
-                <span className="truncate">
-                  {/* {topics.find((t) => t.slug === active)?.title ||
-      "Welcome to Payoneer Reseller Program"} */}
-                  Referred Account Holder Onboarding Journey
+                <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
+                  Getting Started: Partner Onboarding
                 </span>
-              </div>
+              </nav>
             </div>
           </section>
 
-          {/* reseller-overview */}
-          <section id="referred-account-holders" className="scroll-mt-28">
-            <h2 className="text-[25px] font-bold text-gray-900">
+          {/* How to Join */}
+
+          <section
+            id="referred-account-holders"
+            className="scroll-mt-36 max-w-5xl mx-auto"
+          >
+            {/* Main heading */}
+            <p className="text-gray-900 text-[48px] font-semibold">
               Account Sign-Up Process for Referred Account Holders
-            </h2>
-            <div className="flex justify-between items-center max-w-4xl">
-              <p className="text-gray-900 text-[20px] font-semibold">
+            </p>
+
+            {/* Sub-heading + link */}
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+              <p className="text-gray-900 text-[23px] font-semibold">
                 Standard Registration FLOW
               </p>
               <a
                 href="#"
-                className="text-sm text-blue-600 hover:underline font-medium"
+                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
               >
                 Partner Account Opening Link
               </a>
             </div>
 
-            <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-              Once you sign up on Partner link, Your Account Manager would be
-              able to share a customized link for you
+            <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
+              View the guided steps below to learn how to get onboarded to
+              Payoneer with Hasoffer.
             </p>
 
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Company Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBullets.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content1}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content2}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
+            {(() => {
+              const splitIndex = 6;
 
-              <div className="mt-26">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Contact Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsTwo.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
+              return (
+                <>
+                  {/* First Half */}
+                  {steps.slice(0, splitIndex).map((section, idx) => (
+                    <div
+                      key={idx}
+                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10 "
                     >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
+                      <div
+                        className={`${
+                          idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
+                        } self-center`}
+                      >
+                        <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
+                          {section.title}
+                        </h3>
+                        <ul className="space-y-4 text-[#878787] text-[18px]">
+                          {section.bullets.map((text, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-3 text-gray-700"
+                            >
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>{text}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        {section.note && section.note}
+                      </div>
+
+                      <div
+                        className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
+                          idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
+                        } lg:flex lg:justify-center`}
+                      >
+                        <Image
+                          src={section.image}
+                          alt={section.title}
+                          width={300}
+                          height={300}
+                          className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                          onClick={() => setModalImage(section.image.src)}
+                        />
+                      </div>
+                    </div>
                   ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/* 3rd */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Security Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsThree.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
+
+                  {/* Second Section Heading */}
+                  <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
+                    <p className="text-gray-900 text-[48px] font-semibold">
+                      CLM Flow
+                    </p>
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+                      <p className="text-gray-900 text-[23px] font-semibold">
+                        Step-by-Step Onboarding Guides for Clients:
+                      </p>
+                      <a
+                        href="#"
+                        className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
+                      >
+                        Partner Account Opening Link
+                      </a>
+                    </div>
+                    <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
+                      View the step-by-step guide for onboarding and
+                      registration of your Payoneer business account.
+                    </p>
+                  </div>
+
+                  {/* Second Half */}
+                  {steps.slice(splitIndex).map((section, idx) => (
+                    <div
+                      key={idx}
+                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
                     >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
+                      <div
+                        className={`${
+                          idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
+                        } self-center`}
+                      >
+                        <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
+                          {section.title}
+                        </h3>
+                        <ul className="space-y-4 text-[#878787] text-[18px]">
+                          {section.bullets.map((text, i) => (
+                            <li
+                              key={i}
+                              className="flex items-start gap-3 text-gray-700"
+                            >
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>{text}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        {section.note && section.note}
+                      </div>
+
+                      <div
+                        className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
+                          idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
+                        } lg:flex lg:justify-center`}
+                      >
+                        <Image
+                          src={section.image}
+                          alt={section.title}
+                          width={300}
+                          height={300}
+                          className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                          onClick={() => setModalImage(section.image.src)}
+                        />
+                      </div>
+                    </div>
                   ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content3}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content4}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-12">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Payment Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsFour.map((text, i) => (
-                    <li
-                      key={i}
-                      className=" text-[12px] flex items-start gap-3 text-[#878787]"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className=" text-[#878787] text-[10px] mt-6">
-                  If you do not have a Company Business Bank Account (a Business
-                  Bank), you can enter your Personal Bank Account.
-                </p>
-                <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400">
-                  <li>
-                    Please Note - During KYC, you would be asked to upload your
-                    Personal Bank Statement (Issued within Last 3 Months)
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-0 grid grid-cols-1 lg:grid-cols-2 gap-10">
-              {/* Left column (Text) */}
-              <div className="mt-0">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  KYC Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsfive.map((text, i) => (
-                    <li
-                      key={i}
-                      className="text-[12px] flex items-start gap-3 text-[#878787]"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Additional Content */}
-                <p className="font-semibold text-[#878787] text-sm mt-4 text-[12px]">
-                  Please Click Submit Now & update the requested information
-                </p>
-                <p className="font-semibold text-[#878787] text-sm mt-4 text-[12px]">
-                  Company Documents
-                </p>
-                <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400">
-                  <li>Business License</li>
-                  <li>Certificate of Formation</li>
-                  <li>
-                    Memorandum of Association (MOA)
-                    <span className="block text-[#878787] text-[10px]">
-                      This should show the number of shares held by each
-                      shareholder.
-                    </span>
-                  </li>
-                </ul>
-                <p className="font-semibold text-[#878787] text-sm mt-4 text-[12px]">
-                  Director & Shareholder Documents
-                </p>
-                <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400">
-                  <li>Passport</li>
-                  <li>Home Country Address</li>
-                  <li>
-                    Personal Address Proof (Any of the below is good):
-                    <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400">
-                      <li>Personal Bank Statement</li>
-                      <li>Utility Bill</li>
-                      <li>Tenancy Agreement</li>
-                    </ul>
-                  </li>
-                  <li>
-                    Personal Bank Statement (Issued within Last 6 Months showing
-                    residential address)
-                  </li>
-                </ul>
-              </div>
-
-              {/* Right column (Image) */}
-              <div className="flex items-center justify-center">
-                <div className="w-[200px] h-auto">
-                  <Image
-                  src={Content5}
-                    alt="Reseller program"
-                    width={200}
-                    height={200}
-                    className="rounded-xl object-cover w-full"
-                  />
-                </div>
-              </div>
-            </div>
+                </>
+              );
+            })()}
           </section>
 
-          {/* 2 */}
-          <section>
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content6}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-              {/* Right content */}
-              <div className="mt-12">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  User Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletssix.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-
-          {/* CLM Flow */}
-          <section id="clm-flow" className="scroll-mt-28">
-            <h2 className="text-[25px] font-bold text-gray-900">CLM Flow</h2>
-            <div className="flex justify-between items-center max-w-4xl">
-              <p className="text-gray-900 text-[20px] font-semibold">
-                Step-by-Step Onboarding Guides for Clients:
-              </p>
-              <a
-                href="#"
-                className="text-sm text-blue-600 hover:underline font-medium"
-              >
-                Partner Account Opening Link
-              </a>
-            </div>
-            <p className="text-[12px] font-bold text-[#878787]">
-              View the step-by-step guide for onboarding and registration of
-              your <br /> Payoneer business account.
-            </p>
-          </section>
-          <section>
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Onboarding Process
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsseven.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content7}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content8}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-6">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Registration
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletseight.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Business Details
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsnine.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content9}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              {/* Left image */}
-              <div className="flex justify-center w-[300px]">
-                <Image
-                  src={Content10}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-4">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Email Verification
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsTen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Confirm Business Registration
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletswleven.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content11}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content12}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-6">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Location Information
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletswtwelve.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-6">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Mobile Number Verification
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsthirteen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content13}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content14}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-6">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  Password Creation
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsfourteen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-0">
-                  Document Submission
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsfifteen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content15}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full mt-12"
-                />
-              </div>
-            </div>
-          </section>
-          {/* 2 */}
-          <section id="reseller-overview" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-[30%_70%] gap-10  ">
-              {/* Left image */}
-              <div className="flex justify-center w-[200px]">
-                <Image
-                  src={Content16}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-auto h-auto"
-                />
-              </div>
-
-              {/* Right content */}
-              <div className="mt-6">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4">
-                  ID photo submission
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletssisteen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0.5 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section id="How-to-Join" className="scroll-mt-28">
-            <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="mt-10">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
-                  Final Document Submission
-                </h3>
-                <ul className="space-y-4 text-[#878787] text-[10px]">
-                  {resellerBulletsseventeen.map((text, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3 text-gray-700"
-                    >
-                      <Image
-                        src={Checkicon}
-                        alt="My Icon"
-                        width={20}
-                        height={20}
-                        className="mt-0 flex-none"
-                      />
-                      <span>{text}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="w-[200px] h-auto">
-                <Image
-                  src={Content17}
-                  alt="Reseller program"
-                  width={200}
-                  height={200}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
-            </div>
-          </section>
           {/* 2 */}
           <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               {/* Left column (Text) */}
               <div className="mt-0">
-                <h3 className="text-[20px] font-semibold text-gray-900 mb-4 mt-10">
+                <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
                   Some Additional KYC Requirements
                 </h3>
 
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] sm:text-[20px]   mt-6 text-[12px]">
                   Affiliation URL / Screenshot showing affiliation
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   This requirement is related to LOB verification.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   URL/Screenshot needs to be from the AH&apos;s website, where
                   they promote their services.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the AH doesn&apos;t have a website, they can provide the
                   social media or freelancer platform page where they promote
                   themselves (e.g. Upwork).
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Requirement: Screenshot of the customer&apos;s profile/account
                   showing user name/store name, URL or logo of website and
                   profile details of AH such as full name, Phone number, email
                   address
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If they were also asked to provide a URL affiliation, then
                   they should provide a link to a page within AH&apos;s website,
                   basically showing that AH has the ability to edit the website
                   and add details to it. The affiliation URL can sometimes be
                   accepted in the form of a screenshot.{" "}
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
                   <a className="text-blue-600" href="">
                     Autologger 7650
                   </a>{" "}
                 </p>
-                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
                     Text to A
                   </a>{" "}
                 </p>
                 {/* Business Profile */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
                   Business Profile / Merchant Application Form (MAF)
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   The Business Profile it is also called Merchant application
                   form (MAF) and required for LOB verification when an AH is
                   receiving payments via the Payment Request Service.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   AHs will be requested to provide their Business profile when
                   they opt-in for the PRQ service
                 </p>
                 {/* Held ID */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
                   Held ID
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px]">
                   This requirements is related to identity verification.{" "}
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px]sm:text-[17px] sm:text-[17px]">
                   The Held ID photo must show the AH holding a piece of paper
                   with the day&apos;s date on it.{" "}
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   The picture should be clear and easy to see the paper that the
                   AH is holding, with their face unobscured and make sure the
                   picture is not mirrored or reversed.
                 </p>
-                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
                     Text - Request for ID and Held ID
                   </a>
                 </p>
                 {/* Invoice */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   Invoice
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-6 text-[12px]  sm:text-[17px]">
                   This requirement is related to LOB verification.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px]  sm:text-[17px]">
                   The AH needs to provide the invoice they have sent to their
                   client and that is related to the payment. It must include:
                 </p>
-                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400">
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400  sm:text-[17px]">
                   <li>Information about the services provided </li>
                   <li>The names of the buyer (payer) and seller (AH) </li>
                   <li>The amount for payment</li>
                 </ul>
                 {/* Invoice For Alias Review */}
 
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[20px]">
                   Invoice (For Alias Review)
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   Invoice is the document issued by a seller with the list of
                   goods or services provided.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   The valid document must contain the original seller&apos;s
                   name, the buyers name and the general description of the
                   products. The document must show a connection to customer:
                 </p>
-                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400">
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>Alias name is matching</li>
                   <li>
                     One of the affiliation items matched with BO information:
@@ -1069,57 +668,57 @@ export default function ResellerLandingPage() {
                   </li>
                 </ul>
                 {/* Visual identity verification (Selfie) */}
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[20px]">
                   Visual identity verification (Selfie)
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   This requirements is related to identity verification.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   Payoneer accepts Selfies as &apos;Visual Identity
                   Verification&apos;. When a selfie requirement is opened, there
                   are also 2 other requirements:
                 </p>
-                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400">
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>Internal Selfie Information </li>
                   <li>ID </li>
                 </ul>
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   Please note that they are part of the overall selfie
                   requirement and we should not manually upload anything to
                   these requirements or review (give review status) to them.
                 </p>
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[20px]">
                   They should be completed by AH and reviewed by KYC only.
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   How submission looks like for customer:
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   1. When Selfie is requested, it appears as a requirement
                   called &apos;Visual identity verification&apos;{" "}
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   2. After a customer clicks on it, they are directed to a
                   &apos;Selfie submission wizard&apos;
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   3. They have to choose the country and type of their ID
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   4. Then they have to make a photo of their ID (if required for
                   the document type & country - both sides) 
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   5. And finally they have to make a selfie
                 </p>
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px]">
+                <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
                     Text to customer - How to submit a Selfie (Visual Identity
                     Verification)
                   </a>
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]">
+                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the customer would like to opt out from the service, refer
                   to the How can an AH opt-out of the &apos;Selfie&apos;
                   requirement (Visual Identity Verification) section in the How
