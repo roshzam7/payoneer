@@ -68,7 +68,7 @@ import checkIcon from "../assets/images/Check-icon.svg";
 import resellerImg from "../assets/images/ResellerProgram-img.png";
 import resellerPhasesImg from "../assets/images/Reseller-Program-Phases-img.png";
 import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
-//import resellerCardBg from "../assets/images/Reseller-card-bg.png";
+import resellerCardBg from "../assets/images/Reseller-card-bg.png";
 
 // Key features icons
 import fastOnboarding from "../assets/images/fast-onboarding.svg";
@@ -671,7 +671,9 @@ export default function ResellerLandingPage() {
 
           <section
             className="scroll-mt-28 relative py-0 sm:py-10 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/Reseller-card-bg.png')" }}
+      style={{
+        backgroundImage: `url(${resellerCardBg})`,
+      }}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
               <div className="mt-6 sm:mt-10 mb-6 sm:mb-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 items-stretch">
