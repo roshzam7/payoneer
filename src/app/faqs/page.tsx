@@ -767,43 +767,38 @@ export default function ResellerLandingPage() {
         </aside>
 
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white">
-          <section
+                    <section
             aria-label="Breadcrumb"
-            className="sticky top-[80px] z-40 bg-white text-black border-b border-white/10 backdrop-blur"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div
-              className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0 h-6 flex items-center gap-3 bg-white"
-              onClick={() => router.push("/")}
-            >
+            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
+              {/* Back button */}
               <button
                 type="button"
                 onClick={() => router.push("/")}
-                className="inline-flex items-center justify-center h-8 w-8 rounded-xl bg-white text-black"
-                aria-label="Back to Table of Content"
-                title="Back to Table of Content"
+                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                aria-label="Back"
+                title="Back"
               >
-                <Image
-                  src={backBtn}
-                  alt="Expand cross-border"
-                  width={32}
-                  height={32}
-                  className="mt-0"
-                />
+                <Image src={backBtn} alt="Back" width={32} height={32} />
               </button>
-              <div className="flex items-center gap-2 text-sm text-[#878787]">
+
+              {/* Crumb text */}
+              <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
                 <span
-                  className="font-medium cursor-pointer hover:underline"
+                  className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
                   Table of Content
                 </span>
                 <span className="opacity-60">›</span>
-                <span className="truncate">
-                  Referred Account Holder Onboarding Journey
+                <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
+                  Supporting Your Referred Account Holders (AHs)
                 </span>
-              </div>
+              </nav>
             </div>
           </section>
+
 
           {/* ---------- Section 1: FAQs ---------- */}
           <section id="faqs" className="scroll-mt-28">

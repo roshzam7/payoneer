@@ -658,7 +658,6 @@ export default function ResellerLandingPage() {
 
           {/* key-features */}
           <section
-            id="key-features"
             className="scroll-mt-10 sm:py-10 px-4 sm:px-6 mb-0 sm:mb-20"
           >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
@@ -707,6 +706,14 @@ export default function ResellerLandingPage() {
               </div>
             </div>
             <div className="pointer-events-none absolute inset-0" />
+          </section>
+           <section
+            id="key-features"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+          >
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+              Coming Soon..
+            </h2>
           </section>
         </main>
       </div>

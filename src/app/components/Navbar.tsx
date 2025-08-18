@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../assets/Logo.png";
 
 const Navbar: React.FC = () => {
@@ -13,16 +14,18 @@ const Navbar: React.FC = () => {
           <div className="flex justify-between items-center h-16">
             {/* Left: Logo */}
             <div className="flex items-center space-x-4">
-              <Image src={Logo} alt="Logo" width={100} height={30} />
+              <Link href="/">
+                <Image src={Logo} alt="Logo" width={100} height={30} />
+              </Link>
 
               {/* Desktop Links */}
               <div className="hidden md:flex space-x-6 text-sm text-black font-medium">
-                <a href="#" className="hover:text-black">
+                <Link href="/" className="hover:text-black">
                   Home
-                </a>
-                <a href="#" className="hover:text-black">
+                </Link>
+                <Link href="/resource-hub" className="hover:text-black">
                   Resource hub
-                </a>
+                </Link>
                 <div className="relative group">
                   <button className="flex items-center space-x-1 hover:text-black">
                     <span>Forum</span>
@@ -41,18 +44,18 @@ const Navbar: React.FC = () => {
                     </svg>
                   </button>
                   <div className="absolute left-0 mt-2 w-32 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none group-hover:pointer-events-auto">
-                    <a
-                      href="#"
+                    <Link
+                      href="/forum/option1"
                       className="block px-4 py-2 text-sm hover:bg-gray-100"
                     >
                       Option 1
-                    </a>
-                    <a
-                      href="#"
+                    </Link>
+                    <Link
+                      href="/forum/option2"
                       className="block px-4 py-2 text-sm hover:bg-gray-100"
                     >
                       Option 2
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -89,21 +92,27 @@ const Navbar: React.FC = () => {
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="md:hidden mt-2 space-y-2 text-sm text-black font-medium pb-4">
-              <a href="#" className="block hover:text-black">
+              <Link href="/" className="block hover:text-black">
                 Home
-              </a>
-              <a href="#" className="block hover:text-black">
+              </Link>
+              <Link href="/resource-hub" className="block hover:text-black">
                 Resource hub
-              </a>
+              </Link>
               <div>
                 <span className="block hover:text-black">Forum</span>
                 <div className="ml-4 mt-1 space-y-1">
-                  <a href="#" className="block hover:text-black text-gray-600">
+                  <Link
+                    href="/forum/option1"
+                    className="block hover:text-black text-gray-600"
+                  >
                     Option 1
-                  </a>
-                  <a href="#" className="block hover:text-black text-gray-600">
+                  </Link>
+                  <Link
+                    href="/forum/option2"
+                    className="block hover:text-black text-gray-600"
+                  >
                     Option 2
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
