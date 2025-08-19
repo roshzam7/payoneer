@@ -201,10 +201,20 @@ export default function ResellerLandingPage() {
                   with competitors, Wio and 3S Money.
                 </p>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4 space-x-4">
-                  <a className="text-blue-600 hover:underline" href="">
+           <a
+                    href="/files/Payoneer_wio_Battlecard.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
                     View Payoneer vs Wio Battlecard
                   </a>
-                  <a className="text-blue-600 hover:underline" href="">
+                          <a
+                    href="/files/Payoneer_3s_money_battlecard.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
                     View Payoneer vs 3S Money Battlecard
                   </a>
                 </p>
