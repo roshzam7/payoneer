@@ -254,7 +254,7 @@ export default function ResellerLandingPage() {
                   other design variations.
                 </p>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a className="text-blue-600 hover:underline" href="">
+                  <a className="text-blue-600 hover:underline" target="_blank" href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview">
                     View Payoneer Design Guidelines
                   </a>
                 </p>

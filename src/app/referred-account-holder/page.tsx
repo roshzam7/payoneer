@@ -390,25 +390,18 @@ export default function ResellerLandingPage() {
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-              Account Sign-Up Process for Referred Account Holders
+              Standard Sign-up Flow
             </p>
-
-            {/* Sub-heading + link */}
+             <p className="text-gray-900 text-[23px] font-semibold">
+                Request for your unique onboarding link at support@payoneerpartnerships.com
+             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[23px] font-semibold">
-                Standard Registration FLOW
+                Step-by-Step Onboarding Guides for Clients:
               </p>
-              <a
-                href="#"
-                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-              >
-                Partner Account Opening Link
-              </a>
             </div>
-
-            <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
-              View the guided steps below to learn how to get onboarded to
-              Payoneer with Hasoffer.
+             <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
+              Once you sign up on Partner link, Your Account Manager would be able to share a customized link for you
             </p>
 
             {(() => {
@@ -472,16 +465,13 @@ export default function ResellerLandingPage() {
                     <p className="text-gray-900 text-[48px] font-semibold">
                       CLM Flow
                     </p>
+                    <p className="text-gray-900 text-[23px] font-semibold">
+                        Request for your unique onboarding link at support@payoneerpartnerships.com
+                      </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
                       <p className="text-gray-900 text-[23px] font-semibold">
                         Step-by-Step Onboarding Guides for Clients:
                       </p>
-                      <a
-                        href="#"
-                        className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-                      >
-                        Partner Account Opening Link
-                      </a>
                     </div>
                     <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
                       View the step-by-step guide for onboarding and
