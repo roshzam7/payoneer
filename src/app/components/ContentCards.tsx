@@ -47,7 +47,7 @@ const cards: Card[] = [
         label: "Marketing & Reselling Guidelines",
         slug: "reselling-guidelines",
       },
-      { label: "Referred AH Onboarding Overview", slug: "onboarding-overview" },
+      { label: "Customer Personas", slug: "onboarding-overview" },
       
       { label: "Co-Branded or Dedicated Landing Pages", slug: "onboarding-overview" },
 
