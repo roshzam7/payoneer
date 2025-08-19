@@ -24,6 +24,10 @@ const topics = [
     title: "Referred AH Onboarding Overview",
     slug: "onboarding-overview",
   },
+    {
+    title: "Co-Branded or Dedicated Landing Pages",
+    slug: "onboarding-overview",
+  },
 ];
 
 export default function ResellerLandingPage() {
@@ -163,7 +167,12 @@ export default function ResellerLandingPage() {
                   solutions, and step-by-step guidance on opening an account.
                 </p>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a className="text-blue-600 hover:underline" href="">
+                 <a
+                    href="/files/Payoneer-Global-Payments-Training-Document.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
                     View Payoneer Training Document
                   </a>
                 </p>
@@ -174,10 +183,8 @@ export default function ResellerLandingPage() {
                   Training Webinars & Certifications
                 </h3>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  This certificate recognizes Authorised Channel Partners of
-                  Payoneer. It confirms your status as a trusted partner,
-                  authorized to promote Payoneer&apos;s global payment
-                  solutions.
+                  This certificate recognizes Authorised Channel Partners of Payoneer. It confirms your status as a trusted partner, authorized to promote Payoneer&apos;s global payment solutions. <br />
+                  Please find a sample certificate, and to request one, please raise a request at support@payoneerpartnerships.com.
                 </p>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   <a

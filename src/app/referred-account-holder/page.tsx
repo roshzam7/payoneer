@@ -545,82 +545,70 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* 2 */}
-          <section id="kyc-process-explained" className="scroll-mt-28">
+              <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               {/* Left column (Text) */}
               <div className="mt-0">
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
-                  Some Additional KYC Requirements
+                  Additional KYC Requirements
                 </h3>
-
+                <p className="text-[20px] sm:text-[35px]  text-gray-900 mb-4 mt-10">
+                  View this section of the guide to know which documents, links,
+                  and screenshots are needed as part of the onboarding process.
+                  You&apos;ll find clear explanations for each requirement,
+                  along with examples of acceptable formats, to simplify the
+                  process and avoid delays.
+                </p>
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Affiliation URL / Screenshot showing affiliation
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  This requirement is related to LOB verification.
-                </p>
+
                 <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  URL/Screenshot needs to be from the AH&apos;s website, where
-                  they promote their services.
+                  The URL or screenshot should come from the account
+                  holder&apos;s official website where their services are
+                  promoted. If the account holder does not have a website, they
+                  may provide a link to their social media page or freelancer
+                  platform profile, such as their Upwork page. The screenshot
+                  must clearly show the customer&apos;s profile or account,
+                  including their username or store name, the website URL or
+                  logo, and profile details such as full name, phone number, and
+                  email address. If they are also asked to provide a URL
+                  affiliation, this should be a link to a page within the
+                  account holder&apos;s website demonstrating that they can edit
+                  the site and add details to it. In some cases, an affiliation
+                  screenshot may be accepted instead of a live link. Affiliation
+                  screenshots should be captured and saved using Autologger.
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If the AH doesn&apos;t have a website, they can provide the
-                  social media or freelancer platform page where they promote
-                  themselves (e.g. Upwork).
-                </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  Requirement: Screenshot of the customer&apos;s profile/account
-                  showing user name/store name, URL or logo of website and
-                  profile details of AH such as full name, Phone number, email
-                  address
-                </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If they were also asked to provide a URL affiliation, then
-                  they should provide a link to a page within AH&apos;s website,
-                  basically showing that AH has the ability to edit the website
-                  and add details to it. The affiliation URL can sometimes be
-                  accepted in the form of a screenshot.{" "}
-                </p>
+
                 <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
                   <a className="text-blue-600" href="">
                     Autologger 7650
                   </a>{" "}
                 </p>
-                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  <a className="text-blue-600" href="">
-                    Text to A
-                  </a>{" "}
-                </p>
+
                 {/* Business Profile */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-                  Business Profile / Merchant Application Form (MAF)
+                  Business profile / Merchant application form (MAF)
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  The Business Profile it is also called Merchant application
-                  form (MAF) and required for LOB verification when an AH is
-                  receiving payments via the Payment Request Service.
-                </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  AHs will be requested to provide their Business profile when
-                  they opt-in for the PRQ service
+                  The Business Profile, also known as the Merchant Application
+                  Form (MAF), is required for LOB verification when an account
+                  holder receives payments through the Payment Request Service.
+                  Account holders will be asked to provide their Business
+                  Profile when they choose to opt in to the PRQ service.{" "}
                 </p>
                 {/* Held ID */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   {" "}
                   Held ID
                 </p>
-                <p className=" text-[#878787] text-sm mt-6 text-[12px]">
-                  This requirements is related to identity verification.{" "}
-                </p>
                 <p className=" text-[#878787] text-sm mt-2 text-[12px]sm:text-[17px] sm:text-[17px]">
-                  The Held ID photo must show the AH holding a piece of paper
-                  with the day&apos;s date on it.{" "}
-                </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  The picture should be clear and easy to see the paper that the
-                  AH is holding, with their face unobscured and make sure the
-                  picture is not mirrored or reversed.
+                  The held ID photo must show the account holder holding a piece
+                  of paper with the current date written on it. The photo should
+                  be clear, with the paper and the account holder&apos;s face
+                  fully visible and unobstructed. Make sure the image is not
+                  mirrored or reversed.
                 </p>
                 <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
@@ -633,17 +621,23 @@ export default function ResellerLandingPage() {
                   Invoice
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px]  sm:text-[17px]">
-                  This requirement is related to LOB verification.
+                  The account holder must provide the invoice they sent to their
+                  client for the relevant payment. The invoice should include:
+                  <br />
+                  <br />
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px]  sm:text-[17px]">
-                  The AH needs to provide the invoice they have sent to their
-                  client and that is related to the payment. It must include:
-                </p>
+
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400  sm:text-[17px]">
-                  <li>Information about the services provided </li>
-                  <li>The names of the buyer (payer) and seller (AH) </li>
-                  <li>The amount for payment</li>
+                  <li>details of the services provided </li>
+                  <li>the names of both the buyer (payer) and</li>
+                  <li>the seller (account holder), and the payment amount. </li>
                 </ul>
+                <p className=" text-[#878787] text-sm mt-6 text-[12px]  sm:text-[17px]">
+                  Please note that each business uses its own invoice format, so
+                  there is no single example of a “typical” invoice. The
+                  contents will also vary from one business to another, so use
+                  your best judgment when reviewing an invoice.
+                </p>
                 {/* Invoice For Alias Review */}
 
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
@@ -651,71 +645,74 @@ export default function ResellerLandingPage() {
                   Invoice (For Alias Review)
                 </p>
                 <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  Invoice is the document issued by a seller with the list of
-                  goods or services provided.
+                  A valid invoice must include the following elements:
                 </p>
-                <p className=" text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  The valid document must contain the original seller&apos;s
-                  name, the buyers name and the general description of the
-                  products. The document must show a connection to customer:
+
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>The original seller&apos;s name</li>
+                  <li>The buyer&apos;s name</li>
+                  <li>A general description of the products</li>
+                </ul>
+
+                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  The document must also show a connection to the customer by
+                  meeting the following criteria
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-                  <li>Alias name is matching</li>
-                  <li>
-                    One of the affiliation items matched with BO information:
-                    <ul className="list-disc list-inside pl-4 space-y-1">
-                      <li>Verified Phone number</li>
-                      <li>Customer&apos;s name</li>
-                      <li>Email address</li>
-                    </ul>
-                  </li>
+                  <li>The alias name matches</li>
                 </ul>
+                <p className=" text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  At least one of the affiliation items matches the beneficial
+                  owner&apos;s (BO) information:
+                </p>
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>Verified phone number</li>
+                  <li>Customer&apos;s name</li>
+                  <li>Email address</li>
+                </ul>
+
                 {/* Visual identity verification (Selfie) */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   {" "}
                   Visual identity verification (Selfie)
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
-                  This requirements is related to identity verification.
+                  Payoneer accepts selfies as part of &apos;Visual Identity
+                  Verification.&apos; When a selfie requirement is opened, there
+                  are also two additional sub-requirements:
                 </p>
-                <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
-                  Payoneer accepts Selfies as &apos;Visual Identity
-                  Verification&apos;. When a selfie requirement is opened, there
-                  are also 2 other requirements:
-                </p>
+
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>Internal Selfie Information </li>
                   <li>ID </li>
                 </ul>
                 <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
-                  Please note that they are part of the overall selfie
-                  requirement and we should not manually upload anything to
-                  these requirements or review (give review status) to them.
+                  Please note that these are part of the overall selfie
+                  requirement and should not be manually uploaded or reviewed;
+                  they must be completed by the account holder and reviewed only
+                  by KYC.
                 </p>
-                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-                  {" "}
-                  They should be completed by AH and reviewed by KYC only.
-                </p>
+
                 <p className=" text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
-                  How submission looks like for customer:
+                  What submission will look like to the customer:
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   1. When Selfie is requested, it appears as a requirement
-                  called &apos;Visual identity verification&apos;{" "}
+                  called &apos;Visual identity verification&apos;
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   2. After a customer clicks on it, they are directed to a
                   &apos;Selfie submission wizard&apos;
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
-                  3. They have to choose the country and type of their ID
+                  3. Here, they select their country and the type of their ID
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
-                  4. Then they have to make a photo of their ID (if required for
-                  the document type & country - both sides) 
+                  4. Next, they take a photo of their ID (as required for the
+                  document type & country)
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
-                  5. And finally they have to make a selfie
+                  5. Finally, they take a selfie
                 </p>
                 <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
@@ -724,10 +721,10 @@ export default function ResellerLandingPage() {
                   </a>
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If the customer would like to opt out from the service, refer
-                  to the How can an AH opt-out of the &apos;Selfie&apos;
-                  requirement (Visual Identity Verification) section in the How
-                  to handle documents guide.
+                  If the account holder wishes to opt out of the service, refer
+                  to the “How can an account holder opt out of the
+                  &apos;Selfie&apos; requirement &apos;(Visual Identity Verification)&apos;
+                  section in the How to handle documents guide.
                 </p>
               </div>
             </div>
