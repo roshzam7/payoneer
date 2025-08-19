@@ -10,6 +10,7 @@ import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 
+
 const topics = [
   {
     title: "Sales Enablement Tools",
@@ -179,8 +180,13 @@ export default function ResellerLandingPage() {
                   solutions.
                 </p>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a className="text-blue-600 hover:underline" href="">
-                    Download Certificate
+                  <a
+                    href="/files/Partnership_Certificate-Sample.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    Sample Certificate
                   </a>
                 </p>
 
