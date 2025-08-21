@@ -25,8 +25,43 @@ import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
 
+const tutorials = [
+  {
+    title:
+      "Get paid with Payoneer – Learn how to simplify getting paid with Payoneer",
+    desc: "Now that you’ve registered with Payoneer, you’ll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you’re always in control.",
+    link: "#",
+    image: "/placeholder.png",
+  },
+  {
+    title:
+      "Payoneer Account Dashboard – Introduction to basic features & functions",
+    desc: "Now that you’ve registered with Payoneer, you’ll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
+    link: "#",
+    image: "/placeholder.png",
+  },
+  {
+    title:
+      "Convert Currencies with Payoneer – Learn how to convert currencies seamlessly at competitive rates ",
+    desc: "Now that you’ve registered with Payoneer, you’ll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
+    link: "#",
+    image: "/placeholder.png",
+  },
+  {
+    title:
+      "Adding funds to your account from your bank account – Keep your business moving ",
+    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you’re always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays. ",
+    link: "#",
+    image: "/placeholder.png",
+  },
+  {
+    title: "Make Global Payments with Confidence and Ease",
+    desc: "With Payoneer, it’s easy to make secure, fast payments to your suppliers and contractors directly to their bank account – or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
+    link: "#",
+    image: "/placeholder.png",
+  },
+];
 
-// Topics for sidebar navigation
 const topics = [
   {
     title: "Account Sign-Up Process for Referred Account Holders",
@@ -37,7 +72,11 @@ const topics = [
     slug: "clm-flow",
   },
   {
-    title: "KYC Process Explained",
+    title: "Additional KYC Requirements",
+    slug: "kyc-process-explained",
+  },
+  {
+    title: "Get started with Payoneer",
     slug: "kyc-process-explained",
   },
 ];
@@ -394,16 +433,18 @@ export default function ResellerLandingPage() {
             <p className="text-gray-900 text-[48px] font-semibold">
               Standard Sign-up Flow
             </p>
-             <p className="text-gray-900 text-[23px] font-semibold">
-                Request for your unique onboarding link at support@payoneerpartnerships.com
-             </p>
+            <p className="text-gray-900 text-[23px] font-semibold">
+              Request for your unique onboarding link at
+              support@payoneerpartnerships.com
+            </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[23px] font-semibold">
                 Step-by-Step Onboarding Guides for Clients:
               </p>
             </div>
-             <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
-              Once you sign up on Partner link, Your Account Manager would be able to share a customized link for you
+            <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
+              Once you sign up on Partner link, Your Account Manager would be
+              able to share a customized link for you
             </p>
 
             {(() => {
@@ -412,7 +453,7 @@ export default function ResellerLandingPage() {
               return (
                 <>
                   {/* First Half */}
- {/* First Half */}
+                  {/* First Half */}
                   {steps.slice(0, splitIndex).map((section, idx) => (
                     <div
                       key={idx}
@@ -485,8 +526,9 @@ export default function ResellerLandingPage() {
                       CLM Flow
                     </p>
                     <p className="text-gray-900 text-[23px] font-semibold">
-                        Request for your unique onboarding link at support@payoneerpartnerships.com
-                      </p>
+                      Request for your unique onboarding link at
+                      support@payoneerpartnerships.com
+                    </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
                       <p className="text-gray-900 text-[23px] font-semibold">
                         Step-by-Step Onboarding Guides for Clients:
@@ -570,7 +612,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* 2 */}
-              <section id="kyc-process-explained" className="scroll-mt-28">
+          <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               {/* Left column (Text) */}
               <div className="mt-0">
@@ -741,20 +783,185 @@ export default function ResellerLandingPage() {
                 </p>
                 <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
-                    How to submit a Selfie (Visual Identity
-                    Verification)
+                    How to submit a Selfie (Visual Identity Verification)
                   </a>
                 </p>
                 <p className=" text-[#878787] text-xs sm:text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the account holder wishes to opt out of the service, refer
                   to the “How can an account holder opt out of the
-                  &apos;Selfie&apos; requirement &apos;(Visual Identity Verification)&apos;
-                  section in the 
+                  &apos;Selfie&apos; requirement &apos;(Visual Identity
+                  Verification)&apos; section in the&nbsp;
                   <a className="text-blue-600" href="">
                     How to handle documents guide
                   </a>
                   .
                 </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Column with heading + first card */}
+              <div className="flex flex-col gap-6 md:mt-6">
+                {/* Heading */}
+                <div className="max-w-3xl">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                    Get started with Payoneer
+                  </h2>
+                  <p className="mt-4 text-gray-600 text-lg">
+                    An overview of Payoneer’s features, including payment
+                    collection, currency conversion, account funding, and global
+                    payouts—helping referred customers activate and grow with
+                    their new account.
+                  </p>
+                </div>
+
+                {/* First Card */}
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {tutorials[0].title}
+                    </h3>
+                    <p className="text-gray-600 text-[16px] mb-4">
+                      {tutorials[0].desc}
+                    </p>
+                    <a
+                      href={tutorials[0].link}
+                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                    >
+                      View the tutorial video
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
+                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
+                      <Image
+                        src={tutorials[0].image}
+                        alt={tutorials[0].title}
+                        width={400}
+                        height={300}
+                        className="rounded-md object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* 4th card */}
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {tutorials[3].title}
+                    </h3>
+                    <p className="text-gray-600 text-[16px] mb-4">
+                      {tutorials[3].desc}
+                    </p>
+                    <a
+                      href={tutorials[2].link}
+                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                    >
+                      View the tutorial video
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
+                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
+                      <Image
+                        src={tutorials[3].image}
+                        alt={tutorials[3].title}
+                        width={400}
+                        height={300}
+                        className="rounded-md object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-6">
+                {/* Second Card */}
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {tutorials[1].title}
+                    </h3>
+                    <p className="text-gray-600 text-[16px] mb-4">
+                      {tutorials[1].desc}
+                    </p>
+                    <a
+                      href={tutorials[1].link}
+                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                    >
+                      View the tutorial video
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
+                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
+                      <Image
+                        src={tutorials[1].image}
+                        alt={tutorials[1].title}
+                        width={400}
+                        height={300}
+                        className="rounded-md object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                {/* 3 Card */}
+
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {tutorials[2].title}
+                    </h3>
+                    <p className="text-gray-600 text-[16px] mb-4">
+                      {tutorials[2].desc}
+                    </p>
+                    <a
+                      href={tutorials[2].link}
+                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                    >
+                      View the tutorial video
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
+                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
+                      <Image
+                        src={tutorials[2].image}
+                        alt={tutorials[2].title}
+                        width={400}
+                        height={300}
+                        className="rounded-md object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* 5 Card */}
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
+                  <div className="p-6 flex flex-col flex-1">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                      {tutorials[4].title}
+                    </h3>
+                    <p className="text-gray-600 text-[16px] mb-4">
+                      {tutorials[4].desc}
+                    </p>
+                    <a
+                      href={tutorials[4].link}
+                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                    >
+                      View the tutorial video
+                    </a>
+                  </div>
+                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
+                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
+                      <Image
+                        src={tutorials[4].image}
+                        alt={tutorials[4].title}
+                        width={400}
+                        height={300}
+                        className="rounded-md object-cover"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
