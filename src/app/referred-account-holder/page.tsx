@@ -577,7 +577,7 @@ export default function ResellerLandingPage() {
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
                   Additional KYC Requirements
                 </h3>
-                <p className="text-[20px] sm:text-[35px]  text-gray-900 mb-4 mt-10">
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   View this section of the guide to know which documents, links,
                   and screenshots are needed as part of the onboarding process.
                   You&apos;ll find clear explanations for each requirement,
@@ -637,7 +637,7 @@ export default function ResellerLandingPage() {
                 </p>
                 <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
-                    Text - Request for ID and Held ID
+                    Request for ID and Held ID
                   </a>
                 </p>
                 {/* Invoice */}
@@ -741,7 +741,7 @@ export default function ResellerLandingPage() {
                 </p>
                 <p className="font-semibold text-[#878787] text-xs sm:text-sm mt-6 text-[12px] sm:text-[17px]">
                   <a className="text-blue-600" href="">
-                    Text to customer - How to submit a Selfie (Visual Identity
+                    How to submit a Selfie (Visual Identity
                     Verification)
                   </a>
                 </p>
@@ -749,7 +749,11 @@ export default function ResellerLandingPage() {
                   If the account holder wishes to opt out of the service, refer
                   to the “How can an account holder opt out of the
                   &apos;Selfie&apos; requirement &apos;(Visual Identity Verification)&apos;
-                  section in the How to handle documents guide.
+                  section in the 
+                  <a className="text-blue-600" href="">
+                    How to handle documents guide
+                  </a>
+                  .
                 </p>
               </div>
             </div>
