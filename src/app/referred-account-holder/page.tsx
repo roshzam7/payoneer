@@ -23,6 +23,8 @@ import Content14 from "../assets/images/sectionfour/Content14.png";
 import Content15 from "../assets/images/sectionfour/Content15.png";
 import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
+import expandicon from "../assets/images/expandIcon.png";
+
 
 // Topics for sidebar navigation
 const topics = [
@@ -410,11 +412,13 @@ export default function ResellerLandingPage() {
               return (
                 <>
                   {/* First Half */}
+ {/* First Half */}
                   {steps.slice(0, splitIndex).map((section, idx) => (
                     <div
                       key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10 "
+                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
                     >
+                      {/* Text Content */}
                       <div
                         className={`${
                           idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
@@ -443,8 +447,9 @@ export default function ResellerLandingPage() {
                         {section.note && section.note}
                       </div>
 
+                      {/* Image with Persistent + Button */}
                       <div
-                        className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
+                        className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
                           idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
                         } lg:flex lg:justify-center`}
                       >
@@ -453,9 +458,23 @@ export default function ResellerLandingPage() {
                           alt={section.title}
                           width={300}
                           height={300}
-                          className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                          className="rounded-xl object-cover w-full h-auto cursor-pointer"
                           onClick={() => setModalImage(section.image.src)}
                         />
+
+                        {/* Persistent + button */}
+                        <button
+                          onClick={() => setModalImage(section.image.src)}
+                          className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
+                        >
+                          <Image
+                            src={expandicon}
+                            alt="Expand"
+                            width={20}
+                            height={20}
+                            className="flex-none mt-1"
+                          />
+                        </button>
                       </div>
                     </div>
                   ))}
@@ -485,6 +504,7 @@ export default function ResellerLandingPage() {
                       key={idx}
                       className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
                     >
+                      {/* Text Content */}
                       <div
                         className={`${
                           idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
@@ -513,8 +533,9 @@ export default function ResellerLandingPage() {
                         {section.note && section.note}
                       </div>
 
+                      {/* Image with Persistent + Button */}
                       <div
-                        className={`w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
+                        className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
                           idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
                         } lg:flex lg:justify-center`}
                       >
@@ -523,9 +544,23 @@ export default function ResellerLandingPage() {
                           alt={section.title}
                           width={300}
                           height={300}
-                          className="rounded-xl object-cover w-full h-auto cursor-pointer hover:shadow-lg transition-shadow"
+                          className="rounded-xl object-cover w-full h-auto cursor-pointer"
                           onClick={() => setModalImage(section.image.src)}
                         />
+
+                        {/* Persistent + button */}
+                        <button
+                          onClick={() => setModalImage(section.image.src)}
+                          className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
+                        >
+                          <Image
+                            src={expandicon}
+                            alt="Expand"
+                            width={20}
+                            height={20}
+                            className="flex-none mt-1"
+                          />
+                        </button>
                       </div>
                     </div>
                   ))}

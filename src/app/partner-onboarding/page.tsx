@@ -9,6 +9,8 @@ import Content from "../assets/images/gettingstarted/Content.png";
 import Content2 from "../assets/images/gettingstarted/Content2.png";
 import Content3 from "../assets/images/gettingstarted/Content3.png";
 import Checkicon from "../assets/images/Check-icon.svg";
+import expandicon from "../assets/images/expandIcon.png";
+
 
 const topics = [
   { title: "How to Join the Program", slug: "How-to-Join" },
@@ -256,7 +258,14 @@ export default function ResellerLandingPage() {
                     onClick={() => setModalImage(section.image.src)}
                     className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
                   >
-                    +
+                  <Image
+                          src={expandicon}
+                          alt="Check"
+                          width={20}
+                          height={20}
+                          className="flex-none mt-1"
+                        />
+
                   </button>
                 </div>
               </div>
