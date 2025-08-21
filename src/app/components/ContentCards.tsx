@@ -55,10 +55,10 @@ const cards: Card[] = [
     viewAllHref: "/partner-activation",
   },
   {
-    title: "Referred Account Holder (AH) Onboarding Journey",
+    title: "Referred Account Holder Onboarding Journey",
     items: [
       {
-        label: "Account Sign-Up Process for Referred Account Holders",
+        label: "Standard Sign-up Flow",
         slug: "referred-account-holders",
       },
       { label: "CLM Flow", slug: "clm-flow" },
@@ -67,7 +67,7 @@ const cards: Card[] = [
     viewAllHref: "/referred-account-holder",
   },
   {
-    title: "Supporting Your Referred Account Holders (AHs)",
+    title: "Support Center",
     items: [
       { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
       {

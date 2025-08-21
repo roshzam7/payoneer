@@ -68,6 +68,9 @@ import checkIcon from "../assets/images/Check-icon.svg";
 import resellerImg from "../assets/images/ResellerProgram-img.png";
 import resellerPhasesImg from "../assets/images/Reseller-Program-Phases-img.png";
 import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
+import marketplaces from "../assets/images/marketplaces-icon.svg";
+import transaction from "../assets/images/transaction-icon.svg";
+
 import resellerCardBg from "../assets/images/Reseller-card-bg.png";
 
 // Key features icons
@@ -202,7 +205,7 @@ const partnerCards = [
     ],
   },
   {
-    image: expandCrossBorder,
+    image: transaction,
     title: "Unlock new revenue streams",
     link: "Generate new revenue streams via tailored revenue-share model",
     bullets: [
@@ -211,7 +214,7 @@ const partnerCards = [
     ],
   },
   {
-    image: expandCrossBorder,
+    image: marketplaces,
     title: "Grow your international brand",
     link: "Leverage Payoneer's resources and reach to grow your business",
     bullets: [
@@ -671,7 +674,7 @@ export default function ResellerLandingPage() {
           <section
             className="scroll-mt-28 relative py-0 sm:py-10 bg-cover bg-center"
       style={{
-        backgroundImage: `url(${resellerCardBg})`,
+    backgroundImage: `url(${resellerCardBg.src})`,
       }}
           >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
