@@ -80,7 +80,7 @@ export default function ResellerLandingPage() {
           onClick={() => setModalImage(null)}
         >
           <div
-            className="relative max-w-3xl w-full p-4"
+            className="relative max-w-3xl w-full p-4 flex justify-center"
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -94,7 +94,7 @@ export default function ResellerLandingPage() {
               alt="Preview"
               width={800}
               height={800}
-              className="rounded-xl object-contain w-full h-auto"
+              className="rounded-xl object-contain max-h-[80vh] w-auto"
             />
           </div>
         </div>
@@ -237,7 +237,7 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Image with modal trigger */}
-                               <div
+                <div
                   className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
                     idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
                   } lg:flex lg:justify-center`}
@@ -250,6 +250,7 @@ export default function ResellerLandingPage() {
                     className="rounded-xl object-cover w-full h-auto cursor-pointer"
                     onClick={() => setModalImage(section.image.src)}
                   />
+
                   {/* Persistent + button */}
                   <button
                     onClick={() => setModalImage(section.image.src)}
@@ -353,7 +354,7 @@ export default function ResellerLandingPage() {
               </ul>
             </div>
           </div>
-                    <section
+          <section
             id="Understanding-Partner-Tiers"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
           >
