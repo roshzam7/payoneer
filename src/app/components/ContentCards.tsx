@@ -62,7 +62,7 @@ const cards: Card[] = [
         slug: "referred-account-holders",
       },
       { label: "CLM Flow", slug: "clm-flow" },
-      { label: "KYC Process", slug: "kyc-process-explained" },
+      { label: "Additional KYC Requirements", slug: "kyc-process-explained" },
       { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
 
     ],

@@ -748,13 +748,13 @@ export default function ResellerLandingPage() {
 
       <div className="flex">
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
-          <h3 className="text-[25px] text-black font-semibold mb-4">Topics</h3>
-          <nav className="space-y-2">
+          <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
+          <nav className="space-y-3">
             {topics.map((topic) => (
               <button
                 key={topic.slug}
                 onClick={() => scrollTo(topic.slug)}
-                className={`block text-left w-full px-4 py-2 rounded-full text-[10px] transition border ${
+                className={`block text-left w-full px-4 py-2 rounded-full text-xs sm:text-sm transition border ${
                   active === topic.slug
                     ? "bg-[#EFEFEF] text-[#878787] border-white"
                     : "bg-white text-gray-800 border-gray-200 hover:bg-gray-100"

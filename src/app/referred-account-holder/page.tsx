@@ -64,7 +64,7 @@ const tutorials = [
 
 const topics = [
   {
-    title: "Account Sign-Up Process for Referred Account Holders",
+    title: "Standard Sign-up Flow",
     slug: "referred-account-holders",
   },
   {
