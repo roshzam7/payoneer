@@ -77,7 +77,7 @@ const topics = [
   },
   {
     title: "Get started with Payoneer",
-    slug: "kyc-process-explained",
+    slug: "get-started-with-payoneer",
   },
 ];
 
@@ -800,7 +800,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+          <section id="get-started-with-payoneer" className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Column with heading + first card */}
               <div className="flex flex-col gap-6 md:mt-6">
