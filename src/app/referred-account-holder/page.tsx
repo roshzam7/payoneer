@@ -828,7 +828,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[0].link}
-                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
                     </a>
