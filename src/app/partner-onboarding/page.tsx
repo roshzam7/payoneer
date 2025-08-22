@@ -182,9 +182,22 @@ export default function ResellerLandingPage() {
                 href="#"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
               >
-                View Contracting & Legal Agreements
+                
               </a>
             </div>
+             <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
+              After sign-up you will receive partnership contract. Please find a sample contract below:
+            </p>
+            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
+                <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
+                >
+                View Contracting & Legal Agreements
+                </a>
+            </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Reseller Sign-Up Process
             </p>
