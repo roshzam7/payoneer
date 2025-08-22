@@ -622,7 +622,7 @@ export default function ResellerLandingPage() {
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
                   Additional KYC Requirements
                 </h3>
-                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+            <p className="mt-2 text-gray-900 text-[17px]">
                   View this section of the guide to know which documents, links,
                   and screenshots are needed as part of the onboarding process.
                   You&apos;ll find clear explanations for each requirement,
