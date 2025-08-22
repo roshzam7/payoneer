@@ -24,41 +24,48 @@ import Content15 from "../assets/images/sectionfour/Content15.png";
 import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
+import GetPaidWithPayoneer from "../assets/images/GetPaidWithPayoneer.png";
+import PayoneerAccountDashboard from "../assets/images/PayoneerAccountDashboard.png";
+import ConvertCurrencies from "../assets/images/ConvertCurrencies.png";
+import Addingfundstoyouraccount from "../assets/images/Addingfundstoyouraccount.png";
+import MakeGlobalPayments from "../assets/images/MakeGlobalPayments.png";
+
+
 
 const tutorials = [
   {
     title:
-      "Get paid with Payoneer – Learn how to simplify getting paid with Payoneer",
-    desc: "Now that you’ve registered with Payoneer, you’ll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you’re always in control.",
-    link: "#",
-    image: "/placeholder.png",
+      "Get paid with Payoneer - Learn how to simplify getting paid with Payoneer",
+    desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
+    link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
+    image: GetPaidWithPayoneer,
   },
   {
     title:
-      "Payoneer Account Dashboard – Introduction to basic features & functions",
-    desc: "Now that you’ve registered with Payoneer, you’ll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
-    link: "#",
-    image: "/placeholder.png",
+      "Payoneer Account Dashboard - Introduction to basic features & functions",
+    desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
+    link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
+    image: PayoneerAccountDashboard,
   },
   {
     title:
-      "Convert Currencies with Payoneer – Learn how to convert currencies seamlessly at competitive rates ",
-    desc: "Now that you’ve registered with Payoneer, you’ll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
-    link: "#",
-    image: "/placeholder.png",
+      "Convert Currencies with Payoneer - Learn how to convert currencies seamlessly at competitive rates",
+    desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
+    link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
+    image: ConvertCurrencies,
   },
   {
     title:
-      "Adding funds to your account from your bank account – Keep your business moving ",
-    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you’re always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays. ",
-    link: "#",
-    image: "/placeholder.png",
+      "Adding funds to your account from your bank account - Keep your business moving",
+    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
+    link: "#https://www.youtube.com/watch?si=eD_Ny7whpX9rMUvH&v=EcDhegY1v_Y&feature=youtu.be",
+    image: Addingfundstoyouraccount,
   },
   {
     title: "Make Global Payments with Confidence and Ease",
-    desc: "With Payoneer, it’s easy to make secure, fast payments to your suppliers and contractors directly to their bank account – or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
-    link: "#",
-    image: "/placeholder.png",
+    desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
+    link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
+    image: MakeGlobalPayments,
   },
 ];
 
@@ -800,7 +807,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section id="get-started-with-payoneer" className="scroll-mt-28 max-w-6xl mx-auto px-4 sm:px-6 py-16">
+          <section id="get-started-with-payoneer" className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Column with heading + first card */}
               <div className="flex flex-col gap-6 md:mt-6">
