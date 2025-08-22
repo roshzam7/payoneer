@@ -417,7 +417,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Getting Started: Partner Onboarding
+                  Referred Account Holder Onboarding Journey
                 </span>
               </nav>
             </div>
@@ -856,7 +856,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[2].link}
-                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
                     </a>
@@ -887,7 +887,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[1].link}
-                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
                     </a>
@@ -917,7 +917,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[2].link}
-                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
                     </a>
@@ -945,7 +945,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[4].link}
-                      className="text-purple-600 font-semibold hover:underline mt-auto"
+                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
                     </a>

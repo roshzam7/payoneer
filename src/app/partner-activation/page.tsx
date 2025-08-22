@@ -21,12 +21,12 @@ const topics = [
     slug: "reselling-guidelines",
   },
   {
-    title: "Referred AH Onboarding Overview",
-    slug: "onboarding-overview",
+    title: "Customer Personas",
+    slug: "customer-personas",
   },
     {
     title: "Co-Branded or Dedicated Landing Pages",
-    slug: "onboarding-overview",
+    slug: "co-branded-or-dedicated-landing-pages",
   },
 ];
 
@@ -279,15 +279,11 @@ export default function ResellerLandingPage() {
 
                 {/* Personas */}
                 <h2
-                  id="onboarding-overview"
+                  id="customer-personas"
                   className="text-2xl sm:text-4xl font-bold text-gray-900 scroll-mt-24 mt-10 mb-4"
                 >
-                  Referred AH Onboarding Overview
-                </h2>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-2 mb-4">
-                  {" "}
                   Personas
-                </h3>
+                </h2>
                 <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
                   View the customer profiles to gain an understanding of their
                   specific requirements, preferred payment functionalities, and
@@ -376,6 +372,14 @@ export default function ResellerLandingPage() {
                 </div>
               ))}
             </div>
+          </section>
+                   <section
+            id="co-branded-or-dedicated-landing-pages"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+          >
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+              Coming Soon..
+            </h2>
           </section>
         </main>
       </div>
