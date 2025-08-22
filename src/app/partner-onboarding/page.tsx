@@ -189,8 +189,8 @@ export default function ResellerLandingPage() {
               After sign-up you will receive partnership contract. Please find a sample contract below:
             </p>
             <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-                <a
-                href="#"
+             <a
+                href="/files/REFERRAL-MARKETING-AGREEMENT.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
