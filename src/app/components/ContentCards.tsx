@@ -49,7 +49,9 @@ const cards: Card[] = [
       },
       { label: "Customer Personas", slug: "onboarding-overview" },
       
-      { label: "Co-Branded or Dedicated Landing Pages", slug: "onboarding-overview" },
+      { label: "Co-Branded or Dedicated Landing Pages", slug: "co-branded-or-dedicated-landing-pages" },
+       { label: "Payoneer Pricing", slug: "payoneer-pricing" },
+
 
     ],
     viewAllHref: "/partner-activation",

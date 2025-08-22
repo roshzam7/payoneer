@@ -28,6 +28,10 @@ const topics = [
     title: "Co-Branded or Dedicated Landing Pages",
     slug: "co-branded-or-dedicated-landing-pages",
   },
+      {
+    title: "Payoneer Pricing",
+    slug: "payoneer-pricing",
+  },
 ];
 
 export default function ResellerLandingPage() {
