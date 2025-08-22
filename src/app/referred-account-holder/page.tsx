@@ -437,7 +437,7 @@ export default function ResellerLandingPage() {
               Request for your unique onboarding link at
               support@payoneerpartnerships.com
             </p>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
             <p className="mt-2 text-gray-900 text-[23px]">
                 Step-by-Step Onboarding Guides for Clients:
               </p>
@@ -525,12 +525,12 @@ export default function ResellerLandingPage() {
                     <p className="text-gray-900 text-[48px] font-semibold">
                       CLM Flow
                     </p>
-                    <p className="text-gray-900 text-[23px] font-semibold">
+            <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at
                       support@payoneerpartnerships.com
                     </p>
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
-                      <p className="text-gray-900 text-[23px] font-semibold">
+                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
+            <p className="mt-2 text-gray-900 text-[23px]">
                         Step-by-Step Onboarding Guides for Clients:
                       </p>
                     </div>
