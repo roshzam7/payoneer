@@ -24,11 +24,7 @@ import Content15 from "../assets/images/sectionfour/Content15.png";
 import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
-import GetPaidWithPayoneer from "../assets/images/GetPaidWithPayoneer.png";
-import PayoneerAccountDashboard from "../assets/images/PayoneerAccountDashboard.png";
-import ConvertCurrencies from "../assets/images/ConvertCurrencies.png";
-import Addingfundstoyouraccount from "../assets/images/Addingfundstoyouraccount.png";
-import MakeGlobalPayments from "../assets/images/MakeGlobalPayments.png";
+import Footer from "../components/Footer";
 
 
 
@@ -975,6 +971,8 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
+            <Footer />
+
     </div>
   );
 }

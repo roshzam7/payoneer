@@ -10,6 +10,8 @@ import Content2 from "../assets/images/gettingstarted/Content2.png";
 import Content3 from "../assets/images/gettingstarted/Content3.png";
 import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
+import Footer from "../components/Footer";
+
 
 
 const topics = [
@@ -394,6 +396,7 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

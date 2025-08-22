@@ -6,6 +6,7 @@ import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Togglebtn from "../assets/images/toggle-faq.svg";
+import Footer from "../components/Footer";
 
 
 type ListFAQ = {
@@ -731,6 +732,7 @@ export default function ResellerLandingPage() {
   return (
     <div>
       <Navbar />
+      
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
         className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
@@ -1038,6 +1040,6 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
-    </div>
+            <Footer />    </div>
   );
 }

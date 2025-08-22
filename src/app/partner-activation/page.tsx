@@ -9,6 +9,7 @@ import Sectionthree1 from "../assets/images/Sectionthree/Sectionthree1.png";
 import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
+import Footer from "../components/Footer";
 
 
 const topics = [
@@ -66,6 +67,7 @@ export default function ResellerLandingPage() {
   return (
     <div>
       <Navbar />
+
 
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
@@ -387,6 +389,7 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
+    <Footer />
     </div>
   );
 }

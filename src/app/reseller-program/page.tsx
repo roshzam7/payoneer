@@ -9,6 +9,8 @@ import barclays from "../assets/images/globalbanks/barclays.svg";
 import citi from "../assets/images/globalbanks/citi.svg";
 import deutsche from "../assets/images/globalbanks/deutsche-bank.svg";
 import bankLogo1 from "../assets/images/globalbanks/bank-of-america.svg"
+import Footer from "../components/Footer";
+
 
 
 // Local banks
@@ -720,6 +722,8 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
+     <Footer />
+      
     </div>
   );
 }
