@@ -371,7 +371,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Getting Started: Partner Onboarding
+                  Welcome to Payoneer Reseller Program
                 </span>
               </nav>
             </div>
