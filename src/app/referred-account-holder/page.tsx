@@ -45,27 +45,27 @@ const tutorials = [
       "Payoneer Account Dashboard - Introduction to basic features & functions",
     desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
     link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
-    image: "/images/GetPaidWithPayoneer.png",
+    image: "/images/PayoneerAccountDashboard.png",
   },
   {
     title:
       "Convert Currencies with Payoneer - Learn how to convert currencies seamlessly at competitive rates",
     desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
     link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
-    image: "/images/GetPaidWithPayoneer.png",
+    image: "/images/ConvertCurrencies.png",
   },
   {
     title:
       "Adding funds to your account from your bank account - Keep your business moving",
     desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
     link: "#https://www.youtube.com/watch?si=eD_Ny7whpX9rMUvH&v=EcDhegY1v_Y&feature=youtu.be",
-    image: "/images/GetPaidWithPayoneer.png",
+    image: "/images/Addingfundstoyouraccount.png",
   },
   {
     title: "Make Global Payments with Confidence and Ease",
     desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
     link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
-    image: "/images/GetPaidWithPayoneer.png",
+    image: "/images/MakeGlobalPayments.png",
   },
 ];
 
@@ -835,6 +835,7 @@ export default function ResellerLandingPage() {
                     </p>
                     <a
                       href={tutorials[0].link}
+                      target="_blank"
                       className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
                     >
                       View the tutorial video
