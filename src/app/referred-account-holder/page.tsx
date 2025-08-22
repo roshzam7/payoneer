@@ -38,7 +38,7 @@ const tutorials = [
       "Get paid with Payoneer - Learn how to simplify getting paid with Payoneer",
     desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
     link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
-    image: GetPaidWithPayoneer,
+    image: "/images/GetPaidWithPayoneer.png",
   },
   {
     title:
