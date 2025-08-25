@@ -300,15 +300,11 @@ export default function ResellerLandingPage() {
                 <Image
                   src={Sectionthree3}
                   alt="Reseller Program Phases"
-                  width={800}
-                  height={450}
                   className="w-full h-auto rounded-xl mt-4 mb-8"
                 />
                 <Image
                   src={Sectionthree4}
                   alt="Reseller Program Phases"
-                  width={800}
-                  height={450}
                   className="w-full h-auto rounded-xl mt-4 mb-8"
                 />
 
