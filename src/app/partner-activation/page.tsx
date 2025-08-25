@@ -379,7 +379,7 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-                   <section
+           <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
           >
