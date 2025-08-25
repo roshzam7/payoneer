@@ -10,7 +10,7 @@ import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 import Footer from "../components/Footer";
-import Newpage from "../newpage/Newpage";
+import PricingPage from "../newpage/Newpage";
 
 
 const topics = [
@@ -388,7 +388,7 @@ export default function ResellerLandingPage() {
               Coming Soon..
             </h2>
           </section>
-          <Newpage />
+          <PricingPage />
         </main>
       </div>
     <Footer />
