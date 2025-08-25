@@ -809,7 +809,7 @@ export default function ResellerLandingPage() {
               <div className="flex flex-col gap-6 md:mt-6">
                 {/* Heading */}
                 <div className="max-w-3xl">
-                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
+                  <h2 className="text-gray-900 text-[48px] font-semibold">
                     Get started with Payoneer
                   </h2>
                   <p className="mt-4 text-gray-600 text-lg">

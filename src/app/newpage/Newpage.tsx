@@ -1235,7 +1235,7 @@ export default function PricingPage() {
 
             {/* Right side */}
             <div>
-              <span className="inline-block bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
+              <span className="inline-block bg-[#155135] text-white text-xs font-bold px-2 py-1 rounded">
                 29.95 USD
               </span>
               <p className="mt-2 text-gray-600">Annual account fee</p>
@@ -1305,6 +1305,29 @@ export default function PricingPage() {
         >
           <p className="text-gray-600 text-lg leading-relaxed mb-8">
             Last updated on 1st April 2025
+          </p>
+        </section>
+                <section className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center bg-[#fef3eb]">
+          <p className="text-gray-600 text-sm leading-relaxed mb-8">
+            The prices and fees displayed on this page present an estimation
+            based on our most standard and common fee structure, available for
+            majority of the account types in the majority of the regions where
+            our services may be available. Different prices and fees may be
+            applied in different territories, for different account types. The
+            pricing and fees applicable to you are provided for review during
+            account registration and are also available any time from the Fees
+            link in your Payoneer account.
+            <a
+              target="_blank"
+              className="text-blue-600 hover:underline"
+              href="https://login.payoneer.com/?sessionDataKey=36f7faa2d580427591fc54b2930a727d----&state=e98d578a-fdd8-4c0f-9fdc-23569b1c02e8&provider_id=internal&client_id=b3d186db-4e5d-49c8-8a12-5753136af807&redirect_uri=https%3A%2F%2Fmyaccount.brand.domain%2Flogin%2Flogin.aspx&scope=myaccount+openid&response_type=code"
+            >
+              Sign in{" "}
+            </a>
+            to your account to review the most updated fees.
+            <br />
+            Please note that Making a payment with currency conversion is
+            available in permitted jurisdictions only.
           </p>
         </section>
         {/* NOTES */}

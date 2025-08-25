@@ -382,13 +382,15 @@ export default function ResellerLandingPage() {
           </section>
            <section
             id="co-branded-or-dedicated-landing-pages"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
           >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Coming Soon..
             </h2>
           </section>
+          <section id="payoneer-pricing">
           <PricingPage />
+          </section>
         </main>
       </div>
     <Footer />
