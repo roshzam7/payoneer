@@ -10,7 +10,7 @@ import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 import Footer from "../components/Footer";
-import Newpage from "../newpage/page";
+import Newpage from "../newpage/Newpage";
 
 
 const topics = [
