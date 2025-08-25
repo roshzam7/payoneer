@@ -244,14 +244,14 @@ export default function PricingPage() {
               That&apos;s why we work hard to keep our pricing low, and whenever
               possible, completely free.
             </p>
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <a
                 href="#get-started"
                 className="inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold bg-gray-900 text-white hover:bg-black transition"
               >
                 Open your free account
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex justify-center lg:justify-end">

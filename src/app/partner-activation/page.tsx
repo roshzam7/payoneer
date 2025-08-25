@@ -26,14 +26,15 @@ const topics = [
     title: "Customer Personas",
     slug: "customer-personas",
   },
+   {
+    title: "Payoneer Pricing",
+    slug: "payoneer-pricing",
+  },
     {
     title: "Co-Branded or Dedicated Landing Pages",
     slug: "co-branded-or-dedicated-landing-pages",
   },
-      {
-    title: "Payoneer Pricing",
-    slug: "payoneer-pricing",
-  },
+     
 ];
 
 export default function ResellerLandingPage() {
@@ -380,16 +381,17 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-           <section
+
+          <section id="payoneer-pricing">
+          <PricingPage />
+          </section>
+                     <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
           >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Coming Soon..
             </h2>
-          </section>
-          <section id="payoneer-pricing">
-          <PricingPage />
           </section>
         </main>
       </div>

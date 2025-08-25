@@ -48,9 +48,8 @@ const cards: Card[] = [
         slug: "reselling-guidelines",
       },
       { label: "Customer Personas", slug: "onboarding-overview" },
-      
+     { label: "Payoneer Pricing", slug: "payoneer-pricing" },
       { label: "Co-Branded or Dedicated Landing Pages", slug: "co-branded-or-dedicated-landing-pages" },
-       { label: "Payoneer Pricing", slug: "payoneer-pricing" },
 
 
     ],
