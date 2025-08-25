@@ -389,7 +389,6 @@ export default function ResellerLandingPage() {
             </h2>
           </section>
           <Newpage />
-
         </main>
       </div>
     <Footer />
