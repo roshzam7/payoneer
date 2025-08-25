@@ -5,10 +5,8 @@ import { useRouter } from "next/navigation";
 
 // reuse your existing components/assets
 import Navbar from "../components/Navbar";
-import PhoneMockup from "./../assets/Images/pricing-header-1.png.webp";
+import PhoneMockup from "./../assets/images/pricing-header-1.png.webp";
 import bgimage from "../assets/reseller-banner.png";
-import Checkicon from "../assets/images/Check-icon.svg";
-import Footer from "../components/Footer";
 
 type FeeRow = { item: string; fee: string; note?: string };
 type FeeGroup = { title: string; rows: FeeRow[] };
