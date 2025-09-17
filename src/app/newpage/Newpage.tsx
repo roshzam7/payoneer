@@ -1317,13 +1317,9 @@ export default function PricingPage() {
             pricing and fees applicable to you are provided for review during
             account registration and are also available any time from the Fees
             link in your Payoneer account.
-            <a
-              target="_blank"
-              className="text-blue-600 hover:underline"
-              href="https://login.payoneer.com/?sessionDataKey=36f7faa2d580427591fc54b2930a727d----&state=e98d578a-fdd8-4c0f-9fdc-23569b1c02e8&provider_id=internal&client_id=b3d186db-4e5d-49c8-8a12-5753136af807&redirect_uri=https%3A%2F%2Fmyaccount.brand.domain%2Flogin%2Flogin.aspx&scope=myaccount+openid&response_type=code"
-            >
-              Sign in{" "}
-            </a>
+        
+              Sign in 
+            
             to your account to review the most updated fees.
             <br />
             Please note that Making a payment with currency conversion is
