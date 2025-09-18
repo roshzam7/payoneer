@@ -23,12 +23,9 @@ const Navbar: React.FC = () => {
                 <Link href="/" className="hover:text-black">
                   Home
                 </Link>
-                <Link href="/resource-hub" className="hover:text-black">
-                  Resource hub
-                </Link>
                 <div className="relative group">
-                  <button className="flex items-center space-x-1 hover:text-black">
-                    <span>Forum</span>
+                  <button className="flex items-center space-x-1 hover:text-black ">
+                    <span>pages</span>
                     <svg
                       className="w-4 h-4 ml-1"
                       fill="none"
@@ -43,18 +40,36 @@ const Navbar: React.FC = () => {
                       />
                     </svg>
                   </button>
-                  <div className="absolute left-0 mt-2 w-32 bg-white border rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none group-hover:pointer-events-auto">
+                  <div className="absolute left-0 mt-0 w-100 border-0 bg-white  rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none group-hover:pointer-events-auto">
                     <Link
-                      href="/forum/option1"
+                      href="/reseller-program"
                       className="block px-4 py-2 text-sm hover:bg-gray-100"
                     >
-                      Option 1
+                      Welcome to the Payoneer Reseller Program
                     </Link>
                     <Link
-                      href="/forum/option2"
+                      href="/partner-onboarding"
                       className="block px-4 py-2 text-sm hover:bg-gray-100"
                     >
-                      Option 2
+                      Getting Started: Partner Onboarding
+                    </Link>
+                    <Link
+                      href="/partner-activation"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100"
+                    >
+                      Partner Activation & Enablement
+                    </Link>
+                    <Link
+                      href="/referred-account-holder"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100"
+                    >
+                      Referred Account Holder (AH) Onboarding Journey
+                    </Link>
+                    <Link
+                      href="/faqs"
+                      className="block px-4 py-2 text-sm hover:bg-gray-100"
+                    >
+                      Supporting Your Referred Account Holders
                     </Link>
                   </div>
                 </div>
@@ -95,23 +110,38 @@ const Navbar: React.FC = () => {
               <Link href="/" className="block hover:text-black">
                 Home
               </Link>
-              <Link href="/resource-hub" className="block hover:text-black">
-                Resource hub
-              </Link>
               <div>
-                <span className="block hover:text-black">Forum</span>
-                <div className="ml-4 mt-1 space-y-1">
+                <span className="block hover:text-black">pages</span>
+                <div className="ml-0 mt-2 space-y-1">
                   <Link
-                    href="/forum/option1"
-                    className="block hover:text-black text-gray-600"
+                    href="/reseller-program"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100"
                   >
-                    Option 1
+                    Welcome to the Payoneer Reseller Program
                   </Link>
                   <Link
-                    href="/forum/option2"
-                    className="block hover:text-black text-gray-600"
+                    href="/partner-onboarding"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100"
                   >
-                    Option 2
+                    Getting Started: Partner Onboarding
+                  </Link>
+                  <Link
+                    href="/partner-activation"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100"
+                  >
+                    Partner Activation & Enablement
+                  </Link>
+                  <Link
+                    href="/referred-account-holder"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100"
+                  >
+                    Referred Account Holder (AH) Onboarding Journey
+                  </Link>
+                  <Link
+                    href="/faqs"
+                    className="block px-4 py-2 text-sm hover:bg-gray-100"
+                  >
+                    Supporting Your Referred Account Holders
                   </Link>
                 </div>
               </div>

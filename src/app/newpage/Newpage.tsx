@@ -1316,11 +1316,7 @@ export default function PricingPage() {
             applied in different territories, for different account types. The
             pricing and fees applicable to you are provided for review during
             account registration and are also available any time from the Fees
-            link in your Payoneer account.
-        
-              Sign in 
-            
-            to your account to review the most updated fees.
+            link in your Payoneer account. Sign in to your account to review the most updated fees.
             <br />
             Please note that Making a payment with currency conversion is
             available in permitted jurisdictions only.
