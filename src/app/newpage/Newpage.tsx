@@ -470,9 +470,9 @@ export default function PricingPage() {
             </p>
 
             {/* Highlighted text */}
-            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+            {/* <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
               Directly from your Payoneer balance
-            </h3>
+            </h3> */}
 
             {/* Body */}
             <p className="text-gray-700 text-base leading-relaxed">
@@ -717,9 +717,9 @@ export default function PricingPage() {
           id="pay-and-use-funds"
           className="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center"
         >
-          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+          {/* <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
             Not with Payoneer? Not a problem.
-          </h3>
+          </h3> */}
         </section>
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           {/* Section wrapper */}
@@ -986,9 +986,9 @@ export default function PricingPage() {
           </h2>
 
           {/* Highlighted text */}
-          <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+          {/* <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
             Withdraw to your bank account
-          </h3>
+          </h3> */}
 
           {/* Body */}
           <p className="text-gray-700 text-base leading-relaxed">
