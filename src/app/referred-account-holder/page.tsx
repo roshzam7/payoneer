@@ -766,7 +766,7 @@ export default function ResellerLandingPage() {
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>The original seller’s full name</li>
-                  <li>The buyer’s name</li>
+                  <li>The buyer&apos;s name</li>
                   <li>A general description of the products or services provided</li>
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
@@ -776,7 +776,7 @@ export default function ResellerLandingPage() {
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>The alias name matches</li>
                   <li>Verified phone number</li>
-                  <li>Customer's name</li>
+                  <li>Customer&apos;s name</li>
                   <li>Email address</li>
                 </ul>
 
@@ -805,8 +805,8 @@ export default function ResellerLandingPage() {
                     Verification requirement.
                   </li>
                   <li>
-                    After a customer clicks on it, they are directed to a 'Selfie
-                    submission wizard'.
+                    After a customer clicks on it, they are directed to a &apos;Selfie
+                    submission wizard&apos;.
                   </li>
                   <li>They select their country and choose the appropriate ID type.</li>
                   <li>
@@ -822,8 +822,8 @@ export default function ResellerLandingPage() {
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the account holder wishes to opt out of the service, refer to the
-                  “How can an account holder opt out of the 'Selfie' requirement '(Visual
-                  Identity Verification)' section in the{" "}
+                  “How can an account holder opt out of the &apos;Selfie&apos; requirement &apos;(Visual
+                  Identity Verification)&apos; section in the{" "}
                   <a className="text-blue-600" href="">
                     How to handle documents guide
                   </a>
