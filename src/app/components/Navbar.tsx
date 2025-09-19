@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
                 </Link>
                 <div className="relative group">
                   <button className="flex items-center space-x-1 hover:text-black ">
-                    <span>pages</span>
+                    <span>Topics</span>
                     <svg
                       className="w-4 h-4 ml-1"
                       fill="none"
