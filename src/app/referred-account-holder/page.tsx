@@ -375,6 +375,7 @@ export default function ResellerLandingPage() {
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
+          
           <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
           <nav className="space-y-3">
             {topics.map((topic) => (
@@ -391,6 +392,29 @@ export default function ResellerLandingPage() {
               </button>
             ))}
           </nav>
+          <a
+  href="/files/sample.pdf" // place your PDF inside public/files/
+  download
+  className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black shadow-md hover:bg-gray-100"
+  aria-label="Download PDF"
+  title="Download PDF"
+>
+  {/* Download Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+    />
+  </svg>
+</a>
         </aside>
 
         {/* Main content */}

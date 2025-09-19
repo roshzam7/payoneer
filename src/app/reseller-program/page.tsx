@@ -90,28 +90,24 @@ const topics = [
 ];
 
 const metrics = [
-  { value: "190+", labelTop: "Countries", bar: "from-purple-400 to-pink-400" },
-  { value: "150+", labelTop: "Currencies", bar: "from-purple-400 to-blue-400" },
+    {
+    value: "Millions",
+    labelTop: "Customers Worldwide",
+    bar: "from-purple-400 to-pink-400",
+  },
+  { value: "190+", labelTop: "countries and territories", bar: "from-purple-400 to-pink-400" },
+  { value: "70+", labelTop: "Currencies Supported", bar: "from-purple-400 to-blue-400" },
   {
-    value: "150+",
-    labelTop: "Countries Local Clearing",
+    value: "2000+",
+    labelTop: "Employees Worldwide",
     bar: "from-pink-400 to-yellow-400",
   },
   {
-    value: "145+",
-    labelTop: "Countries with 2+ Banking Partners",
+    value: "70+",
+    labelTop: "Currencies Supported",
     bar: "from-indigo-400 to-blue-400",
   },
-  {
-    value: "99+",
-    labelTop: "Countries with 3+ Banking Partners",
-    bar: "from-purple-400 to-pink-400",
-  },
-  {
-    value: "60+",
-    labelTop: "Funding Currencies",
-    bar: "from-purple-400 to-blue-400",
-  },
+
 ];
 
 const bankCols = [
