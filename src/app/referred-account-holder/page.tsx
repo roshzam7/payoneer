@@ -369,32 +369,6 @@ export default function ResellerLandingPage() {
         Onboarding Journey
       </span>
     </h1>
-
-    {/* Download PDF Button */}
-    <a
-      href="/files/sample.pdf" // update with your actual file
-      download
-      className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-5 py-2 text-black font-medium shadow-sm hover:bg-gray-100"
-      aria-label="Download PDF"
-      title="Download PDF"
-    >
-      {/* Download Icon */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-        />
-      </svg>
-      <span>Download PDF</span>
-    </a>
   </div>
 </section>
 
@@ -425,35 +399,65 @@ export default function ResellerLandingPage() {
         {/* Main content */}
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white relative z-10">
           {/* Breadcrumb */}
-          <section
-            aria-label="Breadcrumb"
-            className="border-b border-white/10 bg-white text-black backdrop-blur"
-          >
-            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
-              <button
-                type="button"
-                onClick={() => router.push("/")}
-                className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
-                aria-label="Back"
-                title="Back"
-              >
-                <Image src={backBtn} alt="Back" width={32} height={32} />
-              </button>
+ <section
+  aria-label="Breadcrumb"
+  className="border-b border-white/10 bg-white text-black backdrop-blur"
+>
+  <div className="max-w-5xl mx-auto flex flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-0 py-2">
+    {/* Left Side: Back + Breadcrumb */}
+    <div className="flex items-center gap-2">
+      <button
+        type="button"
+        onClick={() => router.push("/")}
+        className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+        aria-label="Back"
+        title="Back"
+      >
+        <Image src={backBtn} alt="Back" width={32} height={32} />
+      </button>
 
-              <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
-                <span
-                  className="cursor-pointer font-medium hover:underline"
-                  onClick={() => router.push("/")}
-                >
-                  Table of Content
-                </span>
-                <span className="opacity-60">›</span>
-                <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Referred Account Holder Onboarding Journey
-                </span>
-              </nav>
-            </div>
-          </section>
+      <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
+        <span
+          className="cursor-pointer font-medium hover:underline"
+          onClick={() => router.push("/")}
+        >
+          Table of Content
+        </span>
+        <span className="opacity-60">›</span>
+        <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
+          Referred Account Holder Onboarding Journey
+        </span>
+      </nav>
+    </div>
+
+    {/* Right Side: Download PDF Button */}
+    <a
+      href="/files/sample.pdf" // update with your actual file
+      download
+      className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-black font-medium shadow-sm hover:bg-gray-100"
+      aria-label="Download PDF"
+      title="Download PDF"
+    >
+      {/* Download Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+        />
+      </svg>
+      <span>Download PDF</span>
+    </a>
+  </div>
+</section>
+
 
           {/* How to Join */}
 
