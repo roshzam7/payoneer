@@ -453,7 +453,7 @@ export default function ResellerLandingPage() {
           d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
         />
       </svg>
-      <span>Download PDF</span>
+      <span>Download Page as PDF</span>
     </a>
   </div>
 </section>
