@@ -392,29 +392,30 @@ export default function ResellerLandingPage() {
               </button>
             ))}
           </nav>
-          <a
-  href="/files/sample.pdf" // place your PDF inside public/files/
-  download
-  className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black shadow-md hover:bg-gray-100"
-  aria-label="Download PDF"
-  title="Download PDF"
->
-  {/* Download Icon */}
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    className="h-5 w-5"
-    fill="none"
-    viewBox="0 0 24 24"
-    stroke="currentColor"
-  >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={2}
-      d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-    />
-  </svg>
-</a>
+                <a
+          href="/files/Partnership_Certificate-Sample.pdf" 
+          download
+          className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-black shadow-sm hover:bg-gray-100"
+          aria-label="Download PDF"
+          title="Download PDF"
+        >
+          {/* Download Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+            />
+          </svg>
+          <span>Download PDF</span>
+        </a>
         </aside>
 
         {/* Main content */}
