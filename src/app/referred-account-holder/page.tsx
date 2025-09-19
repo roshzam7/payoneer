@@ -432,8 +432,7 @@ export default function ResellerLandingPage() {
 
     {/* Right Side: Download PDF Button */}
     <a
-      href="/files/sample.pdf" // update with your actual file
-      download
+      href="/files/referred-account-holder-Page" 
       className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-sm text-[#878787] shadow-sm hover:bg-gray-100"
       aria-label="Download PDF"
       title="Download PDF"
