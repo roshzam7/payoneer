@@ -357,20 +357,47 @@ export default function ResellerLandingPage() {
       )}
 
       {/* Banner */}
-      <section
-        style={{ backgroundImage: `url(${Banner.src})` }}
-        className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+<section
+  style={{ backgroundImage: `url(${Banner.src})` }}
+  className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+>
+  <div className="max-w-4xl mx-auto py-12 sm:py-20">
+    <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+      Referred Account Holder (AH)
+      <br />
+      <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+        Onboarding Journey
+      </span>
+    </h1>
+
+    {/* Download PDF Button */}
+    <a
+      href="/files/sample.pdf" // update with your actual file
+      download
+      className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-5 py-2 text-black font-medium shadow-sm hover:bg-gray-100"
+      aria-label="Download PDF"
+      title="Download PDF"
+    >
+      {/* Download Icon */}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
       >
-        <div className="max-w-4xl mx-auto py-12 sm:py-20">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Referred Account Holder (AH)
-            <br />
-            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Onboarding Journey
-            </span>
-          </h1>
-        </div>
-      </section>
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+          d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+        />
+      </svg>
+      <span>Download PDF</span>
+    </a>
+  </div>
+</section>
+
 
       <div className="flex">
         {/* Sidebar */}
@@ -392,30 +419,7 @@ export default function ResellerLandingPage() {
               </button>
             ))}
           </nav>
-                <a
-          href="/files/Partnership_Certificate-Sample.pdf" 
-          download
-          className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-black shadow-sm hover:bg-gray-100"
-          aria-label="Download PDF"
-          title="Download PDF"
-        >
-          {/* Download Icon */}
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-            />
-          </svg>
-          <span>Download PDF</span>
-        </a>
+
         </aside>
 
         {/* Main content */}
