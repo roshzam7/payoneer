@@ -821,189 +821,187 @@ You may be asked to provide evidence of your professional affiliation:          
           </section>
           {/* Additional KYC Requirements */}
           <section id="kyc-process-explained" className="scroll-mt-28">
-  <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
-    {/* Left column (Text) */}
-    <div className="mt-0">
-      <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
-        Additional KYC Requirements
-      </h3>
+            <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
+              {/* Left column (Text) */}
+              <div className="mt-0">
+                <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
+                  Additional KYC Requirements
+                </h3>
 
-      <p className="mt-2 text-gray-900 text-[17px]">
-        As part of the onboarding process, you may be asked to provide
-        additional documentation. The following outlines the requirements, with
-        clear guidance to help you prepare the information in the correct format
-        and avoid processing delays.
-      </p>
+                <p className="mt-2 text-gray-900 text-[17px]">
+                  As part of the onboarding process, you may be asked to provide
+                  additional documentation. The following outlines the requirements, with
+                  clear guidance to help you prepare the information in the correct format
+                  and avoid processing delays.
+                </p>
 
-      {/* Affiliation */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Affiliation URL / Screenshot showing affiliation
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        You may be asked to provide evidence of your professional affiliation:
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        This can be a link to your official website where your services are
-        displayed.
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        If you do not maintain a website, you may submit a link to your verified
-        social media profile or freelancer platform account (e.g., Upwork).
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        Screenshots must clearly display your profile or account details,
-        including username or store name, website URL or logo, and profile
-        information such as full name, phone number, and email address.
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        In some cases, a screenshot may be accepted in place of a live link.
-        Affiliation screenshots should be captured using Autologger.
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        Autologger for Affiliation Screenshot:{" "}
-        <a className="text-blue-600" href="">
-          Autologger 7650
-        </a>
-      </p>
+                {/* Affiliation */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Affiliation URL / Screenshot showing affiliation
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  You may be asked to provide evidence of your professional affiliation:
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  This can be a link to your official website where your services are
+                  displayed.
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  If you do not maintain a website, you may submit a link to your verified
+                  social media profile or freelancer platform account (e.g., Upwork).
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  Screenshots must clearly display your profile or account details,
+                  including username or store name, website URL or logo, and profile
+                  information such as full name, phone number, and email address.
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  In some cases, a screenshot may be accepted in place of a live link.
+                  Affiliation screenshots should be captured using Autologger.
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  Autologger for Affiliation Screenshot:{" "}
+                  <a className="text-blue-600" href="">
+                    Autologger 7650
+                  </a>
+                </p>
 
-      {/* Business Profile */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Business profile / Merchant application form (MAF)
-      </p>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        For accounts receiving payments via the Payment Request Service (PRQ),
-        submission of a Business Profile — also known as the Merchant
-        Application Form (MAF) — is required. This form provides essential
-        information for Line of Business (LOB) verification.
-      </p>
+                {/* Business Profile */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Business profile / Merchant application form (MAF)
+                </p>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  For accounts receiving payments via the Payment Request Service (PRQ),
+                  submission of a Business Profile — also known as the Merchant
+                  Application Form (MAF) — is required. This form provides essential
+                  information for Line of Business (LOB) verification.
+                </p>
 
-      {/* Held ID */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Held ID
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        A Held ID submission must include a clear photograph of the account
-        holder:
-      </p>
-      <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-        <li>
-          Holding their government-issued ID alongside a piece of paper
-          displaying the current date.
-        </li>
-        <li>
-          Both the face of the account holder and the text on the paper must be
-          fully visible and unobstructed.
-        </li>
-        <li>The image must not be mirrored, reversed, or edited.</li>
-      </ul>
-      <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        <a className="text-blue-600" href="">
-          Request for ID and Held ID
-        </a>
-      </p>
+                {/* Held ID */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Held ID
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  A Held ID submission must include a clear photograph of the account
+                  holder:
+                </p>
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>
+                    Holding their government-issued ID alongside a piece of paper
+                    displaying the current date.
+                  </li>
+                  <li>
+                    Both the face of the account holder and the text on the paper must be
+                    fully visible and unobstructed.
+                  </li>
+                  <li>The image must not be mirrored, reversed, or edited.</li>
+                </ul>
+                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  <a className="text-blue-600" href="">
+                    Request for ID and Held ID
+                  </a>
+                </p>
 
-      {/* Invoice */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Invoice Submission Requirements
-      </p>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        To verify a payment, the account holder must submit the invoice issued
-        to their client. This document serves as proof of the transaction and
-        should include the following details:
-      </p>
-      <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-        <li>A description of the services provided</li>
-        <li>The full names of both the buyer (payer) and the seller (account holder)</li>
-        <li>The payment amount</li>
-      </ul>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        Each business may use a different invoice format. Therefore, there is no
-        single “standard” template. Use your discretion to determine if the
-        invoice contains the required elements.
-      </p>
+                {/* Invoice */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Invoice Submission Requirements
+                </p>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  To verify a payment, the account holder must submit the invoice issued
+                  to their client. This document serves as proof of the transaction and
+                  should include the following details:
+                </p>
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>A description of the services provided</li>
+                  <li>The full names of both the buyer (payer) and the seller (account holder)</li>
+                  <li>The payment amount</li>
+                </ul>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  Each business may use a different invoice format. Therefore, there is no
+                  single “standard” template. Use your discretion to determine if the
+                  invoice contains the required elements.
+                </p>
 
-      {/* Invoice for Alias Review */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Invoice Requirements for Alias Review
-      </p>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        For reviews involving an alias, the invoice must meet additional
-        criteria to demonstrate a clear connection between the customer and the
-        payment.
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        The invoice must include:
-      </p>
-      <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-        <li>The original seller’s full name</li>
-        <li>The buyer’s name</li>
-        <li>A general description of the products or services provided</li>
-      </ul>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        In addition, the invoice must establish a link to the customer by
-        meeting at least one of the following criteria:
-      </p>
-      <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-        <li>The alias name matches</li>
-        <li>Verified phone number</li>
-        <li>Customer's name</li>
-        <li>Email address</li>
-      </ul>
+                {/* Invoice for Alias Review */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Invoice Requirements for Alias Review
+                </p>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  For reviews involving an alias, the invoice must meet additional
+                  criteria to demonstrate a clear connection between the customer and the
+                  payment.
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  The invoice must include:
+                </p>
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>The original seller’s full name</li>
+                  <li>The buyer’s name</li>
+                  <li>A general description of the products or services provided</li>
+                </ul>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  In addition, the invoice must establish a link to the customer by
+                  meeting at least one of the following criteria:
+                </p>
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>The alias name matches</li>
+                  <li>Verified phone number</li>
+                  <li>Customer's name</li>
+                  <li>Email address</li>
+                </ul>
 
-      {/* Selfie */}
-      <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-        Visual Identity Verification (Selfie)
-      </p>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        In some cases, the account holder will be asked to complete Visual
-        Identity Verification. This process involves taking a selfie and
-        uploading a valid ID document. When required, the customer will see a
-        prompt titled <strong>Visual Identity Verification</strong> in their
-        account.
-      </p>
-      <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        Please note that these are part of the overall selfie requirement and
-        should not be manually uploaded or reviewed; they must be completed by
-        the account holder and reviewed only by KYC.
-      </p>
-      <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        What the customer experience looks like:
-      </p>
-      <ol className="list-decimal list-outside pl-5 text-[12px] text-[#878787] space-y-2 sm:text-[17px]">
-        <li>
-          When Selfie is requested, the customer clicks on the Visual Identity
-          Verification requirement.
-        </li>
-        <li>
-          After a customer clicks on it, they are directed to a 'Selfie
-          submission wizard'.
-        </li>
-        <li>They select their country and choose the appropriate ID type.</li>
-        <li>
-          Next, they are prompted to take a photo of their ID document (as
-          required for the document type & country).
-        </li>
-        <li>Finally, they take a live selfie.</li>
-      </ol>
-      <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-        <a className="text-blue-600" href="">
-          How to submit a Selfie (Visual Identity Verification)
-        </a>
-      </p>
-      <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-        If the account holder wishes to opt out of the service, refer to the
-        “How can an account holder opt out of the 'Selfie' requirement '(Visual
-        Identity Verification)' section in the{" "}
-        <a className="text-blue-600" href="">
-          How to handle documents guide
-        </a>
-        .
-      </p>
-    </div>
-  </div>
-</section>
-{/*  */}
-
+                {/* Selfie */}
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  Visual Identity Verification (Selfie)
+                </p>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  In some cases, the account holder will be asked to complete Visual
+                  Identity Verification. This process involves taking a selfie and
+                  uploading a valid ID document. When required, the customer will see a
+                  prompt titled <strong>Visual Identity Verification</strong> in their
+                  account.
+                </p>
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  Please note that these are part of the overall selfie requirement and
+                  should not be manually uploaded or reviewed; they must be completed by
+                  the account holder and reviewed only by KYC.
+                </p>
+                <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  What the customer experience looks like:
+                </p>
+                <ol className="list-decimal list-outside pl-5 text-[12px] text-[#878787] space-y-2 sm:text-[17px]">
+                  <li>
+                    When Selfie is requested, the customer clicks on the Visual Identity
+                    Verification requirement.
+                  </li>
+                  <li>
+                    After a customer clicks on it, they are directed to a 'Selfie
+                    submission wizard'.
+                  </li>
+                  <li>They select their country and choose the appropriate ID type.</li>
+                  <li>
+                    Next, they are prompted to take a photo of their ID document (as
+                    required for the document type & country).
+                  </li>
+                  <li>Finally, they take a live selfie.</li>
+                </ol>
+                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
+                  <a className="text-blue-600" href="">
+                    How to submit a Selfie (Visual Identity Verification)
+                  </a>
+                </p>
+                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                  If the account holder wishes to opt out of the service, refer to the
+                  “How can an account holder opt out of the 'Selfie' requirement '(Visual
+                  Identity Verification)' section in the{" "}
+                  <a className="text-blue-600" href="">
+                    How to handle documents guide
+                  </a>
+                  .
+                </p>
+              </div>
+            </div>
+          </section>
           <section id="get-started-with-payoneer" className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Column with heading + first card */}
