@@ -102,11 +102,7 @@ const metrics = [
     labelTop: "Employees Worldwide",
     bar: "from-pink-400 to-yellow-400",
   },
-  {
-    value: "70+",
-    labelTop: "Currencies Supported",
-    bar: "from-indigo-400 to-blue-400",
-  },
+
 
 ];
 
@@ -391,7 +387,7 @@ export default function ResellerLandingPage() {
                 Unmatched Global Infrastructure
               </h2>
               <p className="text-[#878787] text-[13px] sm:text-[20px] mt-1">
-                Covering 200+ countries with redundant capabilities in 145
+                Covering 190+ countries with redundant capabilities in 145
                 countries
               </p>
 

@@ -713,14 +713,14 @@ export default function PricingPage() {
             </p>
           </div>
         </section>
-        <section
+        {/* <section
           id="pay-and-use-funds"
           className="max-w-4xl mx-auto px-4 sm:px-6 py-16 text-center"
         >
-          {/* <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
+           <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-4">
             Not with Payoneer? Not a problem.
-          </h3> */}
-        </section>
+          </h3> 
+        </section> */}
         <section className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
           {/* Section wrapper */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative">

@@ -823,7 +823,7 @@ export default function ResellerLandingPage() {
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the account holder wishes to opt out of the service, refer to the
                   “How can an account holder opt out of the &apos;Selfie&apos; requirement &apos;(Visual
-                  Identity Verification)&apos; section in the{" "}
+                  Identity Verification)&apos; section“ in the{" "}
                   <a className="text-blue-600" href="">
                     How to handle documents guide
                   </a>
