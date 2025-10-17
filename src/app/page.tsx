@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar";
 import HeroBanner from "./components/HeroBanner";
 import ContentCards from "./components/ContentCards";
 import Footer from "./components/Footer";
-
+import NewmainOntent from "./components/NewmainpageContents";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <Navbar />
       <HeroBanner />
       <ContentCards />
+      <NewmainOntent />
       <Footer />
     </div>
   );
