@@ -103,24 +103,28 @@ const HeroBanner: React.FC = () => {
 
   return (
     <section
-      className="relative w-full h-screen bg-center bg-no-repeat bg-cover pt-16"
+      className="relative w-full h-screen bg-center bg-no-repeat bg-cover pt-0"
       style={{ backgroundImage: `url(${Banner.src})` }}
       aria-label="Welcome to Payoneer"
     >
       <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-center text-center pt-24 sm:pt-24">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-gray-900">
-          Welcome to <br />
+          Welcome to the <br />
           <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-            Payoneer
+            Payoneer Partner Program
           </span>
         </h1>
 
         {/* Description */}
         <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-lg leading-relaxed text-gray-700">
-          Your exclusive platform for everything you need — from detailed guides
-          on ordering new cards to tips on maximizing Payoneer products and
-          staying updated on our latest services.
+          Powering your success with an exclusive program built for growth and
+          next-gen infrastructure
+        </p>
+        <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-sm leading-relaxed text-gray-700">
+          Unlock full access to our ecosystem — from seamless onboarding and
+          activation to smart guides and realtime support. Everything you need
+          to scale, all in one place.
         </p>
 
         {/* 🔍 Search Input with Dropdown */}

@@ -150,12 +150,12 @@ export default function NewmainpageContents() {
             </div>
 
             <div>
-              <h2 className="text-lg font-semibold text-gray-800">
+              <h2 className="text-xl font-semibold text-gray-800">
                 Empowering our partners to Go Further, Faster
               </h2>
               <p className="mt-2 text-gray-600">
-                As a trusted partner, you’re at the center of our growth. This
-                is your dedicated hub — packed with tools, resources, and
+                As a trusted partner, you&apos;re at the center of our growth.
+                This is your dedicated hub — packed with tools, resources, and
                 insights to help you maximize your impact, unlock new revenue
                 streams, and deliver more value to your customers. Unlock full
                 access to our ecosystem — from seamless onboarding and
@@ -168,7 +168,7 @@ export default function NewmainpageContents() {
 
       {/* SECTION 2: Why partner */}
       <section className="mt-8">
-        <h3 className="text-lg font-semibold text-gray-800 mb-6">
+        <h3 className="text-xl font-semibold text-gray-800 mb-6">
           Why partner with us
         </h3>
 
@@ -278,7 +278,7 @@ export default function NewmainpageContents() {
 
       {/* SECTION 3: Next steps */}
       <section className="mt-10">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4">
+        <h3 className="text-xl font-semibold text-gray-800 mb-4">
           Your next steps for maximum impact
         </h3>
 
@@ -289,7 +289,7 @@ export default function NewmainpageContents() {
             </h4>
             <p className="mt-2 text-sm text-gray-600">
               We will share new modules, integrations, and product feature
-              updates as they’re released.
+              updates as they&apos;re released.
             </p>
             <Link
               href="/partner-activation"
@@ -299,12 +299,13 @@ export default function NewmainpageContents() {
             </Link>
           </div>
 
-          <div className="bg-gradient-to-b from-white to-gray-50 border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition">
+          <div className="bg-gradient-to-b from-white to-gray-50 border border-gray-100 rounded-lg px-8 py-6 shadow-sm hover:shadow-md transition">
             <h4 className="text-sm font-semibold text-gray-700">
               Claim enhanced rewards
             </h4>
             <p className="mt-2 text-sm text-gray-600">
-              Check if you’ve unlocked a higher tier, bonus or campaign reward.
+              Check if you&apos;ve unlocked a higher tier, bonus or campaign
+              reward.
             </p>
             <Link
               href="/rewards"
@@ -360,8 +361,8 @@ export default function NewmainpageContents() {
             Need help or want to explore more?
           </h4>
           <p className="mt-1 text-sm text-gray-600">
-            Open a support ticket or browse our FAQs — we’re here to help you
-            succeed.
+            Open a support ticket or browse our FAQs — we&apos;re here to help
+            you succeed.
           </p>
         </div>
 
