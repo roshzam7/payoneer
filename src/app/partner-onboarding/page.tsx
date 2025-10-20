@@ -12,8 +12,6 @@ import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
-
-
 const topics = [
   { title: "How to Join the Program", slug: "How-to-Join" },
   {
@@ -183,22 +181,21 @@ export default function ResellerLandingPage() {
               <a
                 href="#"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-              >
-                
-              </a>
+              ></a>
             </div>
-             <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              After sign-up you will receive partnership contract. Please find a sample contract below:
+            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
+              After sign-up you will receive partnership contract. Please find a
+              sample contract below:
             </p>
             <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-             <a
+              <a
                 href="/files/REFERRAL-MARKETING-AGREEMENT.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-                >
+              >
                 View Contracting & Legal Agreements
-                </a>
+              </a>
             </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Reseller Sign-Up Process
@@ -273,14 +270,13 @@ export default function ResellerLandingPage() {
                     onClick={() => setModalImage(section.image.src)}
                     className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
                   >
-                  <Image
-                          src={expandicon}
-                          alt="Check"
-                          width={20}
-                          height={20}
-                          className="flex-none mt-1"
-                        />
-
+                    <Image
+                      src={expandicon}
+                      alt="Check"
+                      width={20}
+                      height={20}
+                      className="flex-none mt-1"
+                    />
                   </button>
                 </div>
               </div>
@@ -289,17 +285,23 @@ export default function ResellerLandingPage() {
 
           {/* 2 */}
           {/* 4th */}
-          <section id="Understand-Your-Role" className="scroll-mt-28 mb-3">
-            <h2 className="text-[48px] font-bold text-gray-900">
-              Understand Your Role as a Payoneer Reseller
-            </h2>
 
-            <p className="mt-2 text-[#878787] text-[23px] max-w-2xl">
-              View the following details to ensure you meet all requirements and
-              maintain compliance with our program.{" "}
-            </p>
+          <section
+            id="Understand-Your-Role"
+            className="scroll-mt-28 mb-4 w-full sm:px-0 py-12 text-left "
+          >
+            <div className="w-full">
+              <h2 className="text-[26px] sm:text-[48px] font-bold text-gray-900">
+                Understand Your Role as a Payoneer Reseller
+              </h2>
+              <p className="mt-4 text-[#878787] text-[14px] sm:text-[18px] max-w-4xl">
+                View the following details to ensure you meet all requirements
+                and maintain compliance with our program.{" "}
+              </p>
+            </div>
           </section>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
