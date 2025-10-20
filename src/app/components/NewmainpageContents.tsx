@@ -4,7 +4,6 @@ import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import growthIcon from "@/app/assets/images/collection-links.svg";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import Testimonial from "./Testimonial"; // Make sure this path is correct
 
 export default function NewmainpageContents() {

@@ -71,7 +71,6 @@ import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
 import marketplaces from "../assets/images/marketplaces-icon.svg";
 import transaction from "../assets/images/transaction-icon.svg";
 
-import resellerCardBg from "../assets/images/Reseller-card-bg.png";
 
 // Key features icons
 import fastOnboarding from "../assets/images/fast-onboarding.svg";
