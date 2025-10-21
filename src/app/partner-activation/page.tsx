@@ -10,7 +10,7 @@ import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 import Footer from "../components/Footer";
-import PricingPage from "../newpage/Newpage";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const topics = [
   {
@@ -25,19 +25,42 @@ const topics = [
     title: "Customer Personas",
     slug: "customer-personas",
   },
-  {
-    title: "Payoneer Pricing",
-    slug: "payoneer-pricing",
-  },
+
   {
     title: "Co-Branded or Dedicated Landing Pages",
     slug: "co-branded-or-dedicated-landing-pages",
   },
 ];
 
+const personas = [
+  {
+    id: 1,
+    alt: "Persona 1",
+    src: Sectionthree3, // ← Use the imported image
+  },
+  {
+    id: 2,
+    alt: "Persona 2",
+    src: Sectionthree4, // ← Use the imported image
+  },
+];
+
 export default function ResellerLandingPage() {
   const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? personas.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === personas.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -144,108 +167,121 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section id="sales-enablement-tools" className="scroll-mt-24 mb-0">
-            <h2 className="text-[48px] font-bold text-gray-900 mt-10">
-              Sales Enablement Tools
-            </h2>
-            <div className="mt-8 w-full">
-              <Image
-                src={Sectionthree1}
-                alt="Reseller Program Phases"
-                width={800}
-                height={450}
-                className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
-              />
-            </div>
-          </section>
-          <section id="kyc-process-explained" className="scroll-mt-28 mb-0">
-            <div className="grid grid-cols-1 gap-8">
-              {/* Pitch Decks & Sales Scripts */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-                  Pitch Decks & Sales Scripts
-                </h3>
-                <p className="text-[#666] text-sm sm:text-base mb-3 leading-relaxed">
-                  View the Payoneer Global Payments Training Document to gain an
-                  overview of our international reach, available payment
-                  solutions, and step-by-step guidance on opening an account.
-                </p>
-                <a
-                  href="/files/Payoneer-Global-Payments-Training-Document.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-medium hover:underline"
-                >
-                  View Payoneer Training Document
-                </a>
-              </div>
-
-              {/* Training Webinars & Certifications */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-                  Training Webinars & Certifications
-                </h3>
-                <p className="text-[#666] text-sm sm:text-base mb-3 leading-relaxed">
-                  This certificate recognizes Authorised Channel Partners of
-                  Payoneer. It confirms your status as a trusted partner,
-                  authorized to promote Payoneer&apos;s global payment
-                  solutions.
-                </p>
-                <p className="text-[#666] text-sm sm:text-base mb-3">
-                  To request one, please raise a request at{" "}
-                  <a
-                    href="mailto:support@payoneerpartnerships.com"
-                    className="text-blue-600 hover:underline"
-                  >
-                    support@payoneerpartnerships.com
-                  </a>
-                  .
-                </p>
-                <a
-                  href="/files/Partnership_Certificate-Sample.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 font-medium hover:underline"
-                >
-                  View Sample Certificate
-                </a>
-              </div>
-
-              {/* Brand Positioning Guide */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-                  Brand Positioning Guide
-                </h3>
-                <p className="text-[#666] text-sm sm:text-base mb-3 leading-relaxed">
-                  View the brand battlecards to gain a breakdown of
-                  Payoneer&apos;s core features and see how our services compare
-                  with competitors, Wio and 3S Money.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 mt-2">
-                  <a
-                    href="/files/Payoneer_wio_Battlecard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 font-medium hover:underline"
-                  >
-                    Payoneer vs Wio Battlecard
-                  </a>
-                  <a
-                    href="/files/Payoneer_3s_money_battlecard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 font-medium hover:underline"
-                  >
-                    Payoneer vs 3S Money Battlecard
-                  </a>
+          <section id="sales-enablement-tools" className="scroll-mt-28 mb-12">
+            <div className="grid grid-cols-1 gap-10">
+              {/* Header Section */}
+              <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-3xl shadow-lg border border-gray-100 p-8 sm:p-12">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+                  Sales Enablement Tools
+                </h2>
+                <div className="mt-6 w-full flex justify-center">
+                  <Image
+                    src={Sectionthree1}
+                    alt="Reseller Program Phases"
+                    width={800}
+                    height={450}
+                    className="w-full max-w-5xl h-auto rounded-2xl border border-gray-200 shadow-md transition-transform duration-300 hover:scale-[1.02]"
+                  />
                 </div>
               </div>
 
-              {/* Marketing & Reselling Guidelines */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
+              {/* Cards Section */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Card 1 */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    Pitch Decks & Sales Scripts
+                  </h3>
+                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
+                    View the Payoneer Global Payments Training Document to gain
+                    an overview of our international reach, available payment
+                    solutions, and step-by-step guidance on opening an account.
+                  </p>
+                  <a
+                    href="/files/Payoneer-Global-Payments-Training-Document.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                  >
+                    View Payoneer Training Document →
+                  </a>
+                </div>
+
+                {/* Card 2 */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    Training Webinars & Certifications
+                  </h3>
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    This certificate recognizes Authorised Channel Partners of
+                    Payoneer. It confirms your status as a trusted partner,
+                    authorized to promote Payoneer&apos;s global payment
+                    solutions.
+                  </p>
+                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
+                    To request one, please raise a request at{" "}
+                    <a
+                      href="mailto:support@payoneerpartnerships.com"
+                      className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
+                    >
+                      support@payoneerpartnerships.com
+                    </a>
+                    .
+                  </p>
+                  <a
+                    href="/files/Partnership_Certificate-Sample.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                  >
+                    View Sample Certificate →
+                  </a>
+                </div>
+
+                {/* Card 3 */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    Brand Positioning Guide
+                  </h3>
+                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
+                    View the brand battlecards to gain a breakdown of
+                    Payoneer&apos;s core features and see how our services
+                    compare with competitors, Wio and 3S Money.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 mt-3">
+                    <a
+                      href="/files/Payoneer_wio_Battlecard.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    >
+                      Payoneer vs Wio Battlecard →
+                    </a>
+                    <a
+                      href="/files/Payoneer_3s_money_battlecard.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    >
+                      Payoneer vs 3S Money Battlecard →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Marketing & Reselling Guidelines */}
+          <section
+            id="marketing-reselling-guidelines"
+            className="scroll-mt-28 mb-12"
+          >
+            <div className="grid grid-cols-1 gap-10">
+              {/* Header Section */}
+              <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-3xl shadow-lg border border-gray-100 p-8 sm:p-12">
                 <h3
                   id="reselling-guidelines"
-                  className="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4"
+                  className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6"
                 >
                   Marketing & Reselling Guidelines
                 </h3>
@@ -254,51 +290,60 @@ export default function ResellerLandingPage() {
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm mt-3"
+                  className="w-full h-auto rounded-2xl border border-gray-200 shadow-md transition-transform duration-300 hover:scale-[1.02]"
                 />
               </div>
 
-              {/* Branding & Messaging Compliance */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-                  Branding & Messaging Compliance
-                </h3>
-                <p className="text-[#666] text-sm sm:text-base mb-3 leading-relaxed">
-                  View the Payoneer Design Guidelines to gain a comprehensive
-                  understanding of our brand&apos;s visual identity. This
-                  document provides detailed examples of the correct use of
-                  logos, color palettes, typography, imagery, tone of voice, and
-                  other design variations.
-                </p>
-                <a
-                  className="text-blue-600 font-medium hover:underline"
-                  target="_blank"
-                  href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview"
-                >
-                  View Payoneer Design Guidelines
-                </a>
-              </div>
+              {/* Cards Section */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {/* Branding & Messaging Compliance */}
+                <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    Branding & Messaging Compliance
+                  </h3>
+                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
+                    View the Payoneer Design Guidelines to gain a comprehensive
+                    understanding of our brand&apos;s visual identity. This
+                    document provides detailed examples of the correct use of
+                    logos, color palettes, typography, imagery, tone of voice,
+                    and other design variations.
+                  </p>
+                  <a
+                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    target="_blank"
+                    href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview"
+                  >
+                    View Payoneer Design Guidelines →
+                  </a>
+                </div>
 
-              {/* Do's and Don'ts */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-3">
-                  Do&apos;s and Don&apos;ts in Promotions
-                </h3>
-                <p className="text-[#666] text-sm sm:text-base mb-3 leading-relaxed">
-                  Refer to the Do&apos;s & Don&apos;ts Guidelines to understand
-                  how to accurately and effectively promote Payoneer. This
-                  ensures all promotional efforts align with brand standards.
-                </p>
-                <a
-                  className="text-blue-600 font-medium hover:underline"
-                  href="/files/Payoneer-Dos-Donts.pdf"
-                  target="_blank"
-                >
-                  ✅ View Do&apos;s & Don&apos;ts Guidelines
-                </a>
+                {/* Do's and Don'ts */}
+                <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    Do&apos;s and Don&apos;ts in Promotions
+                  </h3>
+                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
+                    Refer to the Do&apos;s & Don&apos;ts Guidelines to
+                    understand how to accurately and effectively promote
+                    Payoneer. This ensures all promotional efforts align with
+                    brand standards.
+                  </p>
+                  <a
+                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    href="/files/Payoneer-Dos-Donts.pdf"
+                    target="_blank"
+                  >
+                    View Do&apos;s & Don&apos;ts Guidelines →
+                  </a>
+                </div>
               </div>
+            </div>
+          </section>
 
-              {/* Personas */}
+          {/* Personas */}
+
+          <section className="scroll-mt-28 mb-0">
+            <div className="grid grid-cols-1 gap-8">
               <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
                 <h2
                   id="customer-personas"
@@ -310,196 +355,66 @@ export default function ResellerLandingPage() {
                   View the customer profiles to understand their requirements,
                   preferred payment functionalities, and engagement patterns.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Image
-                    src={Sectionthree3}
-                    alt="Persona 1"
-                    className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
-                  />
-                  <Image
-                    src={Sectionthree4}
-                    alt="Persona 2"
-                    className="w-full h-auto rounded-xl border border-gray-100 shadow-sm"
-                  />
-                </div>
-              </div>
 
-              {/* Restricted Businesses */}
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-                  Businesses We Can’t Support
-                </h2>
-                <p className="text-[#666] text-sm sm:text-base leading-relaxed">
-                  To protect our network and maintain compliance, certain
-                  high-risk or restricted businesses are not eligible for
-                  Payoneer services.
-                </p>
+                {/* Slider Container */}
+                <div className="relative w-full max-w-2xl mx-auto">
+                  {/* Image Display */}
+                  <div className="overflow-hidden w-full aspect-[16/9]">
+                    <Image
+                      src={personas[currentIndex].src}
+                      alt={personas[currentIndex].alt}
+                      className="w-full h-full object-cover transition-opacity duration-300"
+                      width={800}
+                      height={450}
+                    />
+                  </div>
+                  <button
+                    onClick={goToPrevious}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                    aria-label="Previous persona"
+                  >
+                    <ChevronLeft className="w-6 h-6 text-gray-800" />
+                  </button>
+
+                  <button
+                    onClick={goToNext}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                    aria-label="Next persona"
+                  >
+                    <ChevronRight className="w-6 h-6 text-gray-800" />
+                  </button>
+                  <div className="flex justify-center gap-2 mt-4">
+                    {personas.map((_, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentIndex(index)}
+                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                          index === currentIndex
+                            ? "bg-blue-600 w-8"
+                            : "bg-gray-300 hover:bg-gray-400"
+                        }`}
+                        aria-label={`Go to persona ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </section>
+
+          {/* Restricted Businesses */}
           {/* 
-          <section id="kyc-process-explained" className="scroll-mt-28 mb-0">
-            <div className="grid grid-cols-1 gap-8">
-              <div>
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
-                  Pitch Decks & Sales Scripts
-                </h3>
-                <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-                  View the Payoneer Global Payments Training Document to gain an
-                  overview of our international reach, available payment
-                  solutions, and step-by-step guidance on opening an account.
-                </p>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a
-                    href="/files/Payoneer-Global-Payments-Training-Document.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    View Payoneer Training Document
-                  </a>
-                </p>
-
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
-                  {" "}
-                  Training Webinars & Certifications
-                </h3>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  This certificate recognizes Authorised Channel Partners of
-                  Payoneer. It confirms your status as a trusted partner,
-                  authorized to promote Payoneer&apos;s global payment
-                  solutions. <br />
-                  Please find a sample certificate, and to request one, please
-                  raise a request at support@payoneerpartnerships.com.
-                </p>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a
-                    href="/files/Partnership_Certificate-Sample.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    Sample Certificate
-                  </a>
-                </p>
-
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
-                  {" "}
-                  Brand Positioning Guide
-                </h3>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  View the brand battlecards to gain a breakdown of
-                  Payoneer&apos;s core features and see how our services compare
-                  with competitors, Wio and 3S Money.
-                </p>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4 space-x-4">
-                  <a
-                    href="/files/Payoneer_wio_Battlecard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    View Payoneer vs Wio Battlecard
-                  </a>
-                  <a
-                    href="/files/Payoneer_3s_money_battlecard.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:underline"
-                  >
-                    View Payoneer vs 3S Money Battlecard
-                  </a>
-                </p>
-
-                <h3
-                  id="reselling-guidelines"
-                  className="scroll-mt-24 text-2xl sm:text-4xl font-semibold text-gray-900 mt-10 mb-4"
-                >
-                  Marketing & Reselling Guidelines
-                </h3>
-                <Image
-                  src={Sectionthree2}
-                  alt="Reseller Program Phases"
-                  width={800}
-                  height={450}
-                  className="w-full h-auto rounded-xl border border-gray-100 shadow-sm mt-4 mb-8"
-                />
-
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
-                  {" "}
-                  Branding & Messaging Compliance
-                </h3>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  View the Payoneer Design Guidelines to gain a comprehensive
-                  understanding of our brand&apos;s visual identity. This
-                  document provides detailed examples of the correct use of
-                  logos, color palettes, typography, imagery, tone of voice, and
-                  other design variations.
-                </p>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a
-                    className="text-blue-600 hover:underline"
-                    target="_blank"
-                    href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview"
-                  >
-                    View Payoneer Design Guidelines
-                  </a>
-                </p>
-
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mt-10 mb-4">
-                  {" "}
-                  Do&apos;s and Don&apos;ts in Promotions
-                </h3>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  Refer to the Do&apos;s & Dont&apos;s Guidelines to understand
-                  how to accurately and effectively promote Payoneer. This
-                  document outlines approved messaging, visual assets, and key
-                  compliance points to ensure all promotional efforts align with
-                  brand standards.
-                </p>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  <a className="text-blue-600 hover:underline" href="">
-                    View Do&apos;s and Dont&apos;s Guidelines
-                  </a>
-                </p>
-
-                <h2
-                  id="customer-personas"
-                  className="text-2xl sm:text-4xl font-bold text-gray-900 scroll-mt-24 mt-10 mb-4"
-                >
-                  Personas
-                </h2>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  View the customer profiles to gain an understanding of their
-                  specific requirements, preferred payment functionalities, and
-                  how they engage with Payoneer&apos;s products.
-                </p>
-                <Image
-                  src={Sectionthree3}
-                  alt="Reseller Program Phases"
-                  className="w-full h-auto rounded-xl mt-4 mb-8"
-                />
-                <Image
-                  src={Sectionthree4}
-                  alt="Reseller Program Phases"
-                  className="w-full h-auto rounded-xl mt-4 mb-8"
-                />
-
-                <h2 className="text-xl sm:text-4xl font-bold text-gray-900 mt-10 mb-4">
-                  Business we can&apos;t support
-                </h2>
-                <p className="text-[#878787] text-xs sm:text-sm mt-2 mb-4">
-                  To protect our network and stay compliant, certain high-risk
-                  or restricted businesses are not eligible for Payoneer
-                  services.
-                </p>
-              </div>
-            </div>
-          </section> */}
-
-          {/* //c */}
-
           <section className="scroll-mt-28  rounded-xl">
+            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
+                Businesses We Can’t Support
+              </h2>
+              <p className="text-[#666] text-sm sm:text-base leading-relaxed">
+                To protect our network and maintain compliance, certain
+                high-risk or restricted businesses are not eligible for Payoneer
+                services.
+              </p>
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl">
               {[
                 [
@@ -552,11 +467,8 @@ export default function ResellerLandingPage() {
                 </div>
               ))}
             </div>
-          </section>
+          </section> */}
 
-          <section id="payoneer-pricing">
-            <PricingPage />
-          </section>
           <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
