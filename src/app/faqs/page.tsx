@@ -8,7 +8,6 @@ import backBtn from "../assets/images/back-button.svg";
 import Togglebtn from "../assets/images/toggle-faq.svg";
 import Footer from "../components/Footer";
 
-
 type ListFAQ = {
   type: "list";
   question: string;
@@ -26,7 +25,6 @@ type TableFAQ = {
 };
 
 type FAQ = ListFAQ | TableFAQ;
-
 
 const topics = [
   {
@@ -461,11 +459,7 @@ const faqsSectionTwo = [
     subHeading:
       "Use the table below to find the correct request type and how to categorize common issues.",
     tableData: {
-      headers: [
-        "Type of Request",
-        "Name of the Issue",
-        "Relevant Request/Query Type",
-      ],
+      headers: ["", "", ""],
       rows: [
         [
           "",
@@ -662,21 +656,70 @@ const faqsSectionTwo = [
       ],
     },
   },
+  {
+    type: "table",
+    question: "Businesses We Can’t Support",
+    subHeading:
+      "To protect our network and maintain compliance, certain high-risk or restricted businesses are not eligible for Payoneer services.",
+    tableData: {
+      headers: ["", ""],
+      rows: [
+        [
+          "Any criminal or illegal act earnings.",
+          "Adult Entertainment Services",
+        ],
+        ["Art, antiquity and collectibles", "Auction houses or antiques"],
+        ["Charities, Donations & Trusts", "Chemicals (Of Any Kind)"],
+        ["Collection agencies", "Counterfeited Products"],
+        [
+          "Cryptocurrency exchanges, Crypto Earnings & Binary Options.",
+          "Dating Services",
+        ],
+        [
+          "Domain registration & buying/ selling",
+          "Energy Industry like Crude Oil, Natural Gas, Petroleum, Diesel & Nuclear.",
+        ],
+        ["Fantasy Sports", "Financial institutions"],
+        [
+          "Finished Metal Products & Hardware",
+          "Fish and seafood of any kind (fresh, frozen or dry)",
+        ],
+        ["Gambling, Betting & Fantasy Sports", "Insurance sales and services"],
+        ["Intrusive beauty and cosmetic products", "Jewelry & bullion trading"],
+        ["Maritime Crewing & Staffing", "Medical or healthcare services"],
+        ["Money exchange", "Multi-level marketing (MLM)"],
+        [
+          "Pharmaceuticals, Medicine, Drugs, Fertilizers & Tobacco",
+          "Prepaid cards or gift card/gift certificates",
+        ],
+        [
+          "Raw & Semi-processed Steel & Iron",
+          "Real Estate sales, Investments & Trading.",
+        ],
+        ["Trusts or funds", "Venture Capital and investments"],
+        ["Web Hosting & VPS"],
+      ],
+    },
+  },
 ];
 const linkify = (text: string) => {
-  const urlRegex =
-    /((https?:\/\/|www\.)[^\s)]+)|(mailto:[^\s)]+)/gi;
+  const urlRegex = /((https?:\/\/|www\.)[^\s)]+)|(mailto:[^\s)]+)/gi;
   const parts = text.split(urlRegex);
 
   return parts.map((part, i) => {
     if (!part) return null;
-    const looksLikeUrl =
-      part.startsWith("http") || part.startsWith("www.");
+    const looksLikeUrl = part.startsWith("http") || part.startsWith("www.");
     const isMailto = part.startsWith("mailto:");
     if (looksLikeUrl) {
       const href = part.startsWith("http") ? part : `https://${part}`;
       return (
-        <a key={i} href={href} target="_blank" rel="noopener noreferrer" className="underline">
+        <a
+          key={i}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline"
+        >
           {part}
         </a>
       );
@@ -732,7 +775,6 @@ export default function ResellerLandingPage() {
   return (
     <div>
       <Navbar />
-      
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
         className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
@@ -747,7 +789,6 @@ export default function ResellerLandingPage() {
           </h1>
         </div>
       </section>
-
       <div className="flex">
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
           <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
@@ -769,7 +810,7 @@ export default function ResellerLandingPage() {
         </aside>
 
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white">
-                    <section
+          <section
             aria-label="Breadcrumb"
             className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
@@ -800,7 +841,6 @@ export default function ResellerLandingPage() {
               </nav>
             </div>
           </section>
-
 
           {/* ---------- Section 1: FAQs ---------- */}
           <section id="faqs" className="scroll-mt-28">
@@ -896,18 +936,18 @@ export default function ResellerLandingPage() {
                           </table>
                         </div>
                       )}
-                    {faq.type === "list" && "answers" in faq && (
-                      <>
-                        {faq.answers.map((ans, i) => (
-                          <div
-                            key={i}
-                            className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
-                          >
-                            {linkify(ans)}
-                          </div>
-                        ))}
-                      </>
-                    )}
+                      {faq.type === "list" && "answers" in faq && (
+                        <>
+                          {faq.answers.map((ans, i) => (
+                            <div
+                              key={i}
+                              className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
+                            >
+                              {linkify(ans)}
+                            </div>
+                          ))}
+                        </>
+                      )}
                     </div>
                   )}
                 </div>
@@ -920,25 +960,19 @@ export default function ResellerLandingPage() {
             <div className="mt-0 grid grid-cols-0 lg:grid-cols-0 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
-                  Support Ticket Questionnaire
+                  Nature of Support Tickets
                 </h2>
                 <div className="flex justify-between items-center max-w-5xl">
-                  <p className="text-gray-900 text-[20px] font-semibold">
-                    Questionnaire
+                  <p className="text-gray-900 text-[17px] ">
+                    Tickets to be raised on provided email ids on a form.
                   </p>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-sm text-blue-600 hover:underline font-medium"
                   >
                     Questionnaire
-                  </a>
+                  </a> */}
                 </div>
-                <h2 className="text-[25px] font-bold text-gray-900">
-                  Nature of Support Tickets
-                </h2>
-                <p className="text-gray-900 text-[20px] font-semibold">
-                  Some description
-                </p>
               </div>
             </div>
           </section>
@@ -1040,6 +1074,7 @@ export default function ResellerLandingPage() {
           </section>
         </main>
       </div>
-            <Footer />    </div>
+      <Footer />{" "}
+    </div>
   );
 }
