@@ -357,9 +357,18 @@ export default function ResellerLandingPage() {
                 </p>
 
                 {/* Slider Container */}
-                <div className="relative w-full max-w-2xl mx-auto">
+                <div className="relative w-full max-w-xl mx-auto flex items-center">
+                  {/* Previous Button */}
+                  <button
+                    onClick={goToPrevious}
+                    className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 mr-2"
+                    aria-label="Previous persona"
+                  >
+                    <ChevronLeft className="w-6 h-6 text-gray-800" />
+                  </button>
+
                   {/* Image Display */}
-                  <div className="overflow-hidden w-full aspect-[16/9]">
+                  <div className="overflow-hidden w-full rounded-2xl">
                     <Image
                       src={personas[currentIndex].src}
                       alt={personas[currentIndex].alt}
@@ -368,35 +377,31 @@ export default function ResellerLandingPage() {
                       height={450}
                     />
                   </div>
-                  <button
-                    onClick={goToPrevious}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
-                    aria-label="Previous persona"
-                  >
-                    <ChevronLeft className="w-6 h-6 text-gray-800" />
-                  </button>
 
+                  {/* Next Button */}
                   <button
                     onClick={goToNext}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+                    className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 ml-2"
                     aria-label="Next persona"
                   >
                     <ChevronRight className="w-6 h-6 text-gray-800" />
                   </button>
-                  <div className="flex justify-center gap-2 mt-4">
-                    {personas.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentIndex(index)}
-                        className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                          index === currentIndex
-                            ? "bg-blue-600 w-8"
-                            : "bg-gray-300 hover:bg-gray-400"
-                        }`}
-                        aria-label={`Go to persona ${index + 1}`}
-                      />
-                    ))}
-                  </div>
+                </div>
+
+                {/* Pagination dots */}
+                <div className="flex justify-center gap-2 mt-4">
+                  {personas.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentIndex
+                          ? "bg-blue-600 w-8"
+                          : "bg-gray-300 hover:bg-gray-400"
+                      }`}
+                      aria-label={`Go to persona ${index + 1}`}
+                    />
+                  ))}
                 </div>
               </div>
             </div>
