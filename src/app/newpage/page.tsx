@@ -354,9 +354,9 @@ export default function ResellerLandingPage() {
               ))}
           </section>
 
-          <section className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center bg-[#fef3eb]">
+          <section className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center ">
             <p className="text-gray-600 text-sm leading-relaxed mb-8">
-              The prices and fees displayed on this page present an estimation
+              *The prices and fees displayed on this page present an estimation
               based on our most standard and common fee structure, available for
               majority of the account types in the majority of the regions where
               our services may be available. Different prices and fees may be

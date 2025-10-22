@@ -722,12 +722,12 @@ export default function ResellerLandingPage() {
                   link. Affiliation screenshots should be captured using
                   Autologger.
                 </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
+                {/* <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
                   <a className="text-blue-600" href="">
                     Autologger 7650
                   </a>
-                </p>
+                </p> */}
 
                 {/* Business Profile */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
