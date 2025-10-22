@@ -25,8 +25,35 @@ import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
+const faqSections = [
+  {
+    title:
+      "Get paid with Payoneer - Learn how to simplify getting paid with Payoneer",
+    description:
+      "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
 
-
+    image: "",
+    link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
+  },
+  {
+    title: "Annual Fee (First Card)",
+    description:
+      "A $29.95 yearly fee is charged for the first Payoneer card issued to your account. Additional cards may have separate fees based on usage and currency.",
+    image: "/images/annual-fee.png",
+  },
+  {
+    title: "Card Replacement",
+    description:
+      "Lost or expired cards can be replaced through the Payoneer Help Center. Replacement fees and shipping times depend on your region.",
+    image: "/images/card-replacement.png",
+  },
+  {
+    title: "ATM Withdrawal Issues",
+    description:
+      "If your card doesn’t dispense cash, verify that the ATM supports MasterCard withdrawals and check your account balance. If funds were deducted but no cash received, open a dispute ticket.",
+    image: "/images/atm-issue.png",
+  },
+];
 
 const tutorials = [
   {
@@ -357,26 +384,24 @@ export default function ResellerLandingPage() {
       )}
 
       {/* Banner */}
-<section
-  style={{ backgroundImage: `url(${Banner.src})` }}
-  className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
->
-  <div className="max-w-4xl mx-auto py-12 sm:py-20">
-    <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-      Referred Account Holder (AH)
-      <br />
-      <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-        Onboarding Journey
-      </span>
-    </h1>
-  </div>
-</section>
-
+      <section
+        style={{ backgroundImage: `url(${Banner.src})` }}
+        className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+      >
+        <div className="max-w-4xl mx-auto py-12 sm:py-20">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            Referred Account Holder (AH)
+            <br />
+            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+              Onboarding Journey
+            </span>
+          </h1>
+        </div>
+      </section>
 
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
-          
           <h3 className="text-2xl text-black font-semibold mb-6">Topics</h3>
           <nav className="space-y-3">
             {topics.map((topic) => (
@@ -393,71 +418,69 @@ export default function ResellerLandingPage() {
               </button>
             ))}
           </nav>
-
         </aside>
 
         {/* Main content */}
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white relative z-10">
           {/* Breadcrumb */}
- <section
-  aria-label="Breadcrumb"
-  className="border-b border-white/10 bg-white text-black backdrop-blur"
->
-  <div className="max-w-5xl mx-auto flex flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-0 py-2">
-    {/* Left Side: Back + Breadcrumb */}
-    <div className="flex items-center gap-2">
-      <button
-        type="button"
-        onClick={() => router.push("/")}
-        className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
-        aria-label="Back"
-        title="Back"
-      >
-        <Image src={backBtn} alt="Back" width={32} height={32} />
-      </button>
+          <section
+            aria-label="Breadcrumb"
+            className="border-b border-white/10 bg-white text-black backdrop-blur"
+          >
+            <div className="max-w-5xl mx-auto flex flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-0 py-2">
+              {/* Left Side: Back + Breadcrumb */}
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={() => router.push("/")}
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-white text-black"
+                  aria-label="Back"
+                  title="Back"
+                >
+                  <Image src={backBtn} alt="Back" width={32} height={32} />
+                </button>
 
-      <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
-        <span
-          className="cursor-pointer font-medium hover:underline"
-          onClick={() => router.push("/")}
-        >
-          Table of Content
-        </span>
-        <span className="opacity-60">›</span>
-        <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-          Referred Account Holder Onboarding Journey
-        </span>
-      </nav>
-    </div>
+                <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
+                  <span
+                    className="cursor-pointer font-medium hover:underline"
+                    onClick={() => router.push("/")}
+                  >
+                    Table of Content
+                  </span>
+                  <span className="opacity-60">›</span>
+                  <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
+                    Referred Account Holder Onboarding Journey
+                  </span>
+                </nav>
+              </div>
 
-    {/* Right Side: Download PDF Button */}
-    <a
-      href="/files/referred-account-holder-Page.pdf" // update with your actual file
-      download
-      className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-sm text-[#878787] shadow-sm hover:bg-gray-100"
-      aria-label="Download PDF"
-      title="Download PDF"
-    >
-      {/* Download Icon */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-5 w-5"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-        />
-      </svg>
-      <span>Download Page as PDF</span>
-    </a>
-  </div>
-</section>
-
+              {/* Right Side: Download PDF Button */}
+              <a
+                href="/files/referred-account-holder-Page.pdf" // update with your actual file
+                download
+                className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-sm text-[#878787] shadow-sm hover:bg-gray-100"
+                aria-label="Download PDF"
+                title="Download PDF"
+              >
+                {/* Download Icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
+                  />
+                </svg>
+                <span>Download Page as PDF</span>
+              </a>
+            </div>
+          </section>
 
           {/* How to Join */}
 
@@ -471,10 +494,16 @@ export default function ResellerLandingPage() {
             </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Request for your unique onboarding link at
-              support@payoneerpartnerships.com
+              <a
+                className="text-blue-500"
+                href="support@payoneerpartnerships.com"
+              >
+                {" "}
+                support@payoneerpartnerships.com
+              </a>
             </p>
-                    <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
-            <p className="mt-2 text-gray-900 text-[23px]">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
+              <p className="mt-2 text-gray-900 text-[23px]">
                 Step-by-Step Onboarding Guides for Clients:
               </p>
             </div>
@@ -493,7 +522,7 @@ export default function ResellerLandingPage() {
                   {steps.slice(0, splitIndex).map((section, idx) => (
                     <div
                       key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
+                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-16"
                     >
                       {/* Text Content */}
                       <div
@@ -515,7 +544,7 @@ export default function ResellerLandingPage() {
                                 alt="Check"
                                 width={20}
                                 height={20}
-                                className="flex-none mt-1"
+                                className="flex-none mt-1 bg-white"
                               />
                               <span>{text}</span>
                             </li>
@@ -561,12 +590,12 @@ export default function ResellerLandingPage() {
                     <p className="text-gray-900 text-[48px] font-semibold">
                       CLM Flow
                     </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
+                    <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at
                       support@payoneerpartnerships.com
                     </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
-            <p className="mt-2 text-gray-900 text-[23px]">
+                      <p className="mt-2 text-gray-900 text-[23px]">
                         Step-by-Step Onboarding Guides for Clients:
                       </p>
                     </div>
@@ -580,7 +609,7 @@ export default function ResellerLandingPage() {
                   {steps.slice(splitIndex).map((section, idx) => (
                     <div
                       key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
+                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-16"
                     >
                       {/* Text Content */}
                       <div
@@ -602,7 +631,7 @@ export default function ResellerLandingPage() {
                                 alt="Check"
                                 width={20}
                                 height={20}
-                                className="flex-none mt-1"
+                                className="flex-none mt-1 bg-white"
                               />
                               <span>{text}</span>
                             </li>
@@ -648,7 +677,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* 2 */}
-          
+
           {/* Additional KYC Requirements */}
           <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
@@ -660,9 +689,9 @@ export default function ResellerLandingPage() {
 
                 <p className="mt-2 text-gray-900 text-[17px]">
                   As part of the onboarding process, you may be asked to provide
-                  additional documentation. The following outlines the requirements, with
-                  clear guidance to help you prepare the information in the correct format
-                  and avoid processing delays.
+                  additional documentation. The following outlines the
+                  requirements, with clear guidance to help you prepare the
+                  information in the correct format and avoid processing delays.
                 </p>
 
                 {/* Affiliation */}
@@ -670,24 +699,28 @@ export default function ResellerLandingPage() {
                   Affiliation URL / Screenshot showing affiliation
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  You may be asked to provide evidence of your professional affiliation:
+                  You may be asked to provide evidence of your professional
+                  affiliation:
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  This can be a link to your official website where your services are
-                  displayed.
+                  This can be a link to your official website where your
+                  services are displayed.
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If you do not maintain a website, you may submit a link to your verified
-                  social media profile or freelancer platform account (e.g., Upwork).
+                  If you do not maintain a website, you may submit a link to
+                  your verified social media profile or freelancer platform
+                  account (e.g., Upwork).
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  Screenshots must clearly display your profile or account details,
-                  including username or store name, website URL or logo, and profile
-                  information such as full name, phone number, and email address.
+                  Screenshots must clearly display your profile or account
+                  details, including username or store name, website URL or
+                  logo, and profile information such as full name, phone number,
+                  and email address.
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  In some cases, a screenshot may be accepted in place of a live link.
-                  Affiliation screenshots should be captured using Autologger.
+                  In some cases, a screenshot may be accepted in place of a live
+                  link. Affiliation screenshots should be captured using
+                  Autologger.
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
@@ -701,10 +734,11 @@ export default function ResellerLandingPage() {
                   Business profile / Merchant application form (MAF)
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  For accounts receiving payments via the Payment Request Service (PRQ),
-                  submission of a Business Profile — also known as the Merchant
-                  Application Form (MAF) — is required. This form provides essential
-                  information for Line of Business (LOB) verification.
+                  For accounts receiving payments via the Payment Request
+                  Service (PRQ), submission of a Business Profile — also known
+                  as the Merchant Application Form (MAF) — is required. This
+                  form provides essential information for Line of Business (LOB)
+                  verification.
                 </p>
 
                 {/* Held ID */}
@@ -712,17 +746,17 @@ export default function ResellerLandingPage() {
                   Held ID
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  A Held ID submission must include a clear photograph of the account
-                  holder:
+                  A Held ID submission must include a clear photograph of the
+                  account holder:
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>
-                    Holding their government-issued ID alongside a piece of paper
-                    displaying the current date.
+                    Holding their government-issued ID alongside a piece of
+                    paper displaying the current date.
                   </li>
                   <li>
-                    Both the face of the account holder and the text on the paper must be
-                    fully visible and unobstructed.
+                    Both the face of the account holder and the text on the
+                    paper must be fully visible and unobstructed.
                   </li>
                   <li>The image must not be mirrored, reversed, or edited.</li>
                 </ul>
@@ -737,19 +771,22 @@ export default function ResellerLandingPage() {
                   Invoice Submission Requirements
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  To verify a payment, the account holder must submit the invoice issued
-                  to their client. This document serves as proof of the transaction and
-                  should include the following details:
+                  To verify a payment, the account holder must submit the
+                  invoice issued to their client. This document serves as proof
+                  of the transaction and should include the following details:
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>A description of the services provided</li>
-                  <li>The full names of both the buyer (payer) and the seller (account holder)</li>
+                  <li>
+                    The full names of both the buyer (payer) and the seller
+                    (account holder)
+                  </li>
                   <li>The payment amount</li>
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  Each business may use a different invoice format. Therefore, there is no
-                  single “standard” template. Use your discretion to determine if the
-                  invoice contains the required elements.
+                  Each business may use a different invoice format. Therefore,
+                  there is no single “standard” template. Use your discretion to
+                  determine if the invoice contains the required elements.
                 </p>
 
                 {/* Invoice for Alias Review */}
@@ -757,21 +794,23 @@ export default function ResellerLandingPage() {
                   Invoice Requirements for Alias Review
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  For reviews involving an alias, the invoice must meet additional
-                  criteria to demonstrate a clear connection between the customer and the
-                  payment.
+                  For reviews involving an alias, the invoice must meet
+                  additional criteria to demonstrate a clear connection between
+                  the customer and the payment.
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   The invoice must include:
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-                  <li>The original seller’s full name</li>
+                  <li>The original seller&apos;s full name</li>
                   <li>The buyer&apos;s name</li>
-                  <li>A general description of the products or services provided</li>
+                  <li>
+                    A general description of the products or services provided
+                  </li>
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  In addition, the invoice must establish a link to the customer by
-                  meeting at least one of the following criteria:
+                  In addition, the invoice must establish a link to the customer
+                  by meeting at least one of the following criteria:
                 </p>
                 <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
                   <li>The alias name matches</li>
@@ -785,33 +824,38 @@ export default function ResellerLandingPage() {
                   Visual Identity Verification (Selfie)
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  In some cases, the account holder will be asked to complete Visual
-                  Identity Verification. This process involves taking a selfie and
-                  uploading a valid ID document. When required, the customer will see a
-                  prompt titled <strong>Visual Identity Verification</strong> in their
+                  In some cases, the account holder will be asked to complete
+                  Visual Identity Verification. This process involves taking a
+                  selfie and uploading a valid ID document. When required, the
+                  customer will see a prompt titled{" "}
+                  <strong>Visual Identity Verification</strong> in their
                   account.
                 </p>
                 <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  Please note that these are part of the overall selfie requirement and
-                  should not be manually uploaded or reviewed; they must be completed by
-                  the account holder and reviewed only by KYC.
+                  Please note that these are part of the overall selfie
+                  requirement and should not be manually uploaded or reviewed;
+                  they must be completed by the account holder and reviewed only
+                  by KYC.
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   What the customer experience looks like:
                 </p>
                 <ol className="list-decimal list-outside pl-5 text-[12px] text-[#878787] space-y-2 sm:text-[17px]">
                   <li>
-                    When Selfie is requested, the customer clicks on the Visual Identity
-                    Verification requirement.
+                    When Selfie is requested, the customer clicks on the Visual
+                    Identity Verification requirement.
                   </li>
                   <li>
-                    After a customer clicks on it, they are directed to a &apos;Selfie
-                    submission wizard&apos;.
+                    After a customer clicks on it, they are directed to a
+                    &apos;Selfie submission wizard&apos;.
                   </li>
-                  <li>They select their country and choose the appropriate ID type.</li>
                   <li>
-                    Next, they are prompted to take a photo of their ID document (as
-                    required for the document type & country).
+                    They select their country and choose the appropriate ID
+                    type.
+                  </li>
+                  <li>
+                    Next, they are prompted to take a photo of their ID document
+                    (as required for the document type & country).
                   </li>
                   <li>Finally, they take a live selfie.</li>
                 </ol>
@@ -821,9 +865,10 @@ export default function ResellerLandingPage() {
                   </a>
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If the account holder wishes to opt out of the service, refer to the
-                  “How can an account holder opt out of the &apos;Selfie&apos; requirement &apos;(Visual
-                  Identity Verification)&apos; section“ in the{" "}
+                  If the account holder wishes to opt out of the service, refer
+                  to the “How can an account holder opt out of the
+                  &apos;Selfie&apos; requirement &apos;(Visual Identity
+                  Verification)&apos; section“ in the{" "}
                   <a className="text-blue-600" href="">
                     How to handle documents guide
                   </a>
@@ -832,176 +877,68 @@ export default function ResellerLandingPage() {
               </div>
             </div>
           </section>
-          <section id="get-started-with-payoneer" className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Column with heading + first card */}
-              <div className="flex flex-col gap-6 md:mt-6">
-                {/* Heading */}
-                <div className="max-w-3xl">
-                  <h2 className="text-gray-900 text-[48px] font-semibold">
-                    Get started with Payoneer
-                  </h2>
-                  <p className="mt-4 text-gray-600 text-lg">
-                    An overview of Payoneer’s features, including payment
-                    collection, currency conversion, account funding, and global
-                    payouts—helping referred customers activate and grow with
-                    their new account.
-                  </p>
-                </div>
+          <section
+            id="get-started-with-payoneer"
+            className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16"
+          >
+            <section className="scroll-mt-28 mt-10">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+                Get started with Payoneer
+              </h2>
+              <p className="text-gray-600 leading-relaxed text-lg mb-4">
+                An overview of Payoneer&apos;s features, including payment
+                collection, currency conversion, account funding, and global
+                payouts—helping referred customers activate and grow with their
+                new account.
+              </p>
+              <div className="flex flex-col space-y-20">
+                {tutorials.map((faq, index) => (
+                  <div
+                    key={index}
+                    className={`flex flex-col md:flex-row items-center gap-10 ${
+                      index % 2 === 1 ? "md:flex-row-reverse" : ""
+                    }`}
+                  >
+                    {/* Image */}
+                    <div className="md:w-1/2 w-full">
+                      <div className="overflow-hidden rounded-2xl shadow-lg">
+                        <Image
+                          src={faq.image}
+                          alt={faq.title}
+                          width={600}
+                          height={400}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    </div>
 
-                {/* First Card */}
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {tutorials[0].title}
-                    </h3>
-                    <p className="text-gray-600 text-[16px] mb-4">
-                      {tutorials[0].desc}
-                    </p>
-                    <a
-                      href={tutorials[0].link}
-                      target="_blank"
-                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
-                    >
-                      View the tutorial video
-                    </a>
-                  </div>
-                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
-                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
-                      <Image
-                        src={tutorials[0].image}
-                        alt={tutorials[0].title}
-                        width={400}
-                        height={300}
-                        className="rounded-md object-cover"
-                      />
+                    {/* Text */}
+                    <div className="md:w-1/2 w-full">
+                      <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                        {faq.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed text-lg mb-4">
+                        {faq.desc}
+                      </p>
+
+                      {/* Gradient link */}
+                      <a
+                        href={faq.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=" font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00] transition-all"
+                      >
+                        View the tutorial video →
+                      </a>
                     </div>
                   </div>
-                </div>
-                {/* 4th card */}
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {tutorials[3].title}
-                    </h3>
-                    <p className="text-gray-600 text-[16px] mb-4">
-                      {tutorials[3].desc}
-                    </p>
-                    <a
-                      href={tutorials[2].link}
-                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
-                    >
-                      View the tutorial video
-                    </a>
-                  </div>
-                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
-                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
-                      <Image
-                        src={tutorials[3].image}
-                        alt={tutorials[3].title}
-                        width={400}
-                        height={300}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
-
-              <div className="flex flex-col gap-6">
-                {/* Second Card */}
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {tutorials[1].title}
-                    </h3>
-                    <p className="text-gray-600 text-[16px] mb-4">
-                      {tutorials[1].desc}
-                    </p>
-                    <a
-                      href={tutorials[1].link}
-                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
-                    >
-                      View the tutorial video
-                    </a>
-                  </div>
-                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
-                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
-                      <Image
-                        src={tutorials[1].image}
-                        alt={tutorials[1].title}
-                        width={400}
-                        height={300}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* 3 Card */}
-
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {tutorials[2].title}
-                    </h3>
-                    <p className="text-gray-600 text-[16px] mb-4">
-                      {tutorials[2].desc}
-                    </p>
-                    <a
-                      href={tutorials[2].link}
-                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
-                    >
-                      View the tutorial video
-                    </a>
-                  </div>
-                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
-                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
-                      <Image
-                        src={tutorials[2].image}
-                        alt={tutorials[2].title}
-                        width={400}
-                        height={300}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-                {/* 5 Card */}
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-sm hover:shadow-md transition overflow-hidden">
-                  <div className="p-6 flex flex-col flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                      {tutorials[4].title}
-                    </h3>
-                    <p className="text-gray-600 text-[16px] mb-4">
-                      {tutorials[4].desc}
-                    </p>
-                    <a
-                      href={tutorials[4].link}
-                      className="font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]"
-                    >
-                      View the tutorial video
-                    </a>
-                  </div>
-                  <div className="bg-gradient-to-tr from-pink-200 via-purple-200 to-blue-200 p-6">
-                    <div className="bg-white/70 rounded-lg aspect-[4/3] flex items-center justify-center">
-                      <Image
-                        src={tutorials[4].image}
-                        alt={tutorials[4].title}
-                        width={400}
-                        height={300}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
           </section>
         </main>
       </div>
-            <Footer />
-
+      <Footer />
     </div>
   );
 }
