@@ -8,13 +8,13 @@ import backBtn from "../assets/images/back-button.svg";
 import Togglebtn from "../assets/images/toggle-faq.svg";
 import Footer from "../components/Footer";
 
-type ListFAQ = {
+type ListPrice = {
   type: "list";
   question: string;
   answers: string[];
 };
 
-type TableFAQ = {
+type TablePrice = {
   type: "table";
   question: string;
   subHeading?: string;
@@ -24,23 +24,23 @@ type TableFAQ = {
   };
 };
 
-type FAQ = ListFAQ | TableFAQ;
+type Price = ListPrice | TablePrice;
 
 const topics = [
   {
-    title: "Frequently Asked Questions (FAQs)",
-    slug: "faqs",
+    title: "Table",
+    slug: "table",
   },
   {
-    title: "Support Ticket Questionnaire",
-    slug: "support-ticket-questionnaire",
+    title: "The prices and fees",
+    slug: "The-prices-and-fees",
   },
 ];
 
-const faqsSectionTwo = [
+const priceSection = [
   {
     type: "table",
-    question: "For full details, visit the official page: Payoneer Pricing",
+    question: "",
     subHeading:
       "Use the table below to find the correct request type and how to categorize common issues.",
     tableData: {
@@ -179,10 +179,10 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
-            Supporting Your Referred
+            Payoneer
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Account Holders
+              Fees
             </span>
           </h1>
         </div>
@@ -241,25 +241,23 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* ---------- Section 1: FAQs ---------- */}
-          <section id="faqs" className="scroll-mt-28">
+          <section id="table" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
-                  Reseller Operations External FAQ Guide
+                  Our goal is to help you keep more of what your business earns.
+                  That's why we work hard to keep our pricing low, and whenever
+                  possible, completely free.
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-                  This document is designed to guide reseller partners on how to
-                  raise operational support queries through the official
-                  Reseller Operations Support Request Form. Please refer to the
-                  FAQs below to navigate the most common queries and
-                  resolutions.
+                  For full details, visit the official page: Payoneer Pricing{" "}
                 </p>
               </div>
             </div>
           </section>
           {/*  */}
           <section className="scroll-mt-28 space-y-12">
-            {(faqsSectionTwo as FAQ[])
+            {(priceSection as Price[])
               .filter((faq) => faq.type === "table" && "tableData" in faq)
               .map((faq, index) => (
                 <div
@@ -354,9 +352,12 @@ export default function ResellerLandingPage() {
               ))}
           </section>
 
-          <section className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center ">
+          <section
+            id="The-prices-and-fees"
+            className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center bg-[#fef3eb]"
+          >
             <p className="text-gray-600 text-sm leading-relaxed mb-8">
-              *The prices and fees displayed on this page present an estimation
+              The prices and fees displayed on this page present an estimation
               based on our most standard and common fee structure, available for
               majority of the account types in the majority of the regions where
               our services may be available. Different prices and fees may be

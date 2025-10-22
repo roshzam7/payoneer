@@ -23,8 +23,29 @@ const Navbar: React.FC = () => {
                 <Link href="/" className="hover:text-black">
                   Home
                 </Link>
+                <Link href="/reseller-program" className="hover:text-black">
+                  Program
+                </Link>{" "}
+                <Link href="/partner-onboarding" className="hover:text-black">
+                  Getting Started
+                </Link>{" "}
+                <Link
+                  href="/referred-account-holder"
+                  className="hover:text-black"
+                >
+                  Onboarding Journey
+                </Link>
+                <Link href="/partner-activation" className="hover:text-black">
+                  Enablement
+                </Link>
+                <Link href="/newpage" className="hover:text-black">
+                  Pricing
+                </Link>
+                <Link href="/faqs" className="hover:text-black">
+                  Support
+                </Link>
                 <div className="relative group">
-                  <button className="flex items-center space-x-1 hover:text-black ">
+                  {/* <button className="flex items-center space-x-1 hover:text-black ">
                     <span>Topics</span>
                     <svg
                       className="w-4 h-4 ml-1"
@@ -39,7 +60,7 @@ const Navbar: React.FC = () => {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </button>
+                  </button> */}
                   <div className="absolute left-0 mt-0 w-100 border-0 bg-white  rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none group-hover:pointer-events-auto">
                     <Link
                       href="/reseller-program"
