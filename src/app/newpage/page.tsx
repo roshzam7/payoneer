@@ -233,7 +233,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Supporting Your Referred Account Holders (AHs)
+                 Payoneer Fees
                 </span>
               </nav>
             </div>
