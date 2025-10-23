@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/reseller-banner.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
-import Togglebtn from "../assets/images/toggle-faq.svg";
 import Footer from "../components/Footer";
 
 type ListPrice = {
@@ -246,7 +245,7 @@ export default function ResellerLandingPage() {
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
                   Our goal is to help you keep more of what your business earns.
-                  That's why we work hard to keep our pricing low, and whenever
+                  That&apos;s why we work hard to keep our pricing low, and whenever
                   possible, completely free.
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">

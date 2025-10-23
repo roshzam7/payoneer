@@ -25,35 +25,6 @@ import Content16 from "../assets/images/sectionfour/Content16.png";
 import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
-const faqSections = [
-  {
-    title:
-      "Get paid with Payoneer - Learn how to simplify getting paid with Payoneer",
-    description:
-      "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
-
-    image: "",
-    link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
-  },
-  {
-    title: "Annual Fee (First Card)",
-    description:
-      "A $29.95 yearly fee is charged for the first Payoneer card issued to your account. Additional cards may have separate fees based on usage and currency.",
-    image: "/images/annual-fee.png",
-  },
-  {
-    title: "Card Replacement",
-    description:
-      "Lost or expired cards can be replaced through the Payoneer Help Center. Replacement fees and shipping times depend on your region.",
-    image: "/images/card-replacement.png",
-  },
-  {
-    title: "ATM Withdrawal Issues",
-    description:
-      "If your card doesn’t dispense cash, verify that the ATM supports MasterCard withdrawals and check your account balance. If funds were deducted but no cash received, open a dispute ticket.",
-    image: "/images/atm-issue.png",
-  },
-];
 
 const tutorials = [
   {
