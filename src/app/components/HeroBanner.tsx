@@ -119,13 +119,13 @@ const HeroBanner: React.FC = () => {
         {/* Description */}
         <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-lg leading-relaxed text-gray-700">
           Powering your success with an exclusive program built for growth and
-          next-gen infrastructure
+          next-gen infrastructure.
         </p>
-        <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-sm leading-relaxed text-gray-700">
+        {/* <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-sm leading-relaxed text-gray-700">
           Unlock full access to our ecosystem — from seamless onboarding and
           activation to smart guides and realtime support. Everything you need
           to scale, all in one place.
-        </p>
+        </p> */}
 
         {/* 🔍 Search Input with Dropdown */}
         <div className="relative w-full sm:w-1/2 mx-auto mt-10">

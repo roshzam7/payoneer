@@ -28,11 +28,13 @@ export default function NewmainpageContents() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800">
-              Welcome to the Payoneer Partner Program
+               Unlock Full Access to Our Ecosystem 
             </h1>
             <p className="mt-4 text-gray-600 max-w-prose">
-              Powering your success with an exclusive program built for growth
-              and next-gen infrastructure. This hub brings together onboarding,
+                      Power your growth with a next-gen ecosystem that simplifies how you
+              start, learn, and succeed. Our all-in-one hub connects onboarding, enablement,
+and rewards—designed to help you move faster, perform better, and scale
+sustainably. It&apos;s more than a program; it&apos;s your gateway to limitless opportunity. This hub brings together onboarding,
               enablement and rewards so you can scale with confidence.
             </p>
 
@@ -172,7 +174,7 @@ export default function NewmainpageContents() {
         </h3>
 
         {/* Top 3 cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
               src={growthIcon}
@@ -227,11 +229,7 @@ export default function NewmainpageContents() {
               integrate Payoneer offerings into your stack.
             </p>
           </div>
-        </div>
-
-        {/* Bottom 2 cards */}
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
+                    <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
               src={growthIcon}
               alt="Expert Support & Resources"
@@ -248,6 +246,11 @@ export default function NewmainpageContents() {
               to keep you moving forward.
             </p>
           </div>
+        </div>
+
+        {/* Bottom 2 cards */}
+        {/* <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+
 
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
@@ -272,7 +275,7 @@ export default function NewmainpageContents() {
               Visit reference
             </Link>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* SECTION 3: Next steps */}
@@ -352,7 +355,6 @@ export default function NewmainpageContents() {
       <section className="mt-16 relative w-full">
         <Testimonial />
       </section>
-
       {/* SECTION 5: CTA */}
       <footer className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
@@ -364,7 +366,6 @@ export default function NewmainpageContents() {
             you succeed.
           </p>
         </div>
-
         <div className="flex gap-3">
           <Link
             href="/support/ticket"
