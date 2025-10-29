@@ -84,7 +84,7 @@ const priceSection = [
           "Same currency to local bank (up to $50K/month)",
           "~$1. 50 / €1.50 / £1.50",
         ],
-        ["", "Above $50 K/month (USD/EUR/GBP", "0. 5% of the amoun"],
+        ["", "Above $50 K/month (USD/EUR/GBP", "0. 5% of the amount"],
         ["", "With currency conversio n (e.g., USD → EUR)", "Up to 3%"],
         ["", "", ""],
         ["", "", ""],
