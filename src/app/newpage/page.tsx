@@ -47,8 +47,8 @@ const priceSection = [
       rows: [
         ["Receiving Funds ", "From ano ther Payoneer user", "Free"],
 
-        ["", "From client via credit/deb it card", "Up to 3.99% + $0.4 9"],
-        ["", "From US client via AC H b ank d ebit", "1%"],
+        ["", "From client via credit/debit card", "Up to 3.99% + $0.4 9"],
+        ["", "From US client via ACH bank debit", "1%"],
 
         [
           "",
@@ -57,17 +57,17 @@ const priceSection = [
         ],
         [
           "",
-          "Receiving account – same currency (e.g. USD to your USD acco unt)",
+          "Receiving account – same currency (e.g. USD to your USD account)",
           "Free",
         ],
         [
           "",
-          "Receiving account – diffe rent currency (e.g. EUR to your USD account)",
+          "Receiving account – different currency (e.g. EUR to your USD account)",
           "Up to 1% or fixed fee, based on location and currency",
         ],
         ["", "", ""],
         ["", "", ""],
-        ["Making Payments", "To ano ther Payoneer user", "Up to 1% (min. $4 )"],
+        ["Making Payments", "To another Payoneer user", "Up to 1% (min. $4 )"],
         ["", "To non-Payoneer user's bank account", "Up to 3%"],
         ["", "", ""],
         ["", "", ""],
@@ -75,7 +75,7 @@ const priceSection = [
 
         ["", "Additional cards", "Free"],
         ["", "Purchases in same currency as card ", "Free"],
-        ["", "Currency conversion (e.g., USD to EU R) ", "Up to 3.5%"],
+        ["", "Currency conversion (e.g., USD to EUR) ", "Up to 3.5%"],
         ["", "Cross-border purchases", "Up to 1.8%"],
         ["", "", ""],
         ["", "", ""],
@@ -85,7 +85,7 @@ const priceSection = [
           "~$1. 50 / €1.50 / £1.50",
         ],
         ["", "Above $50 K/month (USD/EUR/GBP", "0. 5% of the amoun"],
-        ["", "With currency conversio n (e.g., U SD → EUR)", "Up to 3%"],
+        ["", "With currency conversio n (e.g., USD → EUR)", "Up to 3%"],
         ["", "", ""],
         ["", "", ""],
         [
@@ -229,7 +229,7 @@ export default function ResellerLandingPage() {
                   className="cursor-pointer font-medium hover:underline"
                   onClick={() => router.push("/")}
                 >
-                  Table of Content
+                  Table
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
@@ -249,7 +249,16 @@ export default function ResellerLandingPage() {
                   possible, completely free.
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-                  For full details, visit the official page: Payoneer Pricing{" "}
+                  For full details, visit the official page: {" "}
+                  <span className="text-blue-500-" >
+                    Payoneer Pricing
+                  </span>
+                                        {/* <a
+                        className="text-blue-500"
+                        href="support@payoneerpartnerships.com">
+                        {" "}
+                       Payoneer Pricing
+                      </a> */}
                 </p>
               </div>
             </div>

@@ -43,7 +43,7 @@ const tutorials = [
   },
   {
     title:
-      "Convert Currencies with Payoneer - Learn how to convert currencies seamlessly at competitive rates",
+      "Convert Currencies with Payoneer - Learn how to convert currencies Get started with Payoneer at competitive rates",
     desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
     link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
     image: "/images/ConvertCurrencies.png",
@@ -77,7 +77,7 @@ const topics = [
     slug: "kyc-process-explained",
   },
   {
-    title: "Get started with Payoneer",
+    title: "Learn about our solution and products",
     slug: "get-started-with-payoneer",
   },
 ];
@@ -563,7 +563,12 @@ export default function ResellerLandingPage() {
                     </p>
                     <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at
-                      support@payoneerpartnerships.com
+                      <a
+                        className="text-blue-500"
+                        href="support@payoneerpartnerships.com">
+                        {" "}
+                        support@payoneerpartnerships.com
+                      </a>
                     </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
                       <p className="mt-2 text-gray-900 text-[23px]">
