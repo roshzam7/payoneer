@@ -71,7 +71,6 @@ import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
 import marketplaces from "../assets/images/marketplaces-icon.svg";
 import transaction from "../assets/images/transaction-icon.svg";
 
-
 // Key features icons
 import fastOnboarding from "../assets/images/fast-onboarding.svg";
 import debitCards from "../assets/images/debit-cards.svg";
@@ -386,7 +385,7 @@ export default function ResellerLandingPage() {
             <h1 className="text-[20px] sm:text-[48px] font-bold mb-2 text-[#252526]">
               About Payoneer
             </h1>
-            <p className="text-[#878787] mb-6 max-w-2xl text-[13px] sm:text-[17px] ">
+            <p className="text-[#878787] mb-6 w-full text-[13px] sm:text-[17px] ">
               Payoneer is a global financial services company that provides
               solutions for cross-border payments and international transactions
               for businesses, freelancers, and sellers.
@@ -455,7 +454,7 @@ export default function ResellerLandingPage() {
               <h3 className="text-md sm:text-[20px] font-semibold text-gray-900">
                 Trusted by the world&apos;s leading digital brands
               </h3>
-              <p className="text-xs sm:text-[17px] text-[#878787] mt-1 max-w-3xl">
+              <p className="text-xs sm:text-[17px] text-[#878787] mt-1 w-full">
                 Serving over 2000 leading global marketplaces & digital
                 platforms, sending tens of billions of dollars a year to SMBs
                 across the world
@@ -486,7 +485,7 @@ export default function ResellerLandingPage() {
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
               Why Partner with Us
             </h1>
-            <p className="mt-3 max-w-3xl text-[#878787] text-[13px] sm:text-[17px]">
+            <p className="mt-3 w-full text-[#878787] text-[13px] sm:text-[17px]">
               Partner with Payoneer to unlock global payouts, world-class
               infrastructure, and co-marketing opportunities. Empower your
               merchants and creators to scale internationally with seamless
@@ -536,7 +535,7 @@ export default function ResellerLandingPage() {
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Reseller Program Overview
             </h2>
-            <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] max-w-2xl">
+            <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full">
               The Payoneer Reseller Program enables incorporation agencies and
               VAS providers to become full-service financial partners for SMB
               clients.
@@ -604,52 +603,53 @@ export default function ResellerLandingPage() {
             </section>
 
             {/* Partner Cards Block */}
-            <section className="sm:mt-16 mt-4">
-              <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-                Payoneer, your ideal banking services partner
-              </h2>
-              <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] max-w-4xl">
-                The proposed reseller partnership enables cross-border access
-                for customers and unlocks new revenue streams.
-              </p>
+            {/* <section className="sm:mt-16 mt-4">
+              <div className="max-w-6xl mx-auto px-4">
+                <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900 w-full ">
+                  Payoneer, your ideal banking services partner
+                </h2>
+                <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full ">
+                  The proposed reseller partnership enables cross-border access
+                  for customers and unlocks new revenue streams.
+                </p>
 
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {partnerCards.map(({ image, title, link, bullets }) => (
-                  <div
-                    key={title}
-                    className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 shadow-gray-300"
-                  >
-                    {/* Icon above title */}
-                    <Image
-                      src={image}
-                      alt="Expand cross-border"
-                      width={32}
-                      height={32}
-                      className="mt-4"
-                    />
-                    <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {partnerCards.map(({ image, title, link, bullets }) => (
+                    <div
+                      key={title}
+                      className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 shadow-gray-300"
+                    >
+                      <Image
+                        src={image}
+                        alt="Expand cross-border"
+                        width={32}
+                        height={32}
+                        className="mt-4"
+                      />
+                      <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
 
-                    <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
-                      {title}
-                    </h3>
-                    <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                      {link}
-                    </span>
+                      <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
+                        {title}
+                      </h3>
+                      <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                        {link}
+                      </span>
 
-                    <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
-                      {bullets.map((b, i) => (
-                        <li
-                          key={i}
-                          className="relative before:content-['•'] before:absolute before:left-0 before:text-[#878787] pl-3"
-                        >
-                          {b}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
+                      <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
+                        {bullets.map((b, i) => (
+                          <li
+                            key={i}
+                            className="relative before:content-['•'] before:absolute before:left-0 before:text-[#878787] pl-3"
+                          >
+                            {b}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </section>
+            </section> */}
           </section>
 
           <section className="scroll-mt-24 px-4 sm:px-6">

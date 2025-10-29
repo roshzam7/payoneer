@@ -31,10 +31,11 @@ export default function NewmainpageContents() {
                Unlock Full Access to Our Ecosystem 
             </h1>
             <p className="mt-4 text-gray-600 max-w-prose">
-                      Power your growth with a next-gen ecosystem that simplifies how you
+              Power your growth with a next-gen ecosystem that simplifies how you
               start, learn, and succeed. Our all-in-one hub connects onboarding, enablement,
-and rewards—designed to help you move faster, perform better, and scale
-sustainably. It&apos;s more than a program; it&apos;s your gateway to limitless opportunity. This hub brings together onboarding,
+              and rewards—designed to help you move faster, perform better, and scale
+              sustainably. It&apos;s more than a program; it&apos;s your gateway to limitless
+              opportunity. This hub brings together onboarding,
               enablement and rewards so you can scale with confidence.
             </p>
 
@@ -122,7 +123,7 @@ sustainably. It&apos;s more than a program; it&apos;s your gateway to limitless 
             </div>
           </div>
         </div>
-      </header>
+      </header>aaaaaaaaaaaaaaaaaa
 
       {/* SECTION 1 */}
       <section className="mt-10">
