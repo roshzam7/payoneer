@@ -170,11 +170,11 @@ export default function ResellerLandingPage() {
           <section id="sales-enablement-tools" className="scroll-mt-28 mb-12">
             <div className="grid grid-cols-1 gap-10">
               {/* Header Section */}
-              <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-3xl shadow-lg border border-gray-100 p-8 sm:p-12">
-                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
+              <div className="rounded-3xl p-8 sm:p-0">
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
                   Sales Enablement Tools
                 </h2>
-                <div className="mt-6 w-full flex justify-center">
+                {/* <div className="mt-6 w-full flex justify-center">
                   <Image
                     src={Sectionthree1}
                     alt="Reseller Program Phases"
@@ -182,11 +182,11 @@ export default function ResellerLandingPage() {
                     height={450}
                     className="w-full max-w-5xl h-auto rounded-2xl border border-gray-200 shadow-md transition-transform duration-300 hover:scale-[1.02]"
                   />
-                </div>
+                </div> */}
               </div>
 
               {/* Cards Section */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
                 {/* Card 1 */}
                 <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
@@ -278,20 +278,20 @@ export default function ResellerLandingPage() {
           >
             <div className="grid grid-cols-1 gap-10">
               {/* Header Section */}
-              <div className="bg-gradient-to-br from-white via-gray-50 to-gray-100 rounded-3xl shadow-lg border border-gray-100 p-8 sm:p-12">
+              <div className="rounded-3xl  p-8 sm:p-0">
                 <h3
                   id="reselling-guidelines"
-                  className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6"
+                  className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2"
                 >
                   Marketing & Reselling Guidelines
                 </h3>
-                <Image
+                {/* <Image
                   src={Sectionthree2}
                   alt="Reseller Program Phases"
                   width={800}
                   height={450}
                   className="w-full h-auto rounded-2xl border border-gray-200 shadow-md transition-transform duration-300 hover:scale-[1.02]"
-                />
+                /> */}
               </div>
 
               {/* Cards Section */}

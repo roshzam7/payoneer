@@ -252,7 +252,7 @@ const keyFeatures = [
   {
     logo: fastOnboarding,
     title: "Fast Onboarding",
-    desc: "Fast and digital onboarding. Get started in 1–3 days from document submission when you have a business bank account.",
+    desc: "Fast and digital onboarding. Get started in 1-3 days from document submission when you have a business bank account.",
   },
   {
     logo: debitCards,
@@ -303,7 +303,6 @@ export default function ResellerLandingPage() {
   return (
     <div>
       <Navbar />
-
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
         className="w-full bg-gray-50 min-h-[60vh] flex items-center justify-center px-4 text-center border-b border-gray-200 md:bg-cover bg-center"
@@ -321,7 +320,6 @@ export default function ResellerLandingPage() {
           </p>
         </div>
       </section>
-
       <div className="flex">
         {/* Sidebar */}
         <aside className="sticky top-24 h-screen w-[400px] p-10 border-r hidden lg:block">
@@ -342,7 +340,6 @@ export default function ResellerLandingPage() {
             ))}
           </nav>
         </aside>
-
         {/* Page Content */}
         <main className="flex-1 px-4 sm:px-6 py-10 max-w-7xl mx-auto space-y-20 bg-white">
           <section
@@ -360,7 +357,6 @@ export default function ResellerLandingPage() {
               >
                 <Image src={backBtn} alt="Back" width={32} height={32} />
               </button>
-
               {/* Crumb text */}
               <nav className="flex flex-wrap items-center gap-1 sm:gap-2 text-sm text-[#878787]">
                 <span
@@ -376,7 +372,6 @@ export default function ResellerLandingPage() {
               </nav>
             </div>
           </section>
-
           {/* about-payoneer */}
           <section
             id="about-payoneer"
@@ -390,7 +385,6 @@ export default function ResellerLandingPage() {
               solutions for cross-border payments and international transactions
               for businesses, freelancers, and sellers.
             </p>
-
             <div className="mt-10">
               <h2 className="text-md sm:text-[20px] font-semibold text-gray-900">
                 Unmatched Global Infrastructure
@@ -399,7 +393,6 @@ export default function ResellerLandingPage() {
                 Covering 190+ countries with redundant capabilities in 145
                 countries
               </p>
-
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                 {metrics.map((m, i) => (
                   <div
@@ -417,7 +410,6 @@ export default function ResellerLandingPage() {
                 ))}
               </div>
             </div>
-
             {/* Bank/Provider Cards */}
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {bankCols.map((col, i) => (
@@ -448,7 +440,6 @@ export default function ResellerLandingPage() {
                 </div>
               ))}
             </div>
-
             {/* Trusted brands */}
             <div className="mt-10">
               <h3 className="text-md sm:text-[20px] font-semibold text-gray-900">
@@ -459,7 +450,6 @@ export default function ResellerLandingPage() {
                 platforms, sending tens of billions of dollars a year to SMBs
                 across the world
               </p>
-
               <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {brands.map((b, i) => (
                   <div
@@ -479,7 +469,6 @@ export default function ResellerLandingPage() {
               </div>
             </div>
           </section>
-
           {/* why-partner */}
           <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
@@ -491,7 +480,6 @@ export default function ResellerLandingPage() {
               merchants and creators to scale internationally with seamless
               onboarding and localized compliance.
             </p>
-
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {partnerCards.map(({ image, title, link, bullets }) => (
                 <div
@@ -507,14 +495,12 @@ export default function ResellerLandingPage() {
                     className="mt-4"
                   />
                   <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
-
                   <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
                     {title}
                   </h3>
                   <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
                     {link}
                   </span>
-
                   <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
                     {bullets.map((b, i) => (
                       <li
@@ -529,7 +515,6 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-
           {/* reseller-overview */}
           <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
@@ -540,9 +525,8 @@ export default function ResellerLandingPage() {
               VAS providers to become full-service financial partners for SMB
               clients.
             </p>
-
-            <div className="sm:mt-0 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div className="sm:mt-10">
+            <div className="sm:mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10 items-start">
+              <div className="sm:mt-0">
                 <h3 className="text-[18px] sm:text-[20px] font-semibold text-gray-900 mb-4  sm:mt-10">
                   Grow revenue by bundling Payoneer with your services
                 </h3>
@@ -564,34 +548,22 @@ export default function ResellerLandingPage() {
                   ))}
                 </ul>
               </div>
-              <div className="w-full h-auto">
-                <Image
-                  src={resellerImg}
-                  alt="Reseller program"
-                  width={800}
-                  height={500}
-                  className="rounded-xl object-cover w-full"
-                />
-              </div>
             </div>
-
             {/* Reseller Phases */}
             <section
               id="reseller-phases"
               className="scroll-mt-24 sm:mb-24 px-4 sm:px-6 py-12 "
             >
-              <div className="max-w-6xl mx-auto text-left">
+              <div className="max-w-6xl mx-auto text-left mt-10">
                 {/* Heading */}
                 <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
                   Reseller Program Phases
                 </h2>
               </div>
-
               {/* Image */}
               <div className="sm:mt-12  mt-8 relative max-w-6xl mx-auto group ">
                 {/* Soft glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-tr from-purple-200 via-transparent to-yellow-100 opacity-50 rounded-2xl blur-xl group-hover:opacity-70 transition-all duration-500" />
-
                 <Image
                   src={resellerPhasesImg}
                   alt="Reseller Program Phases"
@@ -601,57 +573,7 @@ export default function ResellerLandingPage() {
                 />
               </div>
             </section>
-
-            {/* Partner Cards Block */}
-            {/* <section className="sm:mt-16 mt-4">
-              <div className="max-w-6xl mx-auto px-4">
-                <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900 w-full ">
-                  Payoneer, your ideal banking services partner
-                </h2>
-                <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full ">
-                  The proposed reseller partnership enables cross-border access
-                  for customers and unlocks new revenue streams.
-                </p>
-
-                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {partnerCards.map(({ image, title, link, bullets }) => (
-                    <div
-                      key={title}
-                      className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 shadow-gray-300"
-                    >
-                      <Image
-                        src={image}
-                        alt="Expand cross-border"
-                        width={32}
-                        height={32}
-                        className="mt-4"
-                      />
-                      <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
-
-                      <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
-                        {title}
-                      </h3>
-                      <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-                        {link}
-                      </span>
-
-                      <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
-                        {bullets.map((b, i) => (
-                          <li
-                            key={i}
-                            className="relative before:content-['•'] before:absolute before:left-0 before:text-[#878787] pl-3"
-                          >
-                            {b}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section> */}
           </section>
-
           <section className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Great for Your Customers
@@ -673,7 +595,6 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-
           {/* key-features */}
           <section
             id="key-features"
@@ -685,7 +606,6 @@ export default function ResellerLandingPage() {
             <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left">
               Focus on building long-term value, not just one-time transactions.
             </p>
-
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {keyFeatures.map((f, i) => (
                 <div
@@ -702,15 +622,12 @@ export default function ResellerLandingPage() {
                       className="object-contain"
                     />
                   </div>
-
                   {/* Accent line */}
                   <div className="mt-3 h-0.5 w-10 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full ml-0" />
-
                   {/* Title */}
                   <h3 className="mt-3 text-[16px] sm:text-[20px] font-semibold text-gray-900 text-left">
                     {f.title}
                   </h3>
-
                   {/* Description */}
                   <p className="mt-3 text-[12px] sm:text-[15px] text-[#878787] text-left">
                     {f.desc}
@@ -719,7 +636,6 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-
           <section
             id="key-features"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"

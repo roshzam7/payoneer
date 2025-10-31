@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import growthIcon from "@/app/assets/images/collection-links.svg";
-import Testimonial from "./Testimonial"; // Make sure this path is correct
+import Testimonial from "./Testimonial"; // testimonial on codesace
 
 export default function NewmainpageContents() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -20,26 +20,25 @@ export default function NewmainpageContents() {
   };
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-12">
+    <section className="max-w-6xl mx-auto px-6 py-12 ">
       {/* HERO */}
-      <header className="relative bg-gradient-to-r from-white via-gray-50 to-white rounded-2xl p-8 lg:p-12 shadow-md overflow-hidden">
-        <div className="absolute right-0 top-0 -mr-24 -mt-24 w-80 h-80 bg-[radial-gradient(ellipse_at_center,#f6f0eb,#ffffff00)] opacity-60 pointer-events-none rounded-full"></div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <header className="relative  rounded-2xl py-0 lg:py-0 w-full overflow-hidden text-l">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-center  w-full">
           <div>
-            <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800">
-               Unlock Full Access to Our Ecosystem 
+            <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800  w-full">
+              Unlock Full Access to Our Ecosystem
             </h1>
-            <p className="mt-4 text-gray-600 max-w-prose">
-              Power your growth with a next-gen ecosystem that simplifies how you
-              start, learn, and succeed. Our all-in-one hub connects onboarding, enablement,
-              and rewards—designed to help you move faster, perform better, and scale
-              sustainably. It&apos;s more than a program; it&apos;s your gateway to limitless
-              opportunity. This hub brings together onboarding,
-              enablement and rewards so you can scale with confidence.
+            <p className="mt-4 text-gray-600  w-full">
+              Power your growth with a next-gen ecosystem that simplifies how
+              you start, learn, and succeed. Our all-in-one hub connects
+              onboarding, enablement, and rewards-designed to help you move
+              faster, perform better, and scale sustainably. It&apos;s more than
+              a program; it&apos;s your gateway to limitless opportunity. This
+              hub brings together onboarding, enablement and rewards so you can
+              scale with confidence.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3  w-full">
               <Link
                 href="/partner-onboarding"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
@@ -70,104 +69,27 @@ export default function NewmainpageContents() {
                 </Link>
               </div>
             </div>
-
-            <div className="mt-6 text-sm text-gray-500">
-              <strong className="text-gray-700">Fast facts:</strong>
-              <ul className="mt-2 space-y-1">
-                <li>Seamless onboarding & activation</li>
-                <li>Tiered rewards and incentives</li>
-                <li>Pro-level enablement & 24/7 support</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="hidden lg:block">
-            <div className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm">
-              <h3 className="text-sm font-semibold text-gray-600">
-                Program snapshot
-              </h3>
-              <div className="mt-4 grid grid-cols-2 gap-4">
-                <div className="p-3 bg-gray-50 rounded-lg">
-                  <div className="text-xs font-medium text-gray-500">
-                    Active partners
-                  </div>
-                  <div className="mt-1 text-xl font-semibold text-gray-800">
-                    1,200+
-                  </div>
-                </div>
-                <div className="p-3 bg-gray-50 rounded-lg">
-                  <div className="text-xs font-medium text-gray-500">
-                    Avg. partner growth
-                  </div>
-                  <div className="mt-1 text-xl font-semibold text-gray-800">
-                    +34% YoY
-                  </div>
-                </div>
-                <div className="p-3 bg-gray-50 rounded-lg">
-                  <div className="text-xs font-medium text-gray-500">
-                    Support SLA
-                  </div>
-                  <div className="mt-1 text-xl font-semibold text-gray-800">
-                    24/7
-                  </div>
-                </div>
-                <div className="p-3 bg-gray-50 rounded-lg">
-                  <div className="text-xs font-medium text-gray-500">
-                    Integrations
-                  </div>
-                  <div className="mt-1 text-xl font-semibold text-gray-800">
-                    API-ready
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-      </header>aaaaaaaaaaaaaaaaaa
-
+      </header>
       {/* SECTION 1 */}
       <section className="mt-10">
-        <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-          <div className="flex items-start gap-6">
-            <div className="w-14 h-14 flex items-center justify-center rounded-lg bg-[#fff4ec] border border-[#ffe0c9]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-7 h-7 text-[#ff6a00]"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="1.5"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2z"
-                />
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M21 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"
-                />
-              </svg>
-            </div>
-
-            <div>
-              <h2 className="text-xl font-semibold text-gray-800">
-                Empowering our partners to Go Further, Faster
-              </h2>
-              <p className="mt-2 text-gray-600">
-                As a trusted partner, you&apos;re at the center of our growth.
-                This is your dedicated hub — packed with tools, resources, and
-                insights to help you maximize your impact, unlock new revenue
-                streams, and deliver more value to your customers. Unlock full
-                access to our ecosystem — from seamless onboarding and
-                activation to smart guides and real-time support.
-              </p>
-            </div>
+        <div className="bg-white rounded-2xl py-0 ">
+          <div>
+            <h2 className="text-xl font-semibold text-gray-800">
+              Empowering our partners to Go Further, Faster
+            </h2>
+            <p className="mt-2 text-gray-600">
+              As a trusted partner, you&apos;re at the center of our growth.
+              This is your dedicated hub - packed with tools, resources, and
+              insights to help you maximize your impact, unlock new revenue
+              streams, and deliver more value to your customers. Unlock full
+              access to our ecosystem - from seamless onboarding and activation
+              to smart guides and real-time support.
+            </p>
           </div>
         </div>
       </section>
-
       {/* SECTION 2: Why partner */}
       <section className="mt-8">
         <h3 className="text-xl font-semibold text-gray-800 mb-6">
@@ -230,7 +152,7 @@ export default function NewmainpageContents() {
               integrate Payoneer offerings into your stack.
             </p>
           </div>
-                    <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
+          <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
               src={growthIcon}
               alt="Expert Support & Resources"
@@ -278,7 +200,6 @@ export default function NewmainpageContents() {
           </div>
         </div> */}
       </section>
-
       {/* SECTION 3: Next steps */}
       <section className="mt-10">
         <h3 className="text-xl font-semibold text-gray-800 mb-4">
@@ -294,12 +215,6 @@ export default function NewmainpageContents() {
               We will share new modules, integrations, and product feature
               updates as they&apos;re released.
             </p>
-            <Link
-              href="/partner-activation"
-              className="mt-3 inline-block text-sm font-semibold bg-gradient-to-r from-purple-500  to-blue-500 bg-clip-text text-transparent hover:underline hover:brightness-110 transition-all duration-200"
-            >
-              Learn more →
-            </Link>
           </div>
 
           <div className="bg-gradient-to-b from-white to-gray-50 border border-gray-100 rounded-lg px-8 py-6 shadow-sm hover:shadow-md transition">
@@ -310,12 +225,6 @@ export default function NewmainpageContents() {
               Check if you&apos;ve unlocked a higher tier, bonus or campaign
               reward.
             </p>
-            <Link
-              href="/rewards"
-              className="mt-3 inline-block text-sm font-semibold bg-gradient-to-r from-purple-500  to-blue-500 bg-clip-text text-transparent hover:underline hover:brightness-110 transition-all duration-200"
-            >
-              Check rewards →
-            </Link>
           </div>
 
           <div className="bg-gradient-to-b from-white to-gray-50 border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition">
@@ -326,12 +235,6 @@ export default function NewmainpageContents() {
               Download latest collateral: templates, case studies and marketing
               toolkits.
             </p>
-            <Link
-              href="/assets"
-              className="mt-3 inline-block text-sm font-semibold bg-gradient-to-r from-purple-500  to-blue-500 bg-clip-text text-transparent hover:underline hover:brightness-110 transition-all duration-200"
-            >
-              Open assets →
-            </Link>
           </div>
 
           <div className="bg-gradient-to-b from-white to-gray-50 border border-gray-100 rounded-lg p-6 shadow-sm hover:shadow-md transition">
@@ -342,16 +245,9 @@ export default function NewmainpageContents() {
               Use referral campaigns to grow your network and earn more for
               successful referrals.
             </p>
-            <Link
-              href="/referrals"
-              className="mt-3 inline-block text-sm font-semibold bg-gradient-to-r from-purple-500  to-blue-500 bg-clip-text text-transparent hover:underline hover:brightness-110 transition-all duration-200"
-            >
-              Start inviting →
-            </Link>
           </div>
         </div>
       </section>
-
       {/* SECTION 4: Testimonials */}
       <section className="mt-16 relative w-full">
         <Testimonial />
@@ -363,17 +259,11 @@ export default function NewmainpageContents() {
             Need help or want to explore more?
           </h4>
           <p className="mt-1 text-sm text-gray-600">
-            Open a support ticket or browse our FAQs — we&apos;re here to help
+            Open a support ticket or browse our FAQs - we&apos;re here to help
             you succeed.
           </p>
         </div>
         <div className="flex gap-3">
-          <Link
-            href="/support/ticket"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
-          >
-            Open ticket
-          </Link>
           <div className="inline-block rounded-md bg-gradient-to-r from-purple-500 to-blue-500 p-[1px] hover:brightness-110 transition-all duration-200">
             <Link
               href="/faqs"
