@@ -107,7 +107,7 @@ const HeroBanner: React.FC = () => {
       style={{ backgroundImage: `url(${Banner.src})` }}
       aria-label="Welcome to Payoneer"
     >
-      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-center text-center pt-24 sm:pt-24">
+      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-22 sm:pt-16 lg:pt-26">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-gray-900">
           Welcome to the <br />
@@ -121,12 +121,6 @@ const HeroBanner: React.FC = () => {
           Powering your success with an exclusive program built for growth and
           next-gen infrastructure.
         </p>
-        {/* <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-sm leading-relaxed text-gray-700">
-          Unlock full access to our ecosystem — from seamless onboarding and
-          activation to smart guides and realtime support. Everything you need
-          to scale, all in one place.
-        </p> */}
-
         {/* 🔍 Search Input with Dropdown */}
         <div className="relative w-full sm:w-1/2 mx-auto mt-10">
           {/* Search Icon */}

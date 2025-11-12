@@ -240,7 +240,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* ---------- Section 1: FAQs ---------- */}
-          <section id="table" className="scroll-mt-28">
+          <section id="table" className="scroll-mt-28 mb-4">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
