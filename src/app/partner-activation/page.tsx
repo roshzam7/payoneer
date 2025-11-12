@@ -133,7 +133,7 @@ export default function ResellerLandingPage() {
             aria-label="Breadcrumb"
             className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-7xl mx-auto flex h-6 items-center gap-3 px-4 sm:px-6 lg:px-0">
+            <div className="max-w-7xl mx-0 flex h-6 items-center gap-3 px-4 sm:px-6 lg:px-2">
               {/* Back button */}
               <button
                 type="button"
@@ -190,7 +190,7 @@ export default function ResellerLandingPage() {
                 {/* Card 1 */}
                 <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Pitch Decks & Sales Scripts
+                    Pitch decks & sales scripts
                   </h3>
                   <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
                     View the Payoneer Global Payments Training Document to gain

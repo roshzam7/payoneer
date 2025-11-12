@@ -211,7 +211,7 @@ export default function ResellerLandingPage() {
             aria-label="Breadcrumb"
             className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
+            <div className="max-w-5xl mx-0 flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-2 py-2">
               {/* Back button */}
               <button
                 type="button"

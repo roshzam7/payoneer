@@ -92,7 +92,7 @@ const metrics = [
   },
   {
     value: "190+",
-    labelTop: "countries and territories",
+    labelTop: "Countries and Territories",
     bar: "from-purple-400 to-pink-400",
   },
   {
@@ -227,14 +227,14 @@ const partnerCards = [
 // Great for your customers
 const customerBenefits = [
   {
-    title: "Go Global",
+    title: "Go global",
     desc: "Send and receive payments in over 190 countries",
   },
   {
     title: "Get paid like a local",
     desc: "Global bank account details in 9+ Currencies",
   },
-  { title: "Get started, fast", desc: "Fast Onboarding (100% online)" },
+  { title: "Get started, fast", desc: "Fast onboarding (100% online)" },
   {
     title: "Safeguard funds",
     desc: "Funds are safe in Global Systematically Important Banks (G-SIBs)",
@@ -344,9 +344,9 @@ export default function ResellerLandingPage() {
         <main className="flex-1 px-4 sm:px-6 py-10 max-w-7xl mx-auto space-y-20 bg-white">
           <section
             aria-label="Breadcrumb"
-            className="border-b border-white/10 bg-white text-black backdrop-blur"
+            className="mb-2 border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
+            <div className="max-w-5xl mx-0 flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-2 py-2">
               {/* Back button */}
               <button
                 type="button"
@@ -387,7 +387,7 @@ export default function ResellerLandingPage() {
             </p>
             <div className="mt-10">
               <h2 className="text-md sm:text-[20px] font-semibold text-gray-900">
-                Unmatched Global Infrastructure
+                Unmatched global infrastructure
               </h2>
               <p className="text-[#878787] text-[13px] sm:text-[17px] mt-1">
                 Covering 190+ countries with redundant capabilities in 145
@@ -576,7 +576,7 @@ export default function ResellerLandingPage() {
           </section>
           <section className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Great for Your Customers
+              Great for your customers
             </h2>
             <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px]">
               Keeping your customers happy is always good for business.

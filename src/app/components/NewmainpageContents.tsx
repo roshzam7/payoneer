@@ -111,10 +111,10 @@ export default function NewmainpageContents() {
               Growth Tools
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
-              Partner Activation & Enablement, Sales Enablement Tools, Marketing
-              & Reselling Guidelines, Customer Personas, Co-Branded Landing
+              Partner activation & enablement, sales enablement tools, marketing
+              & reselling guidelines, customer personas, co-branded landing
               Pages.
-            </p>
+              </p>
           </div>
 
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">

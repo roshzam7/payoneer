@@ -398,7 +398,7 @@ export default function ResellerLandingPage() {
             aria-label="Breadcrumb"
             className="border-b border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-5xl mx-auto flex flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-0 py-2">
+            <div className="max-w-5xl mx-auto 0 flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-2 py-2">
               {/* Left Side: Back + Breadcrumb */}
               <div className="flex items-center gap-2">
                 <button
