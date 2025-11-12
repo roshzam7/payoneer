@@ -29,21 +29,21 @@ import Footer from "../components/Footer";
 const tutorials = [
   {
     title:
-      "Get paid with Payoneer - Learn how to simplify getting paid with Payoneer",
+      "Get paid with payoneer - learn how to simplify getting paid with payoneer",
     desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
     link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
     image: "/images/GetPaidWithPayoneer.png",
   },
   {
     title:
-      "Payoneer Account Dashboard - Introduction to basic features & functions",
+      "Payoneer account dashboard - introduction to basic features & functions",
     desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
     link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
     image: "/images/PayoneerAccountDashboard.png",
   },
   {
     title:
-      "Convert Currencies with Payoneer - Learn how to convert currencies Get started with Payoneer at competitive rates",
+      "Convert currencies with payoneer - learn how to convert currencies get started with payoneer at competitive rates",
     desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
     link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
     image: "/images/ConvertCurrencies.png",
@@ -56,7 +56,7 @@ const tutorials = [
     image: "/images/Addingfundstoyouraccount.png",
   },
   {
-    title: "Make Global Payments with Confidence and Ease",
+    title: "Make global payments with confidence and ease",
     desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
     link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
     image: "/images/MakeGlobalPayments.png",
@@ -461,8 +461,7 @@ export default function ResellerLandingPage() {
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-              Standard Sign-up Flow
-            </p>
+Standard sign-up flow            </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Request for your unique onboarding link at
               <a
@@ -559,7 +558,7 @@ export default function ResellerLandingPage() {
                   {/* Second Section Heading */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
                     <p className="text-gray-900 text-[48px] font-semibold">
-                      CLM Flow
+                      CLM flow
                     </p>
                     <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at
@@ -660,7 +659,8 @@ export default function ResellerLandingPage() {
               {/* Left column (Text) */}
               <div className="mt-0">
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
-                  Additional KYC Requirements
+                  Additional kyc requirements
+
                 </h3>
 
                 <p className="mt-2 text-gray-900 text-[17px]">
@@ -744,7 +744,7 @@ export default function ResellerLandingPage() {
 
                 {/* Invoice */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-                  Invoice Submission Requirements
+                  Invoice submission requirements
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   To verify a payment, the account holder must submit the
@@ -767,7 +767,7 @@ export default function ResellerLandingPage() {
 
                 {/* Invoice for Alias Review */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-                  Invoice Requirements for Alias Review
+                  Invoice requirements for alias review
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   For reviews involving an alias, the invoice must meet
@@ -859,7 +859,7 @@ export default function ResellerLandingPage() {
           >
             <section className="scroll-mt-28 mt-10">
               <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-                Get started with Payoneer
+                Get started with payoneer
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-4">
                 An overview of Payoneer&apos;s features, including payment
