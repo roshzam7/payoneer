@@ -860,7 +860,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section className="scroll-mt-28 space-y-6">
+          <section className="scroll-mt-28 space-y-6 mb-4">
             {(faqs as FAQ[]).map((faq, index) => {
               const key = `faqs-${index}`;
               const isOpen = !!faqOpenMap[key];
