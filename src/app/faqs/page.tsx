@@ -843,7 +843,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* ---------- Section 1: FAQs ---------- */}
-          <section id="faqs" className="scroll-mt-28">
+          <section id="faqs" className="scroll-mt-28 mb-4">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
@@ -963,7 +963,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* ---------- Section 2: Support Ticket Questionnaire ---------- */}
-          <section id="support-ticket-questionnaire" className="scroll-mt-28">
+          {/* <section id="support-ticket-questionnaire" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-0 lg:grid-cols-0 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
@@ -973,16 +973,10 @@ export default function ResellerLandingPage() {
                   <p className="text-gray-900 text-[17px] ">
                     Tickets to be raised on provided email ids on a form.
                   </p>
-                  {/* <a
-                    href="#"
-                    className="text-sm text-blue-600 hover:underline font-medium"
-                  >
-                    Questionnaire
-                  </a> */}
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <section className="scroll-mt-28 space-y-6">
             {(faqsSectionTwo as FAQ[]).map((faq, index) => {

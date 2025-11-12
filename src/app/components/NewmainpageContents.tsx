@@ -26,7 +26,7 @@ export default function NewmainpageContents() {
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-center  w-full">
           <div>
             <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800  w-full">
-              Unlock Full Access to Our Ecosystem
+              Unlock full access to our ecosystem
             </h1>
             <p className="mt-4 text-gray-600  w-full">
               Power your growth with a next-gen ecosystem that simplifies how
@@ -76,9 +76,9 @@ export default function NewmainpageContents() {
       <section className="mt-10">
         <div className="bg-white rounded-2xl py-0 ">
           <div>
-            <h2 className="text-xl font-semibold text-gray-800">
-              Empowering our partners to Go Further, Faster
-            </h2>
+          <h2 className="text-xl font-semibold text-gray-800">
+  Empowering our partners to <i>Go Further, Faster</i>
+</h2>
             <p className="mt-2 text-gray-600">
               As a trusted partner, you&apos;re at the center of our growth.
               This is your dedicated hub - packed with tools, resources, and
