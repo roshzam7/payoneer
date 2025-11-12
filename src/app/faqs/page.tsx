@@ -94,11 +94,11 @@ const faqs = [
       "Who do I contact if I face issues with the form or have additional questions?",
     answers: [
       "Please reach out to our support email id:",
-    'APAC - <a href="mailto:resellersupport_apac@payoneer.com" class="text-[#0098ff] underline hover:text-[#0077cc]">resellersupport_apac@payoneer.com</a>',
-    'EMEA - <a href="mailto:resellersupport_emea@payoneer.com" class="text-[#0098ff] underline hover:text-[#0077cc]">resellersupport_emea@payoneer.com</a>',
-    'LATAM - <a href="mailto:resellersupport_latam@payoneer.com" class="text-[#0098ff] underline hover:text-[#0077cc]">resellersupport_latam@payoneer.com</a>',
-    'CHINA - <a href="mailto:resellersupport_china@payoneer.com" class="text-[#0098ff] underline hover:text-[#0077cc]">resellersupport_china@payoneer.com</a>',
-    'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com" class="text-[#0098ff] underline hover:text-[#0077cc]">resellersupport_nam@payoneer.com</a>',
+    'APAC - <a href="mailto:resellersupport_apac@payoneer.com" >resellersupport_apac@payoneer.com</a>',
+    'EMEA - <a href="mailto:resellersupport_emea@payoneer.com" >resellersupport_emea@payoneer.com</a>',
+    'LATAM - <a href="mailto:resellersupport_latam@payoneer.com" >resellersupport_latam@payoneer.com</a>',
+    'CHINA - <a href="mailto:resellersupport_china@payoneer.com" >resellersupport_china@payoneer.com</a>',
+    'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com" >resellersupport_nam@payoneer.com</a>',
     ],
   },
 

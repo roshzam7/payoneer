@@ -4,6 +4,84 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "../assets/Logo.png";
 
+type LinkItem = { label: string; slug: string };
+type Card = {
+  title: string;
+  items: Array<string | LinkItem>;
+  viewAllHref: string;
+};
+
+// 🗂 Your navigation data
+const cards: Card[] = [
+  {
+    title: "Welcome to the Payoneer Reseller Program",
+    items: [
+      { label: "About Payoneer", slug: "about-payoneer" },
+      { label: "Why Partner with Us", slug: "why-partner" },
+      { label: "Reseller Program Overview", slug: "reseller-overview" },
+      { label: "Success Stories & Testimonials", slug: "key-features" },
+    ],
+    viewAllHref: "/reseller-program",
+  },
+  {
+    title: "Getting Started: Partner Onboarding",
+    items: [
+      { label: "How to Join the Program", slug: "How-to-Join" },
+      {
+        label: "Understand Your Role as a Payoneer Reseller",
+        slug: "Understand-Your-Role",
+      },
+      {
+        label: "Understanding Partner Tiers",
+        slug: "Understanding-Partner-Tiers",
+      },
+      {
+        label: "Understanding Commercials & Payment Calculators",
+        slug: "Payment-Calculators",
+      },
+    ],
+    viewAllHref: "/partner-onboarding",
+  },
+  {
+    title: "Partner Activation & Enablement",
+    items: [
+      { label: "Sales Enablement Tools", slug: "sales-enablement-tools" },
+      {
+        label: "Marketing & Reselling Guidelines",
+        slug: "reselling-guidelines",
+      },
+      { label: "Customer Personas", slug: "onboarding-overview" },
+      { label: "Payoneer Pricing", slug: "payoneer-pricing" },
+      {
+        label: "Co-Branded or Dedicated Landing Pages",
+        slug: "co-branded-or-dedicated-landing-pages",
+      },
+    ],
+    viewAllHref: "/partner-activation",
+  },
+  {
+    title: "Referred Account Holder Onboarding Journey",
+    items: [
+      { label: "Standard Sign-up Flow", slug: "referred-account-holders" },
+      { label: "CLM Flow", slug: "clm-flow" },
+      { label: "Additional KYC Requirements", slug: "kyc-process-explained" },
+      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
+    ],
+    viewAllHref: "/referred-account-holder",
+  },
+  {
+    title: "Support Center",
+    items: [
+      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
+      {
+        label: "Support Ticket Questionnaire",
+        slug: "support-ticket-questionnaire",
+      },
+    ],
+    viewAllHref: "/faqs",
+  },
+];
+
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -12,43 +90,28 @@ const Navbar: React.FC = () => {
       <div className="backdrop-blur-md bg-white/30 shadow-md border-b border-white/20">
         <div className="relative px-4">
           <div className="flex justify-between items-center h-16">
-            {/* Left: Logo */}
-            <div className="flex items-center space-x-4">
-              <Link href="/">
-                <Image src={Logo} alt="Logo" width={100} height={30} />
+            {/* Logo */}
+            <Link href="/" className="flex items-center">
+              <Image src={Logo} alt="Logo" width={100} height={30} />
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-6 text-sm text-black font-medium">
+              {/* Home (no dropdown) */}
+              <Link href="/" className="hover:text-black">
+                Home
               </Link>
 
-              {/* Desktop Links */}
-              <div className="hidden md:flex space-x-6 text-sm text-black font-medium mt-2">
-                <Link href="/" className="hover:text-black">
-                  Home
-                </Link>
-                <Link href="/reseller-program" className="hover:text-black">
-                  Program
-                </Link>{" "}
-                <Link href="/partner-onboarding" className="hover:text-black">
-                  Getting Started
-                </Link>{" "}
-                <Link
-                  href="/referred-account-holder"
-                  className="hover:text-black"
-                >
-                  Onboarding Journey
-                </Link>
-                <Link href="/partner-activation" className="hover:text-black">
-                  Enablement
-                </Link>
-                <Link href="/newpage" className="hover:text-black">
-                  Pricing
-                </Link>
-                <Link href="/faqs" className="hover:text-black">
-                  Support
-                </Link>
-                <div className="relative group">
-                  {/* <button className="flex items-center space-x-1 hover:text-black ">
-                    <span>Topics</span>
+              {/* Dynamic dropdowns */}
+              {cards.map((card) => (
+                <div key={card.title} className="relative group">
+                  <Link
+                    href={card.viewAllHref}
+                    className="hover:text-black flex items-center"
+                  >
+                    {card.title.split(":")[0]}
                     <svg
-                      className="w-4 h-4 ml-1"
+                      className="w-4 h-4 ml-1 text-gray-500 group-hover:text-black"
                       fill="none"
                       stroke="currentColor"
                       strokeWidth="2"
@@ -60,44 +123,39 @@ const Navbar: React.FC = () => {
                         d="M19 9l-7 7-7-7"
                       />
                     </svg>
-                  </button> */}
-                  <div className="absolute left-0 mt-0 w-100 border-0 bg-white  rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-200 pointer-events-none group-hover:pointer-events-auto">
-                    <Link
-                      href="/reseller-program"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Welcome to the Payoneer Reseller Program
-                    </Link>
-                    <Link
-                      href="/partner-onboarding"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Getting Started: Partner Onboarding
-                    </Link>
-                    <Link
-                      href="/partner-activation"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Partner Activation & Enablement
-                    </Link>
-                    <Link
-                      href="/referred-account-holder"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Referred Account Holder (AH) Onboarding Journey
-                    </Link>
-                    <Link
-                      href="/faqs"
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
-                    >
-                      Supporting Your Referred Account Holders
-                    </Link>
+                  </Link>
+
+                  {/* Submenu */}
+                  <div className="absolute left-0 mt-0 w-64 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">
+                    <ul className="py-2">
+                      {card.items.map((item, i) => {
+                        if (typeof item === "string") return null;
+                        return (
+                          <li key={i}>
+                            <Link
+                              href={`${card.viewAllHref}#${item.slug}`}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                            >
+                              {item.label}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                      <li className="border-t mt-1">
+                        <Link
+                          href={card.viewAllHref}
+                          className="block px-4 py-2 text-sm text-blue-600 hover:underline"
+                        >
+                          View all →
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
-            </div>
+              ))}
+            </nav>
 
-            {/* Right: Hamburger on Mobile */}
+            {/* Mobile toggle button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -127,45 +185,36 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-2 space-y-2 text-sm text-black font-medium pb-4">
-              <Link href="/" className="block hover:text-black">
+            <div className="md:hidden mt-2 space-y-3 text-sm text-black font-medium pb-4">
+              {/* Home first */}
+              <Link href="/" className="block font-semibold py-2">
                 Home
               </Link>
-              <div>
-                <span className="block hover:text-black">pages</span>
-                <div className="ml-0 mt-2 space-y-1">
+
+              {cards.map((card) => (
+                <div key={card.title}>
                   <Link
-                    href="/reseller-program"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
+                    href={card.viewAllHref}
+                    className="block font-semibold py-2"
                   >
-                    Welcome to the Payoneer Reseller Program
+                    {card.title}
                   </Link>
-                  <Link
-                    href="/partner-onboarding"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Getting Started: Partner Onboarding
-                  </Link>
-                  <Link
-                    href="/partner-activation"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Partner Activation & Enablement
-                  </Link>
-                  <Link
-                    href="/referred-account-holder"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Referred Account Holder (AH) Onboarding Journey
-                  </Link>
-                  <Link
-                    href="/faqs"
-                    className="block px-4 py-2 text-sm hover:bg-gray-100"
-                  >
-                    Supporting Your Referred Account Holders
-                  </Link>
+                  <div className="ml-3 space-y-1">
+                    {card.items.map((item, i) => {
+                      if (typeof item === "string") return null;
+                      return (
+                        <Link
+                          key={i}
+                          href={`${card.viewAllHref}#${item.slug}`}
+                          className="block text-gray-600 hover:underline"
+                        >
+                          {item.label}
+                        </Link>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
           )}
         </div>
