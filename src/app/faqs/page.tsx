@@ -93,12 +93,12 @@ const faqs = [
     question:
       "Who do I contact if I face issues with the form or have additional questions?",
     answers: [
-      "Please reach out to our support email id:",
-    'APAC - <a href="mailto:resellersupport_apac@payoneer.com" >resellersupport_apac@payoneer.com</a>',
-    'EMEA - <a href="mailto:resellersupport_emea@payoneer.com" >resellersupport_emea@payoneer.com</a>',
-    'LATAM - <a href="mailto:resellersupport_latam@payoneer.com" >resellersupport_latam@payoneer.com</a>',
-    'CHINA - <a href="mailto:resellersupport_china@payoneer.com" >resellersupport_china@payoneer.com</a>',
-    'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com" >resellersupport_nam@payoneer.com</a>',
+  "Please reach out to our support email id:",
+  'APAC - <a href="mailto:resellersupport_apac@payoneer.com">resellersupport_apac@payoneer.com</a>',
+  'EMEA - <a href="mailto:resellersupport_emea@payoneer.com">resellersupport_emea@payoneer.com</a>',
+  'LATAM - <a href="mailto:resellersupport_latam@payoneer.com">resellersupport_latam@payoneer.com</a>',
+  'CHINA - <a href="mailto:resellersupport_china@payoneer.com">resellersupport_china@payoneer.com</a>',
+  'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com">resellersupport_nam@payoneer.com</a>',
     ],
   },
 
@@ -936,18 +936,25 @@ export default function ResellerLandingPage() {
                           </table>
                         </div>
                       )}
-                      {faq.type === "list" && "answers" in faq && (
-                        <>
-                          {faq.answers.map((ans, i) => (
-                            <div
-                              key={i}
-                              className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
-                            >
-                              {linkify(ans)}
-                            </div>
-                          ))}
-                        </>
-                      )}
+                  {faq.type === "list" && "answers" in faq && (
+  <>
+    {faq.answers.map((ans, i) => (
+      <div
+        key={i}
+        className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
+      >
+        {ans.includes("<a")
+          ? (
+            <span
+              dangerouslySetInnerHTML={{ __html: ans }}
+            />
+          )
+          : linkify(ans)}
+      </div>
+    ))}
+  </>
+)}
+
                     </div>
                   )}
                 </div>
