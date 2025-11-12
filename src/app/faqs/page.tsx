@@ -42,7 +42,7 @@ const faqs = [
     type: "list",
     question: "How do I submit a request to Reseller Operations?",
     answers: [
-      "Use the official Reseller Operations Support Request Form available here: https://forms.cloud.microsoft/r/BNYvLecaG6 . Ensure all required fields are filled accurately to avoid delays.er",
+      'Use the official <strong><a href="https://forms.cloud.microsoft/r/BNYvLecaG6" target="_blank" rel="noopener noreferrer">Support Request Form</a></strong>. Ensure all required fields are filled accurately to avoid delays.',
     ],
   },
   {
