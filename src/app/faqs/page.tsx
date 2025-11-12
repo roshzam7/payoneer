@@ -780,7 +780,7 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-12">
+          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-12">
             Supporting Your Referred
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">

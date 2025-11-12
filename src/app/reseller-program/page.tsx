@@ -400,7 +400,7 @@ export default function ResellerLandingPage() {
                     className="relative rounded-lg bg-white p-5 h-25"
                   >
                     <div className="absolute inset-y-0 left-0 w-1 rounded-l-lg bg-[linear-gradient(to_bottom,#DFD902,#FF4800,#FC4911,#F44B3E,#E84F87,#DA54D8,#6974E6,#1E8AF0,#0092F4)]"></div>
-                    <div className="text-2xl sm:text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#DA54D8] to-[#0092F4]">
+                    <div className="text-2xl sm:text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-[#DA54D8] to-[#0092F4]">
                       {m.value}
                     </div>
                     <div className="mt-1 text-xs sm:text-[14px] text-[#878787]">
