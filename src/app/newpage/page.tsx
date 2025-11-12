@@ -248,17 +248,7 @@ export default function ResellerLandingPage() {
                   That&apos;s why we work hard to keep our pricing low, and whenever
                   possible, completely free.
                 </h2>
-                <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-                  For full details, visit the official page:{" "}
-                  <a
-                    href="https://www.payoneer.com/pricing/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Payoneer Pricing
-                  </a>
-                </p>
+
               <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
               Use the table below to find the correct request type and how to categorize common issues.
                 </p>
@@ -360,6 +350,17 @@ export default function ResellerLandingPage() {
                   </div>
                 </div>
               ))}
+                              <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+                  For full details, visit the official page:{" "}
+                  <a
+                    href="https://www.payoneer.com/pricing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
+                    Payoneer Pricing
+                  </a>
+                </p>
           </section>
 
           <section
