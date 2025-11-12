@@ -41,11 +41,11 @@ const priceSection = [
     type: "table",
     question: "",
     subHeading:
-      "Use the table below to find the correct request type and how to categorize common issues.",
+      "",
     tableData: {
       headers: ["Category", "Service Description", "Fee"],
       rows: [
-        ["Receiving Funds ", "From ano ther Payoneer user", "Free"],
+        ["Receiving Funds ", "From another Payoneer user", "Free"],
 
         ["", "From client via credit/debit card", "Up to 3.99% + $0.4 9"],
         ["", "From US client via ACH bank debit", "1%"],
@@ -84,12 +84,12 @@ const priceSection = [
           "Same currency to local bank (up to $50K/month)",
           "~$1. 50 / €1.50 / £1.50",
         ],
-        ["", "Above $50 K/month (USD/EUR/GBP", "0. 5% of the amount"],
-        ["", "With currency conversio n (e.g., USD → EUR)", "Up to 3%"],
+        ["", "Above $50K/month (USD/EUR/GBP", "0. 5% of the amount"],
+        ["", "With currency conversion (e.g., USD → EUR)", "Up to 3%"],
         ["", "", ""],
         ["", "", ""],
         [
-          "Other Fee s",
+          "Other Fees",
           "Annual inactivity fee (if < $2,000 received in 12 months)",
           "$29.95",
         ],
@@ -249,16 +249,18 @@ export default function ResellerLandingPage() {
                   possible, completely free.
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-                  For full details, visit the official page: {" "}
-                  <span className="text-blue-500-" >
+                  For full details, visit the official page:{" "}
+                  <a
+                    href="https://www.payoneer.com/pricing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline"
+                  >
                     Payoneer Pricing
-                  </span>
-                                        {/* <a
-                        className="text-blue-500"
-                        href="support@payoneerpartnerships.com">
-                        {" "}
-                       Payoneer Pricing
-                      </a> */}
+                  </a>
+                </p>
+              <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+              Use the table below to find the correct request type and how to categorize common issues.
                 </p>
               </div>
             </div>
