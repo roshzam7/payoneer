@@ -13,14 +13,14 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
-  { title: "How to Join the Program", slug: "How-to-Join" },
+  { title: "How to join the program", slug: "How-to-Join" },
   {
-    title: "Understand Your Role as a Payoneer Reseller",
+    title: "Understand your role as a Payoneer reseller",
     slug: "Understand-Your-Role",
   },
-  { title: "Understanding Partner Tiers", slug: "Understanding-Partner-Tiers" },
+  { title: "Understanding partner tiers", slug: "Understanding-Partner-Tiers" },
   {
-    title: "Understanding Commercials & Payment Calculators",
+    title: "Understanding commercials & payment calculators",
     slug: "Payment-Calculators",
   },
 ];
@@ -108,10 +108,10 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Getting Started
+            Getting started
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Partner Onboarding
+              Partner onboarding
             </span>
           </h1>
         </div>
@@ -166,7 +166,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Getting Started: Partner Onboarding
+                  Getting started: partner onboarding
                 </span>
               </nav>
             </div>
@@ -176,7 +176,7 @@ export default function ResellerLandingPage() {
           <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[48px] font-semibold">
-                How to Join the Program
+                How to join the program
               </p>
               <a
                 href="#"
@@ -207,17 +207,17 @@ export default function ResellerLandingPage() {
 
             {[
               {
-                title: "Account Details",
+                title: "Account details",
                 bullets: resellerBullets,
                 image: Content,
               },
               {
-                title: "User Details",
+                title: "User details",
                 bullets: resellerBulletsTwo,
                 image: Content2,
               },
               {
-                title: "User Agreement",
+                title: "User agreement",
                 bullets: resellerBulletsThree,
                 image: Content3,
               },
@@ -292,7 +292,7 @@ export default function ResellerLandingPage() {
           >
             <div className="w-full">
               <h2 className="text-[26px] sm:text-[48px] font-bold text-gray-900">
-                Understand Your Role as a Payoneer Reseller
+                Understand your role as a Payoneer reseller
               </h2>
               <p className="mt-4 text-[#878787] text-[14px] sm:text-[18px] max-w-4xl">
                 View the following details to ensure you meet all requirements
@@ -305,7 +305,7 @@ export default function ResellerLandingPage() {
             {/* Card 1 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
-                Your Role as a Reseller
+                Your role as a reseller
               </h3>
               {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
@@ -333,7 +333,7 @@ export default function ResellerLandingPage() {
             {/* Card 2 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
-                How to Refer Clients Share Payoneer-provided links that contain
+                How to refer clients share Payoneer-provided links that contain
                 your unique tracking code
               </h3>
               {/* Gradient underline */}
@@ -360,7 +360,7 @@ export default function ResellerLandingPage() {
 
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
-                Important Limits You cannot bind Payoneer or speak on its behalf
+                Important limits you cannot bind Payoneer or speak on its behalf{" "}
               </h3>
               {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
