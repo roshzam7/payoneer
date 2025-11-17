@@ -251,7 +251,7 @@ const customerBenefits = [
 const keyFeatures = [
   {
     logo: fastOnboarding,
-    title: "Fast Onboarding",
+    title: "Fast onboarding",
     desc: "Fast and digital onboarding. Get started in 1-3 days from document submission when you have a business bank account.",
   },
   {
@@ -311,7 +311,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-snug sm:leading-tight mb-6 sm:mb-8">
             Welcome to
             <br />
-            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
               Payoneer reseller program
             </span>
           </h1>
@@ -367,7 +367,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Reseller Program
+                  Reseller program
                 </span>
               </nav>
             </div>
@@ -390,8 +390,8 @@ export default function ResellerLandingPage() {
                 Unmatched global infrastructure
               </h2>
               <p className="text-[#878787] text-[13px] sm:text-[17px] mt-1">
-                Covering 190+ countries with redundant capabilities in 145
-                countries
+                Covering 190+ countries and Territories with redundant
+                capabilities in 145 countries
               </p>
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                 {metrics.map((m, i) => (
