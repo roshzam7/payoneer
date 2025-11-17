@@ -79,25 +79,25 @@ import onlineCheckout from "../assets/images/online-checkout.svg";
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
-  { title: "Why Partner with Us", slug: "why-partner" },
-  { title: "Reseller Program Overview", slug: "reseller-overview" },
-  { title: "Success Stories & Testimonials", slug: "key-features" },
+  { title: "Why partner with us", slug: "why-partner" },
+  { title: "Reseller program overview", slug: "reseller-overview" },
+  { title: "Success stories & testimonials", slug: "key-features" },
 ];
 
 const metrics = [
   {
     value: "Millions",
-    labelTop: "Customers Worldwide",
+    labelTop: "Customers worldwide",
     bar: "from-purple-400 to-pink-400",
   },
   {
     value: "190+",
-    labelTop: "Countries and Territories",
+    labelTop: "Countries and territories",
     bar: "from-purple-400 to-pink-400",
   },
   {
     value: "70+",
-    labelTop: "Currencies Supported",
+    labelTop: "Currencies supported",
     bar: "from-purple-400 to-blue-400",
   },
   {
@@ -107,7 +107,7 @@ const metrics = [
   },
   {
     value: "17",
-    labelTop: "Languages Supported",
+    labelTop: "Languages supported",
     bar: "from-pink-400 to-yellow-400",
   },
 ];
