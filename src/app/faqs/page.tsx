@@ -28,11 +28,11 @@ type FAQ = ListFAQ | TableFAQ;
 
 const topics = [
   {
-    title: "Frequently Asked Questions (FAQs)",
+    title: "Frequently asked questions (FAQs)",
     slug: "faqs",
   },
   {
-    title: "Support Ticket Questionnaire",
+    title: "Support ticket questionnaire",
     slug: "support-ticket-questionnaire",
   },
 ];
@@ -93,12 +93,12 @@ const faqs = [
     question:
       "Who do I contact if I face issues with the form or have additional questions?",
     answers: [
-  "Please reach out to our support email id:",
-  'APAC - <a href="mailto:resellersupport_apac@payoneer.com">resellersupport_apac@payoneer.com</a>',
-  'EMEA - <a href="mailto:resellersupport_emea@payoneer.com">resellersupport_emea@payoneer.com</a>',
-  'LATAM - <a href="mailto:resellersupport_latam@payoneer.com">resellersupport_latam@payoneer.com</a>',
-  'CHINA - <a href="mailto:resellersupport_china@payoneer.com">resellersupport_china@payoneer.com</a>',
-  'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com">resellersupport_nam@payoneer.com</a>',
+      "Please reach out to our support email id:",
+      'APAC - <a href="mailto:resellersupport_apac@payoneer.com">resellersupport_apac@payoneer.com</a>',
+      'EMEA - <a href="mailto:resellersupport_emea@payoneer.com">resellersupport_emea@payoneer.com</a>',
+      'LATAM - <a href="mailto:resellersupport_latam@payoneer.com">resellersupport_latam@payoneer.com</a>',
+      'CHINA - <a href="mailto:resellersupport_china@payoneer.com">resellersupport_china@payoneer.com</a>',
+      'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com">resellersupport_nam@payoneer.com</a>',
     ],
   },
 
@@ -812,7 +812,7 @@ export default function ResellerLandingPage() {
         <main className="flex-1 px-6 py-10 max-w-5xl mx-auto space-y-20 bg-white">
           <section
             aria-label="Breadcrumb"
-            className="border-b border-white/10 bg-white text-black backdrop-blur"
+            className="border-b mb-2 border-white/10 bg-white text-black backdrop-blur"
           >
             <div className="max-w-5xl mx-auto flex sm:flex-row sm:items-center gap-2 px-4 sm:px-6 lg:px-0 py-2">
               {/* Back button */}
@@ -836,7 +836,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Supporting Your Referred Account Holders (AHs)
+                  Supporting your referred account holders (AHs)
                 </span>
               </nav>
             </div>
@@ -847,14 +847,22 @@ export default function ResellerLandingPage() {
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
-                  Reseller Operations External FAQ Guide
+                  Reseller operations external FAQ guide
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
                   This document is designed to guide reseller partners on how to
                   raise operational support queries through the official
-                  Reseller Operations Support Request Form. Please refer to the
-                  FAQs below to navigate the most common queries and
-                  resolutions.
+                  Reseller Operations{" "}
+                  <a
+                    href="https://forms.cloud.microsoft/r/BNYvLecaG6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                  >
+                    support request form
+                  </a>
+                  . Please refer to the FAQs below to navigate the most common
+                  queries and resolutions.
                 </p>
               </div>
             </div>
@@ -936,25 +944,24 @@ export default function ResellerLandingPage() {
                           </table>
                         </div>
                       )}
-                  {faq.type === "list" && "answers" in faq && (
-  <>
-    {faq.answers.map((ans, i) => (
-      <div
-        key={i}
-        className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
-      >
-        {ans.includes("<a")
-          ? (
-            <span
-              dangerouslySetInnerHTML={{ __html: ans }}
-            />
-          )
-          : linkify(ans)}
-      </div>
-    ))}
-  </>
-)}
-
+                      {faq.type === "list" && "answers" in faq && (
+                        <>
+                          {faq.answers.map((ans, i) => (
+                            <div
+                              key={i}
+                              className="pl-5 space-y-2 text-[14px] text-[#555] leading-relaxed"
+                            >
+                              {ans.includes("<a") ? (
+                                <span
+                                  dangerouslySetInnerHTML={{ __html: ans }}
+                                />
+                              ) : (
+                                linkify(ans)
+                              )}
+                            </div>
+                          ))}
+                        </>
+                      )}
                     </div>
                   )}
                 </div>

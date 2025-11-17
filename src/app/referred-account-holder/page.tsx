@@ -29,7 +29,7 @@ import Footer from "../components/Footer";
 const tutorials = [
   {
     title:
-      "Get paid with payoneer - learn how to simplify getting paid with payoneer",
+      "Get paid with Payoneer - learn how to simplify getting paid with Payoneer",
     desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
     link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
     image: "/images/GetPaidWithPayoneer.png",
@@ -43,7 +43,7 @@ const tutorials = [
   },
   {
     title:
-      "Convert currencies with payoneer - learn how to convert currencies get started with payoneer at competitive rates",
+      "Convert currencies with Payoneer - learn how to convert currencies get started with Payoneer at competitive rates",
     desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
     link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
     image: "/images/ConvertCurrencies.png",
@@ -65,15 +65,15 @@ const tutorials = [
 
 const topics = [
   {
-    title: "Standard Sign-up Flow",
+    title: "Standard sign-up flow",
     slug: "referred-account-holders",
   },
   {
-    title: "CLM Flow",
+    title: "CLM flow",
     slug: "clm-flow",
   },
   {
-    title: "Additional KYC Requirements",
+    title: "Additional KYC requirements",
     slug: "kyc-process-explained",
   },
   {
@@ -150,22 +150,22 @@ const resellerBulletsseventeen = [
 // Steps with bullets and optional note content
 const steps = [
   {
-    title: "Company Details",
+    title: "Company details",
     bullets: resellerBullets,
     image: Content1,
   },
   {
-    title: "Contact Details",
+    title: "Contact details",
     bullets: resellerBulletsTwo,
     image: Content2,
   },
   {
-    title: "    Security Details",
+    title: "    Security details",
     bullets: resellerBulletsThree,
     image: Content3,
   },
   {
-    title: "    Payment Details ",
+    title: "    Payment details ",
     bullets: resellerBulletsFour,
     image: Content4,
     note: (
@@ -184,7 +184,7 @@ const steps = [
     ),
   },
   {
-    title: "    KYC Details ",
+    title: "    KYC details ",
     bullets: resellerBulletsfive,
     image: Content5,
     note: (
@@ -396,9 +396,9 @@ export default function ResellerLandingPage() {
           {/* Breadcrumb */}
           <section
             aria-label="Breadcrumb"
-            className="border-b border-white/10 bg-white text-black backdrop-blur"
+            className="border-b mb-2 border-white/10 bg-white text-black backdrop-blur"
           >
-            <div className="max-w-5xl mx-auto 0 flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-2 py-2">
+            <div className="max-w-5xl mx-auto flex flex-wrap sm:flex-row sm:items-center justify-between gap-2 px-4 sm:px-6 lg:px-0 py-2">
               {/* Left Side: Back + Breadcrumb */}
               <div className="flex items-center gap-2">
                 <button
@@ -461,7 +461,8 @@ export default function ResellerLandingPage() {
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-Standard sign-up flow            </p>
+              Standard sign-up flow{" "}
+            </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Request for your unique onboarding link at
               <a
@@ -474,7 +475,7 @@ Standard sign-up flow            </p>
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
               <p className="mt-2 text-gray-900 text-[23px]">
-                Step-by-Step Onboarding Guides for Clients:
+                Step-by-step onboarding guides for clients:
               </p>
             </div>
             <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
@@ -564,14 +565,15 @@ Standard sign-up flow            </p>
                       Request for your unique onboarding link at
                       <a
                         className="text-blue-500"
-                        href="support@payoneerpartnerships.com">
+                        href="support@payoneerpartnerships.com"
+                      >
                         {" "}
                         support@payoneerpartnerships.com
                       </a>
                     </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
                       <p className="mt-2 text-gray-900 text-[23px]">
-                        Step-by-Step Onboarding Guides for Clients:
+                        Step-by-step onboarding guides for clients:
                       </p>
                     </div>
                     <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
@@ -659,8 +661,7 @@ Standard sign-up flow            </p>
               {/* Left column (Text) */}
               <div className="mt-0">
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
-                  Additional kyc requirements
-
+                  Additional KYC requirements
                 </h3>
 
                 <p className="mt-2 text-gray-900 text-[17px]">
@@ -859,7 +860,7 @@ Standard sign-up flow            </p>
           >
             <section className="scroll-mt-28 mt-10">
               <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
-                Get started with payoneer
+                Get started with Payoneer
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg mb-4">
                 An overview of Payoneer&apos;s features, including payment
