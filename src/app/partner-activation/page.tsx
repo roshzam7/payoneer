@@ -14,20 +14,20 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const topics = [
   {
-    title: "Sales Enablement Tools",
+    title: "Sales enablement tools",
     slug: "sales-enablement-tools",
   },
   {
-    title: "Marketing & Reselling Guidelines",
+    title: "Marketing & reselling guidelines",
     slug: "reselling-guidelines",
   },
   {
-    title: "Customer Personas",
+    title: "Customer personas",
     slug: "customer-personas",
   },
 
   {
-    title: "Co-Branded or Dedicated Landing Pages",
+    title: "Co-branded or dedicated landing pages",
     slug: "co-branded-or-dedicated-landing-pages",
   },
 ];
@@ -49,6 +49,7 @@ export default function ResellerLandingPage() {
   const router = useRouter();
   const [active, setActive] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
@@ -100,7 +101,7 @@ export default function ResellerLandingPage() {
             Partner
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              Activation & Enablement
+              activation & enablement
             </span>
           </h1>
         </div>
@@ -161,7 +162,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate">
-                  Partner Activation & Enablement
+                  Partner activation & enablement
                 </span>
               </nav>
             </div>
@@ -172,7 +173,7 @@ export default function ResellerLandingPage() {
               {/* Header Section */}
               <div className="rounded-3xl p-8 sm:p-0">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2">
-                  Sales Enablement Tools
+                  Sales enablement tools
                 </h2>
                 {/* <div className="mt-6 w-full flex justify-center">
                   <Image
@@ -201,16 +202,30 @@ export default function ResellerLandingPage() {
                     href="/files/Payoneer-Global-Payments-Training-Document.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
                   >
-                    View Payoneer Training Document →
+                    View Payoneer training document
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </a>
                 </div>
 
                 {/* Card 2 */}
                 <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Training Webinars & Certifications
+                    Training webinars & certifications
                   </h3>
                   <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
                     This certificate recognizes Authorised Channel Partners of
@@ -232,16 +247,30 @@ export default function ResellerLandingPage() {
                     href="/files/Partnership_Certificate-Sample.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
                   >
-                    View Sample Certificate →
+                    View sample certificate
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </a>
                 </div>
 
                 {/* Card 3 */}
                 <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Brand Positioning Guide
+                    Brand positioning guide
                   </h3>
                   <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
                     View the brand battlecards to gain a breakdown of
@@ -249,22 +278,53 @@ export default function ResellerLandingPage() {
                     compare with competitors, Wio and 3S Money.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 mt-3">
-                    <a
-                      href="/files/Payoneer_wio_Battlecard.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
-                    >
-                      Payoneer vs Wio Battlecard →
-                    </a>
-                    <a
-                      href="/files/Payoneer_3s_money_battlecard.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
-                    >
-                      Payoneer vs 3S Money Battlecard →
-                    </a>
+                    <div className="flex items-center gap-3 flex-wrap">
+                      <a
+                        href="/files/Payoneer_wio_Battlecard.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
+                      >
+                        Payoneer vs wio battlecard
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"
+                          />
+                        </svg>
+                      </a>
+
+                      <a
+                        href="/files/Payoneer_3s_money_battlecard.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
+                      >
+                        Payoneer vs 3s money battlecard
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"
+                          />
+                        </svg>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -283,7 +343,7 @@ export default function ResellerLandingPage() {
                   id="reselling-guidelines"
                   className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2"
                 >
-                  Marketing & Reselling Guidelines
+                  Marketing & reselling guidelines
                 </h3>
                 {/* <Image
                   src={Sectionthree2}
@@ -299,7 +359,7 @@ export default function ResellerLandingPage() {
                 {/* Branding & Messaging Compliance */}
                 <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Branding & Messaging Compliance
+                    Branding & messaging compliance
                   </h3>
                   <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
                     View the Payoneer Design Guidelines to gain a comprehensive
@@ -309,31 +369,61 @@ export default function ResellerLandingPage() {
                     and other design variations.
                   </p>
                   <a
-                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
-                    target="_blank"
                     href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
                   >
-                    View Payoneer Design Guidelines →
+                    View Payoneer design guidelines
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </a>
                 </div>
 
                 {/* Do's and Don'ts */}
                 <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Do&apos;s and Don&apos;ts in Promotions
+                    Do&apos;s and don&apos;ts in promotions
                   </h3>
                   <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
-                    Refer to the Do&apos;s & Don&apos;ts Guidelines to
+                    Refer to the Do&apos;s & don&apos;ts Guidelines to
                     understand how to accurately and effectively promote
                     Payoneer. This ensures all promotional efforts align with
                     brand standards.
                   </p>
                   <a
-                    className="inline-block text-blue-600 font-medium hover:underline hover:text-blue-700 transition-colors duration-200"
                     href="/files/Payoneer-Dos-Donts.pdf"
                     target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
                   >
-                    View Do&apos;s & Don&apos;ts Guidelines →
+                    View do&apos;s &amp; don&apos;ts guidelines
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -344,7 +434,8 @@ export default function ResellerLandingPage() {
 
           <section className="scroll-mt-28 mb-0">
             <div className="grid grid-cols-1 gap-8">
-              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
+              <div className="bg-white p-6 sm:p-8">
+                {/* Title */}
                 <h2
                   id="customer-personas"
                   className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
@@ -372,9 +463,10 @@ export default function ResellerLandingPage() {
                     <Image
                       src={personas[currentIndex].src}
                       alt={personas[currentIndex].alt}
-                      className="w-full h-full object-cover transition-opacity duration-300"
+                      className="w-full h-full object-cover transition-opacity duration-300 cursor-pointer"
                       width={800}
                       height={450}
+                      onClick={() => setIsModalOpen(true)} // <-- open modal
                     />
                   </div>
 
@@ -405,75 +497,36 @@ export default function ResellerLandingPage() {
                 </div>
               </div>
             </div>
-          </section>
 
-          {/* Restricted Businesses */}
-          {/* 
-          <section className="scroll-mt-28  rounded-xl">
-            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 sm:p-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">
-                Businesses We Can’t Support
-              </h2>
-              <p className="text-[#666] text-sm sm:text-base leading-relaxed">
-                To protect our network and maintain compliance, certain
-                high-risk or restricted businesses are not eligible for Payoneer
-                services.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 rounded-xl">
-              {[
-                [
-                  "Any criminal or illegal act earnings.",
-                  "Adult Entertainment Services",
-                  "Art, antiquity and collectibles",
-                  "Auction houses or antiques",
-                  "Charities, Donations & Trusts",
-                  "Chemicals (Of Any Kind)",
-                  "Collection agencies",
-                  "Counterfeited Products",
-                  "Cryptocurrency exchanges, Crypto Earnings & Binary Options.",
-                  "Dating Services",
-                  "Domain registration & buying/ selling",
-                  "Energy Industry like Crude Oil, Natural Gas, Petroleum, Diesel & Nuclear.",
-                  "Fantasy Sports",
-                  "Financial institutions",
-                  "Finished Metal Products & Hardware",
-                ],
-                [
-                  "Fish and seafood of any kind (fresh, frozen or dry)",
-                  "Gambling, Betting & Fantasy Sports",
-                  "Insurance sales and services",
-                  "Intrusive beauty and cosmetic products",
-                  "Jewelry & bullion trading",
-                  "Maritime Crewing & Staffing",
-                  "Medical or healthcare services",
-                  "Money exchange",
-                  "Multi-level marketing (MLM)",
-                  "Pharmaceuticals, Medicine, Drugs, Fertilizers & Tobacco",
-                  "Prepaid cards or gift card/gift certificates",
-                  "Raw & Semi-processed Steel & Iron",
-                  "Real Estate sales, Investments & Trading.",
-                  "Trusts or funds",
-                  "Venture Capital and investments",
-                  "Web Hosting & VPS",
-                ],
-              ].map((list, idx) => (
+            {isModalOpen && (
+              <div
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[9999]"
+                onClick={() => setIsModalOpen(false)}
+              >
                 <div
-                  key={idx}
-                  className="rounded-[12px] border border-gray-200 p-6 bg-white shadow-md"
+                  className="relative bg-white rounded-lg shadow-2xl max-w-3xl w-full p-4"
+                  onClick={(e) => e.stopPropagation()} // prevent outer click
                 >
-                  <ul className="list-disc list-outside pl-5 space-y-2 text-xs sm:text-sm text-[#878787]">
-                    {list.map((item, i) => (
-                      <li key={i} className="-ml-2">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </section> */}
+                  {/* Close Button */}
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="absolute top-3 right-3 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full"
+                  >
+                    ✕
+                  </button>
 
+                  {/* Image Inside Modal */}
+                  <Image
+                    src={personas[currentIndex].src}
+                    alt={personas[currentIndex].alt}
+                    width={1000}
+                    height={600}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
+          </section>
           <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
