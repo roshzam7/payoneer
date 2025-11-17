@@ -107,11 +107,11 @@ const HeroBanner: React.FC = () => {
       style={{ backgroundImage: `url(${Banner.src})` }}
       aria-label="Welcome to Payoneer"
     >
-      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-22 sm:pt-16 lg:pt-26">
+      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-22 sm:pt-16 lg:pt-50">
         {/* Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] text-gray-900">
           Welcome to the <br />
-          <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
             Payoneer Partner Program
           </span>
         </h1>

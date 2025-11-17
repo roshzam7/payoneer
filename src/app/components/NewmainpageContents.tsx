@@ -22,7 +22,7 @@ export default function NewmainpageContents() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 ">
       {/* HERO */}
-      <header className="relative  rounded-2xl py-0 lg:py-0 w-full overflow-hidden text-l">
+      <header className="relative py-0 lg:py-0 w-full overflow-hidden text-l">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-center  w-full">
           <div>
             <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800  w-full">
@@ -77,7 +77,7 @@ export default function NewmainpageContents() {
         <div className="bg-white rounded-2xl py-0 ">
           <div>
           <h2 className="text-xl font-semibold text-gray-800">
-  Empowering our partners to <i>Go Further, Faster</i>
+  Empowering our partners to go further, faster 
 </h2>
             <p className="mt-2 text-gray-600">
               As a trusted partner, you&apos;re at the center of our growth.
@@ -108,7 +108,7 @@ export default function NewmainpageContents() {
             />
             <div className="mt-2 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
             <h4 className="mt-3 text-[18px] font-semibold text-gray-900">
-              Growth Tools
+              Growth tools
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
               Partner activation & enablement, sales enablement tools, marketing
@@ -127,7 +127,7 @@ export default function NewmainpageContents() {
             />
             <div className="mt-2 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
             <h4 className="mt-3 text-[18px] font-semibold text-gray-900">
-              More Rewards & Incentives
+              More rewards & incentives
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
               Performance-driven rewards and tiered incentives designed to
@@ -162,7 +162,7 @@ export default function NewmainpageContents() {
             />
             <div className="mt-2 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
             <h4 className="mt-3 text-[18px] font-semibold text-gray-900">
-              Expert Support & Resources
+              Expert support & resources
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
               Pro-level guides, onboarding playbooks, and a 24/7 support center
@@ -269,7 +269,7 @@ export default function NewmainpageContents() {
               href="/faqs"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200"
             >
-              Browse FAQs
+              Browse faqs
             </Link>
           </div>
         </div>

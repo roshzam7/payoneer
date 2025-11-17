@@ -114,7 +114,7 @@ const metrics = [
 
 const bankCols = [
   {
-    title: "Global Banks",
+    title: "Global banks",
     logos: [
       {
         name: "Bank of America",
@@ -126,7 +126,7 @@ const bankCols = [
     ],
   },
   {
-    title: "Selected Regional & Local Banks",
+    title: "Selected regional & local banks",
     logos: [
       { name: "NAB", logo: nab },
       { name: "ICBC", logo: icbc },
@@ -142,7 +142,7 @@ const bankCols = [
     ],
   },
   {
-    title: "Selected Payment Providers",
+    title: "Selected payment providers",
     logos: [
       { name: "1", logo: pp1 },
       { name: "2", logo: pp2 },
@@ -234,7 +234,7 @@ const customerBenefits = [
     title: "Get paid like a local",
     desc: "Global bank account details in 9+ Currencies",
   },
-  { title: "Get started, fast", desc: "Fast onboarding (100% online)" },
+  { title: "Get started, fast", desc: "Fast Onboarding (100% online)" },
   {
     title: "Safeguard funds",
     desc: "Funds are safe in Global Systematically Important Banks (G-SIBs)",
@@ -312,7 +312,7 @@ export default function ResellerLandingPage() {
             Welcome to
             <br />
             <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
-              the Payoneer Reseller Program
+              Payoneer reseller program
             </span>
           </h1>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg">
@@ -472,7 +472,7 @@ export default function ResellerLandingPage() {
           {/* why-partner */}
           <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
-              Why Partner with Us
+              Why partner with us
             </h1>
             <p className="mt-3 w-full text-[#878787] text-[13px] sm:text-[17px]">
               Partner with Payoneer to unlock global payouts, world-class
@@ -518,10 +518,10 @@ export default function ResellerLandingPage() {
           {/* reseller-overview */}
           <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Reseller Program Overview
+              Reseller program overview
             </h2>
             <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full">
-              The Payoneer Reseller Program enables incorporation agencies and
+              The Payoneer reseller program enables incorporation agencies and
               VAS providers to become full-service financial partners for SMB
               clients.
             </p>
@@ -557,7 +557,7 @@ export default function ResellerLandingPage() {
               <div className="max-w-6xl mx-auto text-left mt-10">
                 {/* Heading */}
                 <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
-                  Reseller Program Phases
+                  Reseller program phases
                 </h2>
               </div>
               {/* Image */}
