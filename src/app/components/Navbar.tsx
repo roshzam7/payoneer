@@ -14,7 +14,7 @@ type Card = {
 // 🗂 Your navigation data
 const cards: Card[] = [
   {
-    title: "Welcome to the Payoneer Reseller Program",
+    title: "Program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why Partner with Us", slug: "why-partner" },
@@ -43,7 +43,7 @@ const cards: Card[] = [
     viewAllHref: "/partner-onboarding",
   },
   {
-    title: "Partner Activation & Enablement",
+    title: "Enablement",
     items: [
       { label: "Sales Enablement Tools", slug: "sales-enablement-tools" },
       {
@@ -59,7 +59,7 @@ const cards: Card[] = [
     viewAllHref: "/partner-activation",
   },
   {
-    title: "Referred Account Holder Onboarding Journey",
+    title: "Onboarding Journey",
     items: [
       { label: "Standard Sign-up Flow", slug: "referred-account-holders" },
       { label: "CLM Flow", slug: "clm-flow" },
@@ -68,15 +68,13 @@ const cards: Card[] = [
     ],
     viewAllHref: "/referred-account-holder",
   },
-      {
-    title: "Payoneer Pricing",
-    items: [
-      { label: "Payoneer Pricing", slug: "newpage" },
-    ],
+  {
+    title: "Pricing",
+    items: [{ label: "Payoneer Pricing", slug: "newpage" }],
     viewAllHref: "/newpage",
   },
   {
-    title: "Support Center",
+    title: "Support",
     items: [
       { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
       {
@@ -86,7 +84,6 @@ const cards: Card[] = [
     ],
     viewAllHref: "/faqs",
   },
-
 ];
 
 const Navbar: React.FC = () => {
@@ -105,9 +102,9 @@ const Navbar: React.FC = () => {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-6 text-sm text-black font-medium">
               {/* Home (no dropdown) */}
-              <Link href="/" className="hover:text-black">
+              {/* <Link href="/" className="hover:text-black">
                 Home
-              </Link>
+              </Link> */}
 
               {/* Dynamic dropdowns */}
               {cards.map((card) => (
