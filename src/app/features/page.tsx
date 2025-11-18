@@ -72,8 +72,8 @@ export default function PayoneerPaymentsPage() {
       >
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Simplify your{" "}
-            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+            Simplify your{" "} <br />
+          <span className="block  bg-clip-text text-gray-900">
               international payments
             </span>
           </h1>

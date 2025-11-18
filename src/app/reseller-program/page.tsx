@@ -311,7 +311,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-snug sm:leading-tight mb-6 sm:mb-8">
             Welcome to
             <br />
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          <span className="block  bg-clip-text text-gray-900">
               Payoneer reseller program
             </span>
           </h1>

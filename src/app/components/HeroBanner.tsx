@@ -111,7 +111,7 @@ const HeroBanner: React.FC = () => {
         {/* Heading */}
  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
     Welcome to the <br />
-    <span className="block text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          <span className="block  bg-clip-text text-gray-900">
         Payoneer Partner Program
     </span>
 </h1>

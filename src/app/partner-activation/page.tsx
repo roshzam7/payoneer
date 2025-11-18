@@ -100,7 +100,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-6 sm:mb-12 leading-snug">
             Partner
             <br />
-            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+          <span className="block  bg-clip-text text-gray-900">
               activation & enablement
             </span>
           </h1>

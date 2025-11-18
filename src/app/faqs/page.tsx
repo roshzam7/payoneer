@@ -42,7 +42,7 @@ const faqs = [
     type: "list",
     question: "How do I submit a request to Reseller Operations?",
     answers: [
-      'Use the official <strong><a href="https://forms.cloud.microsoft/r/BNYvLecaG6" style="color="#2b7fff;" target="_blank" rel="noopener noreferrer">Support Request Form</a></strong>. Ensure all required fields are filled accurately to avoid delays.',
+      'Use the official <strong><a href="https://forms.cloud.microsoft/r/BNYvLecaG6" style="color:#2b7fff;" target="_blank" rel="noopener noreferrer">Support Request Form</a></strong>. Ensure all required fields are filled accurately to avoid delays.',
     ],
   },
   {
@@ -94,11 +94,11 @@ const faqs = [
       "Who do I contact if I face issues with the form or have additional questions?",
     answers: [
       "Please reach out to our support email id:",
-      'APAC - <a href="mailto:resellersupport_apac@payoneer.com">resellersupport_apac@payoneer.com</a>',
-      'EMEA - <a href="mailto:resellersupport_emea@payoneer.com">resellersupport_emea@payoneer.com</a>',
-      'LATAM - <a href="mailto:resellersupport_latam@payoneer.com">resellersupport_latam@payoneer.com</a>',
-      'CHINA - <a href="mailto:resellersupport_china@payoneer.com">resellersupport_china@payoneer.com</a>',
-      'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com">resellersupport_nam@payoneer.com</a>',
+      'APAC - <a href="mailto:resellersupport_apac@payoneer.com" style="color:#2b7fff;">resellersupport_apac@payoneer.com</a>',
+      'EMEA - <a href="mailto:resellersupport_emea@payoneer.com" style="color:#2b7fff;">resellersupport_emea@payoneer.com</a>',
+      'LATAM - <a href="mailto:resellersupport_latam@payoneer.com" style="color:#2b7fff;">resellersupport_latam@payoneer.com</a>',
+      'CHINA - <a href="mailto:resellersupport_china@payoneer.com" style="color:#2b7fff;">resellersupport_china@payoneer.com</a>',
+      'NORTH AMERICA - <a href="mailto:resellersupport_nam@payoneer.com" style="color:#2b7fff;">resellersupport_nam@payoneer.com</a>',
     ],
   },
 
@@ -452,6 +452,7 @@ const faqs = [
     },
   },
 ];
+
 const faqsSectionTwo = [
   {
     type: "table",
@@ -702,6 +703,7 @@ const faqsSectionTwo = [
     },
   },
 ];
+
 const linkify = (text: string) => {
   const urlRegex = /((https?:\/\/|www\.)[^\s)]+)|(mailto:[^\s)]+)/gi;
   const parts = text.split(urlRegex);
@@ -718,7 +720,7 @@ const linkify = (text: string) => {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline"
+          className="text-blue-600 underline"
         >
           {part}
         </a>
@@ -726,7 +728,7 @@ const linkify = (text: string) => {
     }
     if (isMailto) {
       return (
-        <a key={i} href={part} className="underline">
+        <a key={i} href={part} className="text-blue-600 underline">
           {part.replace("mailto:", "")}
         </a>
       );
@@ -783,7 +785,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-12">
             Supporting Your Referred
             <br />
-            <span className="block sm:inline text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">
+            <span className="block  bg-clip-text text-gray-900">
               Account Holders
             </span>
           </h1>
