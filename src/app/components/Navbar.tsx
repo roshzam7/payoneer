@@ -87,10 +87,24 @@ const cards: Card[] = [
     {
     title: "Features",
     items: [
-      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
+      { label: "Overview", 
+        slug: "overview" 
+      },
       {
-        label: "Support Ticket Questionnaire",
-        slug: "support-ticket-questionnaire",
+        label: "Key features & benefits",
+        slug: "features",
+      },
+            {
+        label: "Business tools",
+        slug: "business-tools",
+      },
+            {
+        label: "Who is it for?",
+        slug: "who-its-for",
+      },
+            {
+        label: "Learn more",
+        slug: "learn-more",
       },
     ],
     viewAllHref: "/features",
