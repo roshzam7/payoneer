@@ -84,6 +84,17 @@ const cards: Card[] = [
     ],
     viewAllHref: "/faqs",
   },
+    {
+    title: "Features",
+    items: [
+      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
+      {
+        label: "Support Ticket Questionnaire",
+        slug: "support-ticket-questionnaire",
+      },
+    ],
+    viewAllHref: "/features",
+  },
 ];
 
 const Navbar: React.FC = () => {
