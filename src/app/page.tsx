@@ -8,7 +8,6 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       <Navbar />
       <HeroBanner />
-      
       <NewmainOntent />
       <Footer />
     </div>
