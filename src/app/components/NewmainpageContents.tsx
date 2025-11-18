@@ -145,7 +145,7 @@ export default function NewmainpageContents() {
             />
             <div className="mt-2 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
             <h4 className="mt-3 text-[18px] font-semibold text-gray-900">
-              Seamless Experience Upgrades
+              Seamless experience upgrades
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
               Faster onboarding flows, improved APIs and UX that make it easy to
@@ -269,7 +269,7 @@ export default function NewmainpageContents() {
               href="/faqs"
               className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 transition-all duration-200"
             >
-              Browse faqs
+              Browse FAQs
             </Link>
           </div>
         </div>

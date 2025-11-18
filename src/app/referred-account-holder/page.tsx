@@ -227,12 +227,12 @@ const steps = [
     ),
   },
   {
-    title: "    User Details ",
+    title: "    User details ",
     bullets: resellerBulletssix,
     image: Content6,
   },
   {
-    title: "  Onboarding Process ",
+    title: "  Onboarding process ",
     bullets: resellerBulletsseven,
     image: Content7,
   },
@@ -242,37 +242,37 @@ const steps = [
     image: Content8,
   },
   {
-    title: "    Business Details ",
+    title: "    Business details ",
     bullets: resellerBulletsnine,
     image: Content9,
   },
   {
-    title: "  Email Verification ",
+    title: "  Email verification ",
     bullets: resellerBulletsTen,
     image: Content10,
   },
   {
-    title: "  Confirm Business Registration ",
+    title: "  Confirm business registration ",
     bullets: resellerBulletswleven,
     image: Content11,
   },
   {
-    title: "  Location Information ",
+    title: "  Location information ",
     bullets: resellerBulletswtwelve,
     image: Content12,
   },
   {
-    title: "  Mobile Number Verification ",
+    title: "  Mobile number verification ",
     bullets: resellerBulletsthirteen,
     image: Content13,
   },
   {
-    title: "  Password Creation  ",
+    title: "  Password creation  ",
     bullets: resellerBulletsfourteen,
     image: Content14,
   },
   {
-    title: "  Document Submission ",
+    title: "  Document submission ",
     bullets: resellerBulletsfifteen,
     image: Content15,
   },
@@ -282,7 +282,7 @@ const steps = [
     image: Content16,
   },
   {
-    title: "  Final Document Submission ",
+    title: "  Final document submission ",
     bullets: resellerBulletsseventeen,
     image: Content17,
   },
