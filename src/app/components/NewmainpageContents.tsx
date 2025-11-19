@@ -22,7 +22,7 @@ export default function NewmainpageContents() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 ">
       {/* HERO */}
-      <header className="relative py-0 lg:py-0 w-full overflow-hidden text-l">
+      <header className="relative py-0 lg:py-0 w-full text-l">
         <div className="grid grid-cols-1 lg:grid-cols-1 gap-8 items-center  w-full">
           <div>
             <h1 className="text-3xl lg:text-4xl font-semibold text-gray-800  w-full">

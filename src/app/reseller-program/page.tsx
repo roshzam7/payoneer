@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Banner from "./../assets/reseller-banner.png";
+import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import barclays from "../assets/images/globalbanks/barclays.svg";
@@ -305,7 +305,7 @@ export default function ResellerLandingPage() {
       <Navbar />
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
-        className="w-full bg-gray-50 min-h-[60vh] flex items-center justify-center px-4 text-center border-b border-gray-200 md:bg-cover bg-center"
+        className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-snug sm:leading-tight mb-6 sm:mb-8">

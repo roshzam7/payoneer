@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Banner from "../assets/Hero-header.png";
+import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Footer from "../components/Footer";
@@ -68,7 +68,7 @@ export default function PayoneerPaymentsPage() {
       {/* HERO */}
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
-        className="bg-gray-50 h-[400px] sm:h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+        className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
           <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 mb-6">

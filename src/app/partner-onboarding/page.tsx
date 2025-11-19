@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Banner from "./../assets/reseller-banner.png";
+import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Content from "../assets/images/gettingstarted/Content.png";
@@ -104,13 +104,13 @@ export default function ResellerLandingPage() {
 
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
-        className="bg-gray-50 min-h-[400px] sm:min-h-[500px] flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
+        className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
     <h1 className="text-2xl sm:text-4xl font-bold text-[#212529] mb-6 **leading-normal**">
     Getting started
     <br />
-    <span className="block sm:inline text-transparent bg-clip-text text-[#212529]">
+    <span className="block sm:inline bg-clip-text text-[#212529]">
         Partner onboarding
     </span>
 </h1>

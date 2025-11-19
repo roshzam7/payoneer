@@ -73,17 +73,7 @@ const cards: Card[] = [
     items: [{ label: "Payoneer Pricing", slug: "newpage" }],
     viewAllHref: "/newpage",
   },
-  {
-    title: "Support",
-    items: [
-      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
-      {
-        label: "Support Ticket Questionnaire",
-        slug: "support-ticket-questionnaire",
-      },
-    ],
-    viewAllHref: "/faqs",
-  },
+
     {
     title: "Features",
     items: [
@@ -108,6 +98,17 @@ const cards: Card[] = [
       },
     ],
     viewAllHref: "/features",
+  },
+    {
+    title: "Support",
+    items: [
+      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
+      {
+        label: "Support Ticket Questionnaire",
+        slug: "support-ticket-questionnaire",
+      },
+    ],
+    viewAllHref: "/faqs",
   },
 ];
 
