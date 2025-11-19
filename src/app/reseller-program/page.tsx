@@ -308,7 +308,7 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
-          <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-snug sm:leading-tight mb-6 sm:mb-8">
+             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             Welcome to
             <br />
           <span className="block  bg-clip-text text-gray-900">
