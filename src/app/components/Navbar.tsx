@@ -71,7 +71,7 @@ const cards: Card[] = [
   {
     title: "Pricing",
     items: [{ label: "Payoneer Pricing", slug: "newpage" }],
-    viewAllHref: "/newpage",
+    viewAllHref: "/program",
   },
 
     {
