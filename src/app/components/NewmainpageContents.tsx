@@ -3,7 +3,11 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import growthIcon from "@/app/assets/images/collection-links.svg";
+import growthIcon1 from "@/app/assets/images/collection-links.svg";
+import growthIcon2 from "@/app/assets/images/collection-links.svg";
+import growthIcon3 from "@/app/assets/images/collection-links.svg";
+import growthIcon4 from "@/app/assets/images/collection-links.svg";
+
 import Testimonial from "./Testimonial"; // testimonial on codesace
 
 export default function NewmainpageContents() {
@@ -76,9 +80,9 @@ export default function NewmainpageContents() {
       <section className="mt-10">
         <div className="bg-white rounded-2xl py-0 ">
           <div>
-          <h2 className="text-xl font-semibold text-gray-800">
-  Empowering our partners to go further, faster 
-</h2>
+            <h2 className="text-xl font-semibold text-gray-800">
+              Empowering our partners to go further, faster
+            </h2>
             <p className="mt-2 text-gray-600">
               As a trusted partner, you&apos;re at the center of our growth.
               This is your dedicated hub - packed with tools, resources, and
@@ -100,7 +104,7 @@ export default function NewmainpageContents() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
-              src={growthIcon}
+              src={growthIcon1}
               alt="Growth Tools"
               width={32}
               height={32}
@@ -114,12 +118,12 @@ export default function NewmainpageContents() {
               Partner activation & enablement, sales enablement tools, marketing
               & reselling guidelines, customer personas, co-branded landing
               Pages.
-              </p>
+            </p>
           </div>
 
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
-              src={growthIcon}
+              src={growthIcon2}
               alt="More Rewards"
               width={32}
               height={32}
@@ -137,7 +141,7 @@ export default function NewmainpageContents() {
 
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
-              src={growthIcon}
+              src={growthIcon3}
               alt="Seamless Experience Upgrades"
               width={32}
               height={32}
@@ -154,7 +158,7 @@ export default function NewmainpageContents() {
           </div>
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
             <Image
-              src={growthIcon}
+              src={growthIcon4}
               alt="Expert Support & Resources"
               width={32}
               height={32}
@@ -253,7 +257,7 @@ export default function NewmainpageContents() {
         <Testimonial />
       </section>
       {/* SECTION 5: CTA */}
-      <footer className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+      {/* <footer className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h4 className="text-lg font-semibold text-gray-800">
             Need help or want to explore more?
@@ -273,7 +277,7 @@ export default function NewmainpageContents() {
             </Link>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </section>
   );
 }
