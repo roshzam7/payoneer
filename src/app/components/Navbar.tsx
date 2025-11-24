@@ -21,7 +21,7 @@ const cards: Card[] = [
       { label: "Reseller Program Overview", slug: "reseller-overview" },
       { label: "Success Stories & Testimonials", slug: "key-features" },
     ],
-    viewAllHref: "/reseller-program",
+    viewAllHref: "/program",
   },
   {
     title: "Getting Started: Partner Onboarding",
@@ -71,7 +71,7 @@ const cards: Card[] = [
   {
     title: "Pricing",
     items: [{ label: "Payoneer Pricing", slug: "newpage" }],
-    viewAllHref: "/program",
+    viewAllHref: "/pricing",
   },
 
     {
