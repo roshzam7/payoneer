@@ -257,7 +257,7 @@ export default function NewmainpageContents() {
         <Testimonial />
       </section>
       {/* SECTION 5: CTA */}
-      {/* <footer className="mt-12 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+     <footer className="mt-12 bg-white rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h4 className="text-lg font-semibold text-gray-800">
             Need help or want to explore more?
@@ -277,7 +277,7 @@ export default function NewmainpageContents() {
             </Link>
           </div>
         </div>
-      </footer> */}
+      </footer>
     </section>
   );
 }
