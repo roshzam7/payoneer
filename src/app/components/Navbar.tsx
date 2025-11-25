@@ -17,26 +17,26 @@ const cards: Card[] = [
     title: "Program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
-      { label: "Why Partner with Us", slug: "why-partner" },
-      { label: "Reseller Program Overview", slug: "reseller-overview" },
-      { label: "Success Stories & Testimonials", slug: "key-features" },
+      { label: "Why partner with us", slug: "why-partner" },
+      { label: "Reseller program overview", slug: "reseller-overview" },
+      { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/program",
   },
   {
-    title: "Getting Started: Partner Onboarding",
+    title: "Getting Started",
     items: [
-      { label: "How to Join the Program", slug: "How-to-Join" },
+      { label: "How to join the program", slug: "How-to-Join" },
       {
-        label: "Understand Your Role as a Payoneer Reseller",
+        label: "Understand your role as a payoneer reseller",
         slug: "Understand-Your-Role",
       },
       {
-        label: "Understanding Partner Tiers",
+        label: "Understanding partner tiers",
         slug: "Understanding-Partner-Tiers",
       },
       {
-        label: "Understanding Commercials & Payment Calculators",
+        label: "Understanding commercials & payment calculators",
         slug: "Payment-Calculators",
       },
     ],
@@ -45,32 +45,32 @@ const cards: Card[] = [
   {
     title: "Enablement",
     items: [
-      { label: "Sales Enablement Tools", slug: "sales-enablement-tools" },
+      { label: "Sales enablement tools", slug: "sales-enablement-tools" },
       {
-        label: "Marketing & Reselling Guidelines",
+        label: "Marketing & reselling guidelines",
         slug: "reselling-guidelines",
       },
-      { label: "Customer Personas", slug: "onboarding-overview" },
+      { label: "Customer personas", slug: "onboarding-overview" },
       {
-        label: "Co-Branded or Dedicated Landing Pages",
+        label: "Co-branded or dedicated landing pages",
         slug: "co-branded-or-dedicated-landing-pages",
       },
     ],
     viewAllHref: "/partner-activation",
   },
   {
-    title: "Onboarding Journey",
+    title: "Onboarding journey",
     items: [
-      { label: "Standard Sign-up Flow", slug: "referred-account-holders" },
+      { label: "Standard sign-up flow", slug: "referred-account-holders" },
       { label: "CLM Flow", slug: "clm-flow" },
-      { label: "Additional KYC Requirements", slug: "kyc-process-explained" },
+      { label: "Additional kyc requirements", slug: "kyc-process-explained" },
       { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
     ],
     viewAllHref: "/referred-account-holder",
   },
   {
     title: "Pricing",
-    items: [{ label: "Payoneer Pricing", slug: "newpage" }],
+    items: [{ label: "Payoneer pricing", slug: "newpage" }],
     viewAllHref: "/pricing",
   },
 
@@ -102,9 +102,9 @@ const cards: Card[] = [
     {
     title: "Support",
     items: [
-      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
+      { label: "frequently asked questions (faqs)", slug: "faqs" },
       {
-        label: "Support Ticket Questionnaire",
+        label: "Support ticket questionnaire",
         slug: "support-ticket-questionnaire",
       },
     ],
