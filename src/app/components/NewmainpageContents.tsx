@@ -3,10 +3,10 @@
 import React, { useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import growthIcon1 from "@/app/assets/images/collection-links.svg";
-import growthIcon2 from "@/app/assets/images/collection-links.svg";
-import growthIcon3 from "@/app/assets/images/collection-links.svg";
-import growthIcon4 from "@/app/assets/images/collection-links.svg";
+import growthIcon1 from "@/app/assets/images/newlogos/8.png";
+import growthIcon2 from "@/app/assets/images/newlogos/7.png";
+import growthIcon3 from "@/app/assets/images/newlogos/6.png";
+import growthIcon4 from "@/app/assets/images/newlogos/5.png";
 
 import Testimonial from "./Testimonial"; // testimonial on codesace
 
