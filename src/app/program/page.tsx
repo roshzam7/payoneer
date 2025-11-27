@@ -192,6 +192,7 @@ const resellerBullets = [
   "Get paid for onboarding and activating clients",
 ];
 
+
 const partnerCards = [
   {
     image: expandCrossBorder,
@@ -390,7 +391,7 @@ export default function ResellerLandingPage() {
                 Unmatched global infrastructure
               </h2>
               <p className="text-[#878787] text-[13px] sm:text-[17px] mt-1">
-                Covering 190+ countries and Territories with redundant
+                Covering 190+ countries and territories with redundant
                 capabilities in 145 countries
               </p>
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
@@ -490,8 +491,8 @@ export default function ResellerLandingPage() {
                   <Image
                     src={image}
                     alt="Expand cross-border"
-                    width={32}
-                    height={32}
+                    width={48}
+                    height={48}
                     className="mt-4"
                   />
                   <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
@@ -516,12 +517,12 @@ export default function ResellerLandingPage() {
             </div>
           </section>
           {/* reseller-overview */}
-          <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
+          <section id="reseller-overview" classNamge="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Reseller program overview
             </h2>
             <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full">
-              The Payoneer reseller program enables incorporation agencies and
+              The Payoneer reseller program egnables incorporation agencies and
               VAS providers to become full-service financial partners for SMB
               clients.
             </p>

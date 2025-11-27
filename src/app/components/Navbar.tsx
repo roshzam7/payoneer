@@ -14,7 +14,7 @@ type Card = {
 // 🗂 Your navigation data
 const cards: Card[] = [
   {
-    title: "Program",
+    title: "Reseller program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
