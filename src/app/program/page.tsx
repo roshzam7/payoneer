@@ -517,7 +517,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
           {/* reseller-overview */}
-          <section id="reseller-overview" classNamge="scroll-mt-28 px-4 sm:px-6">
+          <section id="reseller-overview"  className="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Reseller program overview
             </h2>
@@ -553,7 +553,7 @@ export default function ResellerLandingPage() {
             {/* Reseller Phases */}
             <section
               id="reseller-phases"
-              className="scroll-mt-24 sm:mb-24 px-4 sm:px-6 py-12 "
+              className="scroll-mt-28 px-4 sm:px-6 "
             >
               <div className="max-w-6xl mx-auto text-left mt-10">
                 {/* Heading */}
