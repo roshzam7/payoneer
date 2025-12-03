@@ -51,6 +51,25 @@ const cards: Card[] = [
     ],
     viewAllHref: "/partner-onboarding",
   },
+    {
+    title: "Affiliate setup",
+    items: [
+      { label: "How to join the program", slug: "How-to-Join" },
+      {
+        label: "Understand your role as a payoneer reseller",
+        slug: "Understand-Your-Role",
+      },
+      {
+        label: "Understanding partner tiers",
+        slug: "Understanding-Partner-Tiers",
+      },
+      {
+        label: "Understanding commercials & payment calculators",
+        slug: "Payment-Calculators",
+      },
+    ],
+    viewAllHref: "/affiliate setup",
+  },
 
   {
     title: "Client onboarding",

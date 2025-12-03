@@ -329,7 +329,7 @@ export default function ResellerLandingPage() {
             Welcome to
             <br />
             <span className="block  bg-clip-text text-gray-900">
-              Payoneer reseller program
+              Payoneer affiliate program
             </span>
           </h1>
           <p className="text-gray-600 text-sm sm:text-base md:text-lg">
