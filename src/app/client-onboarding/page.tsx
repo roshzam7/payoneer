@@ -470,6 +470,7 @@ export default function ResellerLandingPage() {
                 {" "}
                 support@payoneerpartnerships.com
               </a>
+               <br />
               Get in touch with your partner manager and get the link to
               register
             </p>
