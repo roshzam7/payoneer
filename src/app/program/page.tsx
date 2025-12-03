@@ -235,7 +235,7 @@ const customerBenefits = [
     title: "Get paid like a local",
     desc: "Global bank account details in 9+ Currencies",
   },
-  { title: "Get started, fast", desc: "Fast Onboarding (100% online)" },
+  { title: "Get started, fast", desc: "Fast onboarding (100% online)" },
   {
     title: "Safeguard funds",
     desc: "Funds are safe in Global Systematically Important Banks (G-SIBs)",
@@ -258,7 +258,7 @@ const keyFeatures = [
   {
     logo: debitCards,
     title: "International debit cards",
-    desc: "Get a physical or digital Mastercard in EUR, USD, GBP and CAD. + great cashback rewards*",
+    desc: "Get a physical or digital Mastercard in EUR, USD, GBP and CAD.",
   },
   {
     logo: collectionLinks,
@@ -553,7 +553,7 @@ export default function ResellerLandingPage() {
             {/* Reseller Phases */}
             <section
               id="reseller-phases"
-              className="scroll-mt-28 px-4 sm:px-6 "
+              className="scroll-mt-28 px-4 sm:px-0 "
             >
               <div className="max-w-6xl mx-auto text-left mt-10">
                 {/* Heading */}
@@ -602,7 +602,7 @@ export default function ResellerLandingPage() {
             className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
           >
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
-              Key features your customer will value most
+              Key features your customer will value
             </h1>
             <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left">
               Focus on building long-term value, not just one-time transactions.
@@ -637,14 +637,60 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-          <section
-            id="key-features"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
-          >
-            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Coming Soon..
-            </h2>
-          </section>
+<section
+  id="key-features"
+  className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+>
+  <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+    Success stories &amp; testimonials
+  </h2>
+
+  {/* PDF thumbnails */}
+  <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+    {/* PDF 1 */}
+    <a
+      href="/pdfs/success-story-1.pdf" // change to your PDF path
+      target="_blank"
+      rel="noreferrer"
+      className="group relative block overflow-hidden rounded-xl border border-gray-200"
+    >
+      <img
+        src="assets/images/success-1.jpg" // change to your image path
+        alt="Success story 1"
+        className="w-full h-64 object-cover"
+      />
+
+      {/* Hover title overlay */}
+      <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+          PDF title for success story 1
+        </span>
+      </div>
+    </a>
+
+    {/* PDF 2 */}
+    <a
+      href="/pdfs/success-story-2.pdf" // change to your PDF path
+      target="_blank"
+      rel="noreferrer"
+      className="group relative block overflow-hidden rounded-xl border border-gray-200"
+    >
+      <img
+        src="/images/success-2.jpg" // change to your image path
+        alt="Success story 2"
+        className="w-full h-64 object-cover"
+      />
+
+      {/* Hover title overlay */}
+      <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+        <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+          PDF title for success story 2
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
         </main>
       </div>
       <Footer />

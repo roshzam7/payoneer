@@ -360,11 +360,11 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             Referred Account Holder (AH)
             <br />
-          <span className="block  bg-clip-text text-gray-900">
-              Onboarding Journey
+            <span className="block  bg-clip-text text-gray-900">
+              Onboarding process
             </span>
           </h1>
         </div>
@@ -420,7 +420,7 @@ export default function ResellerLandingPage() {
                   </span>
                   <span className="opacity-60">›</span>
                   <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                    Referred Account Holder Onboarding Journey
+                    Referred Account Holder Onboarding process
                   </span>
                 </nav>
               </div>
@@ -452,16 +452,14 @@ export default function ResellerLandingPage() {
               </a>
             </div>
           </section>
-
           {/* How to Join */}
-
           <section
             id="referred-account-holders"
             className="scroll-mt-36 max-w-5xl mx-auto"
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-              Standard sign-up flow{" "}
+              How to get started as an account holder (AH) in Payoneer
             </p>
             <p className="mt-2 text-gray-900 text-[23px]">
               Request for your unique onboarding link at
@@ -472,6 +470,8 @@ export default function ResellerLandingPage() {
                 {" "}
                 support@payoneerpartnerships.com
               </a>
+              Get in touch with your partner manager and get the link to
+              register
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
               <p className="mt-2 text-gray-900 text-[23px]">
@@ -485,7 +485,6 @@ export default function ResellerLandingPage() {
 
             {(() => {
               const splitIndex = 6;
-
               return (
                 <>
                   {/* First Half */}
@@ -523,7 +522,6 @@ export default function ResellerLandingPage() {
                         </ul>
                         {section.note && section.note}
                       </div>
-
                       {/* Image with Persistent + Button */}
                       <div
                         className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
@@ -538,7 +536,6 @@ export default function ResellerLandingPage() {
                           className="rounded-xl object-cover w-full h-auto cursor-pointer"
                           onClick={() => setModalImage(section.image.src)}
                         />
-
                         {/* Persistent + button */}
                         <button
                           onClick={() => setModalImage(section.image.src)}
@@ -555,7 +552,6 @@ export default function ResellerLandingPage() {
                       </div>
                     </div>
                   ))}
-
                   {/* Second Section Heading */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
                     <p className="text-gray-900 text-[48px] font-semibold">
@@ -581,7 +577,6 @@ export default function ResellerLandingPage() {
                       registration of your Payoneer business account.
                     </p>
                   </div>
-
                   {/* Second Half */}
                   {steps.slice(splitIndex).map((section, idx) => (
                     <div
@@ -616,7 +611,6 @@ export default function ResellerLandingPage() {
                         </ul>
                         {section.note && section.note}
                       </div>
-
                       {/* Image with Persistent + Button */}
                       <div
                         className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
@@ -652,9 +646,7 @@ export default function ResellerLandingPage() {
               );
             })()}
           </section>
-
           {/* 2 */}
-
           {/* Additional KYC Requirements */}
           <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
@@ -663,14 +655,12 @@ export default function ResellerLandingPage() {
                 <h3 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 mb-4 mt-10">
                   Additional KYC requirements
                 </h3>
-
                 <p className="mt-2 text-gray-900 text-[17px]">
                   As part of the onboarding process, you may be asked to provide
                   additional documentation. The following outlines the
                   requirements, with clear guidance to help you prepare the
                   information in the correct format and avoid processing delays.
                 </p>
-
                 {/* Affiliation */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Affiliation URL / Screenshot showing affiliation
@@ -705,7 +695,6 @@ export default function ResellerLandingPage() {
                     Autologger 7650
                   </a>
                 </p> */}
-
                 {/* Business Profile */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Business profile / Merchant application form (MAF)
@@ -717,7 +706,6 @@ export default function ResellerLandingPage() {
                   form provides essential information for Line of Business (LOB)
                   verification.
                 </p>
-
                 {/* Held ID */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Held ID
@@ -742,7 +730,6 @@ export default function ResellerLandingPage() {
                     Request for ID and Held ID
                   </a>
                 </p>
-
                 {/* Invoice */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Invoice submission requirements

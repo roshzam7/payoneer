@@ -11,7 +11,6 @@ type Card = {
   viewAllHref: string;
 };
 
-// 🗂 Your navigation data
 const cards: Card[] = [
   {
     title: "Reseller program",
@@ -24,7 +23,7 @@ const cards: Card[] = [
     viewAllHref: "/program",
   },
   {
-    title: "Getting Started",
+    title: "Partner onboard",
     items: [
       { label: "How to join the program", slug: "How-to-Join" },
       {
@@ -41,6 +40,17 @@ const cards: Card[] = [
       },
     ],
     viewAllHref: "/partner-onboarding",
+  },
+
+  {
+    title: "Client onboarding",
+    items: [
+      { label: "Standard sign-up flow", slug: "referred-account-holders" },
+      { label: "CLM Flow", slug: "clm-flow" },
+      { label: "Additional kyc requirements", slug: "kyc-process-explained" },
+      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
+    ],
+    viewAllHref: "/referred-account-holder",
   },
   {
     title: "Enablement",
@@ -59,47 +69,35 @@ const cards: Card[] = [
     viewAllHref: "/partner-activation",
   },
   {
-    title: "Onboarding journey",
-    items: [
-      { label: "Standard sign-up flow", slug: "referred-account-holders" },
-      { label: "CLM Flow", slug: "clm-flow" },
-      { label: "Additional kyc requirements", slug: "kyc-process-explained" },
-      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
-    ],
-    viewAllHref: "/referred-account-holder",
-  },
-  {
     title: "Pricing",
     items: [{ label: "Payoneer pricing", slug: "newpage" }],
     viewAllHref: "/pricing",
   },
 
-    {
+  {
     title: "Features",
     items: [
-      { label: "Overview", 
-        slug: "overview" 
-      },
+      { label: "Overview", slug: "overview" },
       {
         label: "Key features & benefits",
         slug: "features",
       },
-            {
+      {
         label: "Business tools",
         slug: "business-tools",
       },
-            {
+      {
         label: "Who is it for?",
         slug: "who-its-for",
       },
-            {
+      {
         label: "Learn more",
         slug: "learn-more",
       },
     ],
     viewAllHref: "/features",
   },
-    {
+  {
     title: "Support",
     items: [
       { label: "frequently asked questions (faqs)", slug: "faqs" },
