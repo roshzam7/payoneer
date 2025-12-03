@@ -68,7 +68,7 @@ const cards: Card[] = [
         slug: "Payment-Calculators",
       },
     ],
-    viewAllHref: "/affiliate setup",
+    viewAllHref: "/affiliate-setup",
   },
 
   {
@@ -79,7 +79,7 @@ const cards: Card[] = [
       { label: "Additional kyc requirements", slug: "kyc-process-explained" },
       { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
     ],
-    viewAllHref: "/referred-account-holder",
+    viewAllHref: "/client-onboarding",
   },
   {
     title: "Enablement",

@@ -26,17 +26,17 @@ const topics = [
 ];
 
 const resellerBullets = [
-  "Receive the link for registration from your affiliate manager.",
-  "Click on the link and fill in your information in Part 1 of the Partner Sign Up form.",
-  "Click Next to continue to User Details.",
+  "Receive the link for registration from your affiliate manager. ",
+  "Click the link and fill in your information in Part 1 (Account Details) of the Partner Sign Up form. ",
+  "Click Next to continue to Part 2 (User Details). ",
 ];
 const resellerBulletsTwo = [
   "Fill in your information. It is recommended to choose a strong and unique password.",
-  "Click Next to continue to User Agreement..",
+  "Click Next to continue to Part 3 (User Agreements). ",
 ];
 const resellerBulletsThree = [
-  "Enable the two checkboxes. .",
-  "Click Sign up. You are now successfully signed up!",
+  "Enable the two checkboxes. ",
+  "Click Sign Up. You are now successfully signed up! ",
 ];
 
 export default function ResellerLandingPage() {
@@ -107,13 +107,11 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-    Getting started
-    <br />
-    <span className="block sm:inline bg-clip-text text-[#212529]">
-        Partner onboarding
-    </span>
-</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+            Affiliate setup
+            <br />
+            <span className="block sm:inline bg-clip-text text-[#212529]"></span>
+          </h1>
         </div>
       </section>
 
@@ -176,35 +174,13 @@ export default function ResellerLandingPage() {
           <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[48px] font-semibold">
-                How to join the program
+                How to get onboarded to Payoneer with Hasoffer
               </p>
               <a
                 href="#"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
               ></a>
             </div>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              After sign-up you will receive partnership contract. Please find a
-              sample contract below:
-            </p>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              <a
-                href="/files/REFERRAL-MARKETING-AGREEMENT.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-              >
-                View Contracting & Legal Agreements
-              </a>
-            </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
-              Reseller Sign-Up Process
-            </p>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              View the guided steps below to learn how to get onboarded to
-              Payoneer with Hasoffer.
-            </p>
-
             {[
               {
                 title: "Account details",
@@ -286,7 +262,7 @@ export default function ResellerLandingPage() {
           {/* 2 */}
           {/* 4th */}
 
-          <section
+          {/* <section
             id="Understand-Your-Role"
             className="scroll-mt-28 mb-4 w-full sm:px-0 py-12 text-left "
           >
@@ -299,15 +275,13 @@ export default function ResellerLandingPage() {
                 and maintain compliance with our program.{" "}
               </p>
             </div>
-          </section>
+          </section> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Card 1 */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 Your role as a reseller
               </h3>
-              {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
               <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
@@ -330,13 +304,11 @@ export default function ResellerLandingPage() {
               </ul>
             </div>
 
-            {/* Card 2 */}
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 How to refer clients share Payoneer-provided links that contain
                 your unique tracking code
               </h3>
-              {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
               <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
@@ -356,13 +328,11 @@ export default function ResellerLandingPage() {
               </ul>
             </div>
 
-            {/* Card 3 */}
 
             <div className="bg-white rounded-2xl shadow-md p-6">
               <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
                 Important limits you cannot bind Payoneer or speak on its behalf{" "}
               </h3>
-              {/* Gradient underline */}
               <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
               <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
@@ -395,7 +365,7 @@ export default function ResellerLandingPage() {
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Coming Soon..
             </h2>
-          </section>
+          </section> */}
         </main>
       </div>
       <Footer />
