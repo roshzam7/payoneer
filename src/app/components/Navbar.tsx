@@ -23,6 +23,16 @@ const cards: Card[] = [
     viewAllHref: "/program",
   },
   {
+    title: "Affiliate program",
+    items: [
+      { label: "About Payoneer", slug: "about-payoneer" },
+      { label: "Why partner with us", slug: "why-partner" },
+      { label: "Reseller program overview", slug: "reseller-overview" },
+      { label: "Success stories & testimonials", slug: "key-features" },
+    ],
+    viewAllHref: "/affiliate-program",
+  },
+  {
     title: "Partner onboard",
     items: [
       { label: "How to join the program", slug: "How-to-Join" },
