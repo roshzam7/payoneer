@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 
 const topics = [
   { title: "How to join the program", slug: "How-to-Join" },
+  { title: "How to get onboarded to Payoneer with Hasoffer", slug: "How-to-Join" },
   {
     title: "Understand your role as a Payoneer reseller",
     slug: "Understand-Your-Role",
@@ -164,7 +165,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Getting started: partner onboarding
+                  Affiliate setup
                 </span>
               </nav>
             </div>

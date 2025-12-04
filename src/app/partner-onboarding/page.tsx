@@ -108,7 +108,6 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-    Getting started
     <br />
     <span className="block sm:inline bg-clip-text text-[#212529]">
         Partner onboarding

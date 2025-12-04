@@ -5,10 +5,10 @@ import { useRouter } from "next/navigation";
 import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
-import Sectionthree1 from "../assets/images/Sectionthree/Sectionthree1.png";
-import Sectionthree2 from "../assets/images/Sectionthree/Sectionthree2.png";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
+import expandicon from "../assets/images/expandIcon.png";
+
 import Footer from "../components/Footer";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -97,10 +97,10 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             Partner
             <br />
-          <span className="block  bg-clip-text text-gray-900">
+            <span className="block  bg-clip-text text-gray-900">
               activation & enablement
             </span>
           </h1>
@@ -432,55 +432,67 @@ export default function ResellerLandingPage() {
 
           {/* Personas */}
 
+          {/* Personas */}
           <section className="scroll-mt-28 mb-0">
             <div className="grid grid-cols-1 gap-8">
               <div className="bg-white p-6 sm:p-8">
-                {/* Title */}
                 <h2
                   id="customer-personas"
                   className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
                 >
                   Personas
                 </h2>
+
                 <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
                   View the customer profiles to understand their requirements,
                   preferred payment functionalities, and engagement patterns.
                 </p>
 
-                {/* Slider Container */}
+                {/* Slider */}
                 <div className="relative w-full max-w-xl mx-auto flex items-center">
-                  {/* Previous Button */}
+                  {/* Previous */}
                   <button
                     onClick={goToPrevious}
                     className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 mr-2"
-                    aria-label="Previous persona"
                   >
                     <ChevronLeft className="w-6 h-6 text-gray-800" />
                   </button>
 
-                  {/* Image Display */}
-                  <div className="overflow-hidden w-full rounded-2xl">
+                  {/* Image */}
+                  <div className="relative overflow-hidden w-full rounded-2xl">
                     <Image
                       src={personas[currentIndex].src}
                       alt={personas[currentIndex].alt}
-                      className="w-full h-full object-cover transition-opacity duration-300 cursor-pointer"
                       width={800}
                       height={450}
-                      onClick={() => setIsModalOpen(true)} // <-- open modal
+                      className="w-full h-full object-cover cursor-pointer rounded-2xl"
+                      onClick={() => setIsModalOpen(true)}
                     />
+
+                    {/* Expand icon */}
+                    <button
+                      onClick={() => setIsModalOpen(true)}
+                      className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+                    >
+                      <Image
+                        src={expandicon}
+                        alt="Expand"
+                        width={20}
+                        height={20}
+                      />
+                    </button>
                   </div>
 
-                  {/* Next Button */}
+                  {/* Next */}
                   <button
                     onClick={goToNext}
                     className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 ml-2"
-                    aria-label="Next persona"
                   >
                     <ChevronRight className="w-6 h-6 text-gray-800" />
                   </button>
                 </div>
 
-                {/* Pagination dots */}
+                {/* Dots */}
                 <div className="flex justify-center gap-2 mt-4">
                   {personas.map((_, index) => (
                     <button
@@ -489,15 +501,15 @@ export default function ResellerLandingPage() {
                       className={`w-2 h-2 rounded-full transition-all duration-300 ${
                         index === currentIndex
                           ? "bg-blue-600 w-8"
-                          : "bg-gray-300 hover:bg-gray-400"
+                          : "bg-gray-300"
                       }`}
-                      aria-label={`Go to persona ${index + 1}`}
-                    />
+                    ></button>
                   ))}
                 </div>
               </div>
             </div>
 
+            {/* Modal */}
             {isModalOpen && (
               <div
                 className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[9999]"
@@ -505,9 +517,8 @@ export default function ResellerLandingPage() {
               >
                 <div
                   className="relative bg-white rounded-lg shadow-2xl max-w-3xl w-full p-4"
-                  onClick={(e) => e.stopPropagation()} // prevent outer click
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  {/* Close Button */}
                   <button
                     onClick={() => setIsModalOpen(false)}
                     className="absolute top-3 right-3 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full"
@@ -515,7 +526,6 @@ export default function ResellerLandingPage() {
                     ✕
                   </button>
 
-                  {/* Image Inside Modal */}
                   <Image
                     src={personas[currentIndex].src}
                     alt={personas[currentIndex].alt}
@@ -527,6 +537,7 @@ export default function ResellerLandingPage() {
               </div>
             )}
           </section>
+
           <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "

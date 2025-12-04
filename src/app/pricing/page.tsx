@@ -178,10 +178,10 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto">
              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-            Payoneer
+            
             <br />
           <span className="block  bg-clip-text text-gray-900">
-              Fees
+              Payoneer fees
             </span>
           </h1>
         </div>

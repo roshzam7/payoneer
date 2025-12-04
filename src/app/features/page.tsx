@@ -77,13 +77,7 @@ export default function PayoneerPaymentsPage() {
               international payments
             </span>
           </h1>
-          <p className="text-sm sm:text-base text-[#878787] max-w-2xl mx-auto">
-            With Payoneer, clients and customers can pay you from anywhere in
-            the world as if you had a local bank account. Multi-currency
-            receiving accounts, flexible payment options, and easy withdrawals
-            make it a solid fit for freelancers, e-commerce sellers, SMBs, and
-            global teams.
-          </p>
+ 
         </div>
       </section>
 
@@ -142,6 +136,19 @@ export default function PayoneerPaymentsPage() {
           </section>
 
           {/* OVERVIEW */}
+                    <section
+            id="overview"
+            className="scroll-mt-28 mb-4 space-y-4 max-w-3xl"
+          >
+        
+            <p className="text-[#878787] text-[14px] leading-relaxed">
+            With Payoneer, clients and customers can pay you from anywhere in
+            the world as if you had a local bank account. Multi-currency
+            receiving accounts, flexible payment options, and easy withdrawals
+            make it a solid fit for freelancers, e-commerce sellers, SMBs, and
+            global teams.
+            </p>
+          </section>
           <section
             id="overview"
             className="scroll-mt-28 mb-4 space-y-4 max-w-3xl"

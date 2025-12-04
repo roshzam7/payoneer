@@ -787,7 +787,7 @@ export default function ResellerLandingPage() {
             Supporting Your Referred
             <br />
             <span className="block  bg-clip-text text-gray-900">
-              Account Holders
+              Account Holders (AHs)
             </span>
           </h1>
         </div>
