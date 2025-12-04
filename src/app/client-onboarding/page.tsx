@@ -420,7 +420,7 @@ export default function ResellerLandingPage() {
                   </span>
                   <span className="opacity-60">›</span>
                   <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Onboarding process
+                    Onboarding process
                   </span>
                 </nav>
               </div>
@@ -470,7 +470,7 @@ export default function ResellerLandingPage() {
                 {" "}
                 support@payoneerpartnerships.com
               </a>
-               <br />
+              <br />
               Get in touch with your partner manager and get the link to
               register
             </p>
@@ -483,6 +483,65 @@ export default function ResellerLandingPage() {
               Once you sign up on Partner link, Your Account Manager would be
               able to share a customized link for you
             </p>
+          </section>
+          {/* cardss */}
+          {/* 2 */}
+          <section
+            id=""
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
+          >
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+              <a
+                href="#Standard-sign-up-flow"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/sign-up-flow.png"
+                  alt="Success story 1"
+                  className="w-full h-64 object-cover"
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    Standard sign-up flow
+                  </span>
+                </div>
+              </a>
+
+              <a
+                href="#clm-flow"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/clm-flow.png"
+                  alt="Success story 2"
+                  className="w-full h-64 object-cover"
+                />
+
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    CLM flow
+                  </span>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section
+            id="#Standard-sign-up-flow"
+            className="scroll-mt-36 max-w-5xl mx-auto"
+          >
+            {/* Main heading */}
+            <p className="text-gray-900 text-[48px] font-semibold">
+              Standard sign-up flow
+            </p>
+          </section>
+          <section
+            id="referred-account-holders"
+            className="scroll-mt-36 max-w-5xl mx-auto"
+          >
+            {/* Main scroll */}
 
             {(() => {
               const splitIndex = 6;
@@ -648,7 +707,6 @@ export default function ResellerLandingPage() {
               );
             })()}
           </section>
-          {/* 2 */}
           {/* Additional KYC Requirements */}
           <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
@@ -825,10 +883,8 @@ export default function ResellerLandingPage() {
                   </li>
                   <li>Finally, they take a live selfie.</li>
                 </ol>
-                <p className="font-semibold text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
-                  <a className="text-blue-600" href="">
-                    How to submit a Selfie (Visual Identity Verification)
-                  </a>
+                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                  How to submit a Selfie (Visual Identity Verification)
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the account holder wishes to opt out of the service, refer
