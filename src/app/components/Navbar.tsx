@@ -26,8 +26,8 @@ const cards: Card[] = [
     title: "Affiliate program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
-      { label: "Why partner with us", slug: "why-partner" },
-      { label: "Reseller program overview", slug: "reseller-overview" },
+      { label: "Why become a Payoneer affiliate", slug: "why-partner" },
+      { label: "Affiliate program overview", slug: "reseller-overview" },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/affiliate-program",

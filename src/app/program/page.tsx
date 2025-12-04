@@ -556,7 +556,7 @@ export default function ResellerLandingPage() {
             >
               <div className="max-w-6xl mx-auto text-left mt-10">
                 {/* Heading */}
-                <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
+                <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900 text-left ">
                   Reseller program phases
                 </h2>
               </div>

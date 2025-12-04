@@ -79,8 +79,8 @@ import onlineCheckout from "../assets/images/online-checkout.svg";
 
 const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
-  { title: "Why partner with us", slug: "why-partner" },
-  { title: "Reseller program overview", slug: "reseller-overview" },
+  { title: "Why become a Payoneer affiliate ", slug: "why-partner" },
+  { title: "Affiliate program overview ", slug: "reseller-overview" },
   { title: "Success stories & testimonials", slug: "key-features" },
 ];
 
@@ -384,7 +384,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Reseller program
+                  Affiliate program
                 </span>
               </nav>
             </div>
@@ -489,7 +489,7 @@ export default function ResellerLandingPage() {
           {/* why-partner */}
           <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
-              Why become a Payoneer Affiliate
+              Why become a Payoneer affiliate
             </h1>
             <p className="mt-3 w-full text-[#878787] text-[13px] sm:text-[17px]">
               Join the Payoneer Affiliate Program and earn generous recurring
@@ -827,13 +827,11 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section
+          {/* <section
             id="keey-features"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
           >
-            {/* PDF thumbnails */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
-              {/* PDF 1 */}
               <a
                 href="/files/Payoneer-Co-Branded-Brochure-Sample.pdf"
                 target="_blank"
@@ -846,7 +844,6 @@ export default function ResellerLandingPage() {
                   className="w-full h-64 object-cover"
                 />
 
-                {/* Hover title overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
                     Payoneer Co-Branded Brochure Sample
@@ -866,7 +863,6 @@ export default function ResellerLandingPage() {
                   className="w-full h-64 object-cover"
                 />
 
-                {/* Hover title overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
                     Payoneer Partner Brochure - MENA Consultancy
@@ -874,7 +870,7 @@ export default function ResellerLandingPage() {
                 </div>
               </a>
             </div>
-          </section>
+          </section> */}
         </main>
       </div>
       <Footer />
