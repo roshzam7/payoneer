@@ -492,7 +492,7 @@ export default function ResellerLandingPage() {
           >
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
               <a
-                href="/sign-up-low"
+                href="#Standard-sign-up-flow"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
@@ -510,7 +510,7 @@ export default function ResellerLandingPage() {
               </a>
 
               <a
-                href="/kyc-details"
+                href="#clm-flow"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
