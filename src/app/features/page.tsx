@@ -461,7 +461,7 @@ export default function PayoneerPaymentsPage() {
 
               {/* PDF 5 */}
               <a
-                href="/files/How-to-make-a-payment-to-a-recipient's-payoneer-account.pdf"
+                href="/files/How-to-make-a-payment-to-a-recipients-payoneer-account.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
@@ -473,7 +473,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-make-a-payment-to-a-recipient's-payoneer-account
+                    How-to-make-a-payment-to-a-recipients-payoneer-account
                   </span>
                 </div>
               </a>
@@ -518,7 +518,7 @@ export default function PayoneerPaymentsPage() {
 
               {/* PDF 8 */}
               <a
-                href="/files/How-to-check-a-payment's-status.pdf"
+                href="/files/How-to-check-a-payments-status.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
@@ -530,7 +530,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-check-a-payment's-status
+                    How-to-check-a-payments-status
                   </span>
                 </div>
               </a>
