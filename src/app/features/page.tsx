@@ -372,49 +372,203 @@ export default function PayoneerPaymentsPage() {
             </div>
           </section>
           {/* how to */}
+          <section id="how-to" className="scroll-mt-28 px-4 sm:px-0 mb-0">
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
+              How to..
+            </h1>
+          </section>
+          {/* pdf */}
           <section
             id="keey-features"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-auto"
+            className="scroll-mt-10 sm:py-5 px-4 sm:px-6 mb-0 sm:mb-20 h-auto"
           >
-            {/* PDF thumbnails */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
               {/* PDF 1 */}
               <a
-                href="/files/Payoneer-Co-Branded-Brochure-Sample.pdf"
+                href="/files/How-to-get-paid.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
                   src="/images/success-1.png"
-                  alt="Success story 1"
+                  alt="How to get paid"
                   className="w-full h-64 object-cover"
                 />
-
-                {/* Hover title overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Payoneer Co-Branded Brochure Sample
+                    How-to-get-paid
                   </span>
                 </div>
               </a>
 
+              {/* PDF 2 */}
               <a
-                href="/files/Payoneer-Partner-Brochure--MENA-Consultancy.pdf"
+                href="/files/How-to-track-and-cancel-payment-requests.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
                   src="/images/success-2.png"
-                  alt="Success story 2"
+                  alt="Track and cancel payment requests"
                   className="w-full h-64 object-cover"
                 />
-
-                {/* Hover title overlay */}
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Payoneer Partner Brochure - MENA Consultancy
+                    How-to-track-and-cancel-payment-requests
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 3 */}
+              <a
+                href="/files/How-to-see-fees.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="See fees"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-see-fees
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 4 */}
+              <a
+                href="/files/How-to-request-a-payment.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-1.png"
+                  alt="Request a payment"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-request-a-payment
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 5 */}
+              <a
+                href="/files/How-to-make-a-payment-to-a-recipient's-payoneer-account.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="Make payment to recipient"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-make-a-payment-to-a-recipient's-payoneer-account
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 6 */}
+              <a
+                href="/files/How-to-enable-swift-wire-account.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="Enable SWIFT wire account"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-enable-swift-wire-account
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 7 */}
+              <a
+                href="/files/How-to-enable-local-receiving-accounts.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-1.png"
+                  alt="Enable local receiving accounts"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-enable-local-receiving-accounts
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 8 */}
+              <a
+                href="/files/How-to-check-a-payment's-status.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="Check payment status"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-check-a-payment's-status
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 9 */}
+              <a
+                href="/files/Payoneer-mobile-app.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="Payoneer mobile app"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    Payoneer-mobile-app
+                  </span>
+                </div>
+              </a>
+
+              {/* PDF 10 */}
+              <a
+                href="/files/How-to-withdraw-funds-from-your-Payoneer-Account-to-your-bank-account.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-1.png"
+                  alt="Withdraw funds"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    How-to-withdraw-funds-from-your-Payoneer-Account-to-your-bank-account
                   </span>
                 </div>
               </a>
