@@ -150,7 +150,7 @@ const resellerBulletsseventeen = [
 // Steps with bullets and optional note content
 const steps = [
   {
-    title: "Company details",
+    title: "Step 1: Apply for a Payoneer Account ",
     bullets: resellerBullets,
     image: Content1,
   },

@@ -7,6 +7,49 @@ import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Footer from "../components/Footer";
+import Freelancers from "../assets/images/Freelancers.png";
+import commercesellers from "../assets/images/E-commerce-sellers.png";
+import SMBbusinesses from "../assets/images/SMB-businesses.png";
+import Globalteams from "../assets/images/Global-teams.png";
+
+const partnerCards = [
+  {
+    image: Freelancers,
+    title: "Freelancers & remote workers",
+    link: "",
+    bullets: [
+      "Receive payments from international clients without chasing complex wire transfers.",
+      "Get paid in multiple currencies and withdraw to your local bank when exchange rates make sense",
+    ],
+  },
+  {
+    image: commercesellers,
+    title: "E-commerce sellers",
+    link: "",
+    bullets: [
+      "Use Payoneer Checkout and multi-currency balances to sell globally and manage foreign revenue in one place.",
+      "Pay suppliers and services abroad directly from your Payoneer balance.",
+    ],
+  },
+  {
+    image: SMBbusinesses,
+    title: "SMB businesses",
+    link: "",
+    bullets: [
+      "Pay suppliers, partners, and contractors worldwide without heavy bank wire fees.",
+      "Use working capital options to fund inventory, payroll, or expansion when cash flow is tight.",
+    ],
+  },
+  {
+    image: Globalteams,
+    title: "Global teams",
+    link: "",
+    bullets: [
+      "Batch and scheduled payments make it easier to pay distributed teams on time.",
+      "Role-based access helps finance teams control who can trigger or approve payouts.",
+    ],
+  },
+];
 
 const topics = [
   {
@@ -71,13 +114,12 @@ export default function PayoneerPaymentsPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-            Simplify your{" "} <br />
-          <span className="block  bg-clip-text text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+            Simplify your <br />
+            <span className="block  bg-clip-text text-gray-900">
               international payments
             </span>
           </h1>
- 
         </div>
       </section>
 
@@ -136,17 +178,16 @@ export default function PayoneerPaymentsPage() {
           </section>
 
           {/* OVERVIEW */}
-                    <section
+          <section
             id="overview"
             className="scroll-mt-28 mb-4 space-y-4 max-w-3xl"
           >
-        
             <p className="text-[#878787] text-[14px] leading-relaxed">
-            With Payoneer, clients and customers can pay you from anywhere in
-            the world as if you had a local bank account. Multi-currency
-            receiving accounts, flexible payment options, and easy withdrawals
-            make it a solid fit for freelancers, e-commerce sellers, SMBs, and
-            global teams.
+              With Payoneer, clients and customers can pay you from anywhere in
+              the world as if you had a local bank account. Multi-currency
+              receiving accounts, flexible payment options, and easy withdrawals
+              make it a solid fit for freelancers, e-commerce sellers, SMBs, and
+              global teams.
             </p>
           </section>
           <section
@@ -212,9 +253,7 @@ export default function PayoneerPaymentsPage() {
                   • Send simple payment requests through a shareable link for
                   quick approvals and payments.
                 </p>
-                <p>
-                  • Transfer funds to bank accounts in 190+ countries.
-                </p>
+                <p>• Transfer funds to bank accounts in 190+ countries.</p>
                 <p>
                   • Pay individuals or businesses with competitive FX rates.
                 </p>
@@ -242,8 +281,8 @@ export default function PayoneerPaymentsPage() {
               <div className="grid sm:grid-cols-2 gap-6 text-sm text-[#555] leading-relaxed">
                 <div className="space-y-2">
                   <p>
-                    <span className="font-semibold">Payoneer Checkout:</span>{" "}
-                    If you run an online store, you can accept payments from
+                    <span className="font-semibold">Payoneer Checkout:</span> If
+                    you run an online store, you can accept payments from
                     customers worldwide directly on your site.
                   </p>
                   <p>
@@ -269,7 +308,9 @@ export default function PayoneerPaymentsPage() {
                     reporting.
                   </p>
                   <p>
-                    <span className="font-semibold">Accounting integrations:</span>{" "}
+                    <span className="font-semibold">
+                      Accounting integrations:
+                    </span>{" "}
                     Sync with your accounting tools to make reconciliation
                     easier.
                   </p>
@@ -284,68 +325,99 @@ export default function PayoneerPaymentsPage() {
           </section>
 
           {/* WHO IT'S FOR */}
+
+          <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
+              Why this matters to your clients or users
+            </h1>
+            <p className="mt-3 w-full text-[#878787] text-[13px] sm:text-[17px]">
+              Partner with Payoneer to unlock global payouts, world-class
+              infrastructure, and co-marketing opportunities. Empower your
+              merchants and creators to scale internationally with seamless
+              onboarding and localized compliance.
+            </p>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+              {partnerCards.map(({ image, title, link, bullets }) => (
+                <div
+                  key={title}
+                  className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 shadow-gray-300"
+                >
+                  {/* Icon above title */}
+                  <Image
+                    src={image}
+                    alt="Expand cross-border"
+                    width={48}
+                    height={48}
+                    className="mt-4"
+                  />
+                  <div className="mt-1 h-0.5 w-8 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
+                  <h3 className="mt-2 text-[20px] font-semibold text-gray-900">
+                    {title}
+                  </h3>
+                  <span className="mt-2 block text-[11px] sm:text-[14px] font-medium bg-gradient-to-r from-purple-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+                    {link}
+                  </span>
+                  <ul className="mt-4 text-[10px] sm:text-[14px] text-[#878787] space-y-2">
+                    {bullets.map((b, i) => (
+                      <li
+                        key={i}
+                        className="relative before:content-['•'] before:absolute before:left-0 before:text-[#878787] pl-3"
+                      >
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </section>
+          {/* how to */}
           <section
-            id="who-its-for"
-            className="scroll-mt-28 space-y-8 max-w-5xl mx-auto"
+            id="keey-features"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-auto"
           >
-            <div className="bg-gradient-to-br from-[#ffffff] to-[#f8f9fc] border border-gray-100 shadow-xl rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-[#5f6df3] to-[#aa5cc3] mb-6">
-                Why this matters to your clients or users
-              </h3>
+            {/* PDF thumbnails */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+              {/* PDF 1 */}
+              <a
+                href="/files/Payoneer-Co-Branded-Brochure-Sample.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-1.png"
+                  alt="Success story 1"
+                  className="w-full h-64 object-cover"
+                />
 
-              <div className="grid sm:grid-cols-2 gap-6 text-sm text-[#555] leading-relaxed">
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900">
-                    Freelancers & remote workers
-                  </h4>
-                  <p>
-                    • Receive payments from international clients without
-                    chasing complex wire transfers.
-                  </p>
-                  <p>
-                    • Get paid in multiple currencies and withdraw to your local
-                    bank when exchange rates make sense.
-                  </p>
+                {/* Hover title overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    Payoneer Co-Branded Brochure Sample
+                  </span>
                 </div>
+              </a>
 
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900">
-                    E-commerce sellers
-                  </h4>
-                  <p>
-                    • Use Payoneer Checkout and multi-currency balances to sell
-                    globally and manage foreign revenue in one place.
-                  </p>
-                  <p>
-                    • Pay suppliers and services abroad directly from your
-                    Payoneer balance.
-                  </p>
-                </div>
+              <a
+                href="/files/Payoneer-Partner-Brochure--MENA-Consultancy.pdf"
+                target="_blank"
+                rel="noreferrer"
+                className="group relative block overflow-hidden rounded-xl border border-gray-200"
+              >
+                <img
+                  src="/images/success-2.png"
+                  alt="Success story 2"
+                  className="w-full h-64 object-cover"
+                />
 
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900">SMB businesses</h4>
-                  <p>
-                    • Pay suppliers, partners, and contractors worldwide without
-                    heavy bank wire fees.
-                  </p>
-                  <p>
-                    • Use working capital options to fund inventory, payroll, or
-                    expansion when cash flow is tight.
-                  </p>
+                {/* Hover title overlay */}
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    Payoneer Partner Brochure - MENA Consultancy
+                  </span>
                 </div>
-
-                <div className="space-y-2">
-                  <h4 className="font-semibold text-gray-900">Global teams</h4>
-                  <p>
-                    • Batch and scheduled payments make it easier to pay
-                    distributed teams on time.
-                  </p>
-                  <p>
-                    • Role-based access helps finance teams control who can
-                    trigger or approve payouts.
-                  </p>
-                </div>
-              </div>
+              </a>
             </div>
           </section>
 
