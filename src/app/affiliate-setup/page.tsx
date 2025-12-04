@@ -13,17 +13,8 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
-  { title: "How to join the program", slug: "How-to-Join" },
-  { title: "How to get onboarded to Payoneer with Hasoffer", slug: "How-to-Join" },
-  {
-    title: "Understand your role as a Payoneer reseller",
-    slug: "Understand-Your-Role",
-  },
-  { title: "Understanding partner tiers", slug: "Understanding-Partner-Tiers" },
-  {
-    title: "Understanding commercials & payment calculators",
-    slug: "Payment-Calculators",
-  },
+  { title: "How to get onboarded to Payoneer with Hasoffer", slug: "How-to-Join-two" },
+
 ];
 
 const resellerBullets = [
@@ -172,7 +163,7 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* reseller-overview */}
-          <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
+          <section id="How-to-Join-two" className="scroll-mt-36 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[48px] font-semibold">
                 How to get onboarded to Payoneer with Hasoffer
