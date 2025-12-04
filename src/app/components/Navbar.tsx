@@ -51,7 +51,7 @@ const cards: Card[] = [
     ],
     viewAllHref: "/partner-onboarding",
   },
-    {
+  {
     title: "Affiliate setup",
     items: [
       { label: "How to join the program", slug: "How-to-Join" },
@@ -99,7 +99,7 @@ const cards: Card[] = [
   },
   {
     title: "Pricing",
-    items: [{ label: "Payoneer pricing ", slug: "newpage" }],
+    items: [{ label: "Payoneer pricing", slug: "newpage" }],
     viewAllHref: "/pricing",
   },
 
@@ -143,79 +143,81 @@ const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50">
-      <div className="backdrop-blur-md bg-white/30 shadow-md border-b border-white/20">
-        <div className="relative px-4">
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div className="backdrop-blur-md bg-white/80 shadow-md border-b border-white/40">
+        <div className="relative px-4 sm:px-6 lg:px-10">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center flex-shrink-0">
               <Image src={Logo} alt="Logo" width={100} height={30} />
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-6 text-sm text-black font-medium">
-              {/* Home (no dropdown) */}
-              {/* <Link href="/" className="hover:text-black">
-                Home
-              </Link> */}
+            <nav className="hidden md:flex flex-wrap items-center gap-6 text-sm text-black font-medium">
+              {cards.map((card, index) => {
+                const isLast = index === cards.length - 1;
 
-              {/* Dynamic dropdowns */}
-              {cards.map((card) => (
-                <div key={card.title} className="relative group">
-                  <Link
-                    href={card.viewAllHref}
-                    className="hover:text-black flex items-center"
-                  >
-                    {card.title.split(":")[0]}
-                    <svg
-                      className="w-4 h-4 ml-1 text-gray-500 group-hover:text-black"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      viewBox="0 0 24 24"
+                return (
+                  <div key={card.title} className="relative group">
+                    <Link
+                      href={card.viewAllHref}
+                      className="hover:text-black flex items-center"
                     >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </Link>
+                      {card.title.split(":")[0]}
+                      <svg
+                        className="w-4 h-4 ml-1 text-gray-500 group-hover:text-black"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </Link>
 
-                  {/* Submenu */}
-                  <div className="absolute left-0 mt-0 w-64 bg-white rounded shadow-lg opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-200 ease-in-out pointer-events-none group-hover:pointer-events-auto">
-                    <ul className="py-2">
-                      {card.items.map((item, i) => {
-                        if (typeof item === "string") return null;
-                        return (
-                          <li key={i}>
-                            <Link
-                              href={`${card.viewAllHref}#${item.slug}`}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                            >
-                              {item.label}
-                            </Link>
-                          </li>
-                        );
-                      })}
-                      <li className="border-t mt-1">
-                        <Link
-                          href={card.viewAllHref}
-                          className="block px-4 py-2 text-sm text-blue-600 hover:underline"
-                        >
-                          View all →
-                        </Link>
-                      </li>
-                    </ul>
+                    {/* Submenu */}
+                    <div
+                      className={`absolute mt-2 w-64 bg-white rounded-md shadow-lg transform translate-y-1 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200 ease-out ${
+                        isLast ? "right-0" : "left-0"
+                      }`}
+                    >
+                      <ul className="py-2">
+                        {card.items.map((item, i) => {
+                          if (typeof item === "string") return null;
+                          return (
+                            <li key={i}>
+                              <Link
+                                href={`${card.viewAllHref}#${item.slug}`}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                              >
+                                {item.label}
+                              </Link>
+                            </li>
+                          );
+                        })}
+                        <li className="border-t mt-1">
+                          <Link
+                            href={card.viewAllHref}
+                            className="block px-4 py-2 text-sm text-blue-600 hover:underline"
+                          >
+                            View all →
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </nav>
 
             {/* Mobile toggle button */}
             <div className="md:hidden">
               <button
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                onClick={() => setIsMobileMenuOpen((prev) => !prev)}
                 className="focus:outline-none"
                 aria-label="Toggle menu"
               >
@@ -242,17 +244,16 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden mt-2 space-y-3 text-sm text-black font-medium pb-4">
-              {/* Home first */}
-              <Link href="/" className="block font-semibold py-2">
+            <div className="md:hidden mt-2 space-y-3 text-sm text-black font-medium pb-4 border-t border-gray-100 pt-3">
+              <Link href="/" className="block font-semibold py-1.5">
                 Home
               </Link>
 
               {cards.map((card) => (
-                <div key={card.title}>
+                <div key={card.title} className="space-y-1">
                   <Link
                     href={card.viewAllHref}
-                    className="block font-semibold py-2"
+                    className="block font-semibold py-1.5"
                   >
                     {card.title}
                   </Link>
