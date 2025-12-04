@@ -363,9 +363,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             {/* Referred Account Holder (AH) */}
             <br />
-            <span className="block  bg-clip-text text-gray-900">
-              Onboarding process
-            </span>
+            <span className="block  bg-clip-text text-gray-900">CLM flow</span>
           </h1>
         </div>
       </section>
@@ -420,123 +418,17 @@ export default function ResellerLandingPage() {
                   </span>
                   <span className="opacity-60">›</span>
                   <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                    Onboarding process
+                    CLM flow
                   </span>
                 </nav>
               </div>
-
-              {/* Right Side: Download PDF Button */}
-              <a
-                href="/files/referred-account-holder-Page.pdf" // update with your actual file
-                download
-                className="inline-flex items-center gap-2 rounded-xl border border-black bg-white px-4 py-2 text-sm text-[#878787] shadow-sm hover:bg-gray-100"
-                aria-label="Download PDF"
-                title="Download PDF"
-              >
-                {/* Download Icon */}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"
-                  />
-                </svg>
-                <span>Download Page as PDF</span>
-              </a>
             </div>
           </section>
           {/* How to Join */}
-          <section
-            id="referred-account-holders"
-            className="scroll-mt-36 max-w-5xl mx-auto"
-          >
-            {/* Main heading */}
-            <p className="text-gray-900 text-[48px] font-semibold">
-              How to get started as an account holder (AH) in Payoneer
-            </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
-              Request for your unique onboarding link at
-              <a
-                className="text-blue-500"
-                href="support@payoneerpartnerships.com"
-              >
-                {" "}
-                support@payoneerpartnerships.com
-              </a>
-              <br />
-              Get in touch with your partner manager and get the link to
-              register
-            </p>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
-              <p className="mt-2 text-gray-900 text-[23px]">
-                Step-by-step onboarding guides for clients:
-              </p>
-            </div>
-            <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
-              Once you sign up on Partner link, Your Account Manager would be
-              able to share a customized link for you
-            </p>
-          </section>
+
           {/* cardss */}
           {/* 2 */}
-          <section
-            id=""
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
-          >
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
-              <a
-                href="#Standard-sign-up-flow"
-                rel="noreferrer"
-                className="group relative block overflow-hidden rounded-xl border border-gray-200"
-              >
-                <img
-                  src="/images/sign-up-flow.png"
-                  alt="Success story 1"
-                  className="w-full h-64 object-cover"
-                />
 
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Standard sign-up flow
-                  </span>
-                </div>
-              </a>
-
-              <a
-                href="#clm-flow"
-                rel="noreferrer"
-                className="group relative block overflow-hidden rounded-xl border border-gray-200"
-              >
-                <img
-                  src="/images/clm-flow.png"
-                  alt="Success story 2"
-                  className="w-full h-64 object-cover"
-                />
-
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    CLM flow
-                  </span>
-                </div>
-              </a>
-            </div>
-          </section>
-          <section
-            id="#Standard-sign-up-flow"
-            className="scroll-mt-36 max-w-5xl mx-auto"
-          >
-            {/* Main heading */}
-            <p className="text-gray-900 text-[48px] font-semibold">
-              Standard sign-up flow
-            </p>
-          </section>
           <section
             id="referred-account-holders"
             className="scroll-mt-36 max-w-5xl mx-auto"
@@ -549,74 +441,10 @@ export default function ResellerLandingPage() {
                 <>
                   {/* First Half */}
                   {/* First Half */}
-                  {steps.slice(0, splitIndex).map((section, idx) => (
-                    <div
-                      key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-16"
-                    >
-                      {/* Text Content */}
-                      <div
-                        className={`${
-                          idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
-                        } self-center`}
-                      >
-                        <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
-                          {section.title}
-                        </h3>
-                        <ul className="space-y-4 text-[#878787] text-[18px]">
-                          {section.bullets.map((text, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-3 text-gray-700"
-                            >
-                              <Image
-                                src={Checkicon}
-                                alt="Check"
-                                width={20}
-                                height={20}
-                                className="flex-none mt-1 bg-white"
-                              />
-                              <span>{text}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        {section.note && section.note}
-                      </div>
-                      {/* Image with Persistent + Button */}
-                      <div
-                        className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
-                          idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
-                        } lg:flex lg:justify-center`}
-                      >
-                        <Image
-                          src={section.image}
-                          alt={section.title}
-                          width={300}
-                          height={300}
-                          className="rounded-xl object-cover w-full h-auto cursor-pointer"
-                          onClick={() => setModalImage(section.image.src)}
-                        />
-                        {/* Persistent + button */}
-                        <button
-                          onClick={() => setModalImage(section.image.src)}
-                          className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
-                        >
-                          <Image
-                            src={expandicon}
-                            alt="Expand"
-                            width={20}
-                            height={20}
-                            className="flex-none mt-1"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  ))}
+
                   {/* Second Section Heading */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
-                    <p className="text-gray-900 text-[48px] font-semibold">
-                      CLM flow
-                    </p>
+                    <p className="text-gray-900 text-[48px] font-semibold"></p>
                     <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at
                       <a
