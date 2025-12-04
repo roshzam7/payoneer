@@ -6,7 +6,7 @@ import Banner from "./../assets/Hero-header.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Content from "../assets/images/2nd.png";
-import Content2 from "../assets/images/3nd.png";
+import Content2 from "../assets/images/3rd.png";
 import Content3 from "../assets/images/4th.png";
 import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
