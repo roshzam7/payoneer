@@ -361,7 +361,7 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-            Referred Account Holder (AH)
+            {/* Referred Account Holder (AH) */}
             <br />
             <span className="block  bg-clip-text text-gray-900">
               Onboarding process
@@ -420,7 +420,7 @@ export default function ResellerLandingPage() {
                   </span>
                   <span className="opacity-60">›</span>
                   <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                    Referred Account Holder Onboarding process
+                  Onboarding process
                   </span>
                 </nav>
               </div>
@@ -567,6 +567,7 @@ export default function ResellerLandingPage() {
                         {" "}
                         support@payoneerpartnerships.com
                       </a>
+                      <br />
                     </p>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
                       <p className="mt-2 text-gray-900 text-[23px]">
