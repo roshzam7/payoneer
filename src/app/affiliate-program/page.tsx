@@ -66,7 +66,7 @@ import realde from "../assets/images/brands/realde.svg";
 // Others
 import checkIcon from "../assets/images/Check-icon.svg";
 import resellerImg from "../assets/images/ResellerProgram-img.png";
-import resellerPhasesImg from "../assets/images/Reseller-Program-Phases-img.png";
+import resellerPhasesImg from "../assets/images/Affiliate-Program-Phases-img.png";
 import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
 import marketplaces from "../assets/images/marketplaces-icon.svg";
 import transaction from "../assets/images/transaction-icon.svg";
@@ -575,17 +575,14 @@ export default function ResellerLandingPage() {
               </div>
             </div>
             {/* Reseller Phases */}
-            <section id="reseller-phases" className="scroll-mt-28 px-4 sm:px-0">
+            {/* <section id="reseller-phases" className="scroll-mt-28 px-4 sm:px-0">
               <div className="max-w-6xl mx-auto text-left mt-10">
-                {/* Heading */}
                 <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
                   Affiliate program phases
                 </h2>
               </div>
 
-              {/* Content */}
               <div className="max-w-6xl mx-auto mt-8 sm:mt-12 space-y-10 text-gray-800">
-                {/* Phase 1 */}
                 <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                     1. Sign & Get Onboarded
@@ -598,7 +595,6 @@ export default function ResellerLandingPage() {
                   </p>
                 </div>
 
-                {/* Phase 2 */}
                 <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                     2. Access your Affiliate toolkit
@@ -621,7 +617,6 @@ export default function ResellerLandingPage() {
                   </p>
                 </div>
 
-                {/* Phase 3 */}
                 <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                     3. Onboard & qualify your leads
@@ -635,7 +630,6 @@ export default function ResellerLandingPage() {
                   </p>
                 </div>
 
-                {/* Phase 4 */}
                 <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                   <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
                     4. Track performance & earn
@@ -648,7 +642,35 @@ export default function ResellerLandingPage() {
                   </p>
                 </div>
               </div>
-            </section>
+            </section> */}
+            {/*  */}
+                                  <section
+                        id="why-partners-love-us"
+                        className="scroll-mt-28 px-4 sm:px-0 "
+                      >
+                        <div className="max-w-6xl mx-0 text-left mt-10">
+                          {/* Heading */}
+                          <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900 text-left ">
+                                            Why partners love working with us
+
+                          </h2>
+                        </div>
+                        {/* Image */}
+                        <div className="sm:mt-12  mt-8 relative max-w-6xl mx-auto group ">
+                          {/* Soft glow effect */}
+                          <div className="absolute inset-0 bg-gradient-to-tr from-purple-200 via-transparent to-yellow-100 opacity-50 rounded-2xl blur-xl group-hover:opacity-70 transition-all duration-500" />
+                          <Image
+                            src={resellerPhasesImg}
+                            alt="Why partners love working with us image"
+                            width={800}
+                            height={450}
+                            className="relative z-10 w-full h-auto rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
+                          />
+                        </div>
+                      </section>
+
+
+            {/*  */}
           </section>
           <section className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
@@ -713,7 +735,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section
+           <section
             id="why-partners-love-us"
             className="scroll-mt-28 px-4 sm:px-0"
           >
@@ -724,7 +746,6 @@ export default function ResellerLandingPage() {
             </div>
 
             <div className="max-w-6xl mx-auto mt-10 grid sm:grid-cols-2 gap-8 text-gray-800">
-              {/* Boost your revenue */}
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center ">
@@ -748,8 +769,6 @@ export default function ResellerLandingPage() {
                   customers grow. Your earnings grow.
                 </p>
               </div>
-
-              {/* Enhance your offering */}
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center ">
@@ -773,8 +792,6 @@ export default function ResellerLandingPage() {
                   elevate your brand.
                 </p>
               </div>
-
-              {/* Build your brand */}
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center  ">
@@ -798,8 +815,6 @@ export default function ResellerLandingPage() {
                   joint campaigns, we help promote you.
                 </p>
               </div>
-
-              {/* Fast onboarding */}
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center ">
@@ -822,8 +837,6 @@ export default function ResellerLandingPage() {
                   paperwork. No waiting. Instant activation.
                 </p>
               </div>
-
-              {/* Dedicated partner support */}
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200 sm:col-span-2">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center ">
@@ -857,7 +870,7 @@ export default function ResellerLandingPage() {
                 </p>
               </div>
             </div>
-          </section>
+          </section> 
 
           {/* Ways to Promote Payoneer */}
           <section
@@ -896,6 +909,14 @@ export default function ResellerLandingPage() {
                 We support you every step of the way.
               </p>
             </div>
+          </section>
+                    <section
+            id="Understanding-Partner-Tiers"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+          >
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+              Coming Soon..
+            </h2>
           </section>
 
           {/* <section

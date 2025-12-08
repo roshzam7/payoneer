@@ -430,8 +430,109 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          {/* Personas */}
+          {/* Banner assets */}
+          <section className="scroll-mt-28 mb-0">
+            <div className="grid grid-cols-1 gap-8">
+              <div className="bg-white p-6 sm:p-8">
+                <h2
+                  id="customer-personas"
+                  className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
+                >
+                  Banner assets.
+                </h2>
 
+                <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+Banner assets you may use                </p>
+
+                {/* Slider */}
+                <div className="relative w-full max-w-xl mx-auto flex items-center">
+                  {/* Previous */}
+                  <button
+                    onClick={goToPrevious}
+                    className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 mr-2"
+                  >
+                    <ChevronLeft className="w-6 h-6 text-gray-800" />
+                  </button>
+
+                  {/* Image */}
+                  <div className="relative overflow-hidden w-full rounded-2xl">
+                    <Image
+                      src={personas[currentIndex].src}
+                      alt={personas[currentIndex].alt}
+                      width={800}
+                      height={450}
+                      className="w-full h-full object-cover cursor-pointer rounded-2xl"
+                      onClick={() => setIsModalOpen(true)}
+                    />
+
+                    {/* Expand icon */}
+                    <button
+                      onClick={() => setIsModalOpen(true)}
+                      className="absolute top-3 right-3 bg-white p-2 rounded-full shadow-md hover:bg-gray-100 transition"
+                    >
+                      <Image
+                        src={expandicon}
+                        alt="Expand"
+                        width={20}
+                        height={20}
+                      />
+                    </button>
+                  </div>
+
+                  {/* Next */}
+                  <button
+                    onClick={goToNext}
+                    className="bg-white/90 hover:bg-white p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110 ml-2"
+                  >
+                    <ChevronRight className="w-6 h-6 text-gray-800" />
+                  </button>
+                </div>
+
+                {/* Dots */}
+                <div className="flex justify-center gap-2 mt-4">
+                  {personas.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                        index === currentIndex
+                          ? "bg-blue-600 w-8"
+                          : "bg-gray-300"
+                      }`}
+                    ></button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Modal */}
+            {isModalOpen && (
+              <div
+                className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-[9999]"
+                onClick={() => setIsModalOpen(false)}
+              >
+                <div
+                  className="relative bg-white rounded-lg shadow-2xl max-w-3xl w-full p-4"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="absolute top-3 right-3 bg-gray-200 hover:bg-gray-300 text-gray-700 p-2 rounded-full"
+                  >
+                    ✕
+                  </button>
+
+                  <Image
+                    src={personas[currentIndex].src}
+                    alt={personas[currentIndex].alt}
+                    width={1000}
+                    height={600}
+                    className="w-full h-auto rounded-lg"
+                  />
+                </div>
+              </div>
+            )}
+          </section>
           {/* Personas */}
           <section className="scroll-mt-28 mb-0">
             <div className="grid grid-cols-1 gap-8">
