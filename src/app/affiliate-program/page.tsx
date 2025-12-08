@@ -574,32 +574,30 @@ export default function ResellerLandingPage() {
                 </ul>
               </div>
             </div>
-          
-                                  <section
-                        id="why-partners-love-us"
-                        className="scroll-mt-28 px-4 sm:px-0 "
-                      >
-                        <div className="max-w-6xl mx-0 text-left mt-10">
-                          {/* Heading */}
-                          <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900 text-left ">
-                                            Why partners love working with us
 
-                          </h2>
-                        </div>
-                        {/* Image */}
-                        <div className="sm:mt-12  mt-8 relative max-w-6xl mx-auto group ">
-                          {/* Soft glow effect */}
-                          <div className="absolute inset-0 bg-gradient-to-tr from-purple-200 via-transparent to-yellow-100 opacity-50 rounded-2xl blur-xl group-hover:opacity-70 transition-all duration-500" />
-                          <Image
-                            src={resellerPhasesImg}
-                            alt="Why partners love working with us image"
-                            width={800}
-                            height={450}
-                            className="relative z-10 w-full h-auto rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
-                          />
-                        </div>
-                      </section>
-
+            <section
+              id="why-partners-love-us"
+              className="scroll-mt-28 px-4 sm:px-0 "
+            >
+              <div className="max-w-6xl mx-0 text-left mt-10">
+                {/* Heading */}
+                <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900 text-left ">
+                  Why partners love working with us
+                </h2>
+              </div>
+              {/* Image */}
+              <div className="sm:mt-12  mt-8 relative max-w-6xl mx-auto group ">
+                {/* Soft glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-purple-200 via-transparent to-yellow-100 opacity-50 rounded-2xl blur-xl group-hover:opacity-70 transition-all duration-500" />
+                <Image
+                  src={resellerPhasesImg}
+                  alt="Why partners love working with us image"
+                  width={800}
+                  height={450}
+                  className="relative z-10 w-full h-auto rounded-2xl shadow-xl transition-transform duration-500 group-hover:scale-[1.02]"
+                />
+              </div>
+            </section>
 
             {/*  */}
           </section>
@@ -666,7 +664,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-           <section
+          <section
             id="why-partners-love-us"
             className="scroll-mt-28 px-4 sm:px-0"
           >
@@ -801,7 +799,7 @@ export default function ResellerLandingPage() {
                 </p>
               </div>
             </div>
-          </section> 
+          </section>
 
           {/* Ways to Promote Payoneer */}
           <section
@@ -841,7 +839,7 @@ export default function ResellerLandingPage() {
               </p>
             </div>
           </section>
-                    <section
+          <section
             id="Understanding-Partner-Tiers"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
           >
