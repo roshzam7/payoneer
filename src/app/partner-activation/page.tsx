@@ -435,7 +435,7 @@ export default function ResellerLandingPage() {
             <div className="grid grid-cols-1 gap-8">
               <div className="bg-white p-6 sm:p-8">
                 <h2
-                  id="customer-personas"
+                  id="banner-assets"
                   className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4"
                 >
                   Banner assets.
