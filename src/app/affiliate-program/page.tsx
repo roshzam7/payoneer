@@ -574,76 +574,7 @@ export default function ResellerLandingPage() {
                 </ul>
               </div>
             </div>
-            {/* Reseller Phases */}
-            {/* <section id="reseller-phases" className="scroll-mt-28 px-4 sm:px-0">
-              <div className="max-w-6xl mx-auto text-left mt-10">
-                <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
-                  Affiliate program phases
-                </h2>
-              </div>
-
-              <div className="max-w-6xl mx-auto mt-8 sm:mt-12 space-y-10 text-gray-800">
-                <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                    1. Sign & Get Onboarded
-                  </h3>
-                  <p className="mt-3 leading-relaxed">
-                    Become an official Payoneer Affiliate. You&apos;ll sign the
-                    affiliate agreement and complete a quick onboarding process
-                    with your affiliate manager so you&apos;re fully set up to
-                    start referring clients.
-                  </p>
-                </div>
-
-                <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                    2. Access your Affiliate toolkit
-                  </h3>
-                  <p className="mt-3 leading-relaxed">
-                    Gain access to your affiliate dashboard and resources you
-                    need to promote Payoneer effectively:
-                  </p>
-                  <ul className="mt-3 list-disc list-inside space-y-1">
-                    <li>Tracking links</li>
-                    <li>Promotional banners</li>
-                    <li>Pitch decks</li>
-                    <li>Product guides</li>
-                    <li>Pricing policy</li>
-                    <li>Step-by-step onboarding materials</li>
-                  </ul>
-                  <p className="mt-3">
-                    Everything is designed to help you educate and convert your
-                    audience with confidence.
-                  </p>
-                </div>
-
-                <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                    3. Onboard & qualify your leads
-                  </h3>
-                  <p className="mt-3 leading-relaxed">
-                    Start introducing Payoneer to your audience. Drive traffic
-                    through your affiliate links, help users complete onboarding
-                    by sending guides, and qualify high-value leads by guiding
-                    them through the Payoneer activation steps (verification,
-                    first payment, setup).
-                  </p>
-                </div>
-
-                <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-                    4. Track performance & earn
-                  </h3>
-                  <p className="mt-3 leading-relaxed">
-                    Monitor your referrals and commission earnings through your
-                    affiliate dashboard. Optimize your campaigns with insights,
-                    track user performance, and collaborate with your affiliate
-                    manager to improve conversion and scale your revenue.
-                  </p>
-                </div>
-              </div>
-            </section> */}
-            {/*  */}
+          
                                   <section
                         id="why-partners-love-us"
                         className="scroll-mt-28 px-4 sm:px-0 "
