@@ -81,11 +81,11 @@ const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
   { title: "Why partner with us", slug: "why-partner" },
   { title: "Reseller program overview", slug: "reseller-overview" },
-  { title: "Success stories & testimonials", slug: "key-features" },
   {
     title: "Understand your role as a Payoneer reseller",
     slug: "Understand-Your-Role",
   },
+  { title: "Success stories & testimonials", slug: "key-features" },
 ];
 
 const metrics = [
@@ -601,7 +601,7 @@ export default function ResellerLandingPage() {
           </section>
           {/* key-features */}
           <section
-            id="key-features"
+            id=""
             className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
           >
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
@@ -735,54 +735,58 @@ export default function ResellerLandingPage() {
               </div>
             </div>
           </section>
-
           <section
-            id="keey-features"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
+            id="key-features"
+            className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
           >
-            {/* PDF thumbnails */}
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
-              {/* PDF 1 */}
-              <a
-                href="/files/Payoneer-Co-Branded-Brochure-Sample.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative block overflow-hidden rounded-xl border border-gray-200"
-              >
-                <img
-                  src="/images/success-1.png"
-                  alt="Success story 1"
-                  className="w-full h-64 object-cover"
-                />
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
+              Success stories & testimonials
+            </h1>
+            <section id="" className=" sm:py-0 px-4 sm:px-6 mb-0 sm:mb-20 ">
+              {/* PDF thumbnails */}
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+                {/* PDF 1 */}
+                <a
+                  href="/files/Payoneer-Co-Branded-Brochure-Sample.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative block overflow-hidden rounded-xl border border-gray-200"
+                >
+                  <img
+                    src="/images/success-1.png"
+                    alt="Success story 1"
+                    className="w-full h-64 object-cover"
+                  />
 
-                {/* Hover title overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Payoneer Co-Branded Brochure Sample
-                  </span>
-                </div>
-              </a>
+                  {/* Hover title overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                      Payoneer Co-Branded Brochure Sample
+                    </span>
+                  </div>
+                </a>
 
-              <a
-                href="/files/Payoneer-Partner-Brochure--MENA-Consultancy.pdf"
-                target="_blank"
-                rel="noreferrer"
-                className="group relative block overflow-hidden rounded-xl border border-gray-200"
-              >
-                <img
-                  src="/images/success-2.png"
-                  alt="Success story 2"
-                  className="w-full h-64 object-cover"
-                />
+                <a
+                  href="/files/Payoneer-Partner-Brochure--MENA-Consultancy.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative block overflow-hidden rounded-xl border border-gray-200"
+                >
+                  <img
+                    src="/images/success-2.png"
+                    alt="Success story 2"
+                    className="w-full h-64 object-cover"
+                  />
 
-                {/* Hover title overlay */}
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Payoneer Partner Brochure - MENA Consultancy
-                  </span>
-                </div>
-              </a>
-            </div>
+                  {/* Hover title overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                      Payoneer Partner Brochure - MENA Consultancy
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </section>
           </section>
         </main>
       </div>

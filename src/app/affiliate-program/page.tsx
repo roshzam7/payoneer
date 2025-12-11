@@ -66,7 +66,7 @@ import realde from "../assets/images/brands/realde.svg";
 // Others
 import checkIcon from "../assets/images/Check-icon.svg";
 import resellerImg from "../assets/images/ResellerProgram-img.png";
-import resellerPhasesImg from "../assets/images/Affiliate-Program-Phases-img.png";
+import resellerPhasesImg from "../assets/images/Affiliate-Program-Phases-img.jpg";
 import expandCrossBorder from "../assets/images/Expand-cross-border.svg";
 import marketplaces from "../assets/images/marketplaces-icon.svg";
 import transaction from "../assets/images/transaction-icon.svg";
@@ -87,7 +87,7 @@ const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
   { title: "Why become a Payoneer affiliate ", slug: "why-partner" },
   { title: "Affiliate program overview ", slug: "reseller-overview" },
-  { title: "Success stories & testimonials", slug: "key-features" },
+  { title: "Success stories & testimonials", slug: "keay-features" },
 ];
 
 const metrics = [
@@ -582,7 +582,7 @@ export default function ResellerLandingPage() {
               <div className="max-w-6xl mx-0 text-left mt-10">
                 {/* Heading */}
                 <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900 text-left ">
-                  Why partners love working with us
+                  Affiliate program phases
                 </h2>
               </div>
               {/* Image */}
@@ -624,7 +624,7 @@ export default function ResellerLandingPage() {
           </section>
           {/* key-features */}
           <section
-            id="key-features"
+            id="keeeey-features"
             className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
           >
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
@@ -674,7 +674,7 @@ export default function ResellerLandingPage() {
               </h2>
             </div>
 
-            <div className="max-w-6xl mx-auto mt-10 grid sm:grid-cols-2 gap-8 text-gray-800">
+            <div className="max-w-6xl mx-auto mt-10 grid sm:grid-cols-3 gap-8 text-gray-800">
               <div className="p-6 bg-white rounded-2xl shadow-md border border-gray-200">
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center ">
@@ -840,7 +840,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
           <section
-            id="Understanding-Partner-Tiers"
+            id="keay-features"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
           >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">

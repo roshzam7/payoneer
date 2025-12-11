@@ -12,14 +12,7 @@ import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
-const topics = [
-  { title: "How to join the program", slug: "How-to-Join" },
-  { title: "Understanding partner tiers", slug: "Understanding-Partner-Tiers" },
-  {
-    title: "Understanding commercials & payment calculators",
-    slug: "Payment-Calculators",
-  },
-];
+const topics = [{ title: "How to join the program", slug: "How-to-Join" }];
 
 const resellerBullets = [
   "Receive the link for registration from your affiliate manager.",
@@ -103,12 +96,12 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-    <br />
-    <span className="block sm:inline bg-clip-text text-[#212529]">
-        Partner onboarding
-    </span>
-</h1>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+            <br />
+            <span className="block sm:inline bg-clip-text text-[#212529]">
+              Partner onboarding
+            </span>
+          </h1>
         </div>
       </section>
 
@@ -161,7 +154,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Getting started: partner onboarding
+                 partner onboarding
                 </span>
               </nav>
             </div>

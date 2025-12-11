@@ -18,13 +18,28 @@ const cards: Card[] = [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
       { label: "Reseller program overview", slug: "reseller-overview" },
-      { label: "Success stories & testimonials", slug: "key-features" },
       {
         label: "Understand Your Role as a Payoneer Reseller",
         slug: "Understand-Your-Role",
       },
+      { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/program",
+  },
+  {
+    title: "Partner onboarding",
+    items: [
+      { label: "How to join the program", slug: "How-to-Join" },
+      // {
+      //   label: "Understanding partner tiers",
+      //   slug: "Understanding-Partner-Tiers",
+      // },
+      // {
+      //   label: "Understanding commercials & payment calculators",
+      //   slug: "Payment-Calculators",
+      // },
+    ],
+    viewAllHref: "/partner-onboarding",
   },
   {
     title: "Affiliate program",
@@ -32,28 +47,13 @@ const cards: Card[] = [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why become a Payoneer affiliate", slug: "why-partner" },
       { label: "Affiliate program overview", slug: "reseller-overview" },
-      { label: "Success stories & testimonials", slug: "key-features" },
+      { label: "Success stories & testimonials", slug: "keay-features" },
     ],
     viewAllHref: "/affiliate-program",
   },
-  {
-    title: "Partner onboard",
-    items: [
-      { label: "How to join the program", slug: "How-to-Join" },
 
-      {
-        label: "Understanding partner tiers",
-        slug: "Understanding-Partner-Tiers",
-      },
-      {
-        label: "Understanding commercials & payment calculators",
-        slug: "Payment-Calculators",
-      },
-    ],
-    viewAllHref: "/partner-onboarding",
-  },
   {
-    title: "Affiliate setup",
+    title: "Affiliate onboarding",
     items: [
       {
         label: "How to get onboarded to Payoneer with Hasoffer",

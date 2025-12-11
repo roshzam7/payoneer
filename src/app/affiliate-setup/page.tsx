@@ -13,8 +13,10 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
-  { title: "How to get onboarded to Payoneer with Hasoffer", slug: "How-to-Join-two" },
-
+  {
+    title: "How to get onboarded to Payoneer with Hasoffer",
+    slug: "How-to-Join-two",
+  },
 ];
 
 const resellerBullets = [
@@ -100,7 +102,7 @@ export default function ResellerLandingPage() {
       >
         <div className="max-w-4xl mx-auto py-12 sm:py-20">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-            Affiliate setup
+            Affiliate onboarding
             <br />
             <span className="block sm:inline bg-clip-text text-[#212529]"></span>
           </h1>
@@ -156,14 +158,17 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  Affiliate setup
+                  Affiliate onboarding
                 </span>
               </nav>
             </div>
           </section>
 
           {/* reseller-overview */}
-          <section id="How-to-Join-two" className="scroll-mt-36 max-w-5xl mx-auto">
+          <section
+            id="How-to-Join-two"
+            className="scroll-mt-36 max-w-5xl mx-auto"
+          >
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[48px] font-semibold">
                 How to get onboarded to Payoneer with Hasoffer
