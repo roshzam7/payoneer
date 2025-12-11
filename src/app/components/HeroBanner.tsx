@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import Banner from "../assets/Hero-header.png";
+import Banner from "../assets/LP-banner-01.png";
 
 type LinkItem = { label: string; slug: string };
 type Card = {

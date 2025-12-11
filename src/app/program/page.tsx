@@ -82,6 +82,10 @@ const topics = [
   { title: "Why partner with us", slug: "why-partner" },
   { title: "Reseller program overview", slug: "reseller-overview" },
   { title: "Success stories & testimonials", slug: "key-features" },
+  {
+    title: "Understand your role as a Payoneer reseller",
+    slug: "Understand-Your-Role",
+  },
 ];
 
 const metrics = [
@@ -636,9 +640,105 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
+          {/*  */}
+          <section
+            id="Understand-Your-Role"
+            className="scroll-mt-28 px-4 sm:px-6 py-0 bg-cover bg-center mb-0"
+          >
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
+              Understand your role as a Payoneer reseller
+            </h1>
+            <p className="mt-3 max-w-7xl  text-[#878787] text-[13px] sm:text-[20px] text-left">
+              View the following details to ensure you meet all requirements and
+              maintain compliance with our program.{" "}
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Card 1 */}
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  Your role as a reseller
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
+
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
+                    Actively promote Payoneer&apos;s services to potential
+                    clients (“Prospects”)
+                  </li>
+                  <li>Refer those Prospects using special tracking links</li>
+                  <li>
+                    Ensure that any referred client completes the Payoneer
+                    registration process
+                  </li>
+                  <li>
+                    Provide basic support to approved clients (“Registered
+                    Users”)
+                  </li>
+                  <li>
+                    Never alter or interfere with the applicant&apos;s
+                    registration data
+                  </li>
+                </ul>
+              </div>
+
+              {/* Card 2 */}
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  How to refer clients share Payoneer-provided links that
+                  contain your unique tracking code
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
+
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
+                    You may only promote Payoneer using official Payoneer
+                    marketing materials and branding
+                  </li>
+                  <li>
+                    Use of Payoneer&apos;s Brand: limited, non-exclusive license
+                    to use logos, trademarks, and marketing materials
+                  </li>
+                  <li>
+                    You cannot alter marketing content or use the brand in a
+                    misleading or damaging way
+                  </li>
+                  <li>This license can be revoked at any time</li>
+                </ul>
+              </div>
+
+              {/* Card 3 */}
+
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  Important limits you cannot bind Payoneer or speak on its
+                  behalf{" "}
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
+
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
+                    You may not charge clients any extra fees without written
+                    approval from Payoneer
+                  </li>
+                  <li>
+                    You must not share or modify a Prospect&apos;s data unless
+                    explicitly approved
+                  </li>
+                  <li>
+                    You must always follow the Promotion and Marketing
+                    Guidelines
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
           <section
             id="keey-features"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
           >
             {/* PDF thumbnails */}
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">

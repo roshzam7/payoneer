@@ -19,6 +19,10 @@ const cards: Card[] = [
       { label: "Why partner with us", slug: "why-partner" },
       { label: "Reseller program overview", slug: "reseller-overview" },
       { label: "Success stories & testimonials", slug: "key-features" },
+      {
+        label: "Understand Your Role as a Payoneer Reseller",
+        slug: "Understand-Your-Role",
+      },
     ],
     viewAllHref: "/program",
   },
@@ -36,10 +40,7 @@ const cards: Card[] = [
     title: "Partner onboard",
     items: [
       { label: "How to join the program", slug: "How-to-Join" },
-      {
-        label: "Understand your role as a payoneer reseller",
-        slug: "Understand-Your-Role",
-      },
+
       {
         label: "Understanding partner tiers",
         slug: "Understanding-Partner-Tiers",
@@ -54,7 +55,10 @@ const cards: Card[] = [
   {
     title: "Affiliate setup",
     items: [
-      { label: "How to get onboarded to Payoneer with Hasoffer", slug: "How-to-Join-two" },
+      {
+        label: "How to get onboarded to Payoneer with Hasoffer",
+        slug: "How-to-Join-two",
+      },
     ],
     viewAllHref: "/affiliate-setup",
   },
@@ -133,7 +137,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="backdrop-blur-md bg-white/80 shadow-md border-b border-white/40">
-        <div className="relative px-4 sm:px-6 lg:px-10">
+        <div className="relative px-4 sm:px-8 lg:px-10">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0">
