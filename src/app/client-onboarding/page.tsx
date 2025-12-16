@@ -462,7 +462,10 @@ export default function ResellerLandingPage() {
               How to get started as an account holder (AH) in Payoneer
             </p>
             <p className="mt-2 text-gray-900 text-[23px]">
-              Request for your unique onboarding link at
+              Step 1: Request your unique onboarding link
+              <br />
+              Contact your Partner Manager and ask for your personalized
+              registration link or reach out to <br />
               <a
                 className="text-blue-500"
                 href="support@payoneerpartnerships.com"
@@ -470,9 +473,17 @@ export default function ResellerLandingPage() {
                 {" "}
                 support@payoneerpartnerships.com
               </a>
+            </p>
+            <p className="mt-2 text-gray-900 text-[23px]">
+              Step 2: Follow the Step-by-Step Onboarding Guides
               <br />
-              Get in touch with your partner manager and get the link to
-              register
+              Once you sign up using the partner link, your Account Manager will
+              provide you with a customized onboarding link tailored to your
+              business needs.{" "}
+            </p>
+            <p className="mt-2 text-gray-900 text-[23px]">
+              Step 3: Chose you Guide: <br />
+              • Standard sign-up flow <br />• CLM flow{" "}
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
               <p className="mt-2 text-gray-900 text-[23px]">
