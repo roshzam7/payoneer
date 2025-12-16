@@ -74,7 +74,7 @@ const cards: Card[] = [
   },
   {
     title: "Pricing",
-    items: [{ label: "Payoneer pricing", slug: "newpage" }],
+    items: [],
     viewAllHref: "/pricing",
   },
   {
@@ -90,13 +90,7 @@ const cards: Card[] = [
   },
   {
     title: "Support",
-    items: [
-      { label: "Frequently asked questions (FAQs)", slug: "faqs" },
-      {
-        label: "Support ticket questionnaire",
-        slug: "support-ticket-questionnaire",
-      },
-    ],
+        items: [],
     viewAllHref: "/faqs",
   },
 ];

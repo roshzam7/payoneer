@@ -31,10 +31,7 @@ const topics = [
     title: "Frequently asked questions (FAQs)",
     slug: "faqs",
   },
-  {
-    title: "Support ticket questionnaire",
-    slug: "support-ticket-questionnaire",
-  },
+
 ];
 
 const faqs = [
@@ -784,11 +781,7 @@ export default function ResellerLandingPage() {
         <div className="max-w-4xl mx-auto">
              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
 
-            Supporting Your Referred
-            <br />
-            <span className="block  bg-clip-text text-gray-900">
-              Account Holders (AHs)
-            </span>
+           Supporting your referred account holders (AHs)
           </h1>
         </div>
       </section>

@@ -503,7 +503,7 @@ export default function ResellerLandingPage() {
           >
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
               <a
-                href="/sign-up-low"
+                href="#Standard-sign-up-flow"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
@@ -521,7 +521,7 @@ export default function ResellerLandingPage() {
               </a>
 
               <a
-                href="/kyc-details"
+                href="#clm-flow"
                 rel="noreferrer"
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
@@ -540,7 +540,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
           <section
-            id="#Standard-sign-up-flow"
+            id="Standard-sign-up-flow"
             className="scroll-mt-36 max-w-5xl mx-auto"
           >
             {/* Main heading */}
@@ -894,7 +894,7 @@ export default function ResellerLandingPage() {
                   </li>
                   <li>Finally, they take a live selfie.</li>
                 </ol>
-                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                {/* <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   How to submit a Selfie (Visual Identity Verification)
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
@@ -906,7 +906,7 @@ export default function ResellerLandingPage() {
                     How to handle documents guide
                   </a>
                   .
-                </p>
+                </p> */}
               </div>
             </div>
           </section>

@@ -12,6 +12,43 @@ import commercesellers from "../assets/images/E-commerce-sellers.png";
 import SMBbusinesses from "../assets/images/SMB-businesses.png";
 import Globalteams from "../assets/images/Global-teams.png";
 
+const tutorials = [
+  {
+    title:
+      "Get paid with Payoneer - learn how to simplify getting paid with Payoneer",
+    desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
+    link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
+    image: "/images/GetPaidWithPayoneer.png",
+  },
+  {
+    title:
+      "Payoneer account dashboard - introduction to basic features & functions",
+    desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
+    link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
+    image: "/images/PayoneerAccountDashboard.png",
+  },
+  {
+    title:
+      "Convert currencies with Payoneer - learn how to convert currencies get started with Payoneer at competitive rates",
+    desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
+    link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
+    image: "/images/ConvertCurrencies.png",
+  },
+  {
+    title:
+      "Adding funds to your account from your bank account - Keep your business moving",
+    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
+    link: "#https://www.youtube.com/watch?si=eD_Ny7whpX9rMUvH&v=EcDhegY1v_Y&feature=youtu.be",
+    image: "/images/Addingfundstoyouraccount.png",
+  },
+  {
+    title: "Make global payments with confidence and ease",
+    desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
+    link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
+    image: "/images/MakeGlobalPayments.png",
+  },
+];
+
 const partnerCards = [
   {
     image: Freelancers,
@@ -371,6 +408,67 @@ export default function PayoneerPaymentsPage() {
               ))}
             </div>
           </section>
+
+          {/*  */}
+          <section
+            id="get-started-with-payoneer"
+            className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16"
+          >
+            <section className="scroll-mt-28 mt-10">
+              <h2 className="text-4xl font-bold text-gray-900 mb-12 text-center">
+                Get started with Payoneer
+              </h2>
+              <p className="text-gray-600 leading-relaxed text-lg mb-4">
+                An overview of Payoneer&apos;s features, including payment
+                collection, currency conversion, account funding, and global
+                payouts—helping referred customers activate and grow with their
+                new account.
+              </p>
+              <div className="flex flex-col space-y-20">
+                {tutorials.map((faq, index) => (
+                  <div
+                    key={index}
+                    className={`flex flex-col md:flex-row items-center gap-10 ${
+                      index % 2 === 1 ? "md:flex-row-reverse" : ""
+                    }`}
+                  >
+                    {/* Image */}
+                    <div className="md:w-1/2 w-full">
+                      <div className="overflow-hidden rounded-2xl shadow-lg">
+                        <Image
+                          src={faq.image}
+                          alt={faq.title}
+                          width={600}
+                          height={400}
+                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Text */}
+                    <div className="md:w-1/2 w-full">
+                      <h3 className="text-2xl font-semibold text-gray-900 mb-3">
+                        {faq.title}
+                      </h3>
+                      <p className="text-gray-600 leading-relaxed text-lg mb-4">
+                        {faq.desc}
+                      </p>
+
+                      {/* Gradient link */}
+                      <a
+                        href={faq.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className=" font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00] transition-all"
+                      >
+                        View the tutorial video →
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          </section>
           {/* how to */}
           <section id="how-to" className="scroll-mt-28 px-4 sm:px-0 mb-0">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
@@ -576,7 +674,7 @@ export default function PayoneerPaymentsPage() {
           </section>
 
           {/* LEARN MORE */}
-          <section
+          {/* <section
             id="learn-more"
             className="scroll-mt-28 max-w-4xl mx-auto px-4 sm:px-0 py-10 text-center"
           >
@@ -595,7 +693,7 @@ export default function PayoneerPaymentsPage() {
               </a>
               .
             </p>
-          </section>
+          </section> */}
         </main>
       </div>
 
