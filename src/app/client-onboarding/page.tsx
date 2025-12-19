@@ -6,9 +6,9 @@ import Banner from "../assets/LP-banner-01.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Checkicon from "../assets/images/Check-icon.svg";
-import Content1 from "../assets/images/sectionfour/Content1.png";
-import Content2 from "../assets/images/sectionfour/Content2.png";
-import Content3 from "../assets/images/sectionfour/Content3.png";
+import Content1 from "../assets/images/sectionfour/newimg1.png";
+import Content2 from "../assets/images/sectionfour/newimg2.png";
+import Content3 from "../assets/images/sectionfour/newimg3.png";
 import Content4 from "../assets/images/sectionfour/Content4.png";
 import Content5 from "../assets/images/sectionfour/Content5.png";
 import Content6 from "../assets/images/sectionfour/Content6.png";
@@ -82,27 +82,31 @@ const topics = [
   },
 ];
 
-const resellerBullets = [
-  "Enter the details of your company in the provided fields.",
-];
+const resellerBullets: string[] = [];
 const resellerBulletsTwo = [
-  "Add all relevant details in the fields provided, including UAE Company Address & Phone number ",
+  "A valid company license ",
+  " A personal bank statement dated within the last 3 months. This only needed for registration and verification of the owner Please select “Yes” to open a corporate account and fill out the fiel",
+  "Please select the country as per license. Then, enter your personal bank details on the last page of your application. Please select the bank country where your bank account is located.  ",
 ];
-const resellerBulletsThree = ["Enter your password & Company ID Details "];
-const resellerBulletsFour = [
-  "Add your Bank Account Details in the fields provided",
+const resellerBulletsThree = [
+  "Log into your Payoneer account",
+  "Click on your initials in the top right corner and go to Settings > Verification Center",
+  "Upload the required documents in each section",
 ];
-const resellerBulletsfive = [
-  "Fill in your information. It is recommended to choose a strong and unique password.",
-  "Click Next to continue to User Agreement..",
-];
-const resellerBulletssix = ["Account is Approved."];
-const resellerBulletsseven = [
-  "Select 'Get started' on the homepage to begin the onboarding process.",
-];
-const resellerBulletseight = [
-  " Select your preferred payment from the two available options. ",
-];
+// const resellerBulletsFour = [
+//   "Add your Bank Account Details in the fields provided",
+// ];
+// const resellerBulletsfive = [
+//   "Fill in your information. It is recommended to choose a strong and unique password.",
+//   "Click Next to continue to User Agreement..",
+// ];
+// const resellerBulletssix = ["Account is Approved."];
+// const resellerBulletsseven = [
+//   "Select 'Get started' on the homepage to begin the onboarding process.",
+// ];
+// const resellerBulletseight = [
+//   " Select your preferred payment from the two available options. ",
+// ];
 const resellerBulletsnine = [
   "Select the category that best describes your business from the drop-down selection.",
   "Click Next to continue.!",
@@ -150,97 +154,108 @@ const resellerBulletsseventeen = [
 // Steps with bullets and optional note content
 const steps = [
   {
-    title: "Step 1: Apply for a Payoneer Account ",
+    title:
+      "Let's get started with sharing a basic contact detail and an overview about your business, when you finish click next and in the following ",
+    note: (
+      <>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+          Here are the steps to complete your Payoneer onboarding and begin
+          using your account.
+        </p>
+      </>
+    ),
+
     bullets: resellerBullets,
     image: Content1,
   },
   {
-    title: "Contact details",
+    title: "Step 1: Apply for a Payoneer Account ",
+    note: (
+      <>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+          Please use the link provided by our provider to start your
+          application. Before applying, make sure you have the following
+          documents ready:{" "}
+        </p>
+      </>
+    ),
+
     bullets: resellerBulletsTwo,
     image: Content2,
   },
   {
-    title: "    Security details",
+    title: "    Step 2: Upload Your Documents  ",
+    note: (
+      <>
+        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+          Once your account is created, you&apos;ll need to upload verification
+          documents. <br />
+          To upload your documents:
+        </p>
+      </>
+    ),
     bullets: resellerBulletsThree,
     image: Content3,
   },
-  {
-    title: "    Payment details ",
-    bullets: resellerBulletsFour,
-    image: Content4,
-    note: (
-      <>
-        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
-          If you do not have a Company Business Bank Account (a Business Bank),
-          you can enter your Personal Bank Account.
-        </p>
-        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px]">
-          <li>
-            * Please Note – During KYC, you would be asked to upload your
-            Personal Bank Statement (Issued within Last 3 Months){" "}
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "    KYC details ",
-    bullets: resellerBulletsfive,
-    image: Content5,
-    note: (
-      <>
-        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
-          Please Click Submit Now & update the requested information​{" "}
-        </p>
-        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
-          Company Documents
-        </p>
-        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-          <li>Business License </li>
-          <li>Certificate of Formation </li>
-          <li>
-            Memorandum of Association (MOA) *This should show the Number of
-            shares held by each shareholder.{" "}
-          </li>
-        </ul>
 
-        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
-          Company Documents
-        </p>
-        <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-          <li>Director & Shareholder Documents </li>
-          <li>Home Country Address </li>
-          <li>
-            Personal Address Proof (Any of the below is good)
-            <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-              <li>Personal Bank Statement</li>
-              <li>Utility Bill</li>
-              <li>Tenancy Agreement</li>
-            </ul>
-          </li>
-          <li>
-            Personal Bank Statement (Issued within Last 6 Months showing
-            residential address){" "}
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
-    title: "    User details ",
-    bullets: resellerBulletssix,
-    image: Content6,
-  },
-  {
-    title: "  Onboarding process ",
-    bullets: resellerBulletsseven,
-    image: Content7,
-  },
-  {
-    title: "  Registration ",
-    bullets: resellerBulletseight,
-    image: Content8,
-  },
+  // {
+  //   title: "    KYC details ",
+  //   bullets: resellerBulletsfive,
+  //   image: Content5,
+  //   note: (
+  //     <>
+  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+  //         Please Click Submit Now & update the requested information​{" "}
+  //       </p>
+  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
+  //         Company Documents
+  //       </p>
+  //       <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+  //         <li>Business License </li>
+  //         <li>Certificate of Formation </li>
+  //         <li>
+  //           Memorandum of Association (MOA) *This should show the Number of
+  //           shares held by each shareholder.{" "}
+  //         </li>
+  //       </ul>
+
+  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
+  //         Company Documents
+  //       </p>
+  //       <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+  //         <li>Director & Shareholder Documents </li>
+  //         <li>Home Country Address </li>
+  //         <li>
+  //           Personal Address Proof (Any of the below is good)
+  //           <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
+  //             <li>Personal Bank Statement</li>
+  //             <li>Utility Bill</li>
+  //             <li>Tenancy Agreement</li>
+  //           </ul>
+  //         </li>
+  //         <li>
+  //           Personal Bank Statement (Issued within Last 6 Months showing
+  //           residential address){" "}
+  //         </li>
+  //       </ul>
+  //     </>
+  //   ),
+  // },
+  // {
+  //   title: "    User details ",
+  //   bullets: resellerBulletssix,
+  //   image: Content6,
+  // },
+  // {
+  //   title: "  Onboarding process ",
+  //   bullets: resellerBulletsseven,
+  //   image: Content7,
+  // },
+  // {
+  //   title: "  Registration ",
+  //   bullets: resellerBulletseight,
+  //   image: Content8,
+  // },
   {
     title: "    Business details ",
     bullets: resellerBulletsnine,
@@ -461,7 +476,7 @@ export default function ResellerLandingPage() {
             <p className="text-gray-900 text-[48px] font-semibold">
               How to get started as an account holder (AH) in Payoneer
             </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
+            <p className="mt-2 text-gray-900 text-[20px]">
               Step 1: Request your unique onboarding link
               <br />
               Contact your Partner Manager and ask for your personalized
@@ -474,19 +489,19 @@ export default function ResellerLandingPage() {
                 support@payoneerpartnerships.com
               </a>
             </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
+            <p className="mt-2 text-gray-900 text-[20px] mt-4">
               Step 2: Follow the Step-by-Step Onboarding Guides
               <br />
               Once you sign up using the partner link, your Account Manager will
               provide you with a customized onboarding link tailored to your
               business needs.{" "}
             </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
-              Step 3: Chose you Guide: <br />
+            <p className="mt-2 text-gray-900 text-[20px] mt-4">
+              Step 3: Chose your Guide: <br />
               • Standard sign-up flow <br />• CLM flow{" "}
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
-              <p className="mt-2 text-gray-900 text-[23px]">
+              <p className="mt-2 text-gray-900 text-[20px]">
                 Step-by-step onboarding guides for clients:
               </p>
             </div>
@@ -547,6 +562,11 @@ export default function ResellerLandingPage() {
             <p className="text-gray-900 text-[48px] font-semibold">
               Standard sign-up flow
             </p>
+            <p className="mt-2 text-gray-900 text-[20px]">
+              Let&apos;s get started with sharing a basic contact detail and an
+              overview about your business, when you finish click next and in
+              the following
+            </p>
           </section>
           <section
             id="referred-account-holders"
@@ -555,7 +575,7 @@ export default function ResellerLandingPage() {
             {/* Main scroll */}
 
             {(() => {
-              const splitIndex = 6;
+              const splitIndex = 3;
               return (
                 <>
                   {/* First Half */}
@@ -574,24 +594,24 @@ export default function ResellerLandingPage() {
                         <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
                           {section.title}
                         </h3>
-                        <ul className="space-y-4 text-[#878787] text-[18px]">
-                          {section.bullets.map((text, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-3 text-gray-700"
-                            >
-                              <Image
-                                src={Checkicon}
-                                alt="Check"
-                                width={20}
-                                height={20}
-                                className="flex-none mt-1 bg-white"
-                              />
-                              <span>{text}</span>
-                            </li>
-                          ))}
-                        </ul>
                         {section.note && section.note}
+
+                        {section?.bullets?.length > 0 && (
+                          <ul className="space-y-4 text-[18px] text-[#878787]">
+                            {section.bullets.map((text) => (
+                              <li key={text} className="flex items-start gap-3">
+                                <Image
+                                  src={Checkicon}
+                                  alt="Check"
+                                  width={20}
+                                  height={20}
+                                  className="flex-none mt-1"
+                                />
+                                <span>{text}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                       </div>
                       {/* Image with Persistent + Button */}
                       <div
@@ -623,6 +643,123 @@ export default function ResellerLandingPage() {
                       </div>
                     </div>
                   ))}
+                  {/* table */}
+                  <section className="mb-20">
+                    <h3 className="text-[28px] sm:text-[36px] font-semibold text-gray-900 mb-4">
+                      Required Documents for Account Verification
+                    </h3>
+
+                    <p className="text-[#878787] text-[14px] sm:text-[16px] mb-6">
+                      For each of the categories below, please upload one valid
+                      document from the list provided.
+                    </p>
+
+                    <div className="overflow-x-auto border border-gray-200 rounded-xl">
+                      <table className="min-w-full border-collapse text-left text-sm sm:text-base">
+                        <thead className="bg-gray-100">
+                          <tr>
+                            <th className="border border-gray-200 px-4 py-3 font-semibold text-gray-900 w-[30%]">
+                              Verification Step
+                            </th>
+                            <th className="border border-gray-200 px-4 py-3 font-semibold text-gray-900">
+                              Acceptable Documents (Choose one per category)
+                            </th>
+                          </tr>
+                        </thead>
+
+                        <tbody className="bg-white">
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Company Verification
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Certificate of Incorporation or Business License
+                              or Certificate of Registration or PAN (India) or
+                              Proof of Company Activity or Electronic Business
+                              License (China)
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Company Address Verification
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Recent utility bill (gas, water, electricity –
+                              dated within the last 3 months) or Certificate of
+                              Incorporation (showing address) or recent company
+                              bank statement
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Ownership Structure
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Government-issued document showing ownership
+                              structure or certified copy signed by a
+                              notary/lawyer
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Proof of Residential Address
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Document issued by a government or recognized
+                              institution (e.g., bank statement, utility bill)
+                              showing your name and address
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Government-Issued Photo ID
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Valid ID with full name, date of birth, ID number,
+                              photo, and not expired
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Bank Account Verification
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Personal bank statement (within the last 3 months)
+                              in the name of one of the company owners
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Receiving Account Questionnaire
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Brief description of your business, intended use
+                              of Payoneer, and a business website or supporting
+                              docs like signed agreements/invoices
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td className="border border-gray-200 px-4 py-3 font-medium text-black">
+                              Authorized Representative Letter
+                            </td>
+                            <td className="border border-gray-200 px-4 py-3 text-[#878787]">
+                              Company letter on official letterhead confirming
+                              the authorized contact person, signed by the CEO,
+                              UBO, or attorney
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </section>
+
                   {/* Second Section Heading */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
                     <p className="text-gray-900 text-[48px] font-semibold">
@@ -910,7 +1047,7 @@ export default function ResellerLandingPage() {
               </div>
             </div>
           </section>
-          <section
+          {/* <section
             id="get-started-with-payoneer"
             className="scroll-mt-10 max-w-6xl mx-auto px-4 sm:px-6 py-16"
           >
@@ -932,7 +1069,6 @@ export default function ResellerLandingPage() {
                       index % 2 === 1 ? "md:flex-row-reverse" : ""
                     }`}
                   >
-                    {/* Image */}
                     <div className="md:w-1/2 w-full">
                       <div className="overflow-hidden rounded-2xl shadow-lg">
                         <Image
@@ -945,7 +1081,6 @@ export default function ResellerLandingPage() {
                       </div>
                     </div>
 
-                    {/* Text */}
                     <div className="md:w-1/2 w-full">
                       <h3 className="text-2xl font-semibold text-gray-900 mb-3">
                         {faq.title}
@@ -954,7 +1089,6 @@ export default function ResellerLandingPage() {
                         {faq.desc}
                       </p>
 
-                      {/* Gradient link */}
                       <a
                         href={faq.link}
                         target="_blank"
@@ -968,7 +1102,7 @@ export default function ResellerLandingPage() {
                 ))}
               </div>
             </section>
-          </section>
+          </section> */}
         </main>
       </div>
       <Footer />

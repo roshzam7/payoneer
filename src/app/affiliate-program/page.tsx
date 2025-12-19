@@ -199,6 +199,22 @@ const resellerBullets = [
   "Onboard as many referrals as you want with no caps",
   "Access professional tools to boost your conversion rates",
 ];
+const resellerBulletsEnd = [
+  "Embed Payoneer in your registration flow",
+  "Add Payoneer to your onboarding packages",
+  "Place banners across your website/app",
+  "List Payoneer in your partner directory",
+  "Include us in your FAQs",
+  "Share step-by-step sign-up guides",
+  "Manually introduce high-value leads",
+  "Promote us in your blog or newsletter",
+  "Host a webinar with our team",
+  "Run email campaigns",
+  "Train your sales team with our help",
+  "Promote us on social media",
+  "Collaborate on podcasts, videos, or content",
+
+];
 
 const partnerCards = [
   {
@@ -802,50 +818,51 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* Ways to Promote Payoneer */}
-          <section
-            id="promote-payoneer"
-            className="scroll-mt-28 px-4 sm:px-0 mt-20"
-          >
-            <div className="max-w-6xl mx-auto text-left">
-              <h2 className="text-[22px] sm:text-[48px] font-bold text-gray-900">
-                Ways you can promote Payoneer
-              </h2>
-            </div>
+         
 
-            <div className="max-w-6xl mx-auto mt-10 p-6 bg-white border border-gray-200 rounded-2xl shadow-md">
-              <p className="text-gray-700">
-                We make it easy to drive referrals and maximize your affiliate
-                revenue:
-              </p>
-
-              <ul className="mt-4 grid sm:grid-cols-2 gap-y-2 list-disc list-inside text-gray-800">
-                <li>Embed Payoneer in your registration flow</li>
-                <li>Add Payoneer to your onboarding packages</li>
-                <li>Place banners across your website/app</li>
-                <li>List Payoneer in your partner directory</li>
-                <li>Include us in your FAQs</li>
-                <li>Share step-by-step sign-up guides</li>
-                <li>Manually introduce high-value leads</li>
-                <li>Promote us in your blog or newsletter</li>
-                <li>Host a webinar with our team</li>
-                <li>Run email campaigns</li>
-                <li>Train your sales team with our help</li>
-                <li>Promote us on social media</li>
-                <li>Collaborate on podcasts, videos, or content</li>
-              </ul>
-
-              <p className="mt-5 font-medium text-gray-800">
-                We support you every step of the way.
-              </p>
-            </div>
-          </section>
-          <section
-            id="keay-features"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
-          >
+              <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Coming Soon..
+              Ways you can promote Payoneer
             </h2>
+            <div className="sm:mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10 items-start">
+              <div className="sm:mt-0">
+                <h3 className="text-[18px] sm:text-[20px] font-semibold text-gray-900 mb-4  sm:mt-10">
+                  We make it easy to drive referrals and maximize your affiliate
+                  revenue:
+                </h3>
+                <ul className="space-y-4 text-[#878787] text-[13px] sm:text-[17px]">
+                  {resellerBulletsEnd.map((text, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-3 text-gray-700"
+                    >
+                      <Image
+                        src={checkIcon}
+                        alt="Check icon"
+                        width={20}
+                        height={20}
+                        className="flex-none"
+                      />
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-5 font-medium text-gray-800">
+                  We support you every step of the way.
+                </p>
+              </div>
+            </div>
+
+            <section
+              id="keay-features"
+              className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
+            >
+              <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+                Coming Soon..
+              </h2>
+            </section>
+
+            {/*  */}
           </section>
 
           {/* <section

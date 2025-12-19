@@ -104,7 +104,7 @@ const Navbar: React.FC = () => {
         <div className="relative px-4 sm:px-8 lg:px-10">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center flex-shrink-0">
+            <Link href="/" className="flex items-center flex-shrink-0 pl-20">
               <Image src={Logo} alt="Logo" width={100} height={30} />
             </Link>
 

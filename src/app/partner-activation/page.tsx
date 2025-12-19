@@ -8,9 +8,42 @@ import backBtn from "../assets/images/back-button.svg";
 import Sectionthree3 from "../assets/images/Sectionthree/Sectionthree3.png";
 import Sectionthree4 from "../assets/images/Sectionthree/Sectionthree4.png";
 import expandicon from "../assets/images/expandIcon.png";
+import banner1 from "../assets/banner-assets/banner-1.jpg";
+import banner2 from "../assets/banner-assets/banner-2.jpg";
+import banner3 from "../assets/banner-assets/banner-3.jpg";
+import banner4 from "../assets/banner-assets/banner-4.jpg";
+import banner5 from "../assets/banner-assets/banner-5.jpg";
+import banner6 from "../assets/banner-assets/banner-6.jpg";
+import banner7 from "../assets/banner-assets/banner-7.jpg";
+import banner8 from "../assets/banner-assets/banner-8.jpg";
+import banner9 from "../assets/banner-assets/banner-9.jpg";
+import banner10 from "../assets/banner-assets/banner-10.jpg";
+import banner11 from "../assets/banner-assets/banner-11.jpg";
+import banner12 from "../assets/banner-assets/banner-12.jpg";
+import banner13 from "../assets/banner-assets/banner-13.jpg";
+import banner14 from "../assets/banner-assets/banner-14.jpg";
+import banner15 from "../assets/banner-assets/banner-15.jpg";
 
 import Footer from "../components/Footer";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const bannerAssets = [
+  { id: "banner1", src: banner1, name: "Banner 1" },
+  { id: "banner2", src: banner2, name: "Banner 2" },
+  { id: "banner3", src: banner3, name: "Banner 3" },
+  { id: "banner4", src: banner4, name: "Banner 4" },
+  { id: "banner5", src: banner5, name: "Banner 5" },
+  { id: "banner6", src: banner6, name: "Banner 6" },
+  { id: "banner7", src: banner7, name: "Banner 7" },
+  { id: "banner8", src: banner8, name: "Banner 8" },
+  { id: "banner9", src: banner9, name: "Banner 9" },
+  { id: "banner10", src: banner10, name: "Banner 10" },
+  { id: "banner11", src: banner11, name: "Banner 11" },
+  { id: "banner12", src: banner12, name: "Banner 12" },
+  { id: "banner13", src: banner13, name: "Banner 13" },
+  { id: "banner14", src: banner14, name: "Banner 14" },
+  { id: "banner15", src: banner15, name: "Banner 15" },
+];
 
 const topics = [
   {
@@ -97,7 +130,7 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-normal text-gray-900">
             Partner
             <br />
             <span className="block  bg-clip-text text-gray-900">
@@ -431,7 +464,140 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* Banner assets */}
-      
+          <section className="mb-20">
+            <h3 className="text-[28px] sm:text-[36px] font-semibold text-gray-900 mb-2">
+              Banner assets
+            </h3>
+
+            <p className="text-[#878787] text-[14px] sm:text-[16px] mb-6">
+              Banner assets you may use
+            </p>
+
+            <div className="flex gap-6 overflow-x-auto">
+              {bannerAssets.map((asset) => (
+                <div
+                  key={asset.id}
+                  className="min-w-[240px] border border-gray-200 rounded-xl p-4 bg-white"
+                >
+                  {/* Clickable image for preview */}
+                  <a
+                    href={asset.src.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block relative w-full h-[120px] mb-4 overflow-hidden rounded-lg group"
+                  >
+                    <Image
+                      src={asset.src}
+                      alt={asset.name}
+                      fill
+                      className="object-contain transition-transform duration-300 ease-out group-hover:scale-110"
+                    />
+                  </a>
+
+                  {/* Download button */}
+                  <a
+                    href={asset.src.src}
+                    download={asset.name}
+                    className="block text-center text-sm font-medium text-purple-600 hover:underline"
+                  >
+                    Download
+                  </a>
+                </div>
+              ))}
+            </div>
+
+            {/* Download all */}
+            <div className="mt-6">
+              <a
+                href="/banners/banner-assets.zip"
+                download
+                className="inline-flex items-center justify-center rounded-lg bg-purple-600 px-6 py-3 text-sm font-medium text-white hover:bg-purple-700 transition"
+              >
+                Download all assets
+              </a>
+            </div>
+          </section>
+          <section className="mb-20">
+            <h3 className="text-[28px] sm:text-[36px] font-semibold text-gray-900 mb-2">
+              Marketing Assets
+            </h3>
+
+            <p className="text-[#878787] text-[14px] sm:text-[16px] mb-6">
+              Access Payoneer marketing assets, logos, brand elements, and
+              guidelines.
+            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Logo */}
+              <a
+                href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/logo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center border border-gray-200 rounded-xl p-4 hover:shadow-lg transition"
+              >
+                <img
+                  src="/images/Logo.jpg" // Replace with local preview image if you have
+                  alt="Logo"
+                  className="w-full h-50 object-contain mb-2"
+                />
+                <span className="text-center text-sm font-medium text-purple-600 hover:underline">
+                  Logo
+                </span>
+              </a>
+
+              {/* Halo */}
+              <a
+                href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/halo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center border border-gray-200 rounded-xl p-4 hover:shadow-lg transition"
+              >
+                <img
+                  src="/images/Halo.jpg" // Replace with your halo preview image
+                  alt="Halo"
+                  className="w-full h-50 object-contain mb-2"
+                />
+                <span className="text-center text-sm font-medium text-purple-600 hover:underline">
+                  Halo
+                </span>
+              </a>
+
+              {/* Colors / Brand Guidelines */}
+              <a
+                href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/color-1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center border border-gray-200 rounded-xl p-4 hover:shadow-lg transition"
+              >
+                <img
+                  src="/images/Colors.jpg" // Replace with your colors/brand preview image
+                  alt="Colors"
+                  className="w-full h-50 object-contain mb-2"
+                />
+                <span className="text-center text-sm font-medium text-purple-600 hover:underline">
+                  Colors
+                </span>
+              </a>
+
+              {/* Brand Guidelines Overview */}
+              <a
+                href="https://brand.payoneer.com/d/JRx9ZTaTPq6K/guidelines#/design-guidelines/overview"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-col items-center border border-gray-200 rounded-xl p-4 hover:shadow-lg transition"
+              >
+                <img
+                  src="/images/Brand-guidelines.jpg" // Replace with your overview preview image
+                  alt="Brand Guidelines"
+                  className="w-full h-50 object-contain mb-2"
+                />
+                <span className="text-center text-sm font-medium text-purple-600 hover:underline">
+                  Brand Guidelines
+                </span>
+              </a>
+            </div>
+          </section>
+
           {/* Personas */}
           <section className="scroll-mt-28 mb-0">
             <div className="grid grid-cols-1 gap-8">
