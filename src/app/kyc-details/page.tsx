@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import Banner from "./../assets/Hero-header.png";
+import Banner from "../assets/LP-banner-01.png";
 import Navbar from "../components/Navbar";
 import backBtn from "../assets/images/back-button.svg";
 import Checkicon from "../assets/images/Check-icon.svg";
