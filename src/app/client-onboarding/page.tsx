@@ -934,8 +934,27 @@ export default function ResellerLandingPage() {
                   <li>The image must not be mirrored, reversed, or edited.</li>
                 </ul>
                 <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  <a className="text-blue-600" href="">
+                  <a
+                    href="/files/documents-verified-quickly.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
+                  >
                     Request for ID and Held ID
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-4 h-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M13 7l5 5m0 0l-5 5m5-5H6"
+                      />
+                    </svg>
                   </a>
                 </p>
                 {/* Invoice */}
@@ -957,7 +976,7 @@ export default function ResellerLandingPage() {
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   Each business may use a different invoice format. Therefore,
-                  there is no single “standard” template. Use your discretion to
+                  there is no single &apos;standard&apos; template. Use your discretion to
                   determine if the invoice contains the required elements.
                 </p>
 

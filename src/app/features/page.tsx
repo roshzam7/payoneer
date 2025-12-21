@@ -245,118 +245,117 @@ export default function PayoneerPaymentsPage() {
           </section>
 
           {/* KEY FEATURES */}
-          <section
-            id="features"
-            className="scroll-mt-28 space-y-8 max-w-5xl mx-auto"
-          >
-            <div className="bg-gradient-to-br from-[#ffffff] to-[#f8f9fc] border border-gray-100 shadow-xl rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-[#5f6df3] to-[#aa5cc3] mb-4">
-                1. Global reach and multi-currency accounts
-              </h3>
-              <div className="space-y-3 text-sm text-[#555] leading-relaxed">
-                <p>
-                  • Available in 190+ countries so you can work with clients and
-                  platforms almost anywhere.
-                </p>
-                <p>
-                  • Hold and manage balances in multiple currencies: USD, EUR,
-                  GBP, JPY, AUD, CAD, SGD, HKD, AED, MXN.
-                </p>
-                <p>
-                  • Get paid via “virtual bank accounts” (receiving accounts) in
-                  major currencies, so clients can pay you like a local.
-                </p>
-                <p>
-                  • Smart global routing helps with efficient cross-border
-                  payments.
-                </p>
-                <p>
-                  • Backed by strong banking partnerships for reliability and
-                  uptime.
-                </p>
-              </div>
-            </div>
+          <section>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Card 1 */}
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  Global reach and multi-currency accounts
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
 
-            <div className="bg-gradient-to-br from-[#ffffff] to-[#f8f9fc] border border-gray-100 shadow-xl rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-[#5f6df3] to-[#aa5cc3] mb-4">
-                2. Pay and get paid with flexibility
-              </h3>
-              <div className="space-y-3 text-sm text-[#555] leading-relaxed">
-                <p>
-                  • Accept payments from clients via cards, ACH (US), and local
-                  bank transfers so they can pick what works for them.
-                </p>
-                <p>
-                  • Send simple payment requests through a shareable link for
-                  quick approvals and payments.
-                </p>
-                <p>• Transfer funds to bank accounts in 190+ countries.</p>
-                <p>
-                  • Pay individuals or businesses with competitive FX rates.
-                </p>
-                <p>
-                  • Order and use a physical or virtual card for online
-                  purchases, ATMs, and day-to-day business expenses.
-                </p>
-                <p>
-                  • Card requirements usually include a $100+ balance, advance
-                  request, and proof of residence.
-                </p>
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
+                    Available in 190+ countries so you can work with clients and
+                    platforms almost anywhere{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    Hold and manage balances in multiple currencies: USD, EUR,
+                    GBP, JPY, AUD, CAD, SGD, HKD, AED, MXN{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    Get paid via &apos;virtual bank accounts&apos; (receiving accounts) in
+                    major currencies, so clients can pay you like a local.
+                  </li>
+                  <li>
+                    Smart global routing helps with efficient cross-border
+                    payments.
+                  </li>
+                  <li>
+                    Backed by strong banking partnerships for reliability and
+                    uptime.
+                  </li>
+                </ul>
               </div>
-            </div>
-          </section>
 
-          {/* BUSINESS TOOLS */}
-          <section
-            id="business-tools"
-            className="scroll-mt-28 space-y-8 max-w-5xl mx-auto"
-          >
-            <div className="bg-gradient-to-br from-[#ffffff] to-[#f8f9fc] border border-gray-100 shadow-xl rounded-3xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 bg-clip-text bg-gradient-to-r from-[#5f6df3] to-[#aa5cc3] mb-4">
-                3. Business tools to run global payouts
-              </h3>
-              <div className="grid sm:grid-cols-2 gap-6 text-sm text-[#555] leading-relaxed">
-                <div className="space-y-2">
-                  <p>
+              {/* Card 2 */}
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  Pay and get paid with flexibility{" "}
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
+
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
+                    Accept payments from clients via cards, ACH (US), and local
+                    bank transfers so they can pick what works for them{" "}
+                  </li>
+                  <li>
+                    Send simple payment requests through a shareable link for
+                    quick approvals and payments.
+                  </li>
+                  <li>Transfer funds to bank accounts in 190+ countries.</li>
+                  <li>
+                    Pay individuals or businesses with competitive FX rates.
+                  </li>
+                  <li>
+                    Order and use a physical or virtual card for online
+                    purchases, ATMs, and day-to-day business expenses. .
+                  </li>
+                  <li>
+                    Card requirements usually include a $100+ balance, advance
+                    request, and proof of residence.
+                  </li>
+                  <li>
+                    <span className="font-semibold">Working capital:</span> Get
+                    access to funds to buy inventory, pay contractors, and push
+                    growth without waiting on payouts.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Card 3 */}
+
+              <div className="bg-white rounded-2xl shadow-md p-6">
+                <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
+                  Business tools to run global payouts{" "}
+                </h3>
+                {/* Gradient underline */}
+                <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
+
+                <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
+                  <li>
                     <span className="font-semibold">Payoneer Checkout:</span> If
                     you run an online store, you can accept payments from
                     customers worldwide directly on your site.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     <span className="font-semibold">Batch Payments:</span> Send
                     bulk payouts to contractors, partners, or affiliates in one
                     shot.
-                  </p>
-                  <p>
-                    <span className="font-semibold">Scheduled Payments:</span>{" "}
-                    Automate recurring payouts to suppliers or contractors so
-                    you don&apos;t have to track dates manually.
-                  </p>
-                </div>
-                <div className="space-y-2">
-                  <p>
+                  </li>
+                  <li>
                     <span className="font-semibold">Role Management:</span> Add
                     team members with different permissions to handle payments
                     and approvals.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     <span className="font-semibold">API integrations:</span>{" "}
                     Connect Payoneer to your systems to automate payments and
                     reporting.
-                  </p>
-                  <p>
+                  </li>
+                  <li>
                     <span className="font-semibold">
                       Accounting integrations:
                     </span>{" "}
                     Sync with your accounting tools to make reconciliation
                     easier.
-                  </p>
-                  <p>
-                    <span className="font-semibold">Working capital:</span> Get
-                    access to funds to buy inventory, pay contractors, and push
-                    growth without waiting on payouts.
-                  </p>
-                </div>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
@@ -495,7 +494,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-get-paid
+                    How to get paid
                   </span>
                 </div>
               </a>
@@ -514,7 +513,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-track-and-cancel-payment-requests
+                    How to track and cancel payment requests
                   </span>
                 </div>
               </a>
@@ -533,7 +532,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-see-fees
+                    How to see fees
                   </span>
                 </div>
               </a>
@@ -552,7 +551,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-request-a-payment
+                    How to request a payment
                   </span>
                 </div>
               </a>
@@ -571,7 +570,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-make-a-payment-to-a-recipients-payoneer-account
+                    How to make a payment to a recipient&apos;s Payoneer account
                   </span>
                 </div>
               </a>
@@ -590,7 +589,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-enable-swift-wire-account
+                    How to enable SWIFT wire account
                   </span>
                 </div>
               </a>
@@ -609,7 +608,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-enable-local-receiving-accounts
+                    How to enable local receiving accounts
                   </span>
                 </div>
               </a>
@@ -628,7 +627,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-check-a-payments-status
+                    How to check a payment&apos;s status
                   </span>
                 </div>
               </a>
@@ -647,7 +646,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Payoneer-mobile-app
+                    Payoneer mobile app
                   </span>
                 </div>
               </a>
@@ -666,7 +665,7 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How-to-withdraw-funds-from-your-Payoneer-Account-to-your-bank-account
+                    How to withdraw funds from your Payoneer account to your bank account
                   </span>
                 </div>
               </a>

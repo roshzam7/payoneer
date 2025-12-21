@@ -637,7 +637,7 @@ export default function ResellerLandingPage() {
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   Each business may use a different invoice format. Therefore,
-                  there is no single “standard” template. Use your discretion to
+                  there is no single &apos;standard&apos; template. Use your discretion to
                   determine if the invoice contains the required elements.
                 </p>
 
@@ -716,9 +716,9 @@ export default function ResellerLandingPage() {
                 </p>
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   If the account holder wishes to opt out of the service, refer
-                  to the “How can an account holder opt out of the
+                  to the &apos;How can an account holder opt out of the
                   &apos;Selfie&apos; requirement &apos;(Visual Identity
-                  Verification)&apos; section“ in the{" "}
+                  Verification)&apos; section&apos; in the{" "}
                   <a className="text-blue-600" href="">
                     How to handle documents guide
                   </a>

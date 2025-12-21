@@ -664,7 +664,7 @@ export default function ResellerLandingPage() {
                 <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                   <li>
                     Actively promote Payoneer&apos;s services to potential
-                    clients (“Prospects”)
+                    clients (&apos;Prospects&apos;)
                   </li>
                   <li>Refer those Prospects using special tracking links</li>
                   <li>
@@ -672,8 +672,8 @@ export default function ResellerLandingPage() {
                     registration process
                   </li>
                   <li>
-                    Provide basic support to approved clients (“Registered
-                    Users”)
+                    Provide basic support to approved clients (&apos;Registered
+                    Users&apos;)
                   </li>
                   <li>
                     Never alter or interfere with the applicant&apos;s
