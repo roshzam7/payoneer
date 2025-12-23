@@ -488,7 +488,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-1.png"
+                  src="/images/how-to-get-paid.jpeg"
                   alt="How to get paid"
                   className="w-full h-64 object-cover"
                 />
@@ -507,7 +507,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/how-to-track-and-cancel-payment-requests.jpeg"
                   alt="Track and cancel payment requests"
                   className="w-full h-64 object-cover"
                 />
@@ -526,7 +526,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/how-to-see-fees.jpeg"
                   alt="See fees"
                   className="w-full h-64 object-cover"
                 />
@@ -545,7 +545,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-1.png"
+                  src="/images/how-to-request-a-payment.jpeg"
                   alt="Request a payment"
                   className="w-full h-64 object-cover"
                 />
@@ -564,7 +564,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/how-to-make-a-payment-to-a-recipients-payoneer-account.pdf.jpeg"
                   alt="Make payment to recipient"
                   className="w-full h-64 object-cover"
                 />
@@ -583,7 +583,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/how-to-enable-swift-wire-account.jpeg"
                   alt="Enable SWIFT wire account"
                   className="w-full h-64 object-cover"
                 />
@@ -602,7 +602,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-1.png"
+                  src="/images/how-to-enable-local-receiving-accounts.jpeg"
                   alt="Enable local receiving accounts"
                   className="w-full h-64 object-cover"
                 />
@@ -621,7 +621,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/how-to-check-a-payments-status.jpeg"
                   alt="Check payment status"
                   className="w-full h-64 object-cover"
                 />
@@ -640,7 +640,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-2.png"
+                  src="/images/payoneer-mobile-app.jpeg"
                   alt="Payoneer mobile app"
                   className="w-full h-64 object-cover"
                 />
@@ -659,7 +659,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/success-1.png"
+                  src="/images/how-to-withdraw-funds-from-your-payoneer-account-to-your-bank-account.jpeg"
                   alt="Withdraw funds"
                   className="w-full h-64 object-cover"
                 />
