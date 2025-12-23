@@ -564,7 +564,7 @@ export default function PayoneerPaymentsPage() {
                 className="group relative block overflow-hidden rounded-xl border border-gray-200"
               >
                 <img
-                  src="/images/how-to-make-a-payment-to-a-recipients-payoneer-account.pdf.jpeg"
+                  src="/images/how-to-make-a-payment-to-a-recipients-payoneer-account.jpeg"
                   alt="Make payment to recipient"
                   className="w-full h-64 object-cover"
                 />
