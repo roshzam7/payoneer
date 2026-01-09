@@ -297,7 +297,7 @@ export default function ResellerLandingPage() {
                   </a> */}
                   <section
                     id=""
-                    className=" sm:py-0 px-4 sm:px-6 mb-0 sm:mb-20 "
+                    className=" sm:py-0 px-4 sm:px-0 mb-0 sm:mb-20 "
                   >
                     {/* PDF thumbnails */}
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
