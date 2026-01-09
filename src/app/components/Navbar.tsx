@@ -26,12 +26,7 @@ const cards: Card[] = [
     ],
     viewAllHref: "/program",
   },
-  {
-    title: "Partner onboarding",
-    items: [],
-    viewAllHref: "/partner-onboarding",
-  },
-  {
+    {
     title: "Affiliate program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
@@ -42,10 +37,16 @@ const cards: Card[] = [
     viewAllHref: "/affiliate-program",
   },
   {
-    title: "Affiliate onboarding",
+    title: "Partner onboarding",
     items: [],
-    viewAllHref: "/affiliate-setup",
+    viewAllHref: "/partner-onboarding",
   },
+
+  // {
+  //   title: "Affiliate onboarding",
+  //   items: [],
+  //   viewAllHref: "/affiliate-setup",
+  // },
   {
     title: "Client onboarding",
     items: [

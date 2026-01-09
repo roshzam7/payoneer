@@ -36,32 +36,36 @@ import pp8 from "../assets/images/paymentproviders/8.svg";
 import pp9 from "../assets/images/paymentproviders/9.svg";
 
 // Brands
-import adobe from "../assets/images/brands/adobe.svg";
+// import adobe from "../assets/images/brands/adobe.svg";
+// import booking from "../assets/images/brands/booking.svg";
+// import daraz from "../assets/images/brands/daraz.svg";
+// import cdiscount from "../assets/images/brands/cdiscount.svg";
+// import facebook from "../assets/images/brands/facebook.svg";
 import airbnb from "../assets/images/brands/airbnb.svg";
 import amazon from "../assets/images/brands/amazon.svg";
-import booking from "../assets/images/brands/booking.svg";
-import daraz from "../assets/images/brands/daraz.svg";
-import cdiscount from "../assets/images/brands/cdiscount.svg";
-import facebook from "../assets/images/brands/facebook.svg";
+import ByteDance from "../assets/images/brands/ByteDance_logo_English.svg";
+import EBay from "../assets/images/brands/EBay_logo.svg";
+import Etsy from "../assets/images/brands/Etsy_logo.svg";
 import fiverr from "../assets/images/brands/fiverr.svg";
-import gettyimages from "../assets/images/brands/gettyimages.svg";
 import google from "../assets/images/brands/google.svg";
-import homeaway from "../assets/images/brands/homeaway.svg";
-import joom from "../assets/images/brands/joom.svg";
-import jumia from "../assets/images/brands/jumia.svg";
-import lazada from "../assets/images/brands/lazada.svg";
-import linio from "../assets/images/brands/linio.svg";
-import mercadolibre from "../assets/images/brands/mercadolibre.svg";
-import noon from "../assets/images/brands/noon.svg";
-import wayfair from "../assets/images/brands/wayfair.svg";
-import rakuten from "../assets/images/brands/rakuten.svg";
-import shopee from "../assets/images/brands/shopee.svg";
-import shutterstock from "../assets/images/brands/shutterstock.svg";
-import uber from "../assets/images/brands/uber.svg";
 import upwork from "../assets/images/brands/upwork.svg";
 import walmart from "../assets/images/brands/walmart.svg";
-import wish from "../assets/images/brands/wish.svg";
-import realde from "../assets/images/brands/realde.svg";
+
+// import gettyimages from "../assets/images/brands/gettyimages.svg";
+// import homeaway from "../assets/images/brands/homeaway.svg";
+// import joom from "../assets/images/brands/joom.svg";
+// import jumia from "../assets/images/brands/jumia.svg";
+// import lazada from "../assets/images/brands/lazada.svg";
+// import linio from "../assets/images/brands/linio.svg";
+// import mercadolibre from "../assets/images/brands/mercadolibre.svg";
+// import noon from "../assets/images/brands/noon.svg";
+// import wayfair from "../assets/images/brands/wayfair.svg";
+// import rakuten from "../assets/images/brands/rakuten.svg";
+// import shopee from "../assets/images/brands/shopee.svg";
+// import shutterstock from "../assets/images/brands/shutterstock.svg";
+// import uber from "../assets/images/brands/uber.svg";
+// import wish from "../assets/images/brands/wish.svg";
+// import realde from "../assets/images/brands/realde.svg";
 
 // Others
 import checkIcon from "../assets/images/Check-icon.svg";
@@ -162,32 +166,36 @@ const bankCols = [
 ];
 
 const brands = [
-  { name: "Adobe", logo: adobe },
+  // { name: "Adobe", logo: adobe },
+  // { name: "Booking.com", logo: booking },
+  // { name: "Daraz", logo: daraz },
+  // { name: "Cdiscount", logo: cdiscount },
+  // { name: "Facebook", logo: facebook },
+  // { name: "Getty Images", logo: gettyimages },
+  // { name: "HomeAway", logo: homeaway },
+  // { name: "JOOM", logo: joom },
+  // { name: "JUMIA", logo: jumia },
+  // { name: "LAZADA", logo: lazada },
+  // { name: "LINIO", logo: linio },
+  // { name: "Mercado Libre", logo: mercadolibre },
+  // { name: "Noon", logo: noon },
+  // { name: "Wayfair", logo: wayfair },
+  // { name: "Rakuten", logo: rakuten },
+  // { name: "Shopee", logo: shopee },
+  // { name: "Shutterstock", logo: shutterstock },
+  // { name: "Uber", logo: uber },
+  //   { name: "Wish", logo: wish },
+  // { name: "Real.de", logo: realde },
+
   { name: "Airbnb", logo: airbnb },
   { name: "Amazon", logo: amazon },
-  { name: "Booking.com", logo: booking },
-  { name: "Daraz", logo: daraz },
-  { name: "Cdiscount", logo: cdiscount },
-  { name: "Facebook", logo: facebook },
-  { name: "Fiverr", logo: fiverr },
-  { name: "Getty Images", logo: gettyimages },
+  { name: "ByteDance", logo: ByteDance },
+  { name: "Fiverr", logo: fiverr },  
+  { name: "EBay", logo: EBay },
+  { name: "Etsy", logo: Etsy },
   { name: "Google", logo: google },
-  { name: "HomeAway", logo: homeaway },
-  { name: "JOOM", logo: joom },
-  { name: "JUMIA", logo: jumia },
-  { name: "LAZADA", logo: lazada },
-  { name: "LINIO", logo: linio },
-  { name: "Mercado Libre", logo: mercadolibre },
-  { name: "Noon", logo: noon },
-  { name: "Wayfair", logo: wayfair },
-  { name: "Rakuten", logo: rakuten },
-  { name: "Shopee", logo: shopee },
-  { name: "Shutterstock", logo: shutterstock },
-  { name: "Uber", logo: uber },
   { name: "Upwork", logo: upwork },
   { name: "Walmart", logo: walmart },
-  { name: "Wish", logo: wish },
-  { name: "Real.de", logo: realde },
 ];
 
 const resellerBullets = [

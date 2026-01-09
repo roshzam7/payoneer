@@ -36,32 +36,38 @@ import pp8 from "../assets/images/paymentproviders/8.svg";
 import pp9 from "../assets/images/paymentproviders/9.svg";
 
 // Brands
-import adobe from "../assets/images/brands/adobe.svg";
+// Brands
+// import adobe from "../assets/images/brands/adobe.svg";
+// import booking from "../assets/images/brands/booking.svg";
+// import daraz from "../assets/images/brands/daraz.svg";
+// import cdiscount from "../assets/images/brands/cdiscount.svg";
+// import facebook from "../assets/images/brands/facebook.svg";
 import airbnb from "../assets/images/brands/airbnb.svg";
 import amazon from "../assets/images/brands/amazon.svg";
-import booking from "../assets/images/brands/booking.svg";
-import daraz from "../assets/images/brands/daraz.svg";
-import cdiscount from "../assets/images/brands/cdiscount.svg";
-import facebook from "../assets/images/brands/facebook.svg";
+import ByteDance from "../assets/images/brands/ByteDance_logo_English.svg";
+import EBay from "../assets/images/brands/EBay_logo.svg";
+import Etsy from "../assets/images/brands/Etsy_logo.svg";
 import fiverr from "../assets/images/brands/fiverr.svg";
-import gettyimages from "../assets/images/brands/gettyimages.svg";
 import google from "../assets/images/brands/google.svg";
-import homeaway from "../assets/images/brands/homeaway.svg";
-import joom from "../assets/images/brands/joom.svg";
-import jumia from "../assets/images/brands/jumia.svg";
-import lazada from "../assets/images/brands/lazada.svg";
-import linio from "../assets/images/brands/linio.svg";
-import mercadolibre from "../assets/images/brands/mercadolibre.svg";
-import noon from "../assets/images/brands/noon.svg";
-import wayfair from "../assets/images/brands/wayfair.svg";
-import rakuten from "../assets/images/brands/rakuten.svg";
-import shopee from "../assets/images/brands/shopee.svg";
-import shutterstock from "../assets/images/brands/shutterstock.svg";
-import uber from "../assets/images/brands/uber.svg";
 import upwork from "../assets/images/brands/upwork.svg";
 import walmart from "../assets/images/brands/walmart.svg";
-import wish from "../assets/images/brands/wish.svg";
-import realde from "../assets/images/brands/realde.svg";
+
+// import gettyimages from "../assets/images/brands/gettyimages.svg";
+// import homeaway from "../assets/images/brands/homeaway.svg";
+// import joom from "../assets/images/brands/joom.svg";
+// import jumia from "../assets/images/brands/jumia.svg";
+// import lazada from "../assets/images/brands/lazada.svg";
+// import linio from "../assets/images/brands/linio.svg";
+// import mercadolibre from "../assets/images/brands/mercadolibre.svg";
+// import noon from "../assets/images/brands/noon.svg";
+// import wayfair from "../assets/images/brands/wayfair.svg";
+// import rakuten from "../assets/images/brands/rakuten.svg";
+// import shopee from "../assets/images/brands/shopee.svg";
+// import shutterstock from "../assets/images/brands/shutterstock.svg";
+// import uber from "../assets/images/brands/uber.svg";
+// import wish from "../assets/images/brands/wish.svg";
+// import realde from "../assets/images/brands/realde.svg";
+
 
 // Others
 import checkIcon from "../assets/images/Check-icon.svg";
@@ -164,32 +170,36 @@ const bankCols = [
 ];
 
 const brands = [
-  { name: "Adobe", logo: adobe },
+  // { name: "Adobe", logo: adobe },
+  // { name: "Booking.com", logo: booking },
+  // { name: "Daraz", logo: daraz },
+  // { name: "Cdiscount", logo: cdiscount },
+  // { name: "Facebook", logo: facebook },
+  // { name: "Getty Images", logo: gettyimages },
+  // { name: "HomeAway", logo: homeaway },
+  // { name: "JOOM", logo: joom },
+  // { name: "JUMIA", logo: jumia },
+  // { name: "LAZADA", logo: lazada },
+  // { name: "LINIO", logo: linio },
+  // { name: "Mercado Libre", logo: mercadolibre },
+  // { name: "Noon", logo: noon },
+  // { name: "Wayfair", logo: wayfair },
+  // { name: "Rakuten", logo: rakuten },
+  // { name: "Shopee", logo: shopee },
+  // { name: "Shutterstock", logo: shutterstock },
+  // { name: "Uber", logo: uber },
+  //   { name: "Wish", logo: wish },
+  // { name: "Real.de", logo: realde },
+
   { name: "Airbnb", logo: airbnb },
   { name: "Amazon", logo: amazon },
-  { name: "Booking.com", logo: booking },
-  { name: "Daraz", logo: daraz },
-  { name: "Cdiscount", logo: cdiscount },
-  { name: "Facebook", logo: facebook },
-  { name: "Fiverr", logo: fiverr },
-  { name: "Getty Images", logo: gettyimages },
+  { name: "ByteDance", logo: ByteDance },
+  { name: "Fiverr", logo: fiverr },  
+  { name: "EBay", logo: EBay },
+  { name: "Etsy", logo: Etsy },
   { name: "Google", logo: google },
-  { name: "HomeAway", logo: homeaway },
-  { name: "JOOM", logo: joom },
-  { name: "JUMIA", logo: jumia },
-  { name: "LAZADA", logo: lazada },
-  { name: "LINIO", logo: linio },
-  { name: "Mercado Libre", logo: mercadolibre },
-  { name: "Noon", logo: noon },
-  { name: "Wayfair", logo: wayfair },
-  { name: "Rakuten", logo: rakuten },
-  { name: "Shopee", logo: shopee },
-  { name: "Shutterstock", logo: shutterstock },
-  { name: "Uber", logo: uber },
   { name: "Upwork", logo: upwork },
   { name: "Walmart", logo: walmart },
-  { name: "Wish", logo: wish },
-  { name: "Real.de", logo: realde },
 ];
 
 const resellerBullets = [
@@ -307,6 +317,42 @@ const keyFeatures = [
     logo: onlineCheckout,
     title: "Online checkout",
     desc: "Accept payments on webstores with our online checkout solution.",
+  },
+];
+const Programphases = [
+  {
+    logo: fastOnboarding,
+    title: "Sign & get onboarded ",
+    desc: "Become an official Payoneer Affiliate. You'll sign the affiliate agreement and complete a quick onboarding process with your affiliate manager so you're fully set up to start referring clients. ",
+  },
+  {
+    logo: debitCards,
+    title: "Onboard & qualify your leads ",
+    desc: "Start introducing Payoneer to your audience. Drive traffic through your affiliate links, help users complete onboarding by sending guides, and qualify high-value leads by guiding them through the Payoneer activation steps (verification, first payment, setup). ",
+  },
+  {
+    logo: collectionLinks,
+    title: "Access your affiliate toolkit",
+    desc: {
+      intro:
+        "Gain access to your affiliate dashboard and resources you need to promote Payoneer effectively:",
+      bullets: [
+        "Tracking links",
+        "Promotional banners",
+        "Pitch decks",
+        "Product guides",
+        "Pricing policy",
+        "Step-by-step onboarding materials",
+      ],
+      outro:
+        "Everything is designed to help you educate and convert your audience with confidence.",
+    },
+  },
+
+  {
+    logo: onlineCheckout,
+    title: "Track performance & earn ",
+    desc: "Monitor your referrals and commission earnings through your affiliate dashboard. Optimize your campaigns with insights, track user performance, and collaborate with your affiliate manager to improve conversion and scale your revenue. ",
   },
 ];
 
@@ -614,30 +660,63 @@ export default function ResellerLandingPage() {
                 />
               </div>
             </section>
+                            <section
+              id="why-partners-love-us"
+              className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
+            >
+              <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
+                Affiliate program phases
+              </h1>
+              <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left"></p>
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {Programphases.map((f, i) => (
+                  <div
+                    key={i}
+                    className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 hover:shadow-xl transition-all duration-300"
+                  >
+                    {/* Logo */}
+                    <div className="flex justify-left mt-4">
+                      <Image
+                        src={f.logo}
+                        alt={`${f.title} logo`}
+                        width={48}
+                        height={48}
+                        className="object-contain"
+                      />
+                    </div>
+                    {/* Accent line */}
+                    <div className="mt-3 h-0.5 w-10 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full ml-0" />
+                    {/* Title */}
+                    <h3 className="mt-3 text-[16px] sm:text-[20px] font-semibold text-gray-900 text-left">
+                      {f.title}
+                    </h3>
+                    {/* Description */}
+                    <div className="mt-3 text-[12px] sm:text-[15px] text-[#878787] text-left space-y-3">
+                      {typeof f.desc === "string" ? (
+                        <p>{f.desc}</p>
+                      ) : (
+                        <>
+                          <p>{f.desc.intro}</p>
+
+                          <ul className="list-disc pl-5 space-y-1">
+                            {f.desc.bullets.map((item, idx) => (
+                              <li key={idx}>{item}</li>
+                            ))}
+                          </ul>
+
+                          <p>{f.desc.outro}</p>
+                        </>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
 
             {/*  */}
           </section>
-          <section className="scroll-mt-24 px-4 sm:px-6">
-            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Great for your customers
-            </h2>
-            <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px]">
-              Keeping your customers happy is always good for business.
-            </p>
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
-              {customerBenefits.map((item, i) => (
-                <div key={i}>
-                  <h3 className="text-[17px] sm:text-[20px] font-semibold text-gray-900">
-                    {item.title}
-                  </h3>
-                  <div className="h-0.5 w-8 mt-1 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
-                  <p className="mt-3 text-[#878787] text-[13px] sm:text-[14px]">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
+          
           {/* key-features */}
           <section
             id="keeeey-features"

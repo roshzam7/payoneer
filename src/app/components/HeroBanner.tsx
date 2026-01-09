@@ -11,71 +11,85 @@ type Card = {
 };
 
 const cards: Card[] = [
-  {
-    title: "Welcome to the Payoneer Reseller Program",
+    {
+    title: "Reseller program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
-      { label: "Why Partner with Us", slug: "why-partner" },
-      { label: "Reseller Program Overview", slug: "reseller-overview" },
-      { label: "Success Stories & Testimonials", slug: "key-features" },
-    ],
-    viewAllHref: "/reseller-program",
-  },
-  {
-    title: "Getting Started: Partner Onboarding",
-    items: [
-      { label: "How to Join the Program", slug: "How-to-Join" },
+      { label: "Why partner with us", slug: "why-partner" },
+      { label: "Reseller program overview", slug: "reseller-overview" },
       {
         label: "Understand Your Role as a Payoneer Reseller",
         slug: "Understand-Your-Role",
       },
-      {
-        label: "Understanding Partner Tiers",
-        slug: "Understanding-Partner-Tiers",
-      },
-      {
-        label: "Understanding Commercials & Payment Calculators",
-        slug: "Payment-Calculators",
-      },
+      { label: "Success stories & testimonials", slug: "key-features" },
     ],
+    viewAllHref: "/program",
+  },
+  {
+    title: "Partner onboarding",
+    items: [],
     viewAllHref: "/partner-onboarding",
   },
   {
-    title: "Partner Activation & Enablement",
+    title: "Affiliate program",
     items: [
-      { label: "Sales Enablement Tools", slug: "sales-enablement-tools" },
+      { label: "About Payoneer", slug: "about-payoneer" },
+      { label: "Why become a Payoneer affiliate", slug: "why-partner" },
+      { label: "Affiliate program overview", slug: "reseller-overview" },
+      { label: "Success stories & testimonials", slug: "key-features" },
+    ],
+    viewAllHref: "/affiliate-program",
+  },
+  {
+    title: "Affiliate onboarding",
+    items: [],
+    viewAllHref: "/affiliate-setup",
+  },
+  {
+    title: "Client onboarding",
+    items: [
+      { label: "Standard sign-up flow", slug: "referred-account-holders" },
+      { label: "CLM Flow", slug: "clm-flow" },
+      { label: "Additional kyc requirements", slug: "kyc-process-explained" },
+      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
+    ],
+    viewAllHref: "/client-onboarding",
+  },
+  {
+    title: "Enablement",
+    items: [
+      { label: "Sales enablement tools", slug: "sales-enablement-tools" },
       {
-        label: "Marketing & Reselling Guidelines",
+        label: "Marketing & reselling guidelines",
         slug: "reselling-guidelines",
       },
-      { label: "Customer Personas", slug: "onboarding-overview" },
-      { label: "Payoneer Pricing", slug: "payoneer-pricing" },
+      { label: "Customer personas", slug: "onboarding-overview" },
       {
-        label: "Co-Branded or Dedicated Landing Pages",
+        label: "Co-branded or dedicated landing pages",
         slug: "co-branded-or-dedicated-landing-pages",
       },
     ],
     viewAllHref: "/partner-activation",
   },
   {
-    title: "Referred Account Holder Onboarding Journey",
-    items: [
-      { label: "Standard Sign-up Flow", slug: "referred-account-holders" },
-      { label: "CLM Flow", slug: "clm-flow" },
-      { label: "Additional KYC Requirements", slug: "kyc-process-explained" },
-      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
-    ],
-    viewAllHref: "/referred-account-holder",
+    title: "Pricing",
+    items: [],
+    viewAllHref: "/pricing",
   },
   {
-    title: "Support Center",
+    title: "Features",
     items: [
-      { label: "Frequently Asked Questions (FAQs)", slug: "faqs" },
-      {
-        label: "Support Ticket Questionnaire",
-        slug: "support-ticket-questionnaire",
-      },
+      { label: "Overview", slug: "overview" },
+      { label: "Key features & benefits", slug: "features" },
+      { label: "Business tools", slug: "business-tools" },
+      { label: "Who is it for?", slug: "who-its-for" },
+      { label: "Learn more", slug: "learn-more" },
     ],
+    viewAllHref: "/features",
+  },
+  {
+    title: "Support",
+        items: [],
     viewAllHref: "/faqs",
   },
 ];
