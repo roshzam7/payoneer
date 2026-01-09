@@ -51,7 +51,7 @@ const topics = [
     slug: "sales-enablement-tools",
   },
   {
-    title: "Marketing & reselling guidelines",
+    title: "Marketing guidelines",
     slug: "reselling-guidelines",
   },
   {
@@ -59,10 +59,7 @@ const topics = [
     slug: "customer-personas",
   },
 
-  {
-    title: "Co-branded or dedicated landing pages",
-    slug: "co-branded-or-dedicated-landing-pages",
-  },
+
 ];
 
 const personas = [
@@ -256,7 +253,7 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Card 2 */}
-                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                      <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
                     Training webinars & certifications
                   </h3>
@@ -276,7 +273,7 @@ export default function ResellerLandingPage() {
                     </a>
                     .
                   </p>
-                  <a
+                  {/* <a
                     href="/files/Partnership_Certificate-Sample.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -297,7 +294,35 @@ export default function ResellerLandingPage() {
                         d="M13 7l5 5m0 0l-5 5m5-5H6"
                       />
                     </svg>
-                  </a>
+                  </a> */}
+                  <section
+                    id=""
+                    className=" sm:py-0 px-4 sm:px-6 mb-0 sm:mb-20 "
+                  >
+                    {/* PDF thumbnails */}
+                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
+                      {/* PDF 1 */}
+                      <a
+                        href="/files/Partnership_Certificate-Sample.pdf"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="group relative block overflow-hidden rounded-xl border border-gray-200"
+                      >
+                        <img
+                          src="/images/Training-webinars.png"
+                          alt="Success story 1"
+                          className="w-full h-64 object-cover"
+                        />
+
+                        {/* Hover title overlay */}
+                        <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                          <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                            View sample certificate
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </section>
                 </div>
 
                 {/* Card 3 */}
@@ -388,7 +413,7 @@ export default function ResellerLandingPage() {
               </div>
 
               {/* Cards Section */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-1 gap-8">
                 {/* Branding & Messaging Compliance */}
                 <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
@@ -426,7 +451,7 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Do's and Don'ts */}
-                <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                {/* <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
                     Do&apos;s and don&apos;ts in promotions
                   </h3>
@@ -458,7 +483,7 @@ export default function ResellerLandingPage() {
                       />
                     </svg>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>

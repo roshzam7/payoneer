@@ -476,9 +476,10 @@ export default function ResellerLandingPage() {
             <p className="text-gray-900 text-[48px] font-semibold">
               How to get started as an account holder (AH) in Payoneer
             </p>
-            <p className="mt-2 text-gray-900 text-[20px]">
+            <p className="mt-2 font-bold text-bold text-gray-900 text-[20px]">
               Step 1: Request your unique onboarding link
-              <br />
+            </p>
+            <p className="mt-2 text-gray-900 text-[20px]">
               Contact your Partner Manager and ask for your personalized
               registration link or reach out to <br />
               <a
@@ -489,32 +490,22 @@ export default function ResellerLandingPage() {
                 support@payoneerpartnerships.com
               </a>
             </p>
-            <p className="mt-2 text-gray-900 text-[20px] mt-4">
+              <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
               Step 2: Follow the Step-by-Step Onboarding Guides
-              <br />
+            </p>
+            <p className="mt-2 text-gray-900 text-[20px] mt-4">
               Once you sign up using the partner link, your Account Manager will
               provide you with a customized onboarding link tailored to your
               business needs.{" "}
             </p>
             <p className="mt-2 text-gray-900 text-[20px] mt-4">
-              Step 3: Chose your Guide: <br />
-              • Standard sign-up flow <br />• CLM flow{" "}
-            </p>
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0 mt-2">
-              <p className="mt-2 text-gray-900 text-[20px]">
-                Step-by-step onboarding guides for clients:
-              </p>
-            </div>
-            <p className="text-[#878787] text-sm sm:text-[20px] sm:text-base mt-2 mb-4">
-              Once you sign up on Partner link, Your Account Manager would be
-              able to share a customized link for you
+              Step 3: Choose your Guide: <br />
             </p>
           </section>
-          {/* cardss */}
           {/* 2 */}
           <section
             id=""
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
+            className="scroll-mt-10 sm:py-0 px-4 sm:px-6 mb-0 sm:mb-20 "
           >
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
               <a

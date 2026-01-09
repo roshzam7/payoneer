@@ -59,7 +59,7 @@ const cards: Card[] = [
     viewAllHref: "/partner-activation",
     items: [
       { label: "Sales enablement tools", slug: "sales-enablement-tools" },
-      { label: "Marketing & reselling guidelines", slug: "reselling-guidelines" },
+      { label: "Marketing guidelines", slug: "reselling-guidelines" },
       { label: "Customer personas", slug: "onboarding-overview" },
       {
         label: "Co-branded or dedicated landing pages",
