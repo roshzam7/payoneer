@@ -31,7 +31,7 @@ const topics = [
     slug: "table",
   },
   {
-    title: "The prices and fees",
+    title: "Payoneer fees",
     slug: "The-prices-and-fees",
   },
 ];

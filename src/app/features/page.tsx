@@ -94,21 +94,18 @@ const topics = [
     slug: "overview",
   },
   {
-    title: "Key features & benefits",
+    title: "Why this matters to your clients or users ",
     slug: "features",
   },
   {
-    title: "Business tools",
-    slug: "business-tools",
+    title: "Get started with Payoneer ",
+    slug: "get-started-with-payoneer",
   },
   {
-    title: "Who is it for?",
-    slug: "who-its-for",
+    title: "How to.. ",
+    slug: "how-to",
   },
-  {
-    title: "Learn more",
-    slug: "learn-more",
-  },
+
 ];
 
 export default function PayoneerPaymentsPage() {
@@ -257,7 +254,7 @@ export default function PayoneerPaymentsPage() {
 
                 <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                   <li>
-                    Available in 190+ countries so you can work with clients and
+                    Available in 190+ countries and territories so you can work with clients and
                     platforms almost anywhere{" "}
                   </li>
                   <li>
@@ -298,7 +295,7 @@ export default function PayoneerPaymentsPage() {
                     Send simple payment requests through a shareable link for
                     quick approvals and payments.
                   </li>
-                  <li>Transfer funds to bank accounts in 190+ countries.</li>
+                  <li>Transfer funds to bank accounts in 190+ countries and territories.</li>
                   <li>
                     Pay individuals or businesses with competitive FX rates.
                   </li>
@@ -362,7 +359,7 @@ export default function PayoneerPaymentsPage() {
 
           {/* WHO IT'S FOR */}
 
-          <section id="why-partner" className="scroll-mt-28 px-4 sm:px-6">
+          <section id="features" className="scroll-mt-28 px-4 sm:px-6">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
               Why this matters to your clients or users
             </h1>

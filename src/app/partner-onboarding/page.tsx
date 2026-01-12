@@ -11,6 +11,34 @@ import Content3 from "../assets/images/gettingstarted/Content3.png";
 import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
+import fastOnboarding from "../assets/images/fast-onboarding.svg";
+import One from "../assets/Partnerimgs/1.png";
+import Two from "../assets/Partnerimgs/2.png";
+import Three from "../assets/Partnerimgs/3.png";
+import Four from "../assets/Partnerimgs/4.png";
+import Five from "../assets/Partnerimgs/5.png";
+import Six from "../assets/Partnerimgs/6.png";
+import Seven from "../assets/Partnerimgs/7.png";
+import Eight from "../assets/Partnerimgs/8.png";
+import Nine from "../assets/Partnerimgs/9.png";
+import Ten from "../assets/Partnerimgs/10.png";
+import Eleven from "../assets/Partnerimgs/11.png";
+import Twelve from "../assets/Partnerimgs/12.png";
+import Thirteen from "../assets/Partnerimgs/13.png";
+import Fourteen from "../assets/Partnerimgs/14.png";
+import Fifteen from "../assets/Partnerimgs/15.png";
+import Sixteen from "../assets/Partnerimgs/16.png";
+import Seventeen from "../assets/Partnerimgs/17.png";
+import Eighteen from "../assets/Partnerimgs/18.png";
+import Nineteen from "../assets/Partnerimgs/19.png";
+import Twenty from "../assets/Partnerimgs/20.png";
+import TwentyOne from "../assets/Partnerimgs/21.png";
+import TwentyTwo from "../assets/Partnerimgs/22.png";
+import TwentyThree from "../assets/Partnerimgs/23.png";
+import TwentyFour from "../assets/Partnerimgs/24.png";
+import TwentyFive from "../assets/Partnerimgs/25.png";
+import TwentySix from "../assets/Partnerimgs/26.png";
+import TwentySeven from "../assets/Partnerimgs/27.png";
 
 const topics = [{ title: "How to join the program", slug: "How-to-Join" }];
 
@@ -26,6 +54,80 @@ const resellerBulletsTwo = [
 const resellerBulletsThree = [
   "Enable the two checkboxes. .",
   "Click Sign up. You are now successfully signed up!",
+];
+const keyFeatures = [
+  {
+    logo: fastOnboarding,
+    title: "Automation & Efficiency",
+    desc: "Experience hassle-free operations with automated commission calculations, seamless integrations across platforms, and streamlined affiliate payouts. Our system ensures you spend less time on admin and more time on results. ",
+  },
+  {
+    logo: fastOnboarding,
+    title: "Partner Experience & Transparency",
+    desc: "Enjoy a personalized dashboard with real-time tracking, standardized onboarding, and clear communication of offer terms. Access all your offers and landing pages in one place, with complete visibility and accuracy. ",
+  },
+  {
+    logo: fastOnboarding,
+    title: "Insights & Control",
+    desc: "Make data-driven decisions with a central team dashboard, detailed offer metrics, and profitability analysis. Access up to three years of historical data and manage unpaid invoices directly within the PRM. ",
+  },
+  {
+    logo: fastOnboarding,
+    title: "Flexibility & Growth",
+    desc: "Customize offers by affiliate or referral, stack incentives, and manage revenue shares by product line. Our Knowledge Center provides instant access to policies, manuals, FAQs, and marketing materials- plus, our agile tools let you adapt quickly as your business evolves. ",
+  },
+];
+
+const customerBenefits = [
+  {
+    title: "Registration",
+    desc: "Registration Receive a welcome email with multi-factor authentication instructions and consent to terms & conditions",
+  },
+  {
+    title: "Access New Offers",
+    desc: "Explore a variety of offers, and revenue-based incentives.",
+  },
+  {
+    title: "PRM Access ",
+    desc: "Log in to view all relevant offers, landing pages, billing status, and up to three years of historical data- including any unpaid invoices. ",
+  },
+  {
+    title: "Referral Links",
+    desc: "Instantly generate and manage new referral links through the PRM platform. ",
+  },
+];
+const customerBenefitstwo = [
+  { title: "", desc: "", image: One.src },
+  { title: "", desc: "", image: Two.src },
+  { title: "", desc: "", image: Three.src },
+  { title: "", desc: "", image: Four.src },
+  { title: "", desc: "", image: Five.src },
+  { title: "", desc: "", image: Six.src },
+  { title: "", desc: "", image: Seven.src },
+  { title: "", desc: "", image: Eight.src },
+  { title: "", desc: "", image: Nine.src },
+  { title: "", desc: "", image: Ten.src },
+  { title: "The PRM platform", desc: "", image: Eleven.src },
+  { title: "", desc: "", image: Twelve.src },
+  { title: "", desc: "", image: Thirteen.src },
+  {
+    title: "",
+    desc: "When an affiliate manager converts an affiliate lead, the affiliate is sent a welcome email with instructions to log into the SF Community PRM. The affiliate will be asked to sign the terms and conditions (which include personal identifiable information) and create a password. ",
+    image: Fourteen.src,
+  },
+  { title: "", desc: "", image: Fifteen.src },
+  { title: "", desc: "", image: Sixteen.src },
+  { title: "", desc: "", image: Seventeen.src },
+  { title: "", desc: "", image: Eighteen.src },
+  { title: "", desc: "", image: Nineteen.src },
+  { title: "", desc: "", image: Twenty.src },
+  { title: "", desc: "", image: TwentyOne.src },
+  { title: "", desc: "", image: TwentyTwo.src },
+  { title: "", desc: "", image: TwentyThree.src },
+  { title: "", desc: "", image: TwentyFour.src },
+  { title: "", desc: "", image: TwentyFive.src },
+  { title: "", desc: "", image: TwentySix.src },
+  { title: "", desc: "", image: TwentySeven.src },
 ];
 
 export default function ResellerLandingPage() {
@@ -154,45 +256,83 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                 partner onboarding
+                  partner onboarding
                 </span>
               </nav>
             </div>
           </section>
 
           {/* reseller-overview */}
+
+          {/* 2 */}
+          <section
+            id=""
+            className="scroll-mt-28 px-4 sm:px-0 py-10 bg-cover bg-center"
+          >
+            <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
+              Why we choose PRM community?
+            </h1>
+            <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left"></p>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+              {keyFeatures.map((f, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 hover:shadow-xl transition-all duration-300"
+                >
+                  {/* Logo */}
+                  <div className="flex justify-left mt-4">
+                    <Image
+                      src={f.logo}
+                      alt={`${f.title} logo`}
+                      width={48}
+                      height={48}
+                      className="object-contain"
+                    />
+                  </div>
+                  {/* Accent line */}
+                  <div className="mt-3 h-0.5 w-10 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full ml-0" />
+                  {/* Title */}
+                  <h3 className="mt-3 text-[16px] sm:text-[20px] font-semibold text-gray-900 text-left">
+                    {f.title}
+                  </h3>
+                  {/* Description */}
+                  <p className="mt-3 text-[12px] sm:text-[15px] text-[#878787] text-left">
+                    {f.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+          <section className="scroll-mt-24 px-4 sm:px-6">
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+              How the Affiliate Onboarding Process Works
+            </h2>
+            <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px]"></p>
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
+              {customerBenefits.map((item, i) => (
+                <div key={i}>
+                  <h3 className="text-[17px] sm:text-[20px] font-semibold text-gray-900">
+                    {item.title}
+                  </h3>
+                  <div className="h-0.5 w-8 mt-1 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full" />
+                  <p className="mt-3 text-[#878787] text-[13px] sm:text-[14px]">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
           <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
             <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
               <p className="text-gray-900 text-[48px] font-semibold">
-                How to join the program
+                Affiliate and Partner Onboarding{" "}
               </p>
               <a
                 href="#"
                 className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
               ></a>
             </div>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              After sign-up you will receive partnership contract. Please find a
-              sample contract below:
-            </p>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              <a
-                href="/files/REFERRAL-MARKETING-AGREEMENT.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-              >
-                View Contracting & Legal Agreements
-              </a>
-            </p>
-            <p className="mt-2 text-gray-900 text-[23px]">
-              Reseller Sign-Up Process
-            </p>
-            <p className="text-[#878787] text-sm sm:text-base mt-2 mb-4">
-              View the guided steps below to learn how to get onboarded to
-              Payoneer with Hasoffer.
-            </p>
-
             {[
               {
                 title: "Account details",
@@ -270,40 +410,34 @@ export default function ResellerLandingPage() {
               </div>
             ))}
           </section>
+          <section className="scroll-mt-24 px-4 sm:px-6">
+            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
+              How the Affiliate Onboarding Process Works
+            </h2>
 
-          {/* 2 */}
-          {/* 4th */}
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
+              {customerBenefitstwo.map((item, i) => (
+                <div key={i} className="flex flex-col">
+                  {/* Text */}
+                  <h3 className="text-[17px] text-center sm:text-[20px] font-semibold text-gray-900">
+                    {item.title}
+                  </h3>
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    onClick={() => setModalImage(item.image)}
+                    className="w-full h-full object-cover rounded-lg mb-4 cursor-pointer"
+                  />
 
-          {/* <section
-            id="Understand-Your-Role"
-            className="scroll-mt-28 mb-4 w-full sm:px-0 py-12 text-left "
-          >
-            <div className="w-full">
-              <h2 className="text-[26px] sm:text-[48px] font-bold text-gray-900">
-                Understand your role as a Payoneer reseller
-              </h2>
-              <p className="mt-4 text-[#878787] text-[14px] sm:text-[18px] max-w-4xl">
-                View the following details to ensure you meet all requirements
-                and maintain compliance with our program.{" "}
-              </p>
+                  <p className="mt-3 text-center text-[#878787] text-[13px] sm:text-[14px]">
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
             </div>
-          </section> */}
-          {/* <section
-            id="Understanding-Partner-Tiers"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
-          >
-            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Coming Soon..
-            </h2>
-          </section> */}
-          {/* <section
-            id="Payment-Calculators"
-            className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 h-screen"
-          >
-            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Coming Soon..
-            </h2>
-          </section> */}
+          </section>
+
+          {/* 4th */}
         </main>
       </div>
       <Footer />
