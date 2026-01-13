@@ -40,59 +40,62 @@ const priceSection = [
   {
     type: "table",
     question: "",
-    subHeading:
-      "",
+    subHeading: "",
     tableData: {
       headers: ["Category", "Service Description", "Fee"],
       rows: [
-        ["Receiving Funds ", "From another Payoneer user", "Free"],
+        ["Receiving Funds ", "From another Payoneer user ", "Free"],
 
-        ["", "From client via credit/debit card", "Up to 3.99% + $0.4 9"],
-        ["", "From US client via ACH bank debit", "1%"],
-
+        ["", "From another Payoneer user ", "Free "],
+        ["", "From client via credit/debit card ", "Up to 3.99% + 0.49 USD "],
+        ["", "From US client via ACH bank debit ", "1% "],
         [
           "",
-          "From marketplaces & platforms (e.g., Fiverr, Upwork)",
-          "Varies – set by platform",
-        ],
-        [
-          "",
-          "Receiving account – same currency (e.g. USD to your USD account)",
-          "Free",
+          "From marketplaces & platforms (e.g., Fiverr, Upwork) ",
+          "Varies – set by platform ",
         ],
         [
           "",
-          "Receiving account – different currency (e.g. EUR to your USD account)",
-          "Up to 1% or fixed fee, based on location and currency",
+          "Receiving account – same currency (e.g. USD to your USD account) ",
+          "Free ",
+        ],
+        [
+          "",
+          "Receiving account – different currency (e.g. EUR to your USD account) ",
+          "Up to 1% or fixed fee, based on location and currency ",
         ],
         ["", "", ""],
         ["", "", ""],
-        ["Making Payments", "To another Payoneer user", "Up to 1% (min. $4 )"],
-        ["", "To non-Payoneer user's bank account", "Up to 3%"],
-        ["", "", ""],
-        ["", "", ""],
-        ["Payoneer Card", "Annual fee (first card)", "$29.95/year"],
 
-        ["", "Additional cards", "Free"],
-        ["", "Purchases in same currency as card ", "Free"],
-        ["", "Currency conversion (e.g., USD to EUR) ", "Up to 3.5%"],
-        ["", "Cross-border purchases", "Up to 1.8%"],
+        [
+          "Making Payments To another Payoneer user ",
+          "To a different country to use ",
+          "Up to 1% (min. 4 USD) ",
+        ],
+        ["", "To the same county of yours", "Up to 4.00 USD/EUR/GBP*"],
+        ["", "", ""],
+        ["", "", ""],
+        ["Payoneer Card", "Card annual fee (first card)", "USD 29.95/year"],
+        ["", "Additional cards ", "Free "],
+        ["", "Purchases in same currency as card ", "Free "],
+        ["", "Transactions involving currency conversion ", "Up to 3.5% "],
+        ["", "Cross-border purchases ", "Up to 1.8% "],
         ["", "", ""],
         ["", "", ""],
         [
-          "Withdraw to Bank",
-          "Same currency to local bank (up to $50K/month)",
-          "~$1. 50 / €1.50 / £1.50",
+          "Withdraw to Bank to your bank account or non-Payoneer user's bank account ",
+          "Same country same currency ( local bank) ",
+          "1.50 USD ",
         ],
-        ["", "Above $50K/month (USD/EUR/GBP", "0. 5% of the amount"],
-        ["", "With currency conversion (e.g., USD → EUR)", "Up to 3%"],
-        ["", "", ""],
-        ["", "", ""],
+        ["", "Non-local currency ", "Up to 3% "],
         [
-          "Other Fees",
-          "Annual inactivity fee (if < $2,000 received in 12 months)",
-          "$29.95",
+          "",
+          "local currency from a Payoneer balance of a different currency ",
+          "Up to 3% + min up to 15 USD ",
         ],
+        ["", "", ""],
+        ["", "", ""],
+        ["Other Fees ", "Annual account fee* ", "$29.95 "],
         ["", "", ""],
         ["", "", ""],
       ],
@@ -177,10 +180,9 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-            
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             <br />
-          <span className="block  bg-clip-text text-gray-900">
+            <span className="block  bg-clip-text text-gray-900">
               Payoneer fees
             </span>
           </h1>
@@ -233,7 +235,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                 Payoneer Fees
+                  Payoneer Fees
                 </span>
               </nav>
             </div>
@@ -245,12 +247,13 @@ export default function ResellerLandingPage() {
               <div className="mt-0">
                 <h2 className="text-[25px] font-bold text-gray-900">
                   Our goal is to help you keep more of what your business earns.
-                  That&apos;s why we work hard to keep our pricing low, and whenever
-                  possible, completely free.
+                  That&apos;s why we work hard to keep our pricing low, and
+                  whenever possible, completely free.
                 </h2>
 
-              <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-              Use the table below to find the correct request type and how to categorize common issues.
+                <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+                  Use the table below to find the correct request type and how
+                  to categorize common issues.
                 </p>
               </div>
             </div>
@@ -350,17 +353,17 @@ export default function ResellerLandingPage() {
                   </div>
                 </div>
               ))}
-                              <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
-                  For full details, visit the official page:{" "}
-                  <a
-                    href="https://www.payoneer.com/pricing/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Payoneer Pricing
-                  </a>
-                </p>
+            <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+              For full details, visit the official page:{" "}
+              <a
+                href="https://www.payoneer.com/pricing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:underline"
+              >
+                Payoneer Pricing
+              </a>
+            </p>
           </section>
 
           <section
