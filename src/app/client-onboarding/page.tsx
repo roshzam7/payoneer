@@ -93,20 +93,6 @@ const resellerBulletsThree = [
   "Click on your initials in the top right corner and go to Settings > Verification Center",
   "Upload the required documents in each section",
 ];
-// const resellerBulletsFour = [
-//   "Add your Bank Account Details in the fields provided",
-// ];
-// const resellerBulletsfive = [
-//   "Fill in your information. It is recommended to choose a strong and unique password.",
-//   "Click Next to continue to User Agreement..",
-// ];
-// const resellerBulletssix = ["Account is Approved."];
-// const resellerBulletsseven = [
-//   "Select 'Get started' on the homepage to begin the onboarding process.",
-// ];
-// const resellerBulletseight = [
-//   " Select your preferred payment from the two available options. ",
-// ];
 const resellerBulletsnine = [
   "Select the category that best describes your business from the drop-down selection.",
   "Click Next to continue.!",
@@ -158,10 +144,10 @@ const steps = [
       "Let's get started with sharing a basic contact detail and an overview about your business, when you finish click next and in the following ",
     note: (
       <>
-        <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
+        {/* <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
           Here are the steps to complete your Payoneer onboarding and begin
           using your account.
-        </p>
+        </p> */}
       </>
     ),
 
@@ -490,7 +476,7 @@ export default function ResellerLandingPage() {
                 support@payoneerpartnerships.com
               </a>
             </p>
-              <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
+            <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
               Step 2: Follow the Step-by-Step Onboarding Guides
             </p>
             <p className="mt-2 text-gray-900 text-[20px] mt-4">
@@ -498,7 +484,7 @@ export default function ResellerLandingPage() {
               provide you with a customized onboarding link tailored to your
               business needs.{" "}
             </p>
-            <p className="mt-2 text-gray-900 text-[20px] mt-4">
+            <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
               Step 3: Choose your Guide: <br />
             </p>
           </section>
@@ -967,8 +953,9 @@ export default function ResellerLandingPage() {
                 </ul>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   Each business may use a different invoice format. Therefore,
-                  there is no single &apos;standard&apos; template. Use your discretion to
-                  determine if the invoice contains the required elements.
+                  there is no single &apos;standard&apos; template. Use your
+                  discretion to determine if the invoice contains the required
+                  elements.
                 </p>
 
                 {/* Invoice for Alias Review */}

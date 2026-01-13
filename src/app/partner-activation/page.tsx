@@ -58,8 +58,6 @@ const topics = [
     title: "Customer personas",
     slug: "customer-personas",
   },
-
-
 ];
 
 const personas = [
@@ -253,55 +251,35 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Card 2 */}
-                      <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Training webinars & certifications
-                  </h3>
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    This certificate recognizes Authorised Channel Partners of
-                    Payoneer. It confirms your status as a trusted partner,
-                    authorized to promote Payoneer&apos;s global payment
-                    solutions.
-                  </p>
-                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
-                    To request one, please raise a request at{" "}
-                    <a
-                      href="mailto:support@payoneerpartnerships.com"
-                      className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
-                    >
-                      support@payoneerpartnerships.com
-                    </a>
-                    .
-                  </p>
-                  {/* <a
-                    href="/files/Partnership_Certificate-Sample.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
-                  >
-                    View sample certificate
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  </a> */}
-                  <section
-                    id=""
-                    className=" sm:py-0 px-4 sm:px-0 mb-0 sm:mb-20 "
-                  >
-                    {/* PDF thumbnails */}
-                    <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl">
-                      {/* PDF 1 */}
+                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
+                    {/* LEFT – Text */}
+                    <div>
+                      <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                        Training webinars & certifications
+                      </h3>
+
+                      <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                        This certificate recognizes Authorised Channel Partners
+                        of Payoneer. It confirms your status as a trusted
+                        partner, authorized to promote Payoneer&apos;s global
+                        payment solutions.
+                      </p>
+
+                      <p className="text-[#666] text-sm sm:text-base leading-relaxed">
+                        To request one, please raise a request at{" "}
+                        <a
+                          href="mailto:support@payoneerpartnerships.com"
+                          className="text-blue-600 hover:underline hover:text-blue-700 transition-colors"
+                        >
+                          support@payoneerpartnerships.com
+                        </a>
+                        .
+                      </p>
+                    </div>
+
+                    {/* RIGHT – PDF */}
+                    <div>
                       <a
                         href="/files/Partnership_Certificate-Sample.pdf"
                         target="_blank"
@@ -310,11 +288,10 @@ export default function ResellerLandingPage() {
                       >
                         <img
                           src="/images/Training-webinars.png"
-                          alt="Success story 1"
+                          alt="Sample certificate"
                           className="w-full h-64 object-cover"
                         />
 
-                        {/* Hover title overlay */}
                         <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                           <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
                             View sample certificate
@@ -322,7 +299,7 @@ export default function ResellerLandingPage() {
                         </div>
                       </a>
                     </div>
-                  </section>
+                  </div>
                 </div>
 
                 {/* Card 3 */}
@@ -729,14 +706,14 @@ export default function ResellerLandingPage() {
             )}
           </section>
 
-          <section
+          {/* <section
             id="co-branded-or-dedicated-landing-pages"
             className="scroll-mt-10 sm:py-20 px-4 sm:px-6 mb-0 sm:mb-20 "
           >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Coming Soon..
             </h2>
-          </section>
+          </section> */}
         </main>
       </div>
       <Footer />

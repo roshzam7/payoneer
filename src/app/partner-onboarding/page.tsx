@@ -26,19 +26,6 @@ import Eleven from "../assets/Partnerimgs/11.png";
 import Twelve from "../assets/Partnerimgs/12.png";
 import Thirteen from "../assets/Partnerimgs/13.png";
 import Fourteen from "../assets/Partnerimgs/14.png";
-import Fifteen from "../assets/Partnerimgs/15.png";
-import Sixteen from "../assets/Partnerimgs/16.png";
-import Seventeen from "../assets/Partnerimgs/17.png";
-import Eighteen from "../assets/Partnerimgs/18.png";
-import Nineteen from "../assets/Partnerimgs/19.png";
-import Twenty from "../assets/Partnerimgs/20.png";
-import TwentyOne from "../assets/Partnerimgs/21.png";
-import TwentyTwo from "../assets/Partnerimgs/22.png";
-import TwentyThree from "../assets/Partnerimgs/23.png";
-import TwentyFour from "../assets/Partnerimgs/24.png";
-import TwentyFive from "../assets/Partnerimgs/25.png";
-import TwentySix from "../assets/Partnerimgs/26.png";
-import TwentySeven from "../assets/Partnerimgs/27.png";
 
 const topics = [{ title: "How to join the program", slug: "How-to-Join" }];
 
@@ -97,37 +84,70 @@ const customerBenefits = [
   },
 ];
 const customerBenefitstwo = [
-  { title: "", desc: "", image: One.src },
+  {
+    title:
+      "Step 1: Receive a welcome email with instructions to log into the Community. ",
+    desc: "",
+    image: One.src,
+  },
   { title: "", desc: "", image: Two.src },
-  { title: "", desc: "", image: Three.src },
-  { title: "", desc: "", image: Four.src },
-  { title: "", desc: "", image: Five.src },
-  { title: "", desc: "", image: Six.src },
-  { title: "", desc: "", image: Seven.src },
-  { title: "", desc: "", image: Eight.src },
-  { title: "", desc: "", image: Nine.src },
-  { title: "", desc: "", image: Ten.src },
-  { title: "The PRM platform", desc: "", image: Eleven.src },
-  { title: "", desc: "", image: Twelve.src },
+  {
+    title: "Step 2: Sign the terms and conditions and create a password. ",
+    desc: "",
+    image: Three.src,
+  },
+  {
+    title: "",
+    desc: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP). ",
+    image: Four.src,
+  },
+  {
+    title:
+      "Please note that the username must end with XXXX@exmple.com.payoneer   ",
+    desc: "",
+    image: Five.src,
+  },
+  {
+    title: "",
+    desc: "Press the link to immediately see your referral links:  ",
+    image: Six.src,
+  },
+  {
+    title: "",
+    desc: "Contact your account manager for any questions you may have ",
+    image: Seven.src,
+  },
+  {
+    title: "",
+    desc: "To update profile information or reset a password, access the settings. In the settings section, affiliates can also add team members who require access to the SF PRM; each added team member will be reviewed by the affiliate manager, who will then send a welcome email to the new team member upon approval. ",
+    image: Eight.src,
+  },
+  {
+    title: "",
+    desc: "Dashboard - the performance overview shows past 6-month trend.  ",
+    image: Nine.src,
+  },
+  {
+    title: "Your Referral Links  ",
+    desc: "This landing page shows that when a referral spend and receive a $35. ",
+    image: Ten.src,
+  },
+  {
+    title: "",
+    desc: "My Referrals - you can view all details of an individual referral by selecting Action – View. ",
+    image: Eleven.src,
+  },
+  {
+    title: "",
+    desc: "Billing – Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
+    image: Twelve.src,
+  },
   { title: "", desc: "", image: Thirteen.src },
   {
     title: "",
     desc: "When an affiliate manager converts an affiliate lead, the affiliate is sent a welcome email with instructions to log into the SF Community PRM. The affiliate will be asked to sign the terms and conditions (which include personal identifiable information) and create a password. ",
     image: Fourteen.src,
   },
-  { title: "", desc: "", image: Fifteen.src },
-  { title: "", desc: "", image: Sixteen.src },
-  { title: "", desc: "", image: Seventeen.src },
-  { title: "", desc: "", image: Eighteen.src },
-  { title: "", desc: "", image: Nineteen.src },
-  { title: "", desc: "", image: Twenty.src },
-  { title: "", desc: "", image: TwentyOne.src },
-  { title: "", desc: "", image: TwentyTwo.src },
-  { title: "", desc: "", image: TwentyThree.src },
-  { title: "", desc: "", image: TwentyFour.src },
-  { title: "", desc: "", image: TwentyFive.src },
-  { title: "", desc: "", image: TwentySix.src },
-  { title: "", desc: "", image: TwentySeven.src },
 ];
 
 export default function ResellerLandingPage() {
@@ -323,96 +343,9 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section id="How-to-Join" className="scroll-mt-36 max-w-5xl mx-auto">
-            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 sm:gap-0">
-              <p className="text-gray-900 text-[48px] font-semibold">
-                Affiliate and Partner Onboarding{" "}
-              </p>
-              <a
-                href="#"
-                className="text-blue-600 hover:underline font-medium text-sm sm:text-base mt-2 mb-4"
-              ></a>
-            </div>
-            {[
-              {
-                title: "Account details",
-                bullets: resellerBullets,
-                image: Content,
-              },
-              {
-                title: "User details",
-                bullets: resellerBulletsTwo,
-                image: Content2,
-              },
-              {
-                title: "User agreement",
-                bullets: resellerBulletsThree,
-                image: Content3,
-              },
-            ].map((section, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-10"
-              >
-                {/* Text */}
-                <div className={idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"}>
-                  <h3 className="text-[23px] font-semibold text-gray-900 mb-4 mt-0 sm:mt-30">
-                    {section.title}
-                  </h3>
-                  <ul className="space-y-4 text-[#878787] text-[18px]">
-                    {section.bullets.map((text, i) => (
-                      <li
-                        key={i}
-                        className="flex items-start gap-3 text-gray-700"
-                      >
-                        <Image
-                          src={Checkicon}
-                          alt="Check"
-                          width={20}
-                          height={20}
-                          className="flex-none mt-1"
-                        />
-                        <span>{text}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Image with modal trigger */}
-                <div
-                  className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
-                    idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
-                  } lg:flex lg:justify-center`}
-                >
-                  <Image
-                    src={section.image}
-                    alt={section.title}
-                    width={300}
-                    height={300}
-                    className="rounded-xl object-cover w-full h-auto cursor-pointer"
-                    onClick={() => setModalImage(section.image.src)}
-                  />
-
-                  {/* Persistent + button */}
-                  <button
-                    onClick={() => setModalImage(section.image.src)}
-                    className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
-                  >
-                    <Image
-                      src={expandicon}
-                      alt="Check"
-                      width={20}
-                      height={20}
-                      className="flex-none mt-1"
-                    />
-                  </button>
-                </div>
-              </div>
-            ))}
-          </section>
           <section className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              How the Affiliate Onboarding Process Works
+              Onboarding process
             </h2>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">

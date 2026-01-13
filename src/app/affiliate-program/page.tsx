@@ -68,7 +68,6 @@ import walmart from "../assets/images/brands/walmart.svg";
 // import wish from "../assets/images/brands/wish.svg";
 // import realde from "../assets/images/brands/realde.svg";
 
-
 // Others
 import checkIcon from "../assets/images/Check-icon.svg";
 import resellerImg from "../assets/images/ResellerProgram-img.png";
@@ -82,6 +81,11 @@ import fastOnboarding from "../assets/images/fast-onboarding.svg";
 import debitCards from "../assets/images/debit-cards.svg";
 import collectionLinks from "../assets/images/collection-links.svg";
 import onlineCheckout from "../assets/images/online-checkout.svg";
+
+import affiliatephasesOne from "../assets/images/affiliate-phases-1.png";
+import affiliatephasesTwo from "../assets/images/affiliate-phases-2.png";
+import affiliatephasesThree from "../assets/images/affiliate-phases-3.png";
+import affiliatephasesFour from "../assets/images/affiliate-phases-4.png";
 
 import BoostIcon from "../assets/BoostIcon.png";
 import EnhanceIcon from "../assets/EnhanceIcon.png";
@@ -194,7 +198,7 @@ const brands = [
   { name: "Airbnb", logo: airbnb },
   { name: "Amazon", logo: amazon },
   { name: "ByteDance", logo: ByteDance },
-  { name: "Fiverr", logo: fiverr },  
+  { name: "Fiverr", logo: fiverr },
   { name: "EBay", logo: EBay },
   { name: "Etsy", logo: Etsy },
   { name: "Google", logo: google },
@@ -223,7 +227,6 @@ const resellerBulletsEnd = [
   "Train your sales team with our help",
   "Promote us on social media",
   "Collaborate on podcasts, videos, or content",
-
 ];
 
 const partnerCards = [
@@ -321,17 +324,17 @@ const keyFeatures = [
 ];
 const Programphases = [
   {
-    logo: fastOnboarding,
+    logo: affiliatephasesOne,
     title: "Sign & get onboarded ",
     desc: "Become an official Payoneer Affiliate. You'll sign the affiliate agreement and complete a quick onboarding process with your affiliate manager so you're fully set up to start referring clients. ",
   },
   {
-    logo: debitCards,
+    logo: affiliatephasesTwo,
     title: "Onboard & qualify your leads ",
     desc: "Start introducing Payoneer to your audience. Drive traffic through your affiliate links, help users complete onboarding by sending guides, and qualify high-value leads by guiding them through the Payoneer activation steps (verification, first payment, setup). ",
   },
   {
-    logo: collectionLinks,
+    logo: affiliatephasesThree,
     title: "Access your affiliate toolkit",
     desc: {
       intro:
@@ -350,7 +353,7 @@ const Programphases = [
   },
 
   {
-    logo: onlineCheckout,
+    logo: affiliatephasesFour,
     title: "Track performance & earn ",
     desc: "Monitor your referrals and commission earnings through your affiliate dashboard. Optimize your campaigns with insights, track user performance, and collaborate with your affiliate manager to improve conversion and scale your revenue. ",
   },
@@ -637,8 +640,7 @@ export default function ResellerLandingPage() {
               </div>
             </div>
 
-          
-                            <section
+            <section
               id="why-partners-love-us"
               className="scroll-mt-28 px-4 sm:px-6 py-10 bg-cover bg-center"
             >
@@ -646,7 +648,7 @@ export default function ResellerLandingPage() {
                 Affiliate program phases
               </h1>
               <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left"></p>
-              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
                 {Programphases.map((f, i) => (
                   <div
                     key={i}
@@ -691,10 +693,9 @@ export default function ResellerLandingPage() {
               </div>
             </section>
 
-
             {/*  */}
           </section>
-          
+
           {/* key-features */}
           <section
             id="keeeey-features"
@@ -875,9 +876,8 @@ export default function ResellerLandingPage() {
           </section>
 
           {/* Ways to Promote Payoneer */}
-         
 
-              <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
+          <section id="reseller-overview" className="scroll-mt-28 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Ways you can promote Payoneer
             </h2>
