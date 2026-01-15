@@ -26,43 +26,6 @@ import Content17 from "../assets/images/sectionfour/Content17.png";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
-const tutorials = [
-  {
-    title:
-      "Get paid with Payoneer - learn how to simplify getting paid with Payoneer",
-    desc: "Now that you've registered with Payoneer, you'll find that getting paid is simple, flexible, and efficient. There are three convenient ways to receive funds, making it easy to tailor your payment experience to fit your business needs. You can also track and monitor payments in real-time so you're always in control.",
-    link: "https://www.youtube.com/watch?si=kjS57x0NMEZx8xlU&v=2Z-YtRV8wec&feature=youtu.be",
-    image: "/images/GetPaidWithPayoneer.png",
-  },
-  {
-    title:
-      "Payoneer account dashboard - introduction to basic features & functions",
-    desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
-    link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
-    image: "/images/PayoneerAccountDashboard.png",
-  },
-  {
-    title:
-      "Convert currencies with Payoneer - learn how to convert currencies get started with Payoneer at competitive rates",
-    desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
-    link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
-    image: "/images/ConvertCurrencies.png",
-  },
-  {
-    title:
-      "Adding funds to your account from your bank account - Keep your business moving",
-    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
-    link: "#https://www.youtube.com/watch?si=eD_Ny7whpX9rMUvH&v=EcDhegY1v_Y&feature=youtu.be",
-    image: "/images/Addingfundstoyouraccount.png",
-  },
-  {
-    title: "Make global payments with confidence and ease",
-    desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
-    link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
-    image: "/images/MakeGlobalPayments.png",
-  },
-];
-
 const topics = [
   {
     title: "Standard sign-up flow",
@@ -85,8 +48,7 @@ const topics = [
 const resellerBullets: string[] = [];
 const resellerBulletsTwo = [
   "A valid company license ",
-  " A personal bank statement dated within the last 3 months. This only needed for registration and verification of the owner Please select “Yes” to open a corporate account and fill out the fiel",
-  "Please select the country as per license. Then, enter your personal bank details on the last page of your application. Please select the bank country where your bank account is located.  ",
+  "A personal bank statement dated within the last 3 months. This only needed for registration and verification of the owner",
 ];
 const resellerBulletsThree = [
   "Log into your Payoneer account",
@@ -141,7 +103,7 @@ const resellerBulletsseventeen = [
 const steps = [
   {
     title:
-      "Let's get started with sharing a basic contact detail and an overview about your business, when you finish click next and in the following ",
+      "Here are the steps to complete your Payoneer onboarding and begin using your account.",
     note: (
       <>
         {/* <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
@@ -184,64 +146,6 @@ const steps = [
     image: Content3,
   },
 
-  // {
-  //   title: "    KYC details ",
-  //   bullets: resellerBulletsfive,
-  //   image: Content5,
-  //   note: (
-  //     <>
-  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6">
-  //         Please Click Submit Now & update the requested information​{" "}
-  //       </p>
-  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
-  //         Company Documents
-  //       </p>
-  //       <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-  //         <li>Business License </li>
-  //         <li>Certificate of Formation </li>
-  //         <li>
-  //           Memorandum of Association (MOA) *This should show the Number of
-  //           shares held by each shareholder.{" "}
-  //         </li>
-  //       </ul>
-
-  //       <p className="text-[#878787] text-[10px] sm:text-[15px] mt-6 font-bold ">
-  //         Company Documents
-  //       </p>
-  //       <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-  //         <li>Director & Shareholder Documents </li>
-  //         <li>Home Country Address </li>
-  //         <li>
-  //           Personal Address Proof (Any of the below is good)
-  //           <ul className="list-disc list-outside pl-5 text-[10px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[15px] mt-2 ">
-  //             <li>Personal Bank Statement</li>
-  //             <li>Utility Bill</li>
-  //             <li>Tenancy Agreement</li>
-  //           </ul>
-  //         </li>
-  //         <li>
-  //           Personal Bank Statement (Issued within Last 6 Months showing
-  //           residential address){" "}
-  //         </li>
-  //       </ul>
-  //     </>
-  //   ),
-  // },
-  // {
-  //   title: "    User details ",
-  //   bullets: resellerBulletssix,
-  //   image: Content6,
-  // },
-  // {
-  //   title: "  Onboarding process ",
-  //   bullets: resellerBulletsseven,
-  //   image: Content7,
-  // },
-  // {
-  //   title: "  Registration ",
-  //   bullets: resellerBulletseight,
-  //   image: Content8,
-  // },
   {
     title: "    Business details ",
     bullets: resellerBulletsnine,
@@ -556,70 +460,253 @@ export default function ResellerLandingPage() {
               return (
                 <>
                   {/* First Half */}
-                  {/* First Half */}
-                  {steps.slice(0, splitIndex).map((section, idx) => (
-                    <div
-                      key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-16"
-                    >
-                      {/* Text Content */}
-                      <div
-                        className={`${
-                          idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
-                        } self-center`}
-                      >
-                        <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
-                          {section.title}
-                        </h3>
-                        {section.note && section.note}
+                  <section className="mb-20">
+                    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                            Here are the steps to complete your Payoneer
+                            onboarding and begin using your account.
+                          </h3>
 
-                        {section?.bullets?.length > 0 && (
-                          <ul className="space-y-4 text-[18px] text-[#878787]">
-                            {section.bullets.map((text) => (
-                              <li key={text} className="flex items-start gap-3">
-                                <Image
-                                  src={Checkicon}
-                                  alt="Check"
-                                  width={20}
-                                  height={20}
-                                  className="flex-none mt-1"
-                                />
-                                <span>{text}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-                      </div>
-                      {/* Image with Persistent + Button */}
-                      <div
-                        className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
-                          idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
-                        } lg:flex lg:justify-center`}
-                      >
-                        <Image
-                          src={section.image}
-                          alt={section.title}
-                          width={300}
-                          height={300}
-                          className="rounded-xl object-cover w-full h-auto cursor-pointer"
-                          onClick={() => setModalImage(section.image.src)}
-                        />
-                        {/* Persistent + button */}
-                        <button
-                          onClick={() => setModalImage(section.image.src)}
-                          className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
-                        >
-                          <Image
-                            src={expandicon}
-                            alt="Expand"
-                            width={20}
-                            height={20}
-                            className="flex-none mt-1"
-                          />
-                        </button>
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed"></p>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage(Content1.src)}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200 justify-center flex"
+                            >
+                              <img
+                                src={Content1.src}
+                                alt="Sample certificate"
+                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  ))}
+                  </section>
+                  <section className="mb-20">
+                    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                            Step 1: Apply for a Payoneer Account
+                          </h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Please use the link provided by our provider to
+                            start your application. Before applying, make sure
+                            you have the following documents ready:{" "}
+                          </p>
+                          <ul className="space-y-0 text-[18px] text-[#878787]">
+                            <li className="flex items-start gap-3">
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>A valid company license </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>
+                                A personal bank statement dated within the last
+                                3 months. This only needed for registration and
+                                verification of the owner {" "}
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/1.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/1.png"
+                                alt="Sample certificate"
+                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  {/*  */}
+                  <section className="mb-20">
+                    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                            Please note the below:
+                          </h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Please select as below in the first page to open a
+                            corporate account{" "}
+                          </p>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/2.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/2.png"
+                                alt="Sample certificate"
+                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Please select the country as per your license{" "}
+                          </p>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/3.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/3.png"
+                                alt="Sample certificate"
+                                className="w-cover h-35  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Please select as below then enter your personal bank
+                            details in the last page your application. Please
+                            select the bank country as per your bank account is
+                            situated.{" "}
+                          </p>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/4.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/4.png"
+                                alt="Sample certificate"
+                                className="w-cover h-50  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  {/* step 2 */}
+                  <section className="mb-20">
+                    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
+                        {/* Left – Text */}
+                        <div>
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                            Step 2: Upload Your Documents
+                          </h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Once your account is created, you&apos;ll need to
+                            upload verification documents. <br />
+                            To upload your documents:
+                          </p>
+                          <ul className="space-y-0 text-[18px] text-[#878787]">
+                            <li className="flex items-start gap-3">
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>Log into your Payoneer account</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>
+                                Click on your initials in the top right corner
+                                and go to Settings {">"} Verification Center
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <Image
+                                src={Checkicon}
+                                alt="Check"
+                                width={20}
+                                height={20}
+                                className="flex-none mt-1"
+                              />
+                              <span>
+                                Upload the required documents in each section
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                        {/* RIGHT – PDF */}
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/5.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/5.png"
+                                alt="Sample certificate"
+                                className="w-cover h-50  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
                   {/* table */}
                   <section className="mb-20">
                     <h3 className="text-[28px] sm:text-[36px] font-semibold text-gray-900 mb-4">
@@ -736,8 +823,9 @@ export default function ResellerLandingPage() {
                       </table>
                     </div>
                   </section>
+                  {/* table end */}
 
-                  {/* Second Section Heading */}
+                  {/* CLM flow main */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
                     <p className="text-gray-900 text-[48px] font-semibold">
                       CLM flow
@@ -763,75 +851,739 @@ export default function ResellerLandingPage() {
                       registration of your Payoneer business account.
                     </p>
                   </div>
-                  {/* Second Half */}
-                  {steps.slice(splitIndex).map((section, idx) => (
-                    <div
-                      key={idx}
-                      className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start my-16"
-                    >
-                      {/* Text Content */}
-                      <div
-                        className={`${
-                          idx % 2 !== 0 ? "lg:order-2" : "lg:order-1"
-                        } self-center`}
-                      >
-                        <h3 className="text-[23px] font-semibold text-gray-900 mb-4">
-                          {section.title}
-                        </h3>
-                        <ul className="space-y-4 text-[#878787] text-[18px]">
-                          {section.bullets.map((text, i) => (
-                            <li
-                              key={i}
-                              className="flex items-start gap-3 text-gray-700"
-                            >
-                              <Image
-                                src={Checkicon}
-                                alt="Check"
-                                width={20}
-                                height={20}
-                                className="flex-none mt-1 bg-white"
-                              />
-                              <span>{text}</span>
-                            </li>
-                          ))}
-                        </ul>
-                        {section.note && section.note}
-                      </div>
-                      {/* Image with Persistent + Button */}
-                      <div
-                        className={`relative w-full max-w-[300px] mx-auto lg:mx-0 order-last ${
-                          idx % 2 !== 0 ? "lg:order-1" : "lg:order-2"
-                        } lg:flex lg:justify-center`}
-                      >
-                        <Image
-                          src={section.image}
-                          alt={section.title}
-                          width={300}
-                          height={300}
-                          className="rounded-xl object-cover w-full h-auto cursor-pointer"
-                          onClick={() => setModalImage(section.image.src)}
-                        />
-
-                        {/* Persistent + button */}
-                        <button
-                          onClick={() => setModalImage(section.image.src)}
-                          className="absolute top-2 right-2 w-8 h-8 bg-white text-black rounded-full flex items-center justify-center shadow cursor-pointer"
-                        >
-                          <Image
-                            src={expandicon}
-                            alt="Expand"
-                            width={20}
-                            height={20}
-                            className="flex-none mt-1"
-                          />
-                        </button>
-                      </div>
-                    </div>
-                  ))}
                 </>
               );
             })()}
           </section>
+          {/* CLM flow */}
+          <section className="mb-20">
+            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    1. Sign Up & Account Details
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Email Verification{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Enter your email address. </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Verify it using the code sent to your inbox. </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/a.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/a.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* b */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Business Information{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Indicate whether you own a registered business.{" "}
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Provide the business name and where it is registered.{" "}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/b.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/b.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Mobile Verification{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Enter your phone number. </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Verify it using the SMS code sent to you. </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/c.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/c.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Set a Strong Password{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Use a secure mix of letters, numbers, and symbols.{" "}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/d.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/d.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Business & Payment Information{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Select your industry. </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/e.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/e.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        If you operate through a marketplace, specify which one.{" "}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/f.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/f.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Describe where the money you will receive comes from.{" "}
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/g.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/g.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    Estimate the number of payments you usually send and receive
+                    per month.{" "}
+                  </p>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/h.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/h.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/i.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/i.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/j.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/j.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/k.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/k.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/l.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/l.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/m.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/m.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/n.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/n.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+              {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                    test
+                  </h3>
+
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                    test2{" "}
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>testli </span>
+                    </li>
+                  </ul>
+                </div>
+                {/* RIGHT – PDF */}
+                <div>
+                  <div>
+                    <div
+                      onClick={() => setModalImage("/images/a/o.png")}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src="/images/a/o.png"
+                        alt="Sample certificate"
+                        className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/*  */}
+
+              {/*  */}
+
+              {/*  */}
+            </div>
+          </section>
+
           {/* Additional KYC Requirements */}
           <section id="kyc-process-explained" className="scroll-mt-28">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">

@@ -348,9 +348,9 @@ export default function ResellerLandingPage() {
               Onboarding process
             </h2>
 
-            <div className="mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
+            <div className=" mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
               {customerBenefitstwo.map((item, i) => (
-                <div key={i} className="flex flex-col">
+                <div key={i} className="flex flex-col ">
                   {/* Text */}
                   <h3 className="text-[17px] text-center sm:text-[20px] font-semibold text-gray-900">
                     {item.title}
@@ -359,7 +359,7 @@ export default function ResellerLandingPage() {
                     src={item.image}
                     alt={item.title}
                     onClick={() => setModalImage(item.image)}
-                    className="w-full h-full object-cover rounded-lg mb-4 cursor-pointer"
+                    className="w-100 text-center self-center rounded-lg mb-4 cursor-pointer"
                   />
 
                   <p className="mt-3 text-center text-[#878787] text-[13px] sm:text-[14px]">
