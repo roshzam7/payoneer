@@ -1713,11 +1713,11 @@ export default function ResellerLandingPage() {
                     <div>
                       <div>
                         <div
-                          onClick={() => setModalImage("/images/Held-ID.png")}
+                          onClick={() => setModalImage("/files/Held-ID.pdf ")}
                           className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
                         >
                           <img
-                            src="/files/Held-ID.pdf"
+                            src="/images/Held-IDimg.png"
                             alt="Sample certificate"
                             className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
                           />
