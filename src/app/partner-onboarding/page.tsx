@@ -12,6 +12,11 @@ import Checkicon from "../assets/images/Check-icon.svg";
 import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 import fastOnboarding from "../assets/images/fast-onboarding.svg";
+import Icon1 from "../assets/images/icon-1.png";
+import Icon2 from "../assets/images/icon-2.png";
+import Icon3 from "../assets/images/icon-3.png";
+import Icon4 from "../assets/images/icon-4.png";
+
 import One from "../assets/Partnerimgs/1.png";
 import Two from "../assets/Partnerimgs/2.png";
 import Three from "../assets/Partnerimgs/3.png";
@@ -27,7 +32,14 @@ import Twelve from "../assets/Partnerimgs/12.png";
 import Thirteen from "../assets/Partnerimgs/13.png";
 import Fourteen from "../assets/Partnerimgs/14.png";
 
-const topics = [{ title: "How to join the program", slug: "How-to-Join" }];
+const topics = [
+  { title: "Why we choose PRM community?", slug: "choose-PRM" },
+  {
+    title: "How the Affiliate Onboarding Process Works",
+    slug: "onboarding-process-works",
+  },
+  { title: "Onboarding process", slug: "onboarding-process" },
+];
 
 const resellerBullets = [
   "Receive the link for registration from your affiliate manager.",
@@ -44,22 +56,22 @@ const resellerBulletsThree = [
 ];
 const keyFeatures = [
   {
-    logo: fastOnboarding,
+    logo: Icon1,
     title: "Automation & Efficiency",
     desc: "Experience hassle-free operations with automated commission calculations, seamless integrations across platforms, and streamlined affiliate payouts. Our system ensures you spend less time on admin and more time on results. ",
   },
   {
-    logo: fastOnboarding,
+    logo: Icon2,
     title: "Partner Experience & Transparency",
     desc: "Enjoy a personalized dashboard with real-time tracking, standardized onboarding, and clear communication of offer terms. Access all your offers and landing pages in one place, with complete visibility and accuracy. ",
   },
   {
-    logo: fastOnboarding,
+    logo: Icon3,
     title: "Insights & Control",
     desc: "Make data-driven decisions with a central team dashboard, detailed offer metrics, and profitability analysis. Access up to three years of historical data and manage unpaid invoices directly within the PRM. ",
   },
   {
-    logo: fastOnboarding,
+    logo: Icon4,
     title: "Flexibility & Growth",
     desc: "Customize offers by affiliate or referral, stack incentives, and manage revenue shares by product line. Our Knowledge Center provides instant access to policies, manuals, FAQs, and marketing materials- plus, our agile tools let you adapt quickly as your business evolves. ",
   },
@@ -67,19 +79,19 @@ const keyFeatures = [
 
 const customerBenefits = [
   {
-    title: "Registration",
+    title: "1. Registration",
     desc: "Registration Receive a welcome email with multi-factor authentication instructions and consent to terms & conditions",
   },
   {
-    title: "Access New Offers",
+    title: "2. Access New Offers",
     desc: "Explore a variety of offers, and revenue-based incentives.",
   },
   {
-    title: "PRM Access ",
+    title: "3. PRM Access ",
     desc: "Log in to view all relevant offers, landing pages, billing status, and up to three years of historical data- including any unpaid invoices. ",
   },
   {
-    title: "Referral Links",
+    title: "4. Referral Links",
     desc: "Instantly generate and manage new referral links through the PRM platform. ",
   },
 ];
@@ -145,7 +157,7 @@ const customerBenefitstwo = [
   { title: "", desc: "", image: Thirteen.src },
   {
     title: "",
-    desc: "When an affiliate manager converts an affiliate lead, the affiliate is sent a welcome email with instructions to log into the SF Community PRM. The affiliate will be asked to sign the terms and conditions (which include personal identifiable information) and create a password. ",
+    desc: " ",
     image: Fourteen.src,
   },
 ];
@@ -221,7 +233,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             <br />
             <span className="block sm:inline bg-clip-text text-[#212529]">
-              Partner onboarding
+                  Partner onboarding
             </span>
           </h1>
         </div>
@@ -286,7 +298,7 @@ export default function ResellerLandingPage() {
 
           {/* 2 */}
           <section
-            id=""
+            id="choose-PRM"
             className="scroll-mt-28 px-4 sm:px-0 py-10 bg-cover bg-center"
           >
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
@@ -323,7 +335,8 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-          <section className="scroll-mt-24 px-4 sm:px-6">
+          <section             id="onboarding-process-works"
+ className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               How the Affiliate Onboarding Process Works
             </h2>
@@ -343,7 +356,8 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section className="scroll-mt-24 px-4 sm:px-6">
+          <section             id="onboarding-process"
+ className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               Onboarding process
             </h2>
@@ -362,7 +376,7 @@ export default function ResellerLandingPage() {
                     className="w-100 text-center self-center rounded-lg mb-4 cursor-pointer"
                   />
 
-                  <p className="mt-3 text-center text-[#878787] text-[13px] sm:text-[14px]">
+                  <p className="mt-3 text-center text-gray-900 text-[13px] sm:text-[18px]">
                     {item.desc}
                   </p>
                 </div>

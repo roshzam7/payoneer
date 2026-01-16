@@ -444,9 +444,8 @@ export default function ResellerLandingPage() {
               Standard sign-up flow
             </p>
             <p className="mt-2 text-gray-900 text-[20px]">
-              Let&apos;s get started with sharing a basic contact detail and an
-              overview about your business, when you finish click next and in
-              the following
+              Here are the steps to complete your Payoneer onboarding and begin
+              using your account.
             </p>
           </section>
           <section
@@ -466,21 +465,23 @@ export default function ResellerLandingPage() {
                         {/* Left – Text */}
                         <div className="items-start align-middle align-center content-center">
                           <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                            Here are the steps to complete your Payoneer
-                            onboarding and begin using your account.
+                            Let&apos;s get started with sharing a basic contact
+                            detail and an overview about your business, when you
+                            finish click next and in the following
                           </h3>
 
                           <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed"></p>
                         </div>
                         {/* RIGHT – PDF */}
-                        <div>
-                          <div>
+
+                        <div className="self-center justify-center">
+                          <div className="self-center justify-center items-center place-items-center">
                             <div
-                              onClick={() => setModalImage(Content1.src)}
-                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200 justify-center flex"
+                              onClick={() => setModalImage("/images/i/1.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200 self-center justify-center"
                             >
                               <img
-                                src={Content1.src}
+                                src="/images/i/1.png"
                                 alt="Sample certificate"
                                 className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
                               />
@@ -532,14 +533,15 @@ export default function ResellerLandingPage() {
                           </ul>
                         </div>
                         {/* RIGHT – PDF */}
+
                         <div>
                           <div>
                             <div
-                              onClick={() => setModalImage("/images/i/1.png")}
+                              onClick={() => setModalImage("/images/i/2.png")}
                               className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
                             >
                               <img
-                                src="/images/i/1.png"
+                                src="/images/i/2.png"
                                 alt="Sample certificate"
                                 className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
                               />
@@ -565,31 +567,7 @@ export default function ResellerLandingPage() {
                           </p>
                         </div>
                         {/* RIGHT – PDF */}
-                        <div>
-                          <div>
-                            <div
-                              onClick={() => setModalImage("/images/i/2.png")}
-                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
-                            >
-                              <img
-                                src="/images/i/2.png"
-                                alt="Sample certificate"
-                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
-                        {/* Left – Text */}
-                        <div className="items-start align-middle align-center content-center">
-                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                            Please select the country as per your license{" "}
-                          </p>
-                        </div>
-                        {/* RIGHT – PDF */}
                         <div>
                           <div>
                             <div
@@ -611,13 +589,11 @@ export default function ResellerLandingPage() {
                           <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
                           <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                            Please select as below then enter your personal bank
-                            details in the last page your application. Please
-                            select the bank country as per your bank account is
-                            situated.{" "}
+                            Please select the country as per your license{" "}
                           </p>
                         </div>
                         {/* RIGHT – PDF */}
+
                         <div>
                           <div>
                             <div
@@ -633,12 +609,41 @@ export default function ResellerLandingPage() {
                           </div>
                         </div>
                       </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                        {/* Left – Text */}
+                        <div className="items-start align-middle align-center content-center">
+                          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
+
+                          <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                            Please select as below then enter your personal bank
+                            details in the last page your application. Please
+                            select the bank country as per your bank account is
+                            situated.{" "}
+                          </p>
+                        </div>
+                        {/* RIGHT – PDF */}
+
+                        <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/i/5.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/i/5.png"
+                                alt="Sample certificate"
+                                className="w-cover h-50  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </section>
                   {/* step 2 */}
                   <section className="mb-20">
-                    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-start">
+                    <div className="bg-white  ">
+                      <div className="grid grid-cols-1 sm:grid-cols-1 gap-10 items-start">
                         {/* Left – Text */}
                         <div>
                           <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
@@ -689,20 +694,6 @@ export default function ResellerLandingPage() {
                           </ul>
                         </div>
                         {/* RIGHT – PDF */}
-                        <div>
-                          <div>
-                            <div
-                              onClick={() => setModalImage("/images/i/5.png")}
-                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
-                            >
-                              <img
-                                src="/images/i/5.png"
-                                alt="Sample certificate"
-                                className="w-cover h-50  object-cover transition-transform duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </section>
@@ -865,7 +856,7 @@ export default function ResellerLandingPage() {
                     1. Sign Up & Account Details
                   </h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
                     Email Verification{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
@@ -913,7 +904,8 @@ export default function ResellerLandingPage() {
                 <div className="items-start align-middle align-center content-center">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    {" "}
                     Business Information{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
@@ -964,11 +956,9 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
                     Mobile Verification{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
@@ -1016,11 +1006,9 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
                     Set a Strong Password{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
@@ -1060,11 +1048,9 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
                     Business & Payment Information{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
@@ -1102,12 +1088,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    {" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1119,7 +1103,7 @@ export default function ResellerLandingPage() {
                         className="flex-none mt-1"
                       />
                       <span>
-                        If you operate through a marketplace, specify which one.{" "}
+                        If you operate through a marketplace, specify which one.{" "}
                       </span>
                     </li>
                   </ul>
@@ -1146,12 +1130,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
                   <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                    {" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1190,14 +1172,23 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    Estimate the number of payments you usually send and receive
-                    per month.{" "}
-                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Estimate the number of payments you usually send and
+                        receive per month.{" "}
+                      </span>
+                    </li>
+                  </ul>
                 </div>
                 {/* RIGHT – PDF */}
                 <div>
@@ -1220,12 +1211,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
                   <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                    {" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1236,17 +1225,7 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Image
-                        src={Checkicon}
-                        alt="Check"
-                        width={20}
-                        height={20}
-                        className="flex-none mt-1"
-                      />
-                      <span>testli </span>
+                      <span>Enter the total monthly payment value. </span>
                     </li>
                   </ul>
                 </div>
@@ -1272,13 +1251,9 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
-                  </p>
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed"></p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
                       <Image
@@ -1288,7 +1263,10 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>
+                        Specify your type of business and its URL (if
+                        applicable).{" "}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Image
@@ -1298,7 +1276,9 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>
+                        Provide the location of your business activities.{" "}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1324,12 +1304,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    Personal Details{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1340,17 +1318,7 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Image
-                        src={Checkicon}
-                        alt="Check"
-                        width={20}
-                        height={20}
-                        className="flex-none mt-1"
-                      />
-                      <span>testli </span>
+                      <span>Enter your full name and nationality. </span>
                     </li>
                   </ul>
                 </div>
@@ -1376,12 +1344,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    2. Verify Your Identity{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1392,7 +1358,10 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>
+                        Upload a government-issued photo ID (passport,
+                        driver&apos;s license, or national ID).{" "}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Image
@@ -1402,7 +1371,23 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>
+                        Upload proof of address (utility bill or bank statement
+                        showing your name and address).
+                      </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Verification ensures compliance with financial
+                        regulations.{" "}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1427,12 +1412,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    3. Add a Bank Account
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1443,17 +1426,7 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Image
-                        src={Checkicon}
-                        alt="Check"
-                        width={20}
-                        height={20}
-                        className="flex-none mt-1"
-                      />
-                      <span>testli </span>
+                      <span>Choose your bank country. </span>
                     </li>
                   </ul>
                 </div>
@@ -1479,13 +1452,9 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
-                  </p>
+                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed"></p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
                       <Image
@@ -1495,17 +1464,7 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <Image
-                        src={Checkicon}
-                        alt="Check"
-                        width={20}
-                        height={20}
-                        className="flex-none mt-1"
-                      />
-                      <span>testli </span>
+                      <span>Enter your bank name and account number. </span>
                     </li>
                   </ul>
                 </div>
@@ -1530,12 +1489,10 @@ export default function ResellerLandingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
                 {/* Left – Text */}
                 <div className="items-start align-middle align-center content-center">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    test
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
 
-                  <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                    test2{" "}
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    4. Submit & Wait for Approval{" "}
                   </p>
                   <ul className="space-y-0 text-[18px] text-[#878787]">
                     <li className="flex items-start gap-3">
@@ -1546,7 +1503,9 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>
+                        Submit your application and uploaded documents.{" "}
+                      </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <Image
@@ -1556,7 +1515,30 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>testli </span>
+                      <span>Payoneer will review your information. </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>Approval usually takes a few business days. </span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>
+                        Once approved, you&apos;ll receive a confirmation email
+                        and can start using your account.{" "}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1577,6 +1559,28 @@ export default function ResellerLandingPage() {
                 </div>
               </div>
               {/*  */}
+              <div className="grid grid-cols-1 sm:grid-cols-1 gap-10  align-center mt-4">
+                {/* Left – Text */}
+                <div className="items-start align-middle align-center content-center">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4"></h3>
+
+                  <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                    5. Start Receiving Payments
+                  </p>
+                  <ul className="space-y-0 text-[18px] text-[#878787]">
+                    <li className="flex items-start gap-3">
+                      <Image
+                        src={Checkicon}
+                        alt="Check"
+                        width={20}
+                        height={20}
+                        className="flex-none mt-1"
+                      />
+                      <span>After verification, your account is active. </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
               {/*  */}
 
@@ -1602,30 +1606,37 @@ export default function ResellerLandingPage() {
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Affiliation URL / Screenshot showing affiliation
                 </p>
+
                 <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   You may be asked to provide evidence of your professional
                   affiliation:
                 </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  This can be a link to your official website where your
-                  services are displayed.
-                </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  If you do not maintain a website, you may submit a link to
-                  your verified social media profile or freelancer platform
-                  account (e.g., Upwork).
-                </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  Screenshots must clearly display your profile or account
-                  details, including username or store name, website URL or
-                  logo, and profile information such as full name, phone number,
-                  and email address.
-                </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  In some cases, a screenshot may be accepted in place of a live
-                  link. Affiliation screenshots should be captured using
-                  Autologger.
-                </p>
+
+                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
+                  <li>
+                    This can be a link to your official website where your
+                    services are displayed.
+                  </li>
+                  <li>
+                    {" "}
+                    If you do not maintain a website, you may submit a link to
+                    your verified social media profile or freelancer platform
+                    account (e.g., Upwork).
+                  </li>
+                  <li>
+                    {" "}
+                    Screenshots must clearly display your profile or account
+                    details, including username or store name, website URL or
+                    logo, and profile information such as full name, phone
+                    number, and email address.
+                  </li>
+                  <li>
+                    {" "}
+                    In some cases, a screenshot may be accepted in place of a
+                    live link. Affiliation screenshots should be captured using
+                    Autologger.
+                  </li>
+                </ul>
                 {/* <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
                   <a className="text-blue-600" href="">
@@ -1644,48 +1655,77 @@ export default function ResellerLandingPage() {
                   verification.
                 </p>
                 {/* Held ID */}
-                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
-                  Held ID
-                </p>
-                <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  A Held ID submission must include a clear photograph of the
-                  account holder:
-                </p>
-                <ul className="list-disc list-outside pl-5 text-[12px] text-[#878787] space-y-2 marker:text-gray-400 sm:text-[17px]">
-                  <li>
-                    Holding their government-issued ID alongside a piece of
-                    paper displaying the current date.
-                  </li>
-                  <li>
-                    Both the face of the account holder and the text on the
-                    paper must be fully visible and unobstructed.
-                  </li>
-                  <li>The image must not be mirrored, reversed, or edited.</li>
-                </ul>
-                <p className="font-semibold text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
-                  <a
-                    href="/files/documents-verified-quickly.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
-                  >
-                    Request for ID and Held ID
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  </a>
-                </p>
+                <div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
+                    {/* Left – Text */}
+                    <div className="items-start align-middle align-center content-center">
+                      <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                        {" "}
+                        Held ID{" "}
+                      </h3>
+
+                      <p className="text-[#000] text-sm font-bold sm:text-xl mb-4 leading-relaxed">
+                        A Held ID submission must include a clear photograph of
+                        the account holder:
+                      </p>
+                      <ul className="space-y-0 text-[18px] text-[#878787]">
+                        <li className="flex items-start gap-3">
+                          <Image
+                            src={Checkicon}
+                            alt="Check"
+                            width={20}
+                            height={20}
+                            className="flex-none mt-1"
+                          />
+                          <span>
+                            Holding their government-issued ID alongside a piece
+                            of paper displaying the current date.
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Image
+                            src={Checkicon}
+                            alt="Check"
+                            width={20}
+                            height={20}
+                            className="flex-none mt-1"
+                          />
+                          <span>
+                            Both the face of the account holder and the text on
+                            the paper must be fully visible and unobstructed.{" "}
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <Image
+                            src={Checkicon}
+                            alt="Check"
+                            width={20}
+                            height={20}
+                            className="flex-none mt-1"
+                          />
+                          <span>
+                            The image must not be mirrored, reversed, or edited.
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* RIGHT – PDF */}
+                    <div>
+                      <div>
+                        <div
+                          onClick={() => setModalImage("/images/Held-ID.png")}
+                          className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                        >
+                          <img
+                            src="/files/Held-ID.pdf"
+                            alt="Sample certificate"
+                            className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 {/* Invoice */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Invoice submission requirements
