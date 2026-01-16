@@ -1715,7 +1715,7 @@ export default function ResellerLandingPage() {
                         <div
                           className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
                         >
-                          <a href="/files/Held-ID.pdf ">
+                          <a target="_blank" href="/files/Held-ID.pdf ">
                           <img
                             src="/images/Held-IDimg.png"
                             alt="Sample certificate"
