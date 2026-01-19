@@ -1729,12 +1729,12 @@ export default function ResellerLandingPage() {
                       className="group relative block overflow-hidden rounded-xl border border-gray-200"
                     ><img
                         src="/images/Held-IDimg.png"                  
-                        alt="Success story 2"
+                        alt="Held ID"
                         className="w-full h-64 object-cover"
                         />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    CLM flow
+                    Held ID
                   </span>
                 </div>
               </a>
