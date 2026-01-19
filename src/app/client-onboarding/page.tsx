@@ -27,6 +27,10 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
+   {
+    title: "How to get started as an account holder (AH) in Payoneer ",
+    slug: "get-started-account-holder",
+  },
   {
     title: "Standard sign-up flow",
     slug: "referred-account-holders",
@@ -39,10 +43,7 @@ const topics = [
     title: "Additional KYC requirements",
     slug: "kyc-process-explained",
   },
-  {
-    title: "Learn about our solution and products",
-    slug: "get-started-with-payoneer",
-  },
+ 
 ];
 
 const resellerBullets: string[] = [];
@@ -1715,13 +1716,28 @@ export default function ResellerLandingPage() {
                         <div
                           className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
                         >
-                          <a target="_blank" href="/files/Held-ID.pdf ">
+                          {/* <a target="_blank" href="/files/Held-ID.pdf ">
                           <img
                             src="/images/Held-IDimg.png"
                             alt="Sample certificate"
                             className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
                           />
-                          </a>
+                          </a> */}
+                      <a
+                      href="/files/Held-ID.pdf"
+                      rel="Held ID"
+                      className="group relative block overflow-hidden rounded-xl border border-gray-200"
+                    ><img
+                        src="/images/Held-IDimg.png"                  
+                        alt="Success story 2"
+                        className="w-full h-64 object-cover"
+                        />
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                    CLM flow
+                  </span>
+                </div>
+              </a>
                         </div>
                       </div>
                     </div>
