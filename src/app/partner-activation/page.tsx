@@ -116,6 +116,10 @@ export default function ResellerLandingPage() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
+  function setModalImage(arg0: string): void {
+    throw new Error("Function not implemented.");
+  }
+
   return (
     <div>
       <Navbar />
@@ -279,7 +283,7 @@ export default function ResellerLandingPage() {
                     </div>
 
                     {/* RIGHT – PDF */}
-                    <div>
+                    {/* <div>
                       <a
                         href="/files/Partnership_Certificate-Sample.pdf"
                         target="_blank"
@@ -298,7 +302,21 @@ export default function ResellerLandingPage() {
                           </span>
                         </div>
                       </a>
-                    </div>
+                    </div> */}
+               <div>
+                          <div>
+                            <div
+                              onClick={() => setModalImage("/images/Training-webinars.png")}
+                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                            >
+                              <img
+                                src="/images/Training-webinars.png"
+                                alt="Sample certificate"
+                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
+                              />
+                            </div>
+                          </div>
+                        </div>
                   </div>
                 </div>
 
