@@ -361,7 +361,7 @@ export default function ResellerLandingPage() {
               Onboarding process
             </h2>
 
-            <div className=" mt-8 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
+            <div className=" mt-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
               {customerBenefitstwo.map((item, i) => (
                 <div key={i} className="flex flex-col ">
                   {/* Text */}
