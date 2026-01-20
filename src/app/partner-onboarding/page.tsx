@@ -355,33 +355,41 @@ export default function ResellerLandingPage() {
             </div>
           </section>
 
-          <section             id="onboarding-process"
- className="scroll-mt-24 px-4 sm:px-6">
-            <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              Onboarding process
-            </h2>
+          {customerBenefitstwo.map((item, i) => (
+  <section key={i} className="mb-20">
+    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
+        
+        {/* LEFT – Text */}
+        <div>
+          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+            {item.title}
+          </h3>
 
-            <div className=" mt-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
-              {customerBenefitstwo.map((item, i) => (
-                <div key={i} className="flex flex-col ">
-                  {/* Text */}
-                  <h3 className="text-[17px] text-center sm:text-[20px] font-semibold text-gray-900">
-                    {item.title}
-                  </h3>
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    onClick={() => setModalImage(item.image)}
-                    className="w-100 text-center self-center rounded-lg mb-4 cursor-pointer"
-                  />
+          <p className="text-[#666] text-sm sm:text-base leading-relaxed">
+            {item.desc}
+          </p>
+        </div>
 
-                  <p className="mt-3 text-center text-gray-900 text-[13px] sm:text-[18px]">
-                    {item.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
+        {/* RIGHT – Image */}
+        <div>
+          <div
+            onClick={() => setModalImage(item.image)}
+            className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+          >
+            <img
+              src={item.image}
+              alt={item.title}
+              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+))}
+
 
           {/* 4th */}
         </main>
