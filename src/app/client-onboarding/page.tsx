@@ -32,11 +32,11 @@ const topics = [
     slug: "get-started-account-holder",
   },
   {
-    title: "Standard sign-up flow",
+    title: "Form Flow",
     slug: "referred-account-holders",
   },
   {
-    title: "CLM flow",
+    title: "4 Steps Flow",
     slug: "clm-flow",
   },
   {
@@ -412,7 +412,7 @@ export default function ResellerLandingPage() {
 
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Standard sign-up flow
+                    Form Flow
                   </span>
                 </div>
               </a>
@@ -430,7 +430,7 @@ export default function ResellerLandingPage() {
 
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    CLM flow
+                    4 Steps Flow
                   </span>
                 </div>
               </a>
@@ -442,7 +442,7 @@ export default function ResellerLandingPage() {
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-              Standard sign-up flow
+              Form Flow
             </p>
             <p className="mt-2 text-gray-900 text-[20px]">
               Here are the steps to complete your Payoneer onboarding and begin
@@ -820,7 +820,7 @@ export default function ResellerLandingPage() {
                   {/* CLM flow main */}
                   <div id="clm-flow" className="scroll-mt-36 mt-20 mb-20">
                     <p className="text-gray-900 text-[48px] font-semibold">
-                      CLM flow
+                      4 Steps Flow
                     </p>
                     <p className="mt-2 text-gray-900 text-[23px]">
                       Request for your unique onboarding link at

@@ -65,11 +65,11 @@ const tutorials = [
 
 const topics = [
   {
-    title: "Standard sign-up flow",
+    title: "Form Flow",
     slug: "referred-account-holders",
   },
   {
-    title: "CLM flow",
+    title: "4 Steps Flow",
     slug: "clm-flow",
   },
   {
@@ -363,7 +363,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             {/* Referred Account Holder (AH) */}
             <br />
-            <span className="block  bg-clip-text text-gray-900">CLM flow</span>
+            <span className="block  bg-clip-text text-gray-900">4 Steps Flow</span>
           </h1>
         </div>
       </section>
@@ -418,7 +418,7 @@ export default function ResellerLandingPage() {
                   </span>
                   <span className="opacity-60">›</span>
                   <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                    CLM flow
+                    4 Steps Flow
                   </span>
                 </nav>
               </div>

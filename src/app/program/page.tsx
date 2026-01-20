@@ -423,7 +423,7 @@ export default function ResellerLandingPage() {
               </div>
             </div>
             {/* Bank/Provider Cards */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {bankCols.map((col, i) => (
                 <div
                   key={i}
@@ -451,7 +451,7 @@ export default function ResellerLandingPage() {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
             {/* Trusted brands */}
             <div className="mt-10">
               <h3 className="text-md sm:text-[20px] font-semibold text-gray-900">

@@ -48,8 +48,8 @@ const cards: Card[] = [
     title: "Client onboarding",
     viewAllHref: "/client-onboarding",
     items: [
-      { label: "Standard sign-up flow", slug: "referred-account-holders" },
-      { label: "CLM Flow", slug: "clm-flow" },
+      { label: "Form Flow", slug: "referred-account-holders" },
+      { label: "4 Steps Flow", slug: "clm-flow" },
       { label: "Additional kyc requirements", slug: "kyc-process-explained" },
       { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
     ],

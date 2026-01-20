@@ -33,9 +33,9 @@ import Thirteen from "../assets/Partnerimgs/13.png";
 import Fourteen from "../assets/Partnerimgs/14.png";
 
 const topics = [
-  { title: "Why we choose PRM community?", slug: "choose-PRM" },
+  { title: "Why we choose community?", slug: "choose-PRM" },
   {
-    title: "How the Affiliate Onboarding Process Works",
+    title: "What is the process?",
     slug: "onboarding-process-works",
   },
   { title: "Onboarding process", slug: "onboarding-process" },
@@ -102,7 +102,6 @@ const customerBenefitstwo = [
     desc: "",
     image: One.src,
   },
-  { title: "", desc: "", image: Two.src },
   {
     title: "Step 2: Sign the terms and conditions and create a password. ",
     desc: "",
@@ -302,7 +301,7 @@ export default function ResellerLandingPage() {
             className="scroll-mt-28 px-4 sm:px-0 py-10 bg-cover bg-center"
           >
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900 text-left">
-              Why we choose PRM community?
+              Why we choose community?
             </h1>
             <p className="mt-3 max-w-3xl  text-[#878787] text-[13px] sm:text-[20px] text-left"></p>
             <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
@@ -338,7 +337,7 @@ export default function ResellerLandingPage() {
           <section             id="onboarding-process-works"
  className="scroll-mt-24 px-4 sm:px-6">
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
-              How the Affiliate Onboarding Process Works
+              What is the process?
             </h2>
             <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px]"></p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 sm:gap-x-10 sm:gap-y-10">
