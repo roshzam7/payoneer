@@ -78,16 +78,17 @@ export default function ResellerLandingPage() {
   const [active, setActive] = useState<string | null>(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
   const goToPrevious = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? personas.length - 1 : prevIndex - 1
+      prevIndex === 0 ? personas.length - 1 : prevIndex - 1,
     );
   };
 
   const goToNext = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === personas.length - 1 ? 0 : prevIndex + 1
+      prevIndex === personas.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
@@ -116,13 +117,38 @@ export default function ResellerLandingPage() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  function setModalImage(arg0: string): void {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <div>
       <Navbar />
+      {modalImage && (
+        <div
+          className="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+          onClick={() => setModalImage(null)} // closes when clicking outside
+        >
+          <div
+            className="relative w-[90%] max-w-3xl h-[80vh] p-4 flex items-center justify-center bg-transparent"
+            onClick={(e) => e.stopPropagation()} // prevent outside click closing
+          >
+            {/* Close button */}
+            <button
+              className="absolute top-2 right-2 z-50 bg-white text-black rounded-full w-8 h-8 flex items-center justify-center shadow hover:bg-gray-200"
+              onClick={() => setModalImage(null)}
+            >
+              ✕
+            </button>
+
+            {/* Image */}
+            <div className="w-full h-full relative">
+              <Image
+                src={modalImage}
+                alt="Preview"
+                fill
+                className="object-contain rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       <section
         style={{ backgroundImage: `url(${Banner.src})` }}
@@ -283,40 +309,22 @@ export default function ResellerLandingPage() {
                     </div>
 
                     {/* RIGHT – PDF */}
-                    {/* <div>
-                      <a
-                        href="/files/Partnership_Certificate-Sample.pdf"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="group relative block overflow-hidden rounded-xl border border-gray-200"
-                      >
-                        <img
-                          src="/images/Training-webinars.png"
-                          alt="Sample certificate"
-                          className="w-full h-64 object-cover"
-                        />
-
-                        <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                          <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                            View sample certificate
-                          </span>
+                    <div>
+                      <div>
+                        <div
+                          onClick={() =>
+                            setModalImage("/images/Training-webinars.png")
+                          }
+                          className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                        >
+                          <img
+                            src="/images/Training-webinars.png"
+                            alt="Sample certificate"
+                            className="w-cover   object-cover transition-transform duration-300 group-hover:scale-105"
+                          />
                         </div>
-                      </a>
-                    </div> */}
-               <div>
-                          <div>
-                            <div
-                              onClick={() => setModalImage("/images/Training-webinars.png")}
-                              className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
-                            >
-                              <img
-                                src="/images/Training-webinars.png"
-                                alt="Sample certificate"
-                                className="w-cover h-100  object-cover transition-transform duration-300 group-hover:scale-105"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -446,39 +454,6 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Do's and Don'ts */}
-                {/* <div className="group bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                    Do&apos;s and don&apos;ts in promotions
-                  </h3>
-                  <p className="text-[#666] text-sm sm:text-base mb-5 leading-relaxed">
-                    Refer to the Do&apos;s & don&apos;ts Guidelines to
-                    understand how to accurately and effectively promote
-                    Payoneer. This ensures all promotional efforts align with
-                    brand standards.
-                  </p>
-                  <a
-                    href="/files/Payoneer-Dos-Donts.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium text-white shadow-sm bg-gradient-to-r from-purple-500 to-blue-500 hover:opacity-90 transition-all duration-200"
-                  >
-                    View do&apos;s &amp; don&apos;ts guidelines
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
-                  </a>
-                </div> */}
               </div>
             </div>
           </section>
