@@ -108,57 +108,57 @@ const customerBenefitstwo = [
     image: Three.src,
   },
   {
-    title: "",
-    desc: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP). ",
+    title: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP).",
+    desc: " Please note that the username must end with XXXX@exmple.com.payoneer ",
     image: Four.src,
   },
   {
     title:
-      "Please note that the username must end with XXXX@exmple.com.payoneer   ",
+      "   ",
     desc: "",
     image: Five.src,
   },
   {
     title: "",
     desc: "Press the link to immediately see your referral links:  ",
-    image: Six.src,
-  },
-  {
-    title: "",
-    desc: "Contact your account manager for any questions you may have ",
     image: Seven.src,
   },
   {
     title: "",
-    desc: "To update profile information or reset a password, access the settings. In the settings section, affiliates can also add team members who require access to the SF PRM; each added team member will be reviewed by the affiliate manager, who will then send a welcome email to the new team member upon approval. ",
+    desc: "Contact your account manager for any questions you may have ",
     image: Eight.src,
   },
   {
     title: "",
-    desc: "Dashboard - the performance overview shows past 6-month trend.  ",
+    desc: "To update profile information or reset a password, access the settings. In the settings section, affiliates can also add team members who require access to the SF PRM; each added team member will be reviewed by the affiliate manager, who will then send a welcome email to the new team member upon approval. ",
     image: Nine.src,
+  },
+  {
+    title: "",
+    desc: "Dashboard - the performance overview shows past 6-month trend.  ",
+    image: Ten.src,
   },
   {
     title: "Your Referral Links  ",
     desc: "This landing page shows that when a referral spend and receive a $35. ",
-    image: Ten.src,
-  },
-  {
-    title: "",
-    desc: "My Referrals - you can view all details of an individual referral by selecting Action – View. ",
     image: Eleven.src,
   },
   {
     title: "",
-    desc: "Billing – Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
+    desc: "My Referrals - you can view all details of an individual referral by selecting Action – View. ",
     image: Twelve.src,
   },
-  { title: "", desc: "", image: Thirteen.src },
   {
     title: "",
-    desc: " ",
+    desc: "Billing – Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
     image: Fourteen.src,
   },
+  // { title: "", desc: "", image: Thirteen.src },
+  // {
+  //   title: "",
+  //   desc: " ",
+  //   image: Fourteen.src,
+  // },
 ];
 
 export default function ResellerLandingPage() {
