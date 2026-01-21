@@ -26,13 +26,10 @@ type TablePrice = {
 type Price = ListPrice | TablePrice;
 
 const topics = [
-  {
-    title: "Table",
-    slug: "table",
-  },
+
   {
     title: "Payoneer fees",
-    slug: "The-prices-and-fees",
+    slug: "table",
   },
 ];
 
@@ -315,7 +312,7 @@ export default function ResellerLandingPage() {
                             if (category && category.trim() !== "") {
                               currentCategory = category;
                               return (
-                                <tr key={rowIndex} className="bg-[#f8f8ff]">
+                                <tr key={rowIndex} className="bg-[#ffffff]">
                                   <td className="px-6 py-3 font-semibold text-gray-900 text-[13px] rounded-t-lg border-t border-[#eaeaea]">
                                     {category}
                                   </td>
