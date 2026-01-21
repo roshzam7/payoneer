@@ -360,7 +360,7 @@ export default function ResellerLandingPage() {
           </section>
           {/* How to Join */}
           <section
-            id="referred-account-holders"
+            id="get-started-account-holder"
             className="scroll-mt-36 max-w-5xl mx-auto"
           >
             {/* Main heading */}
@@ -437,7 +437,7 @@ export default function ResellerLandingPage() {
             </div>
           </section>
           <section
-            id="Standard-sign-up-flow"
+            id="referred-account-holders"
             className="scroll-mt-36 max-w-5xl mx-auto"
           >
             {/* Main heading */}

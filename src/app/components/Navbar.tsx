@@ -50,7 +50,7 @@ const cards: Card[] = [
   {
     title: "Client onboarding",
     items: [
-      {
+   {
     label: "How to get started as an account holder (AH) in Payoneer ",
     slug: "get-started-account-holder",
   },
