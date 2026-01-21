@@ -113,12 +113,12 @@ const customerBenefitstwo = [
     desc: " Please note that the username must end with XXXX@exmple.com.payoneer ",
     image: Four.src,
   },
-  {
-    title:
-      "   ",
-    desc: "",
-    image: Five.src,
-  },
+  // {
+  //   title:
+  //     "   ",
+  //   desc: "",
+  //   image: Five.src,
+  // },
   {
     title: "",
     desc: "Press the link to immediately see your referral links:  ",
