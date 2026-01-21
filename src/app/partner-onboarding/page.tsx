@@ -108,7 +108,8 @@ const customerBenefitstwo = [
     image: Three.src,
   },
   {
-    title: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP).",
+    title: "",
+    test: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP).",
     desc: " Please note that the username must end with XXXX@exmple.com.payoneer ",
     image: Four.src,
   },
@@ -365,6 +366,9 @@ export default function ResellerLandingPage() {
           <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
             {item.title}
           </h3>
+          <p className="text-[#666] text-sm sm:text-base leading-relaxed">
+            {item.test}
+          </p>
 
           <p className="text-[#666] text-sm sm:text-base leading-relaxed">
             {item.desc}
