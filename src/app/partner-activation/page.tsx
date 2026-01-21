@@ -394,14 +394,14 @@ export default function ResellerLandingPage() {
 
           {/* Marketing & Reselling Guidelines */}
           <section
-            id="marketing-reselling-guidelines"
+            id="reselling-guidelines"
             className="scroll-mt-28 mb-12"
           >
             <div className="grid grid-cols-1 gap-10">
               {/* Header Section */}
               <div className="rounded-3xl  p-8 sm:p-0">
                 <h3
-                  id="reselling-guidelines"
+                  id=""
                   className="text-2xl sm:text-3xl font-bold text-gray-900 mt-2"
                 >
                   Marketing guidelines

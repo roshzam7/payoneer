@@ -38,7 +38,7 @@ const topics = [
     title: "What is the process?",
     slug: "onboarding-process-works",
   },
-  { title: "Onboarding process", slug: "onboarding-process" },
+  // { title: "Onboarding process", slug: "onboarding-process" },
 ];
 
 const resellerBullets = [

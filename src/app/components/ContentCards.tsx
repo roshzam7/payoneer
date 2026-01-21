@@ -47,24 +47,20 @@ const cards: Card[] = [
   {
     title: "Client onboarding",
     viewAllHref: "/client-onboarding",
-    items: [
-{
-    label: "How to get started as an account holder (AH) in Payoneer ",
-    slug: "get-started-account-holder",
+    items: [   {
+    label: "Overview",    slug: "overview",
   },
   {
-    label: "Form Flow",
-    slug: "referred-account-holders",
+    label: "Why this matters to your clients or users ",    slug: "features",
   },
   {
-    label: "4 Steps Flow",
-    slug: "clm-flow",
+    label: "Get started with Payoneer ",    slug: "get-started-with-payoneer",
   },
   {
-    label: "Additional KYC requirements",
-    slug: "kyc-process-explained",
-  },    ],
+    label: "How to.. ",    slug: "how-to",
   },
+
+  ],  },
   {
     title: "Enablement",
     viewAllHref: "/partner-activation",

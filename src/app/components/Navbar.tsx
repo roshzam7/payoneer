@@ -90,12 +90,18 @@ const cards: Card[] = [
   {
     title: "Features",
     items: [
-      { label: "Overview", slug: "overview" },
-      { label: "Key features & benefits", slug: "features" },
-      { label: "Business tools", slug: "business-tools" },
-      { label: "Who is it for?", slug: "who-its-for" },
-      { label: "Learn more", slug: "learn-more" },
-    ],
+  {
+    label: "Overview",    slug: "overview",
+  },
+  {
+    label: "Why this matters to your clients or users ",    slug: "features",
+  },
+  {
+    label: "Get started with Payoneer ",    slug: "get-started-with-payoneer",
+  },
+  {
+    label: "How to.. ",    slug: "how-to",
+  },    ],
     viewAllHref: "/features",
   },
   {
