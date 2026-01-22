@@ -34,10 +34,7 @@ import Fourteen from "../assets/Partnerimgs/14.png";
 
 const topics = [
   { title: "Why we choose community?", slug: "choose-PRM" },
-  {
-    title: "What is the process?",
-    slug: "onboarding-process-works",
-  },
+  { title: "What is the process?",  slug: "onboarding-process-works", },
   // { title: "Onboarding process", slug: "onboarding-process" },
 ];
 

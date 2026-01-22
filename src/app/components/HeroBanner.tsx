@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import Banner from "../assets/LP-banner-01.png";
 
@@ -17,20 +18,20 @@ const cards: Card[] = [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
       { label: "Reseller program overview", slug: "reseller-overview" },
-      {
-        label: "Understand Your Role as a Payoneer Reseller",
-        slug: "Understand-Your-Role",
-      },
+      { label: "Understand Your Role as a Payoneer Reseller", slug: "Understand-Your-Role" },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/program",
+  },
+  
+  { title: "Partner onboarding", 
+    items: [
+       { label: "Why we choose community?", slug: "choose-PRM" },
+       { label: "What is the process?",  slug: "onboarding-process-works", },
+      ],
+    viewAllHref: "/partner-onboarding",  
+  },
 
-  },
-  {
-    title: "Partner onboarding",
-    viewAllHref: "/partner-onboarding",
-    items: [],
-  },
   {
     title: "Affiliate program",
     items: [
@@ -40,91 +41,99 @@ const cards: Card[] = [
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/affiliate-program",
+  },
 
-  },
-  {
-    title: "Affiliate onboarding",
-    viewAllHref: "/affiliate-setup",
-    items: [],
-  },
+
+  // { title: "Affiliate onboarding", 
+  //   items: [
+  //   ],    
+  //   viewAllHref: "/affiliate-setup",  },
   {
     title: "Client onboarding",
-    items: [   {
-    label: "Overview",    slug: "overview",
-  },
-  {
-    label: "Why this matters to your clients or users ",    slug: "features",
-  },
-  {
-    label: "Get started with Payoneer ",    slug: "get-started-with-payoneer",
-  },
-  {
-    label: "How to.. ",    slug: "how-to",
-  },
-
-  ],  
-
+    items: [
+      { label: "How to get started as an account holder (AH) in Payoneer ", slug: "get-started-account-holder",},
+      { label: "Form Flow", slug: "referred-account-holders", },
+      { label: "4 Steps Flow",slug: "clm-flow", },
+      { label: "Additional KYC requirements", slug: "kyc-process-explained", },
+    ],
     viewAllHref: "/client-onboarding",
-},
+  },
   {
     title: "Enablement",
     items: [
-      { label: "Sales enablement tools", slug: "sales-enablement-tools" },
-      { label: "Marketing guidelines", slug: "reselling-guidelines" },
-      { label: "Customer personas", slug: "onboarding-overview" },
-      {
-        label: "Co-branded or dedicated landing pages",
-        slug: "co-branded-or-dedicated-landing-pages",
-      },
+      {label: "Sales enablement tools", slug: "sales-enablement-tools",},
+      {label: "Marketing guidelines", slug: "reselling-guidelines", },
+      {label: "Customer personas", slug: "customer-personas", },
     ],
     viewAllHref: "/partner-activation",
+  },
 
-  },
-  {
-    title: "Pricing",
-    viewAllHref: "/pricing",
-    items: [],
-  },
+
+  { title: "Pricing", viewAllHref: "/pricing", items: [] },
+
   {
     title: "Features",
     items: [
-      { label: "Overview", slug: "overview" },
-      { label: "Key features & benefits", slug: "features" },
-      { label: "Business tools", slug: "business-tools" },
-      { label: "Who is it for?", slug: "who-its-for" },
-      { label: "Learn more", slug: "learn-more" },
+      { label: "Overview", slug: "overview",  },
+      { label: "Why this matters to your clients or users ", slug: "features", },
+      { label: "Get started with Payoneer ", slug: "get-started-with-payoneer",  },
+      { label: "How to.. ", slug: "how-to",  },
     ],
     viewAllHref: "/features",
-
   },
-  {
-    title: "Support",
-    items: [],
-    viewAllHref: "/faqs",
-
-  },
+  
+  { title: "Support", items: [], viewAllHref: "/faqs" },
 ];
+
+type SearchEntry = {
+  label: string;        // the thing you search for (item title or page title)
+  href: string;         // where it goes
+  pageTitle: string;    // the page name you want to show small
+  kind: "page" | "item";
+};
 
 const HeroBanner: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isFocused, setIsFocused] = useState(false);
 
-  // Flatten items from all cards
-  const allItems = cards.flatMap((card) =>
-    card.items.map((item) =>
-      typeof item === "string"
-        ? { label: item, href: card.viewAllHref }
-        : { label: item.label, href: `${card.viewAllHref}#${item.slug}` }
-    )
-  );
+  // Build searchable list: page titles + items (with page name included)
+  const allItems: SearchEntry[] = useMemo(() => {
+    const raw: SearchEntry[] = cards.flatMap((card) => {
+      const pageEntry: SearchEntry = {
+        label: card.title,
+        href: card.viewAllHref,
+        pageTitle: card.title,
+        kind: "page",
+      };
 
-  // Filter based on search term
-  const filteredItems =
-    searchTerm.trim() === ""
-      ? []
-      : allItems.filter((i) =>
-          i.label.toLowerCase().includes(searchTerm.toLowerCase())
-        );
+      const itemEntries: SearchEntry[] = card.items.map((item) =>
+        typeof item === "string"
+          ? {
+              label: item,
+              href: card.viewAllHref,
+              pageTitle: card.title,
+              kind: "item",
+            }
+          : {
+              label: item.label,
+              href: `${card.viewAllHref}#${item.slug}`,
+              pageTitle: card.title,
+              kind: "item",
+            }
+      );
+
+      return [pageEntry, ...itemEntries];
+    });
+
+    // De-dupe exact label+href
+    return Array.from(new Map(raw.map((x) => [`${x.label}|${x.href}`, x])).values());
+  }, []);
+
+  const filteredItems = useMemo(() => {
+    const q = searchTerm.trim().toLowerCase();
+    if (!q) return [];
+    return allItems.filter((i) => i.label.toLowerCase().includes(q));
+  }, [searchTerm, allItems]);
 
   return (
     <section
@@ -132,22 +141,17 @@ const HeroBanner: React.FC = () => {
       style={{ backgroundImage: `url(${Banner.src})` }}
       aria-label="Welcome to Payoneer"
     >
-      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-40 sm:pt-50  lg:pt-50">
-        {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+      <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-40 sm:pt-50 lg:pt-50">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-normal text-gray-900">
           Welcome to the <br />
-          <span className="block  bg-clip-text text-gray-900">
-           Payoneer partner program
-          </span>
+          <span className="block bg-clip-text text-gray-900">Payoneer partner program</span>
         </h1>
-        {/* Description */}
+
         <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-lg leading-relaxed text-gray-700">
-          Powering your success with an exclusive program built for growth and
-          next-gen infrastructure.
+          Powering your success with an exclusive program built for growth and next-gen infrastructure.
         </p>
-        {/* 🔍 Search Input with Dropdown */}
+
         <div className="relative w-full sm:w-1/2 mx-auto mt-10">
-          {/* Search Icon */}
           <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
             <svg
               className="w-5 h-5 text-gray-400"
@@ -165,7 +169,6 @@ const HeroBanner: React.FC = () => {
             </svg>
           </div>
 
-          {/* Input Field */}
           <input
             type="text"
             placeholder="Search guides, tools, and resources..."
@@ -176,33 +179,40 @@ const HeroBanner: React.FC = () => {
             onBlur={() => setTimeout(() => setIsFocused(false), 150)}
           />
 
-          {/* Clear Button */}
           {searchTerm && (
             <button
+              type="button"
               onClick={() => setSearchTerm("")}
               className="absolute inset-y-0 right-3 flex items-center text-gray-400 hover:text-gray-600"
+              aria-label="Clear search"
             >
               ✕
             </button>
           )}
 
-          {/* Dropdown */}
           {isFocused && filteredItems.length > 0 && (
             <ul className="absolute z-10 mt-2 w-full bg-white border border-gray-200 rounded-md shadow-lg max-h-60 overflow-y-auto text-left">
               {filteredItems.map((item, i) => (
-                <li key={i}>
+                <li key={`${item.href}-${i}`}>
                   <Link
                     href={item.href}
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                   >
-                    {item.label}
+                    <div className="flex flex-col">
+                      <span className="leading-5">{item.label}</span>
+
+                      {/* page name under it, small */}
+                      <span className="text-[11px] text-gray-400 leading-4">
+                        {item.pageTitle}
+                        {item.kind === "page" ? "" : ""}
+                      </span>
+                    </div>
                   </Link>
                 </li>
               ))}
             </ul>
           )}
 
-          {/* No results */}
           {isFocused && searchTerm && filteredItems.length === 0 && (
             <div className="absolute z-10 mt-2 w-full bg-white border border-gray-200 rounded-md shadow-lg p-3 text-sm text-gray-500">
               No results found.

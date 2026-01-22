@@ -89,22 +89,10 @@ const partnerCards = [
 ];
 
 const topics = [
-  {
-    title: "Overview",
-    slug: "overview",
-  },
-  {
-    title: "Why this matters to your clients or users ",
-    slug: "features",
-  },
-  {
-    title: "Get started with Payoneer ",
-    slug: "get-started-with-payoneer",
-  },
-  {
-    title: "How to.. ",
-    slug: "how-to",
-  },
+  { title: "Overview", slug: "overview",  },
+  { title: "Why this matters to your clients or users ", slug: "features", },
+  { title: "Get started with Payoneer ", slug: "get-started-with-payoneer",  },
+  { title: "How to.. ", slug: "how-to",  },
 
 ];
 

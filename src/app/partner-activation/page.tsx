@@ -46,18 +46,9 @@ const bannerAssets = [
 ];
 
 const topics = [
-  {
-    title: "Sales enablement tools",
-    slug: "sales-enablement-tools",
-  },
-  {
-    title: "Marketing guidelines",
-    slug: "reselling-guidelines",
-  },
-  {
-    title: "Customer personas",
-    slug: "customer-personas",
-  },
+  {title: "Sales enablement tools", slug: "sales-enablement-tools",},
+  {title: "Marketing guidelines", slug: "reselling-guidelines", },
+  {title: "Customer personas", slug: "customer-personas", },
 ];
 
 const personas = [

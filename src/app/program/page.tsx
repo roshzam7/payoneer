@@ -85,10 +85,7 @@ const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
   { title: "Why partner with us", slug: "why-partner" },
   { title: "Reseller program overview", slug: "reseller-overview" },
-  {
-    title: "Understand your role as a Payoneer reseller",
-    slug: "Understand-Your-Role",
-  },
+  { title: "Understand your role as a Payoneer reseller", slug: "Understand-Your-Role",},
   { title: "Success stories & testimonials", slug: "key-features" },
 ];
 

@@ -27,22 +27,10 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
-   {
-    title: "How to get started as an account holder (AH) in Payoneer ",
-    slug: "get-started-account-holder",
-  },
-  {
-    title: "Form Flow",
-    slug: "referred-account-holders",
-  },
-  {
-    title: "4 Steps Flow",
-    slug: "clm-flow",
-  },
-  {
-    title: "Additional KYC requirements",
-    slug: "kyc-process-explained",
-  },
+  { title: "How to get started as an account holder (AH) in Payoneer ", slug: "get-started-account-holder",},
+  { title: "Form Flow", slug: "referred-account-holders", },
+  { title: "4 Steps Flow",slug: "clm-flow", },
+  { title: "Additional KYC requirements", slug: "kyc-process-explained", },
  
 ];
 
