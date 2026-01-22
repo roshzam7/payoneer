@@ -11,8 +11,9 @@ type Card = {
 };
 
 const cards: Card[] = [
-    {
+  {
     title: "Reseller program",
+    viewAllHref: "/program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
@@ -23,61 +24,65 @@ const cards: Card[] = [
       },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
-    viewAllHref: "/program",
   },
   {
     title: "Partner onboarding",
-    items: [],
     viewAllHref: "/partner-onboarding",
+    items: [],
   },
   {
     title: "Affiliate program",
+    viewAllHref: "/affiliate-program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why become a Payoneer affiliate", slug: "why-partner" },
       { label: "Affiliate program overview", slug: "reseller-overview" },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
-    viewAllHref: "/affiliate-program",
   },
   {
     title: "Affiliate onboarding",
-    items: [],
     viewAllHref: "/affiliate-setup",
+    items: [],
   },
   {
     title: "Client onboarding",
-    items: [
-      { label: "Form Flow", slug: "referred-account-holders" },
-      { label: "4 Steps Flow", slug: "clm-flow" },
-      { label: "Additional kyc requirements", slug: "kyc-process-explained" },
-      { label: "Get started with Payoneer", slug: "get-started-with-payoneer" },
-    ],
     viewAllHref: "/client-onboarding",
+    items: [   {
+    label: "Overview",    slug: "overview",
   },
   {
+    label: "Why this matters to your clients or users ",    slug: "features",
+  },
+  {
+    label: "Get started with Payoneer ",    slug: "get-started-with-payoneer",
+  },
+  {
+    label: "How to.. ",    slug: "how-to",
+  },
+
+  ],  },
+  {
     title: "Enablement",
+    viewAllHref: "/partner-activation",
     items: [
       { label: "Sales enablement tools", slug: "sales-enablement-tools" },
-      {
-        label: "Marketing guidelines",
-        slug: "reselling-guidelines",
-      },
+      { label: "Marketing guidelines", slug: "reselling-guidelines" },
       { label: "Customer personas", slug: "onboarding-overview" },
       {
         label: "Co-branded or dedicated landing pages",
         slug: "co-branded-or-dedicated-landing-pages",
       },
     ],
-    viewAllHref: "/partner-activation",
   },
   {
     title: "Pricing",
-    items: [],
     viewAllHref: "/pricing",
+    items: [],
   },
   {
     title: "Features",
+    viewAllHref: "/features",
     items: [
       { label: "Overview", slug: "overview" },
       { label: "Key features & benefits", slug: "features" },
@@ -85,12 +90,11 @@ const cards: Card[] = [
       { label: "Who is it for?", slug: "who-its-for" },
       { label: "Learn more", slug: "learn-more" },
     ],
-    viewAllHref: "/features",
   },
   {
     title: "Support",
-        items: [],
     viewAllHref: "/faqs",
+    items: [],
   },
 ];
 
