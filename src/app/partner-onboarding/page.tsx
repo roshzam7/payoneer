@@ -121,7 +121,7 @@ const customerBenefitstwo = [
   // },
   {
     title: "",
-    desc: "Press the link to immediately see your referral links:  ",
+    desc: "Press the link to immediately see your referral links ",
     image: Seven.src,
   },
   {
@@ -136,7 +136,7 @@ const customerBenefitstwo = [
   },
   {
     title: "Dashboard",
-    desc: "Dashboard - the performance overview shows past 6-month trend.  ",
+    desc: "The performance overview shows past 6-month trend.  ",
     image: Ten.src,
   },
   {
@@ -146,12 +146,12 @@ const customerBenefitstwo = [
   },
   {
     title: "My Referrals",
-    desc: "My Referrals - you can view all details of an individual referral by selecting Action – View. ",
+    desc: "You can view all details of an individual referral by selecting Action – View. ",
     image: Twelve.src,
   },
   {
     title: "Billing",
-    desc: "Billing – Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
+    desc: "Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
     image: Fourteen.src,
   },
   // { title: "", desc: "", image: Thirteen.src },
