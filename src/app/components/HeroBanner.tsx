@@ -13,7 +13,6 @@ type Card = {
 const cards: Card[] = [
   {
     title: "Reseller program",
-    viewAllHref: "/program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
@@ -24,6 +23,8 @@ const cards: Card[] = [
       },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
+    viewAllHref: "/program",
+
   },
   {
     title: "Partner onboarding",
@@ -32,13 +33,14 @@ const cards: Card[] = [
   },
   {
     title: "Affiliate program",
-    viewAllHref: "/affiliate-program",
     items: [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why become a Payoneer affiliate", slug: "why-partner" },
       { label: "Affiliate program overview", slug: "reseller-overview" },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
+    viewAllHref: "/affiliate-program",
+
   },
   {
     title: "Affiliate onboarding",
@@ -47,7 +49,6 @@ const cards: Card[] = [
   },
   {
     title: "Client onboarding",
-    viewAllHref: "/client-onboarding",
     items: [   {
     label: "Overview",    slug: "overview",
   },
@@ -61,10 +62,12 @@ const cards: Card[] = [
     label: "How to.. ",    slug: "how-to",
   },
 
-  ],  },
+  ],  
+
+    viewAllHref: "/client-onboarding",
+},
   {
     title: "Enablement",
-    viewAllHref: "/partner-activation",
     items: [
       { label: "Sales enablement tools", slug: "sales-enablement-tools" },
       { label: "Marketing guidelines", slug: "reselling-guidelines" },
@@ -74,6 +77,8 @@ const cards: Card[] = [
         slug: "co-branded-or-dedicated-landing-pages",
       },
     ],
+    viewAllHref: "/partner-activation",
+
   },
   {
     title: "Pricing",
@@ -82,7 +87,6 @@ const cards: Card[] = [
   },
   {
     title: "Features",
-    viewAllHref: "/features",
     items: [
       { label: "Overview", slug: "overview" },
       { label: "Key features & benefits", slug: "features" },
@@ -90,11 +94,14 @@ const cards: Card[] = [
       { label: "Who is it for?", slug: "who-its-for" },
       { label: "Learn more", slug: "learn-more" },
     ],
+    viewAllHref: "/features",
+
   },
   {
     title: "Support",
-    viewAllHref: "/faqs",
     items: [],
+    viewAllHref: "/faqs",
+
   },
 ];
 
