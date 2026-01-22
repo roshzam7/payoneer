@@ -109,8 +109,8 @@ const customerBenefitstwo = [
   },
   {
     title: "",
-    test: "On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP).",
-    desc: " Please note that the username must end with XXXX@exmple.com.payoneer ",
+    desc: " On the second login, you must use an authenticator app such as Google, Microsoft, or Salesforce (TOTP). ",
+    test: " Please note that the username must end with XXXX@exmple.com.payoneer  ",
     image: Four.src,
   },
   // {
@@ -135,7 +135,7 @@ const customerBenefitstwo = [
     image: Nine.src,
   },
   {
-    title: "",
+    title: "Dashboard",
     desc: "Dashboard - the performance overview shows past 6-month trend.  ",
     image: Ten.src,
   },
@@ -145,12 +145,12 @@ const customerBenefitstwo = [
     image: Eleven.src,
   },
   {
-    title: "",
+    title: "My Referrals",
     desc: "My Referrals - you can view all details of an individual referral by selecting Action – View. ",
     image: Twelve.src,
   },
   {
-    title: "",
+    title: "Billing",
     desc: "Billing – Enables affiliates to review their billing status and access their invoices, with options available for downloading documentation. ",
     image: Fourteen.src,
   },
@@ -288,7 +288,7 @@ export default function ResellerLandingPage() {
                 </span>
                 <span className="opacity-60">›</span>
                 <span className="truncate max-w-full sm:max-w-xs md:max-w-md">
-                  partner onboarding
+                  Partner onboarding
                 </span>
               </nav>
             </div>
@@ -366,12 +366,13 @@ export default function ResellerLandingPage() {
           <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
             {item.title}
           </h3>
-          <p className="text-[#666] text-sm sm:text-base leading-relaxed">
-            {item.test}
-          </p>
+        
 
           <p className="text-[#666] text-sm sm:text-base leading-relaxed">
             {item.desc}
+          </p>
+            <p className="font-semibold text-[#666] text-sm sm:text-base leading-relaxed">
+            {item.test}
           </p>
         </div>
 
