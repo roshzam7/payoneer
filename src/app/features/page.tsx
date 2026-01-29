@@ -38,7 +38,7 @@ const tutorials = [
     title:
       "Adding funds to your account from your bank account - Keep your business moving",
     desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
-    link: "#https://www.youtube.com/watch?si=eD_Ny7whpX9rMUvH&v=EcDhegY1v_Y&feature=youtu.be",
+    link: "https://www.youtube.com/watch?v=EcDhegY1v_Y",
     image: "/images/Addingfundstoyouraccount.png",
   },
   {
