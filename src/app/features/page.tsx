@@ -23,27 +23,27 @@ const tutorials = [
   {
     title:
       "Payoneer account dashboard - introduction to basic features & functions",
-    desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
+    desc: "Now that you've registered with Payoneer, you'll see how easy it is to fulfill multiple payment functions, like converting currencies when making transactions, withdrawing funds and requesting payments, all through one dashboard. Your dashboard is designed to simplify cross-border transactions and make it easy to handle all your business payment needs from a single platform! ",
     link: "https://www.youtube.com/watch?si=AP8AwXe5nZl_qIJl&v=58Rem3K1O6Q&feature=youtu.be",
     image: "/images/PayoneerAccountDashboard.png",
   },
   {
     title:
-      "Convert currencies with Payoneer - learn how to convert currencies get started with Payoneer at competitive rates",
-    desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
+      "Convert currencies while making a transaction with Payoneer - learn how to convert currencies while making a transaction. Get started with Payoneer at competitive rates ",
+    desc: "Now that you've registered with Payoneer, you'll see how simple it is to convert currencies while making a transaction, right from your account dashboard. Payoneer gives you the flexibility to convert funds between currencies quickly and at competitive exchange rates - no need for third-party delays. You can reduce currency risk, avoid unnecessary fees, and make your funds work harder for your business.",
     link: "https://www.youtube.com/watch?v=paXY-XskAjQ#",
     image: "/images/ConvertCurrencies.png",
   },
-  {
-    title:
-      "Adding funds to your account from your bank account - Keep your business moving",
-    desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
-    link: "https://www.youtube.com/watch?v=EcDhegY1v_Y",
-    image: "/images/Addingfundstoyouraccount.png",
-  },
+  // {
+  //   title:
+  //     "Adding funds to your account from your bank account - Keep your business moving",
+  //   desc: "To ensure your Payoneer account always has sufficient funds for outgoing payments, you can easily add money directly from your bank account. Adding funds from your bank account helps you to ensure you're always ready to make urgent payments, invest in opportunities, or maintain a positive balance to avoid delays.",
+  //   link: "https://www.youtube.com/watch?v=EcDhegY1v_Y",
+  //   image: "/images/Addingfundstoyouraccount.png",
+  // },
   {
     title: "Make global payments with confidence and ease",
-    desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries, giving your business the reach it needs to grow.",
+    desc: "With Payoneer, it's easy to make secure, fast payments to your suppliers and contractors directly to their bank account or their Payoneer account if they have one. You can convert and send payments in 70+ currencies across 190+ countries and territories , giving your business the reach it needs to grow.",
     link: "https://www.youtube.com/watch?si=ML8q8EtnQX03vSNE&v=SRjUsIMot2Q&feature=youtu.be",
     image: "/images/MakeGlobalPayments.png",
   },
@@ -52,7 +52,7 @@ const tutorials = [
 const partnerCards = [
   {
     image: Freelancers,
-    title: "Freelancers & remote workers",
+    title: "Freelancers ",
     link: "",
     bullets: [
       "Receive payments from international clients without chasing complex wire transfers.",
@@ -74,7 +74,7 @@ const partnerCards = [
     link: "",
     bullets: [
       "Pay suppliers, partners, and contractors worldwide without heavy bank wire fees.",
-      "Use working capital options to fund inventory, payroll, or expansion when cash flow is tight.",
+      "Use working capital options to fund inventory, or expansion when cash flow is tight.  ",
     ],
   },
   {
@@ -89,11 +89,9 @@ const partnerCards = [
 ];
 
 const topics = [
-  { title: "Overview", slug: "overview",  },
-  { title: "Why this matters to your clients or users ", slug: "features", },
-  { title: "Get started with Payoneer ", slug: "get-started-with-payoneer",  },
-  { title: "How to.. ", slug: "how-to",  },
-
+  { title: "Overview", slug: "overview" },
+  { title: "Why this matters to your clients or users ", slug: "features" },
+  { title: "Get started with Payoneer ", slug: "get-started-with-payoneer" },
 ];
 
 export default function PayoneerPaymentsPage() {
@@ -204,12 +202,15 @@ export default function PayoneerPaymentsPage() {
             id="overview"
             className="scroll-mt-28 mb-4 space-y-4 max-w-3xl"
           >
+            <h2 className="text-[25px] font-bold text-gray-900">
+              Simplify your international payments.
+            </h2>
             <p className="text-[#878787] text-[14px] leading-relaxed">
-              With Payoneer, clients and customers can pay you from anywhere in
-              the world as if you had a local bank account. Multi-currency
-              receiving accounts, flexible payment options, and easy withdrawals
-              make it a solid fit for freelancers, e-commerce sellers, SMBs, and
-              global teams.
+              With Payoneer, clients and customers can pay you globally and you
+              can receive payments like a local. Multi-currency receiving
+              accounts, flexible payment options, and easy withdrawals make it a
+              solid fit for freelancers, e-commerce sellers, SMBs, and global
+              teams.{" "}
             </p>
           </section>
           <section
@@ -221,11 +222,11 @@ export default function PayoneerPaymentsPage() {
             </h2>
             <p className="text-[#878787] text-[14px] leading-relaxed">
               Payoneer lets you receive payments from international clients and
-              platforms as if you had local bank accounts in multiple countries.
-              You can hold balances in different currencies, choose how you get
+              platforms as if you had local accounts in multiple countries. You
+              can hold balances in different currencies, choose how you get
               paid, and withdraw funds to your local bank when it suits your
               cash flow. On top of that, you get tools that help you manage
-              global payouts, automate flows, and access working capital.
+              global pay.{" "}
             </p>
           </section>
 
@@ -242,8 +243,8 @@ export default function PayoneerPaymentsPage() {
 
                 <ul className=" text-[14px] space-y-2 text-[#878787] text-sm list-disc list-outside pl-5 marker:text-gray-400">
                   <li>
-                    Available in 190+ countries and territories so you can work with clients and
-                    platforms almost anywhere{" "}
+                    Available in 190+ countries and territories so you can work
+                    with clients and platforms almost anywhere{" "}
                   </li>
                   <li>
                     {" "}
@@ -252,8 +253,8 @@ export default function PayoneerPaymentsPage() {
                   </li>
                   <li>
                     {" "}
-                    Get paid via &apos;virtual bank accounts&apos; (receiving accounts) in
-                    major currencies, so clients can pay you like a local.
+                    Get paid via receiving accounts in major currencies, so
+                    clients can pay you like a local.
                   </li>
                   <li>
                     Smart global routing helps with efficient cross-border
@@ -283,7 +284,10 @@ export default function PayoneerPaymentsPage() {
                     Send simple payment requests through a shareable link for
                     quick approvals and payments.
                   </li>
-                  <li>Transfer funds to bank accounts in 190+ countries and territories.</li>
+                  <li>
+                    Transfer funds to bank accounts in 190+ countries and
+                    territories. Pay businesses with competitive FX rates.
+                  </li>
                   <li>
                     Pay individuals or businesses with competitive FX rates.
                   </li>
@@ -294,11 +298,6 @@ export default function PayoneerPaymentsPage() {
                   <li>
                     Card requirements usually include a $100+ balance, advance
                     request, and proof of residence.
-                  </li>
-                  <li>
-                    <span className="font-semibold">Working capital:</span> Get
-                    access to funds to buy inventory, pay contractors, and push
-                    growth without waiting on payouts.
                   </li>
                 </ul>
               </div>
@@ -444,9 +443,7 @@ export default function PayoneerPaymentsPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className=" font-semibold hover:underline mt-auto text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00] transition-all"
-                      >
-                        View the tutorial video →
-                      </a>
+                      ></a>
                     </div>
                   </div>
                 ))}
@@ -454,18 +451,17 @@ export default function PayoneerPaymentsPage() {
             </section>
           </section>
           {/* how to */}
-          <section id="how-to" className="scroll-mt-28 px-4 sm:px-0 mb-0">
+          {/* <section id="how-to" className="scroll-mt-28 px-4 sm:px-0 mb-0">
             <h1 className="text-[20px] sm:text-[48px] font-semibold text-gray-900">
               How to..
             </h1>
-          </section>
+          </section> */}
           {/* pdf */}
-          <section
+          {/* <section
             id="keey-features"
             className="scroll-mt-10 sm:py-5 px-4 sm:px-6 mb-0 sm:mb-20 h-auto"
           >
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl">
-              {/* PDF 1 */}
               <a
                 href="/files/How-to-get-paid.pdf"
                 target="_blank"
@@ -484,7 +480,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 2 */}
               <a
                 href="/files/How-to-track-and-cancel-payment-requests.pdf"
                 target="_blank"
@@ -503,7 +498,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 3 */}
               <a
                 href="/files/How-to-see-fees.pdf"
                 target="_blank"
@@ -522,7 +516,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 4 */}
               <a
                 href="/files/How-to-request-a-payment.pdf"
                 target="_blank"
@@ -541,7 +534,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 5 */}
               <a
                 href="/files/How-to-make-a-payment-to-a-recipients-payoneer-account.pdf"
                 target="_blank"
@@ -560,7 +552,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 6 */}
               <a
                 href="/files/How-to-enable-swift-wire-account.pdf"
                 target="_blank"
@@ -579,7 +570,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 7 */}
               <a
                 href="/files/How-to-enable-local-receiving-accounts.pdf"
                 target="_blank"
@@ -598,7 +588,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 8 */}
               <a
                 href="/files/How-to-check-a-payments-status.pdf"
                 target="_blank"
@@ -617,7 +606,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 9 */}
               <a
                 href="/files/Payoneer-mobile-app.pdf"
                 target="_blank"
@@ -636,7 +624,6 @@ export default function PayoneerPaymentsPage() {
                 </div>
               </a>
 
-              {/* PDF 10 */}
               <a
                 href="/files/How-to-withdraw-funds-from-your-Payoneer-Account-to-your-bank-account.pdf"
                 target="_blank"
@@ -650,12 +637,13 @@ export default function PayoneerPaymentsPage() {
                 />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                   <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    How to withdraw funds from your Payoneer account to your bank account
+                    How to withdraw funds from your Payoneer account to your
+                    bank account
                   </span>
                 </div>
               </a>
             </div>
-          </section>
+          </section> */}
 
           {/* LEARN MORE */}
           {/* <section

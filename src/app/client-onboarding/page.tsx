@@ -27,11 +27,13 @@ import expandicon from "../assets/images/expandIcon.png";
 import Footer from "../components/Footer";
 
 const topics = [
-  { title: "How to get started as an account holder (AH) in Payoneer ", slug: "get-started-account-holder",},
-  { title: "Form Flow", slug: "referred-account-holders", },
-  { title: "4 Steps Flow",slug: "clm-flow", },
-  { title: "Additional KYC requirements", slug: "kyc-process-explained", },
- 
+  {
+    title: "How to get started as an account holder in Payoneer ",
+    slug: "get-started-account-holder",
+  },
+  { title: "Form Flow", slug: "referred-account-holders" },
+  { title: "4 Steps Flow", slug: "clm-flow" },
+  { title: "Additional KYC requirements", slug: "kyc-process-explained" },
 ];
 
 const resellerBullets: string[] = [];
@@ -353,10 +355,10 @@ export default function ResellerLandingPage() {
           >
             {/* Main heading */}
             <p className="text-gray-900 text-[48px] font-semibold">
-              How to get started as an account holder (AH) in Payoneer
+              How to get started as an account holder in Payoneer
             </p>
             <p className="mt-2 font-bold text-bold text-gray-900 text-[20px]">
-              Step 1: Request your unique onboarding link
+              Step 1: Request your unique registration link
             </p>
             <p className="mt-2 text-gray-900 text-[20px]">
               Contact your Partner Manager and ask for your personalized
@@ -369,15 +371,14 @@ export default function ResellerLandingPage() {
                 support@payoneerpartnerships.com
               </a>
             </p>
-            <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
+            <p className="font-bold text-gray-900 text-[20px] mt-4">
               Step 2: Follow the Step-by-Step Onboarding Guides
             </p>
-            <p className="mt-2 text-gray-900 text-[20px] mt-4">
-              Once you sign up using the partner link, your Account Manager will
-              provide you with a customized onboarding link tailored to your
-              business needs.{" "}
+            <p className=" text-gray-900 text-[20px] mt-4">
+              An account manager will provide a client a customized registration
+              link tailored to your business needs.{" "}
             </p>
-            <p className="mt-2 font-bold text-gray-900 text-[20px] mt-4">
+            <p className="font-bold text-gray-900 text-[20px] mt-4">
               Step 3: Choose your Guide: <br />
             </p>
           </section>
@@ -429,9 +430,7 @@ export default function ResellerLandingPage() {
             className="scroll-mt-36 max-w-5xl mx-auto"
           >
             {/* Main heading */}
-            <p className="text-gray-900 text-[48px] font-semibold">
-              Form Flow
-            </p>
+            <p className="text-gray-900 text-[48px] font-semibold">Form Flow</p>
             <p className="mt-2 text-gray-900 text-[20px]">
               Here are the steps to complete your Payoneer onboarding and begin
               using your account.
@@ -515,8 +514,8 @@ export default function ResellerLandingPage() {
                               />
                               <span>
                                 A personal bank statement dated within the last
-                                3 months. This only needed for registration and
-                                verification of the owner {" "}
+                                few months. This only needed for registration
+                                and verification of the owner{" "}
                               </span>
                             </li>
                           </ul>
@@ -605,9 +604,9 @@ export default function ResellerLandingPage() {
 
                           <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
                             Please select as below then enter your personal bank
-                            details in the last page your application. Please
-                            select the bank country as per your bank account is
-                            situated.{" "}
+                            details in the last page of your application. Please
+                            select the country corresponding to where your bank
+                            account is situated.{" "}
                           </p>
                         </div>
                         {/* RIGHT – PDF */}
@@ -729,14 +728,14 @@ export default function ResellerLandingPage() {
                               Company Address Verification
                             </td>
                             <td className="border border-gray-200 px-4 py-3 text-[#878787]">
-                              Recent utility bill (gas, water, electricity –
-                              dated within the last 3 months) or Certificate of
-                              Incorporation (showing address) or recent company
-                              bank statement
+                              POCA (Proof of Company Address) Utility Bill
+                              (gas/water/electricity, etc.) [past 3 months] Bank
+                              Statement [past 3 months] Legal Document with Name
+                              & Address
                             </td>
                           </tr>
 
-                          <tr>
+                          {/* <tr>
                             <td className="border border-gray-200 px-4 py-3 font-medium text-black">
                               Ownership Structure
                             </td>
@@ -745,16 +744,16 @@ export default function ResellerLandingPage() {
                               structure or certified copy signed by a
                               notary/lawyer
                             </td>
-                          </tr>
+                          </tr> */}
 
                           <tr>
                             <td className="border border-gray-200 px-4 py-3 font-medium text-black">
                               Proof of Residential Address
                             </td>
                             <td className="border border-gray-200 px-4 py-3 text-[#878787]">
-                              Document issued by a government or recognized
-                              institution (e.g., bank statement, utility bill)
-                              showing your name and address
+                              Utility Bill, Bank Statement, Tax Document, The
+                              documents must show full name & address details
+                              and should be valid from the past 6 months{" "}
                             </td>
                           </tr>
 
@@ -919,7 +918,8 @@ export default function ResellerLandingPage() {
                         className="flex-none mt-1"
                       />
                       <span>
-                        Provide the business name and where it is registered.{" "}
+                        Provide the business name and where it is
+                        registered.{" "}
                       </span>
                     </li>
                   </ul>
@@ -1092,7 +1092,8 @@ export default function ResellerLandingPage() {
                         className="flex-none mt-1"
                       />
                       <span>
-                        If you operate through a marketplace, specify which one.{" "}
+                        If you operate through a marketplace, specify which
+                        one.{" "}
                       </span>
                     </li>
                   </ul>
@@ -1134,7 +1135,8 @@ export default function ResellerLandingPage() {
                         className="flex-none mt-1"
                       />
                       <span>
-                        Describe where the money you will receive comes from.{" "}
+                        Describe where the money you will receive comes
+                        from.{" "}
                       </span>
                     </li>
                   </ul>
@@ -1415,7 +1417,10 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>Choose your bank country. </span>
+                      <span>
+                        Choose your country. corresponding to where your bank
+                        account is situated.{" "}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1506,16 +1511,7 @@ export default function ResellerLandingPage() {
                       />
                       <span>Payoneer will review your information. </span>
                     </li>
-                    <li className="flex items-start gap-3">
-                      <Image
-                        src={Checkicon}
-                        alt="Check"
-                        width={20}
-                        height={20}
-                        className="flex-none mt-1"
-                      />
-                      <span>Approval usually takes a few business days. </span>
-                    </li>
+
                     <li className="flex items-start gap-3">
                       <Image
                         src={Checkicon}
@@ -1526,7 +1522,7 @@ export default function ResellerLandingPage() {
                       />
                       <span>
                         Once approved, you&apos;ll receive a confirmation email
-                        and can start using your account.{" "}
+                        and you can then start using your account.
                       </span>
                     </li>
                   </ul>
@@ -1565,7 +1561,9 @@ export default function ResellerLandingPage() {
                         height={20}
                         className="flex-none mt-1"
                       />
-                      <span>After verification, your account is active. </span>
+                      <span>
+                        After verification, your account will be active.{" "}
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -1591,8 +1589,7 @@ export default function ResellerLandingPage() {
                   requirements, with clear guidance to help you prepare the
                   information in the correct format and avoid processing delays.
                 </p>
-                {/* Affiliation */}
-                <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
+                {/* <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Affiliation URL / Screenshot showing affiliation
                 </p>
 
@@ -1625,7 +1622,7 @@ export default function ResellerLandingPage() {
                     live link. Affiliation screenshots should be captured using
                     Autologger.
                   </li>
-                </ul>
+                </ul> */}
                 {/* <p className="text-[#878787] text-sm mt-2 text-[12px] sm:text-[17px]">
                   Autologger for Affiliation Screenshot:{" "}
                   <a className="text-blue-600" href="">
@@ -1644,9 +1641,8 @@ export default function ResellerLandingPage() {
                   verification.
                 </p>
                 {/* Held ID */}
-                <div>
+                {/* <div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-10  align-center mt-4">
-                    {/* Left – Text */}
                     <div className="items-start align-middle align-center content-center">
                       <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
                         {" "}
@@ -1681,7 +1677,8 @@ export default function ResellerLandingPage() {
                           />
                           <span>
                             Both the face of the account holder and the text on
-                            the paper must be fully visible and unobstructed.{" "}
+                            the paper must be fully visible and
+                            unobstructed.{" "}
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
@@ -1698,39 +1695,30 @@ export default function ResellerLandingPage() {
                         </li>
                       </ul>
                     </div>
-                    {/* RIGHT – PDF */}
                     <div>
                       <div>
-                        <div
-                          className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
-                        >
-                          {/* <a target="_blank" href="/files/Held-ID.pdf ">
-                          <img
-                            src="/images/Held-IDimg.png"
-                            alt="Sample certificate"
-                            className="w-full  object-cover transition-transform duration-300 group-hover:scale-105"
-                          />
-                          </a> */}
-                      <a
-                      href="/files/Held-ID.pdf"
-                      rel="Held ID"
-                      className="group relative block overflow-hidden rounded-xl border border-gray-200"
-                    ><img
-                        src="/images/Held-IDimg.png"                  
-                        alt="Held ID"
-                        className="w-full h-64 object-cover"
-                        />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                  <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
-                    Held ID
-                  </span>
-                </div>
-              </a>
+                        <div className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200">
+                          <a
+                            href="/files/Held-ID.pdf"
+                            rel="Held ID"
+                            className="group relative block overflow-hidden rounded-xl border border-gray-200"
+                          >
+                            <img
+                              src="/images/Held-IDimg.png"
+                              alt="Held ID"
+                              className="w-full h-64 object-cover"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                              <span className="px-3 text-center text-sm sm:text-base font-semibold text-white">
+                                Held ID
+                              </span>
+                            </div>
+                          </a>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 {/* Invoice */}
                 <p className="text-[17px] sm:text-[23px] font-semibold text-gray-900 mb-4 mt-10">
                   Invoice submission requirements
@@ -1744,7 +1732,7 @@ export default function ResellerLandingPage() {
                   <li>A description of the services provided</li>
                   <li>
                     The full names of both the buyer (payer) and the seller
-                    (account holder)
+                    (Payoneer account holder- Payee)
                   </li>
                   <li>The payment amount</li>
                 </ul>
@@ -1801,7 +1789,7 @@ export default function ResellerLandingPage() {
                   Please note that these are part of the overall selfie
                   requirement and should not be manually uploaded or reviewed;
                   they must be completed by the account holder and reviewed only
-                  by KYC.
+                  by Payoneer&apos;s KYC team.{" "}
                 </p>
                 <p className="text-[#878787] text-sm mt-6 text-[12px] sm:text-[17px]">
                   What the customer experience looks like:

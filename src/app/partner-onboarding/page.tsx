@@ -34,7 +34,7 @@ import Fourteen from "../assets/Partnerimgs/14.png";
 
 const topics = [
   { title: "Why we choose community?", slug: "choose-PRM" },
-  { title: "What is the process?",  slug: "onboarding-process-works", },
+  { title: "What is the process?", slug: "onboarding-process-works" },
   // { title: "Onboarding process", slug: "onboarding-process" },
 ];
 
@@ -55,23 +55,23 @@ const keyFeatures = [
   {
     logo: Icon1,
     title: "Automation & Efficiency",
-    desc: "Experience hassle-free operations with automated commission calculations, seamless integrations across platforms, and streamlined affiliate payouts. Our system ensures you spend less time on admin and more time on results. ",
+    desc: "Experience hassle-free operations and streamlined affiliate payouts. Our system ensures you spend less time on admin and more time on results.",
   },
   {
     logo: Icon2,
     title: "Partner Experience & Transparency",
-    desc: "Enjoy a personalized dashboard with real-time tracking, standardized onboarding, and clear communication of offer terms. Access all your offers and landing pages in one place, with complete visibility and accuracy. ",
+    desc: "Enjoy a personalized dashboard with real-time tracking, standardized onboarding, and clear communication of offer terms. Access all your offers and landing pages in one place, with complete visibility.",
   },
   {
     logo: Icon3,
     title: "Insights & Control",
-    desc: "Make data-driven decisions with a central team dashboard, detailed offer metrics, and profitability analysis. Access up to three years of historical data and manage unpaid invoices directly within the PRM. ",
+    desc: "Make data-driven decisions with a central team dashboard, detailed offer metrics, and profitability analysis.",
   },
-  {
-    logo: Icon4,
-    title: "Flexibility & Growth",
-    desc: "Customize offers by affiliate or referral, stack incentives, and manage revenue shares by product line. Our Knowledge Center provides instant access to policies, manuals, FAQs, and marketing materials- plus, our agile tools let you adapt quickly as your business evolves. ",
-  },
+  // {
+  //   logo: Icon4,
+  //   title: "Flexibility & Growth",
+  //   desc: "Customize offers by affiliate or referral, stack incentives, and manage revenue shares by product line. Our Knowledge Center provides instant access to policies, manuals, FAQs, and marketing materials- plus, our agile tools let you adapt quickly as your business evolves. ",
+  // },
 ];
 
 const customerBenefits = [
@@ -85,7 +85,7 @@ const customerBenefits = [
   },
   {
     title: "3. PRM Access ",
-    desc: "Log in to view all relevant offers, landing pages, billing status, and up to three years of historical data- including any unpaid invoices. ",
+    desc: "Log in to view relevant offers, landing pages, billing status, and up to three years of historical data- including any unpaid invoices. ",
   },
   {
     title: "4. Referral Links",
@@ -131,14 +131,14 @@ const customerBenefitstwo = [
     desc: "To update profile information or reset a password, access the settings. In the settings section, affiliates can also add team members who require access to the SF PRM; each added team member will be reviewed by the affiliate manager, who will then send a welcome email to the new team member upon approval. ",
     image: Nine.src,
   },
-  {
-    title: "Dashboard",
-    desc: "The performance overview shows past 6-month trend.  ",
-    image: Ten.src,
-  },
+  // {
+  //   title: "Dashboard",
+  //   desc: "The performance overview shows past 6-month trend.  ",
+  //   image: Ten.src,
+  // },
   {
     title: "Your Referral Links  ",
-    desc: "This landing page shows that when a referral spend and receive a $35. ",
+    desc: "This landing page shows and overview of when a referral spends and receives funds ",
     image: Eleven.src,
   },
   {
@@ -230,7 +230,7 @@ export default function ResellerLandingPage() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
             <br />
             <span className="block sm:inline bg-clip-text text-[#212529]">
-                  Partner onboarding
+              Partner onboarding
             </span>
           </h1>
         </div>
@@ -332,8 +332,10 @@ export default function ResellerLandingPage() {
               ))}
             </div>
           </section>
-          <section             id="onboarding-process-works"
- className="scroll-mt-24 px-4 sm:px-6">
+          <section
+            id="onboarding-process-works"
+            className="scroll-mt-24 px-4 sm:px-6"
+          >
             <h2 className="text-[20px] sm:text-[48px] font-bold text-gray-900">
               What is the process?
             </h2>
@@ -351,49 +353,56 @@ export default function ResellerLandingPage() {
                 </div>
               ))}
             </div>
+            <p className="text-[10px] sm:text-[20px]  text-gray-900 mt-10">
+              <strong>Note:</strong> The onboarding flow for resellers,
+              referrers or affiliates as shown below is provided for
+              illustration purposes only and may be updated from time to time
+              without notice at Payoneer&apos;s discretion.
+            </p>
           </section>
 
           {customerBenefitstwo.map((item, i) => (
-  <section key={i} className="mb-20">
-    <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
-        
-        {/* LEFT – Text */}
-        <div>
-          <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-            {item.title}
-          </h3>
-        
+            <section key={i} className="mb-20">
+              <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 items-center">
+                  {/* LEFT – Text */}
+                  <div>
+                    <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
+                      {item.title}
+                    </h3>
 
-          <p className="text-[#666] text-sm sm:text-base leading-relaxed">
-            {item.desc}
+                    <p className="text-[#666] text-sm sm:text-base leading-relaxed">
+                      {item.desc}
+                    </p>
+                    <p className="font-semibold text-[#666] text-sm sm:text-base leading-relaxed">
+                      {item.test}
+                    </p>
+                  </div>
+
+                  {/* RIGHT – Image */}
+                  <div>
+                    <div
+                      onClick={() => setModalImage(item.image)}
+                      className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          ))}
+          {/* note */}
+          <p className="text-[10px] sm:text-[20px]  text-gray-900 mt-10">
+            <strong>Note:</strong> The onboarding flow for resellers, referrers
+            or affiliates as shown below is provided for illustration purposes
+            only and may be updated from time to time without notice at
+            Payoneer&apos;s discretion.
           </p>
-            <p className="font-semibold text-[#666] text-sm sm:text-base leading-relaxed">
-            {item.test}
-          </p>
-        </div>
-
-        {/* RIGHT – Image */}
-        <div>
-          <div
-            onClick={() => setModalImage(item.image)}
-            className="group relative cursor-pointer overflow-hidden rounded-xl border border-gray-200"
-          >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-))}
-
-
-          {/* 4th */}
         </main>
       </div>
       <Footer />

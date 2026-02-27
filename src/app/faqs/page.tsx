@@ -31,7 +31,6 @@ const topics = [
     title: "Frequently asked questions (FAQs)",
     slug: "faqs",
   },
-
 ];
 
 const faqs = [
@@ -45,13 +44,13 @@ const faqs = [
   {
     type: "list",
     question:
-      "What type of queries can I raise via the Reseller Operations Support Request Form?",
+      "What type of queries can be raised via the Reseller Operations Support Request Form? ",
     answers: [
       "You can raise requests related to:",
       "· Account approval (BO opening, document/risk alert)",
       "· Account blockages (pre-risk, suspicious activity)",
       "· Payment reviews (non-loaded, declined payments)",
-      "· Product activation (BLS, GLPS, Card, etc.)",
+      "· Product activation ",
       "· Products upsell (Working Capital, Checkout, WFM, etc.)",
       "· Price reduction for newly acquired accounts",
       "· Name mismatch on bank account",
@@ -699,6 +698,29 @@ const faqsSectionTwo = [
       ],
     },
   },
+  {
+    type: "list",
+    question:
+      "What should I do if I’m having problems with the selfie verification? ",
+    answers: [
+      "Once submitted, you will receive an email confirmation. All further communication will be via email. For follow-ups or additional queries on the same issue please write back to us on the same form.",
+      "Please avoid creating duplicate requests, as it may affect the resolution SLA by recency - only the most recent ticket will be worked on, causing delays.",
+    ],
+  },
+  {
+    type: "list",
+    question:
+      "What should I do if I’m having problems with the selfie verification? ",
+    answers: [
+      "If you’re experiencing issues completing or submitting your selfie, this fallback requirement may be applied instead. It can also be used if you request an alternative to the selfie verification, or if our KYC team is unable to review your selfie due to technical difficulties. In such cases, you may be asked to submit a Held ID instead. ",
+      "A Held ID submission must include a clear photograph of the account holder: ",
+      "",
+      "· Holding their government-issued ID alongside a piece of paper displaying the current date. ",
+      "· Both the face of the account holder and the text on the paper must be fully visible and unobstructed. ",
+      "· The image must not be mirrored, reversed, or edited. ",
+    ],
+    image: "../assets/BrandIcon.png",
+  },
 ];
 
 const linkify = (text: string) => {
@@ -779,9 +801,8 @@ export default function ResellerLandingPage() {
         className="bg-gray-50 h-screen sm:h-screen flex items-center justify-center px-4 text-center border-b border-gray-200 bg-cover bg-center"
       >
         <div className="max-w-4xl mx-auto">
-             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
-
-           Supporting your referred account holders (AHs)
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight **leading-normal** text-gray-900">
+            Supporting your referred account holders (AHs)
           </h1>
         </div>
       </section>
@@ -842,7 +863,7 @@ export default function ResellerLandingPage() {
           <section id="faqs" className="scroll-mt-28 mb-4">
             <div className="mt-0 grid grid-cols-1 lg:grid-cols-1 gap-10">
               <div className="mt-0">
-                <h2 className="text-[25px] font-bold text-gray-900">
+                {/* <h2 className="text-[25px] font-bold text-gray-900">
                   Reseller operations external FAQ guide
                 </h2>
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
@@ -859,7 +880,7 @@ export default function ResellerLandingPage() {
                   </a>
                   . Please refer to the FAQs below to navigate the most common
                   queries and resolutions.
-                </p>
+                </p> */}
               </div>
             </div>
           </section>

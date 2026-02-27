@@ -85,7 +85,10 @@ const topics = [
   { title: "About Payoneer", slug: "about-payoneer" },
   { title: "Why partner with us", slug: "why-partner" },
   { title: "Reseller program overview", slug: "reseller-overview" },
-  { title: "Understand your role as a Payoneer reseller", slug: "Understand-Your-Role",},
+  {
+    title: "Understand your role as a Payoneer reseller",
+    slug: "Understand-Your-Role",
+  },
   { title: "Success stories & testimonials", slug: "key-features" },
 ];
 
@@ -97,7 +100,7 @@ const metrics = [
   },
   {
     value: "190+",
-    labelTop: "Countries and territories",
+    labelTop: "Countries and territories ",
     bar: "from-purple-400 to-pink-400",
   },
   {
@@ -183,15 +186,14 @@ const brands = [
   // { name: "Uber", logo: uber },
   //   { name: "Wish", logo: wish },
   // { name: "Real.de", logo: realde },
-
-  { name: "Airbnb", logo: airbnb },
+  //{ name: "Airbnb", logo: airbnb },
+  // { name: "Etsy", logo: Etsy },
+  // { name: "Google", logo: google },
+  // { name: "Upwork", logo: upwork },
+  // { name: "ByteDance", logo: ByteDance },
   { name: "Amazon", logo: amazon },
-  { name: "ByteDance", logo: ByteDance },
-  { name: "Fiverr", logo: fiverr },  
+  { name: "Fiverr", logo: fiverr },
   { name: "EBay", logo: EBay },
-  { name: "Etsy", logo: Etsy },
-  { name: "Google", logo: google },
-  { name: "Upwork", logo: upwork },
   { name: "Walmart", logo: walmart },
 ];
 
@@ -205,12 +207,11 @@ const partnerCards = [
   {
     image: expandCrossBorder,
     title: "Expand cross-border offering",
-    link: "Compliment your offering with Payoneers global infrastructure",
+    link: "Compliment your offering with Payoneer’s global infrastructure ",
     bullets: [
-      "Hold 9+ currency balances in your global virtual accounts",
-      "Send and receive payments in over 190+ countries/markets",
-      "100% digital onboarding with 1-3 days onboarding SLA",
-      "White-glove service supported by dedicated local account managers",
+      "Offer your customers to hold with Payoneer 9+ currency balances in their global virtual accounts ",
+      "Offer your customers to send and receive payments in over 190+ countries and territories ,  ",
+      "White-glove service supported by dedicated local account managers ",
     ],
   },
   {
@@ -219,7 +220,6 @@ const partnerCards = [
     link: "Generate new revenue streams via tailored revenue-share model",
     bullets: [
       "Volume-tiered revenue share model based on monthly transaction volume",
-      "Fully transparent fees and pricing with detailed reporting and robust SLAs",
     ],
   },
   {
@@ -237,22 +237,22 @@ const partnerCards = [
 const customerBenefits = [
   {
     title: "Go global",
-    desc: "Send and receive payments in over 190 countries",
+    desc: "Send and receive payments in over 190 countries and territories",
   },
   {
     title: "Get paid like a local",
     desc: "Global bank account details in 9+ Currencies",
   },
   { title: "Get started, fast", desc: "Fast onboarding (100% online)" },
-  {
-    title: "Safeguard funds",
-    desc: "Funds are safe in Global Systematically Important Banks (G-SIBs)",
-  },
+
   {
     title: "Full transparency",
     desc: "Fully transparent fees and pricing with detailed reporting and robust SLAs",
   },
-  { title: "Someone to talk to", desc: "Dedicated account manager" },
+  {
+    title: "Someone to talk to",
+    desc: "Access to a dedicated account manager ",
+  },
   { title: "Global support", desc: "Fast support in 17 languages" },
 ];
 
@@ -261,17 +261,17 @@ const keyFeatures = [
   {
     logo: fastOnboarding,
     title: "Fast onboarding",
-    desc: "Fast and digital onboarding. Get started in 1-3 days from document submission when you have a business bank account.",
+    desc: "A streamlined digital process that gets you up and running quickly.",
   },
   {
     logo: debitCards,
     title: "International debit cards",
-    desc: "Get a physical or digital Mastercard in EUR, USD, GBP and CAD.",
+    desc: "Get a physical or digital Payoneer Card in EUR, USD, GBP and CAD. ",
   },
   {
     logo: collectionLinks,
     title: "Payment collection links",
-    desc: "Accept card payments from all over the world and tag them to invoices.",
+    desc: "Accept card payments and enjoy an easy, convenient, and reliable cross-border payment solution. ",
   },
   {
     logo: onlineCheckout,
@@ -392,16 +392,16 @@ export default function ResellerLandingPage() {
             <p className="text-[#878787] mb-6 w-full text-[13px] sm:text-[17px] ">
               Payoneer is a global financial services company that provides
               solutions for cross-border payments and international transactions
-              for businesses, freelancers, and sellers.
+              for businesses, freelancers, and sellers.{" "}
             </p>
             <div className="mt-10">
               <h2 className="text-md sm:text-[20px] font-semibold text-gray-900">
                 Unmatched global infrastructure
               </h2>
-              <p className="text-[#878787] text-[13px] sm:text-[17px] mt-1">
+              {/* <p className="text-[#878787] text-[13px] sm:text-[17px] mt-1">
                 Covering 190+ countries and territories with redundant
                 capabilities in 145 countries
-              </p>
+              </p> */}
               <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
                 {metrics.map((m, i) => (
                   <div
@@ -455,9 +455,13 @@ export default function ResellerLandingPage() {
                 Trusted by the world&apos;s leading digital brands
               </h3>
               <p className="text-xs sm:text-[17px] text-[#878787] mt-1 w-full">
-                Serving over 2000 leading global marketplaces & digital
-                platforms, sending tens of billions of dollars a year to SMBs
-                across the world
+                Payoneer is the financial platform for cross-border business and
+                global payments. Payoneer empowers millions of businesses with
+                the financial tools and services they need to grow and transact
+                globally with confidence. We make it easier for SMBs,
+                particularly in emerging markets, to connect to the global
+                economy, pay and get paid across borders, manage their funds
+                across multiple currencies, and grow their businesses.{" "}
               </p>
               <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {brands.map((b, i) => (
@@ -484,10 +488,10 @@ export default function ResellerLandingPage() {
               Why partner with us
             </h1>
             <p className="mt-3 w-full text-[#878787] text-[13px] sm:text-[17px]">
-              Partner with Payoneer to unlock global payouts, world-class
+              Join Payoneer to unlock global payouts, world-class
               infrastructure, and co-marketing opportunities. Empower your
               merchants and creators to scale internationally with seamless
-              onboarding and localized compliance.
+              onboarding and localized compliance.{" "}
             </p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {partnerCards.map(({ image, title, link, bullets }) => (
@@ -530,7 +534,7 @@ export default function ResellerLandingPage() {
               Reseller program overview
             </h2>
             <p className="mt-2 text-[#878787] text-[13px] sm:text-[17px] w-full">
-              The Payoneer reseller program egnables incorporation agencies and
+              The Payoneer reseller program enables incorporation agencies and
               VAS providers to become full-service financial partners for SMB
               clients.
             </p>
@@ -690,8 +694,8 @@ export default function ResellerLandingPage() {
               {/* Card 2 */}
               <div className="bg-white rounded-2xl shadow-md p-6">
                 <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
-                  How to refer clients share Payoneer-provided links that
-                  contain your unique tracking code
+                  How to refer clients? Share Payoneer-provided links with your
+                  unique tracking code{" "}
                 </h3>
                 {/* Gradient underline */}
                 <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>
@@ -717,8 +721,8 @@ export default function ResellerLandingPage() {
 
               <div className="bg-white rounded-2xl shadow-md p-6">
                 <h3 className="text-[20px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#0070F3] via-[#DA54D8] to-[#FF6A00]">
-                  Important limits you cannot bind Payoneer or speak on its
-                  behalf{" "}
+                  Important limits - you cannot bind Payoneer or speak on its
+                  behalf behalf{" "}
                 </h3>
                 {/* Gradient underline */}
                 <div className="h-0.5 w-24 bg-gradient-to-r from-yellow-400 via-purple-500 to-blue-500 rounded-full mt-1 mb-4"></div>

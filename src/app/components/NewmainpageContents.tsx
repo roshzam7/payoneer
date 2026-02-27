@@ -89,7 +89,7 @@ export default function NewmainpageContents() {
               insights to help you maximize your impact, unlock new revenue
               streams, and deliver more value to your customers. Unlock full
               access to our ecosystem - from seamless onboarding and activation
-              to smart guides and real-time support.
+              to smart guides and real-time support.{" "}
             </p>
           </div>
         </div>
@@ -116,8 +116,7 @@ export default function NewmainpageContents() {
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
               Partner activation & enablement, sales enablement tools, marketing
-              & reselling guidelines, customer personas, co-branded landing
-              Pages.
+              assets, guidelines and customer personas.
             </p>
           </div>
 
@@ -152,8 +151,8 @@ export default function NewmainpageContents() {
               Seamless experience upgrades
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
-              Faster onboarding flows, improved APIs and UX that make it easy to
-              integrate Payoneer offerings into your stack.
+              Faster onboarding flows, smarter tools and a seamless experience
+              that makes it easy to grow.
             </p>
           </div>
           <div className="rounded-2xl bg-white border border-gray-100 shadow-lg p-6 transition-transform duration-200 hover:scale-[1.02]">
@@ -169,8 +168,8 @@ export default function NewmainpageContents() {
               Expert support & resources
             </h4>
             <p className="mt-3 text-sm text-[#878787] leading-relaxed">
-              Pro-level guides, onboarding playbooks, and a 24/7 support center
-              to keep you moving forward.
+              Pro-level guides, onboarding playbooks, and local support to keep
+              you moving forward.
             </p>
           </div>
         </div>
@@ -236,8 +235,7 @@ export default function NewmainpageContents() {
               Access new guides & assets
             </h4>
             <p className="mt-2 text-sm text-gray-600">
-              Download latest collateral: templates, case studies and marketing
-              toolkits.
+              Download latest collateral and marketing toolkits.
             </p>
           </div>
 
@@ -257,14 +255,14 @@ export default function NewmainpageContents() {
         <Testimonial />
       </section>
       {/* SECTION 5: CTA */}
-     <footer className="mt-12 bg-white rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <footer className="mt-12 bg-white rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h4 className="text-lg font-semibold text-gray-800">
             Need help or want to explore more?
           </h4>
           <p className="mt-1 text-sm text-gray-600">
             Open a support ticket or browse our FAQs - we&apos;re here to help
-            you succeed.
+            you succeed
           </p>
         </div>
         <div className="flex gap-3">

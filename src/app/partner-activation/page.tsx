@@ -46,9 +46,9 @@ const bannerAssets = [
 ];
 
 const topics = [
-  {title: "Sales enablement tools", slug: "sales-enablement-tools",},
-  {title: "Marketing guidelines", slug: "reselling-guidelines", },
-  {title: "Customer personas", slug: "customer-personas", },
+  { title: "Sales enablement tools", slug: "sales-enablement-tools" },
+  { title: "Marketing guidelines", slug: "reselling-guidelines" },
+  { title: "Customer personas", slug: "customer-personas" },
 ];
 
 const personas = [
@@ -277,14 +277,14 @@ export default function ResellerLandingPage() {
                     {/* LEFT – Text */}
                     <div>
                       <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
-                        Training webinars & certifications
+                        Training webinars & certifications for Resellers{" "}
                       </h3>
 
                       <p className="text-[#666] text-sm sm:text-base mb-4 leading-relaxed">
-                        This certificate recognizes Authorised Channel Partners
-                        of Payoneer. It confirms your status as a trusted
-                        partner, authorized to promote Payoneer&apos;s global
-                        payment solutions.
+                        The reseller certificate recognizes authorized channel
+                        partners of Payoneer. It confirms your status as a
+                        trusted partner, authorized to promote Payoneer&apos;s
+                        global payment solutions.
                       </p>
 
                       <p className="text-[#666] text-sm sm:text-base leading-relaxed">
@@ -320,7 +320,7 @@ export default function ResellerLandingPage() {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                {/* <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-8 sm:p-10 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
                   <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
                     Brand positioning guide
                   </h3>
@@ -378,16 +378,13 @@ export default function ResellerLandingPage() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </section>
 
           {/* Marketing & Reselling Guidelines */}
-          <section
-            id="reselling-guidelines"
-            className="scroll-mt-28 mb-12"
-          >
+          <section id="reselling-guidelines" className="scroll-mt-28 mb-12">
             <div className="grid grid-cols-1 gap-10">
               {/* Header Section */}
               <div className="rounded-3xl  p-8 sm:p-0">
@@ -502,6 +499,12 @@ export default function ResellerLandingPage() {
                 Download all assets
               </a>
             </div>
+          </section>
+          <section className="mt-0 mb-0">
+            <p className="text-gray-900 font-semibold text-[20px] sm:text-[20px] mb-6">
+              AGREED THAT THE ONLY BANNER TO BE USED IS “THE CROSS-BORDER
+              PAYMENTS SOLUTION TRUSTED BY MILLIONS WORLDWIDE”
+            </p>
           </section>
           <section className="mb-20">
             <h3 className="text-[28px] sm:text-[36px] font-semibold text-gray-900 mb-2">

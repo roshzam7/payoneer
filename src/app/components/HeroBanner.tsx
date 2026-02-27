@@ -18,18 +18,22 @@ const cards: Card[] = [
       { label: "About Payoneer", slug: "about-payoneer" },
       { label: "Why partner with us", slug: "why-partner" },
       { label: "Reseller program overview", slug: "reseller-overview" },
-      { label: "Understand Your Role as a Payoneer Reseller", slug: "Understand-Your-Role" },
+      {
+        label: "Understand Your Role as a Payoneer Reseller",
+        slug: "Understand-Your-Role",
+      },
       { label: "Success stories & testimonials", slug: "key-features" },
     ],
     viewAllHref: "/program",
   },
-  
-  { title: "Partner onboarding", 
+
+  {
+    title: "Partner onboarding",
     items: [
-       { label: "Why we choose community?", slug: "choose-PRM" },
-       { label: "What is the process?",  slug: "onboarding-process-works", },
-      ],
-    viewAllHref: "/partner-onboarding",  
+      { label: "Why we choose community?", slug: "choose-PRM" },
+      { label: "What is the process?", slug: "onboarding-process-works" },
+    ],
+    viewAllHref: "/partner-onboarding",
   },
 
   {
@@ -43,52 +47,56 @@ const cards: Card[] = [
     viewAllHref: "/affiliate-program",
   },
 
-
-  // { title: "Affiliate onboarding", 
+  // { title: "Affiliate onboarding",
   //   items: [
-  //   ],    
+  //   ],
   //   viewAllHref: "/affiliate-setup",  },
   {
     title: "Client onboarding",
     items: [
-      { label: "How to get started as an account holder (AH) in Payoneer ", slug: "get-started-account-holder",},
-      { label: "Form Flow", slug: "referred-account-holders", },
-      { label: "4 Steps Flow",slug: "clm-flow", },
-      { label: "Additional KYC requirements", slug: "kyc-process-explained", },
+      {
+        label: "How to get started as an account holder (AH) in Payoneer ",
+        slug: "get-started-account-holder",
+      },
+      { label: "Form Flow", slug: "referred-account-holders" },
+      { label: "4 Steps Flow", slug: "clm-flow" },
+      { label: "Additional KYC requirements", slug: "kyc-process-explained" },
     ],
     viewAllHref: "/client-onboarding",
   },
   {
     title: "Enablement",
     items: [
-      {label: "Sales enablement tools", slug: "sales-enablement-tools",},
-      {label: "Marketing guidelines", slug: "reselling-guidelines", },
-      {label: "Customer personas", slug: "customer-personas", },
+      { label: "Sales enablement tools", slug: "sales-enablement-tools" },
+      { label: "Marketing guidelines", slug: "reselling-guidelines" },
+      { label: "Customer personas", slug: "customer-personas" },
     ],
     viewAllHref: "/partner-activation",
   },
-
 
   { title: "Pricing", viewAllHref: "/pricing", items: [] },
 
   {
     title: "Features",
     items: [
-      { label: "Overview", slug: "overview",  },
-      { label: "Why this matters to your clients or users ", slug: "features", },
-      { label: "Get started with Payoneer ", slug: "get-started-with-payoneer",  },
-      { label: "How to.. ", slug: "how-to",  },
+      { label: "Overview", slug: "overview" },
+      { label: "Why this matters to your clients or users ", slug: "features" },
+      {
+        label: "Get started with Payoneer ",
+        slug: "get-started-with-payoneer",
+      },
+      { label: "How to.. ", slug: "how-to" },
     ],
     viewAllHref: "/features",
   },
-  
+
   { title: "Support", items: [], viewAllHref: "/faqs" },
 ];
 
 type SearchEntry = {
-  label: string;        // the thing you search for (item title or page title)
-  href: string;         // where it goes
-  pageTitle: string;    // the page name you want to show small
+  label: string; // the thing you search for (item title or page title)
+  href: string; // where it goes
+  pageTitle: string; // the page name you want to show small
   kind: "page" | "item";
 };
 
@@ -119,14 +127,16 @@ const HeroBanner: React.FC = () => {
               href: `${card.viewAllHref}#${item.slug}`,
               pageTitle: card.title,
               kind: "item",
-            }
+            },
       );
 
       return [pageEntry, ...itemEntries];
     });
 
     // De-dupe exact label+href
-    return Array.from(new Map(raw.map((x) => [`${x.label}|${x.href}`, x])).values());
+    return Array.from(
+      new Map(raw.map((x) => [`${x.label}|${x.href}`, x])).values(),
+    );
   }, []);
 
   const filteredItems = useMemo(() => {
@@ -143,12 +153,15 @@ const HeroBanner: React.FC = () => {
     >
       <div className="h-full max-w-5xl mx-auto px-4 flex flex-col items-center justify-start text-center pt-40 sm:pt-50 lg:pt-50">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-normal text-gray-900">
-          Welcome to the <br />
-          <span className="block bg-clip-text text-gray-900">Payoneer partner program</span>
+          Welcome to <br />
+          <span className="block bg-clip-text text-gray-900">
+            Payoneer reseller program
+          </span>
         </h1>
 
         <p className="mt-5 mx-auto max-w-[720px] text-base sm:text-lg leading-relaxed text-gray-700">
-          Powering your success with an exclusive program built for growth and next-gen infrastructure.
+          Powering your success with an exclusive program built for growth and
+          next-gen infrastructure.
         </p>
 
         <div className="relative w-full sm:w-1/2 mx-auto mt-10">

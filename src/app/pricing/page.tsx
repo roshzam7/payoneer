@@ -26,7 +26,6 @@ type TablePrice = {
 type Price = ListPrice | TablePrice;
 
 const topics = [
-
   {
     title: "Payoneer fees",
     slug: "table",
@@ -39,7 +38,7 @@ const priceSection = [
     question: "",
     subHeading: "",
     tableData: {
-      headers: ["Category", "Service Description", "Fee"],
+      headers: [],
       rows: [
         ["Receiving Funds ", "From another Payoneer user ", "Free"],
 
@@ -250,7 +249,15 @@ export default function ResellerLandingPage() {
 
                 <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
                   Use the table below to find the correct request type and how
-                  to categorize common issues.
+                  to categorize common issues. For full details, visit the
+                  official <br />
+                  page:
+                  <a
+                    href="https://www.payoneer.com/about/pricing/"
+                    className="- text-purple-600 hover:underline"
+                  >
+                    pricing page
+                  </a>
                 </p>
               </div>
             </div>
@@ -350,7 +357,7 @@ export default function ResellerLandingPage() {
                   </div>
                 </div>
               ))}
-            <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
+            {/* <p className="mt-2 text-[#878787] text-[14px] max-w-2xl">
               For full details, visit the official page:{" "}
               <a
                 href="https://www.payoneer.com/pricing/"
@@ -360,10 +367,10 @@ export default function ResellerLandingPage() {
               >
                 Payoneer Pricing
               </a>
-            </p>
+            </p> */}
           </section>
 
-          <section
+          {/* <section
             id="The-prices-and-fees"
             className="max-w-8xl mx-auto px-4 sm:px-6 py-16 text-center "
           >
@@ -381,7 +388,7 @@ export default function ResellerLandingPage() {
               Please note that Making a payment with currency conversion is
               available in permitted jurisdictions only.
             </p>
-          </section>
+          </section> */}
         </main>
       </div>
       <Footer />{" "}

@@ -36,7 +36,7 @@ export default function PayoneerTestimonials() {
   const testimonials: TestimonialProps[] = [
     {
       quote:
-        "We’re proud to partner as an affiliate with Payoneer, a trusted leader in global payments. Their seamless and secure solutions empower businesses to expand beyond borders, and together, we’re making international growth easier than ever!",
+        "We’re proud to partner as an affiliate with Payoneer, a trusted leader in global payments. Their seamless and secure solutions empower businesses to expand beyond borders, and together, we’re making international growth easier than ever! ",
       author: "Julie Nguyen",
       company: "Chief Legal Officer, JNT Consultancy & Services, Vietnam",
       image:
@@ -44,7 +44,7 @@ export default function PayoneerTestimonials() {
     },
     {
       quote:
-        "Our Affiliate Partnership with Payoneer has transformed our business. Their reliability and efficiency have helped thousands of companies expand globally, with fast payment processing and ongoing support. Our collaboration has driven growth and received positive client feedback. Together, we’re achieving outstanding results!",
+        "Our Affiliate Partnership with Payoneer has transformed our business. Their reliability and efficiency have helped thousands of companies expand globally, with fast payment processing and ongoing support. Our collaboration has driven growth and received positive client feedback. Together, we’re achieving outstanding results! ",
       author: "Andriy Matyash",
       company: "Managing Partner, Company 4B , Ukraine",
       image:
